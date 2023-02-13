@@ -1,0 +1,6 @@
+numpy==1.19.2
+pandas
+pytest
+nltk
+pyyaml
+spacy

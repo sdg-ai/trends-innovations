@@ -39,34 +39,31 @@ def load_params():
     return params
 
 
-def doc_to_multisentence(text: str, num_sentences: int):
+def doc_to_multisentence(text_obj:dict, num_sentences:int):
     """
     Splits text into blocks/groups of sentences.
 
     The function returns the string indices and corresponding sentences for each of the generated blocks.
 
     Parameters:
-        text (str): Input text.
+        text_obj (dict): Input text object.
         num_sentences (int): Number of sentences in a block.
 
     Returns:
         list: List of dictionaries containing arrays of the string indices and corresponding sentences for each block.
     """
-
-    sentences = nltk.sent_tokenize(text)
-    offset = 0
-    sent_dict = {"string_indices": (0, 0), "text": ""}
-    split_sentences = []
-    for j in range(len(sentences) - num_sentences + 1):
-        line_indices = []
-        line_text = []
-        for line in sentences[j:j + num_sentences]:
-            offset = text.find(line, offset)
-            line_indices.append(tuple([offset, offset + len(line)]))
-            line_text.append(str(line))
-        sent_dict["string_indices"] = [line_indices[i] for i in range(len(line_indices))]
-        sent_dict["text"] = [line_text[i] for i in range(len(line_text))]
-        split_sentences.append(sent_dict.copy())
-        offset = 0
-
-    return split_sentences
+    
+    multi_sentence_obj = []
+    n = len(text_obj)
+    k = num_sentences
+    
+    if n < k:
+        multi_sentence_obj = text_obj
+    else:
+        for j in range(0,n-k+1):
+            group_indices = [(text_obj[ind]['string_indices']) for ind in range(j,j+k)]
+            group_text = [(text_obj[ind]['text']) for ind in range(j, j + k)]
+            group_obj = {'string_indices':group_indices, 'text':group_text}
+            multi_sentence_obj.append(group_obj)
+    
+    return multi_sentence_obj

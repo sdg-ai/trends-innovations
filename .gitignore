@@ -1,2 +1,4 @@
 trends_innovations/classifier_experiments/model_checkpoints
 .idea/
+/app/checkpoints/
+/data/

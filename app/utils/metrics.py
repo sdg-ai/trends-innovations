@@ -1,4 +1,3 @@
-import numpy as np
 import torch
 import torchmetrics as tm
 from collections import defaultdict
@@ -6,7 +5,10 @@ from torchmetrics import MetricCollection
 from torchmetrics.utilities.data import _flatten_dict
 
 
-class AvgEpochLossMeter:
+class AvgDictMeter:
+    """
+    accumulates a dictionary of values and compute the average
+    """
     def __init__(self):
         self.reset()
         self.values = defaultdict(float)
@@ -26,6 +28,10 @@ class AvgEpochLossMeter:
 
 
 class TransformerMetricCollection(MetricCollection):
+    """
+    A collection of metrics for our multi-class problem that can be updated and computed jointly for training validation
+    and testing.
+    """
     def __init__(self, n_classes):
         metrics_collection = {
             "accuracy": tm.classification.MulticlassAccuracy(num_classes=n_classes).to("cuda"),
@@ -55,6 +61,7 @@ class TransformerMetricCollection(MetricCollection):
         self.targets = torch.cat([self.targets, targets])
 
     def reset(self):
+        """Reset the metric state."""
         self.preds = torch.Tensor()
         self.targets = torch.Tensor()
         for metric in self.values():

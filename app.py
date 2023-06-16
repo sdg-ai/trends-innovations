@@ -17,7 +17,7 @@ class Sample(BaseModel):
 
 @app.post("/predict")
 def predict(samples: List[Sample]) -> str:
-    model = TransformerTandIClassifier(model_name="distilbert-base-uncased")
+    model = TransformerTandIClassifier(model_name="distilbert-base-uncased", model_config={})
     inputs = [s.text for s in samples]
     encodings = model.tokenizer(inputs, return_tensors="pt", truncation=True, padding=True, max_length=512)
     predictions = model.predict(encodings)

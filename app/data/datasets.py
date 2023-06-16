@@ -4,15 +4,14 @@ import json
 import torch
 import numpy as np
 import pandas as pd
-from torch.utils.data import Dataset, DataLoader
 from sklearn import preprocessing
-from transformers import AutoTokenizer
+from torch.utils.data import Dataset, DataLoader
 
 
-def load_json_data(data_dir):
+def load_json_data(data_dir: str) -> pd.DataFrame:
     """
     Load all jsonl files in the data directory and returns a dataframe
-    Returns: pd.DataFrame
+    Returns: pd.DataFrame containing the data
     """
     files = [f for f in os.listdir(data_dir) if f.endswith('jsonl')]
     rows = []
@@ -38,13 +37,19 @@ def load_json_data(data_dir):
 
 
 class TAndIDataSet(Dataset):
+    """
+    Custom PyTorch Dataset for training hugging face transformer models
+    Args:
+    data: the data to encode
+    tokenizer: the tokenizer to vectorize the text data
+    label_encoder: the label encoder for a numeric representation of the labels
+    """
     encodings: torch.Tensor
     encoded_labels: torch.Tensor
 
-    def __init__(self, data, tokenizer, label_encoder, max_seq_len=128):
+    def __init__(self, data: pd.DataFrame, tokenizer, label_encoder):
         self.data = data
         self.label_encoder = label_encoder
-        self.max_seq_len = max_seq_len
         self._encode(tokenizer, label_encoder)
 
     def __getitem__(self, idx):
@@ -60,9 +65,18 @@ class TAndIDataSet(Dataset):
         self.encoded_labels = label_encoder.fit_transform(self.data.label.tolist())
 
 
-def get_data_loaders(data_dir, model, batch_sizes):
+def get_data_loaders(data_path:str, model, batch_sizes:dict):
+    """
+    given a data-path, a model, and the batch-sizes, return a ready to use dictionary of data loaders for training
+    hugging face transformer models
+    Args:
+        data_path: the path to the data
+        model: the transformer used for classification
+        batch_sizes: the batch sizes for the train, val, and test data loaders
+    Returns: a dictionary of data loaders for train, val, and test
+    """
     # load csv/json
-    df = load_json_data(data_dir)
+    df = load_json_data(data_path)
     # df = df[:1000]
     # get encodings for labels
     le = preprocessing.LabelEncoder()

@@ -1,0 +1,18 @@
+data_dir: "./data/annotated_data"
+save_model_dir: "./checkpoints"
+wandb_config:
+  entity: "j-getzner"
+  project: "Trends & Innovations Classifier"
+  disabled: False
+
+num_labels: 17
+dataset_splits: [0.7,0.9]
+
+transformers:
+  epochs: 10
+  lr: 0.00013
+  patience: 3
+  batch_sizes:
+    train: 5
+    val: 5
+    test: 5

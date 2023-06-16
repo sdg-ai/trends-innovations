@@ -21,7 +21,7 @@ if __name__ == "__main__":
             model_name=args.model_name,
             model_config=model_config,
             save_model_dir=config["save_model_dir"],
-            wandb=config["wandb_config"])
+            wandb_config=config["wandb_config"])
         data_loaders = get_data_loaders(config["data_dir"], model, config["transformers"]["batch_sizes"])
         model.train(data_loaders["train"], data_loaders["val"])
         model.test(data_loaders["test"])

@@ -36,13 +36,14 @@ class TransformerTandIClassifier(TandIClassifier):
         self.wandb = wandb_config
         self.model_config = model_config
         # check if there is already a saved model
-        if os.path.exists(f"./checkpoints/{model_name}"):
+        # TODO: make path configurable
+        if os.path.exists(f"app/checkpoints/{model_name}"):
             print("Loading preexisting model...")
             self.model = transformers_lib[model_name].from_pretrained(
-                f"./checkpoints/{model_name}",
+                f"app/checkpoints/{model_name}",
                 local_files_only=True
             ).to("cuda")
-            self.tokenizer = AutoTokenizer.from_pretrained(f"./checkpoints/{model_name}", local_files_only=True)
+            self.tokenizer = AutoTokenizer.from_pretrained(f"app/checkpoints/{model_name}", local_files_only=True)
         else:
             self.model = transformers_lib[model_name].from_pretrained(
                 model_name,

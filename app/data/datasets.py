@@ -4,6 +4,7 @@ import json
 import torch
 import numpy as np
 import pandas as pd
+from pickle import dump
 from sklearn import preprocessing
 from torch.utils.data import Dataset, DataLoader
 
@@ -81,6 +82,8 @@ def get_data_loaders(data_path:str, model, batch_sizes:dict):
     # get encodings for labels
     le = preprocessing.LabelEncoder()
     le.fit(df.label)
+    # save label encoder
+    dump(le, open(f'app/checkpoints/{model.model_name}/label_encoder.pkl', 'wb'))
     # split into train, test, val
     # TODO: make split sizes configurable
     train_df, val_df, test_df = np.split(df.sample(frac=1), [int(.7 * len(df)), int(.9 * len(df))])

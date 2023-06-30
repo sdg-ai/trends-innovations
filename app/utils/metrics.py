@@ -29,7 +29,7 @@ class AvgDictMeter:
 
 class TransformerMetricCollection(MetricCollection):
     """
-    A collection of metrics for our multi-class problem that can be updated and computed jointly for training validation
+    A collection of metrics for multi-class problem that can be updated and computed jointly for training and validation
     and testing.
     """
     def __init__(self, n_classes):

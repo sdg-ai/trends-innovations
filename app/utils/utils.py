@@ -2,33 +2,19 @@ import numpy as np
 import random
 import torch
 import os
-from sklearn.model_selection import train_test_split
-
-SEED = 42
 
 
-def split_dataset(dataset, val_size=0.2, test_size=0.1):
-    """
-    Splits the dataset into training, validation and test sets.
-    """
-    # Split the dataset into training and test sets
-    train_data, test_data = train_test_split(dataset, test_size=test_size, random_state=SEED)
-    # Split the training set into training and validation sets
-    train_data, val_data = train_test_split(train_data, test_size=val_size, random_state=SEED)
-    return train_data, val_data, test_data
-
-
-def seed_everything():
+def seed_everything(seed):
     """
     Sets the seed for reproducibility.
     """
-    os.environ['PYTHONHASHSEED'] = str(SEED)
+    os.environ['PYTHONHASHSEED'] = str(seed)
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
-    random.seed(SEED)
-    np.random.seed(SEED)
-    torch.manual_seed(SEED)
-    torch.cuda.manual_seed_all(SEED)
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
 
 
 class EarlyStopper:

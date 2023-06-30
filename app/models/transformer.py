@@ -100,8 +100,7 @@ class TransformerTandIClassifier(TandIClassifier):
         lr_scheduler = get_scheduler(name="linear", optimizer=optimizer, num_warmup_steps=0,
                                      num_training_steps=self.config["epochs"] * len(train_loader))
         # init progress bar
-        progress_bar = tqdm(range(self.config["epochs"] * (
-                train_loader.batch_size * len(train_loader) + val_loader.batch_size * len(val_loader))))
+        progress_bar = tqdm(range(self.config["epochs"] * (len(train_loader) + len(val_loader))))
         # define metrics
         early_stopper = EarlyStopper(patience=self.config["patience"])
         train_metrics = TransformerMetricCollection(n_classes=self.config["num_labels"]).to(self.config["device"])

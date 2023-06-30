@@ -1,0 +1,23 @@
+name: trends-innovations-classifier
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - conda-forge::python=3.10
+  - conda-forge::pip
+  - pytorch::pytorch-cuda
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - conda-forge::torchmetrics
+  - conda-forge::matplotlib
+  - conda-forge::scikit-learn
+  - conda-forge::pandas
+  - conda-forge::tqdm
+  - conda-forge::wandb
+  - pip:
+    - numpy
+    - transformers
+    - fastapi
+    - uvicorn
+    - pydantic

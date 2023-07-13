@@ -1,0 +1,7 @@
+.idea/
+/app/checkpoints/
+/data/
+__pycache__/
+/wandb/
+/experiments/classifier_experiments/
+/experiments/.env

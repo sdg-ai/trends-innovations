@@ -32,7 +32,7 @@ def load_params():
         dict: Dictionary containing the configuration parameters and their values.
     """
 
-    with open(get_full_path("data/config.yml")) as f:
+    with open(get_full_path("../data/config.yml")) as f:
         params = yaml.load(f, Loader=yaml.FullLoader)
     f.close()
 

@@ -16,28 +16,30 @@ python3 setup.py install
 ```
 
 ## Usage
+
 ```python
-from trends_innovations.trends_innovation_classifier import TrendsInnovationClassifier
+from .trends_innovation_classifier import TrendsInnovationClassifier
 
 classifier = TrendsInnovationClassifier()
 
-text = <text>
+text = < text >
 
 output = classifier.predict(text)
 ```
 
 ### Example
+
 ```python
 # Import libraries
 import pandas as pd
-from trends_innovations.trends_innovation_classifier import TrendsInnovationClassifier
+from .trends_innovation_classifier import TrendsInnovationClassifier
 
 # Create classifier object
 classifier = TrendsInnovationClassifier()
 
 # Fetch the input text
 with open('example_text.txt', 'rt', encoding='utf-8', errors='ignore') as f:
-    text = f.read()    
+    text = f.read()
 
 # Make predictions 
 output = classifier.predict(text)

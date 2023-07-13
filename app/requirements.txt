@@ -1,0 +1,14 @@
+torchmetrics
+matplotlib
+scikit-learn
+pandas
+tqdm
+wandb
+numpy
+transformers
+fastapi
+uvicorn
+pydantic
+torch
+torchvision
+torchaudio

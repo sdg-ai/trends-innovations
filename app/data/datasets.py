@@ -16,9 +16,8 @@ def load_json_data(data_dir: str) -> pd.DataFrame:
     :param data_dir: the path to the directory containing the json files (one per clas)
     :return: the data as a pd.Dataframe
     """
-    files = [f for f in os.listdir(data_dir) if f.endswith('jsonl')]
     rows = []
-    for f in files:
+    for f in [f for f in os.listdir(data_dir) if f.endswith('jsonl')]:
         with open(f'{data_dir}/{f}', 'r') as json_file:
             json_list = list(json_file)
         for json_str in json_list:
@@ -79,7 +78,6 @@ def get_data_loaders(model, data_dir: str, batch_sizes: dict, dataset_splits=(0.
     """
     # load csv/json
     df = load_json_data(data_dir)
-    df = df[:1000]
     # get encodings for labels
     le = preprocessing.LabelEncoder()
     le.fit(df.label)

@@ -2,14 +2,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 import openai
-import langchain as lc
-from langchain.prompts import HumanMessagePromptTemplate, AIMessagePromptTemplate, SystemMessagePromptTemplate, \
-    ChatPromptTemplate
+from langchain.prompts import HumanMessagePromptTemplate, ChatPromptTemplate, SystemMessagePromptTemplate
 import json
 import os
 
 pre_prompt = """"""
 
+# TODO: consider splitting it into specs
+# TODO: think about the experiment setup with and without the additional data
+# TODO: when to show it variations and when not
 prompt_template = """
 I am developing a deep-learning model for article classification, which needs to categorize articles into 70 distinct classes. However, my training dataset suffers from class imbalance, with some categories having abundant samples while others lack sufficient representation. To enhance the model's ability to differentiate between classes, I aim to address this issue by generating synthetic articles that incorporate new domain-specific vocabulary and phrasing relevant to the respective categories.
 Below you will find the article that you are meant to rewrite and its assigned class. Please rewrite it in a way that incorporates fresh class-specific knowledge, vocabulary and phrasing. It is essential that you maintain the integrity of the original category. Do you understand?
@@ -42,7 +43,7 @@ def load_articles(filename):
             yield article["id"], article['title'], article['text'], article['category']
 
 
-def generate_response(prompt: str):
+def generate_response(prompt):
     messages = langchain_chatmsgs_to_openaimsgs(prompt)
     completion = openai.ChatCompletion.create(engine="chat", messages=messages, temperature=0.7, stop=None)
     return completion

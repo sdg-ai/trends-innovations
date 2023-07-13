@@ -18,7 +18,7 @@ python3 setup.py install
 ## Usage
 
 ```python
-from experimental.trends_innovation_classifier import TrendsInnovationClassifier
+from .trends_innovation_classifier import TrendsInnovationClassifier
 
 classifier = TrendsInnovationClassifier()
 
@@ -32,7 +32,7 @@ output = classifier.predict(text)
 ```python
 # Import libraries
 import pandas as pd
-from experimental.trends_innovation_classifier import TrendsInnovationClassifier
+from .trends_innovation_classifier import TrendsInnovationClassifier
 
 # Create classifier object
 classifier = TrendsInnovationClassifier()

@@ -5,6 +5,7 @@ import torch
 import wandb
 import numpy as np
 import pandas as pd
+import logging
 from tqdm.auto import tqdm
 from torch.utils.data import DataLoader
 from ._model import TandIClassifier
@@ -51,12 +52,13 @@ class TransformerTandIClassifier(TandIClassifier):
         # TODO: make path configurable
         # check if there is already a saved model
         if os.path.exists(f"app/checkpoints/{self.model_name}"):
-            print("Loading preexisting model...")
+            logging.info("Loading preexisting model...")
             model = transformers_lib[self.model_name].from_pretrained(
                 f"app/checkpoints/{self.model_name}",
                 local_files_only=True
             ).to(self.config["device"])
             tokenizer = AutoTokenizer.from_pretrained(f"app/checkpoints/{self.model_name}", local_files_only=True)
+            logging.info("Model loaded.")
         else:
             print("No previous model checkpoint found.")
             model = transformers_lib[self.model_name].from_pretrained(

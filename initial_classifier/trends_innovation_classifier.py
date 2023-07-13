@@ -2,7 +2,7 @@
 import os
 import pandas as pd
 import spacy
-from trends_innovations.data_utils import load_params, doc_to_multisentence
+from .data_utils import load_params, doc_to_multisentence
 from operator import itemgetter
 from pathlib import Path
 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trends and Innovations Classifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            color: #34A853;
+            margin-bottom: 30px;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        .search-button {
+            background-color: #34A853;
+            color: #fff;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            cursor: pointer;
+        }
+
+        .result {
+            margin-top: 20px;
+            color: #34A853;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trends and Innovations Classifier</h1>
+
+    <form method="post">
+        <div class="search-container">
+            <input type="text" class="search-input" name="text" value="" placeholder="Enter the text to be classified..." />
+            <button type="submit" class="search-button">Search</button>
+        </div>
+    </form>
+
+    <p class="result">Result: {{result}}</p>
+</body>
+</html>

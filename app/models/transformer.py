@@ -85,9 +85,14 @@ class TransformerTandIClassifier(TandIClassifier):
         self.model.eval()
         with torch.no_grad():
             output = self.model(**encodings, output_attentions=False, output_hidden_states=False)
+        # get softmax of logits to get probabilities
+        probs = torch.nn.Softmax()(output.logits)
+        probs = torch.max(probs, dim=-1)
         predictions = torch.argmax(output.logits, dim=-1)
+        # get values from probs by indexes from predictions
+
         le = load(open(f'app/checkpoints/{self.model_name}/label_encoder.pkl', 'rb'))
-        return list(le.inverse_transform(predictions.tolist()))
+        return list(le.inverse_transform(predictions.tolist())), probs
 
     def train(self, train_loader: DataLoader, val_loader: DataLoader):
         """

@@ -7,10 +7,9 @@ import json
 import os
 import random
 from tqdm import tqdm
-import time
 import tiktoken
-random.seed(42
-            )
+import numpy as np
+random.seed(42)
 system_template = "You are a language model with expertise in {domain}."
 prompt_template = """
 Please rewrite the following article while incorporating fresh category-specific vocabulary, phrasing, and domain knowledge. The goal is to maintain the integrity of the original category and ensure that the rewritten article remains relevant to the domain of {domain}. Please include additional domain-specific keywords, recent trends, or emerging topics to be highlighted in the rewritten article, enhancing its focus on {domain}. Avoid providing fake information or wrong statements; prioritize accuracy and reliability. Feel free to explore diverse writing styles as long as they suit the subject matter."
@@ -29,7 +28,7 @@ Article:
 AZURE_OPENAI_SERVICE = os.environ.get("AZURE_OPENAI_SERVICE") or ""
 AZURE_OPENAI_API_KEY = os.environ.get("AZURE_OPENAI_API_KEY") or ""
 AZURE_OPENAI_MODEL_NAME = os.environ.get("AZURE_OPENAI_MODEL_NAME") or "gpt-35-turbo"
-AZURE_OPENAI_DEPLOYMENT_NAME = os.environ.get("AZURE_OPENAI_DEPLOYMENT_NAME") or "chat"
+AZURE_OPENAI_DEPLOYMENT_NAME = os.environ.get("AZURE_OPENAI_DEPLOYMENT_NAME") or "gpt-35-turbo"
 
 OPENAI_API_VERSION = os.environ.get("OPENAI_API_VERSION") or "2023-06-01-preview"
 
@@ -39,8 +38,9 @@ openai.api_version = OPENAI_API_VERSION
 openai.api_key = AZURE_OPENAI_API_KEY
 
 
-NUM_GENERATIONS = 3
-NUM_SAMPLES_PER_CATEGORY = 10
+NUM_GENERATIONS_PER_CATEGORY = 250
+MIN_FRACTION_LEFT_FOR_TESTING = 0.3
+
 
 CONTEXT_LENGTH = 4096 if AZURE_OPENAI_MODEL_NAME == "gpt-3.5-turbo" else 16384
 
@@ -68,12 +68,13 @@ def load_articles(filename):
     return articles
 
 
-def randomly_sample_articles_from_each_category(articles, num_articles_per_category):
-    categories = set([article["category"] for article in articles])
-    sampled_articles = []
+def randomly_sample_articles_from_each_category(articles, category_subset=None):
+    categories = set([article["category"] for article in articles]) if not category_subset else category_subset
+    sampled_articles = {}
     for category in categories:
         category_articles = [article for article in articles if article["category"] == category]
-        sampled_articles.extend(random.sample(category_articles, min(num_articles_per_category, len(category_articles))))
+        num_samples = int(np.floor(len(category_articles) * (1-MIN_FRACTION_LEFT_FOR_TESTING)))
+        sampled_articles[category] = random.sample(category_articles, num_samples)
     return sampled_articles
 
 
@@ -106,45 +107,46 @@ def construct_input(article, category, title):
     messages = langchain_chatmsgs_to_openaimsgs(chat_prompt.to_messages())
     return messages
 
-def truncate_article(article_text):
+def truncate_article(article_text, article_id):
     encoder = tiktoken.encoding_for_model("gpt-3.5-turbo")
     e = encoder.encode(article_text)
-    if len(e) >= 4096/2:
-        print("Truncating article to 4096/2 tokens")
-        return encoder.decode(e[:4096//2])
+    if len(e) >= CONTEXT_LENGTH/2:
+        print(f"Truncating article [{article_id}] to {CONTEXT_LENGTH/2} tokens")
+        return encoder.decode(e[:CONTEXT_LENGTH//2])
     return article_text
 
 
 def main():
     filename = '../data/raw_data.jsonl'
     articles = load_articles(filename)
-    sampled_articles = randomly_sample_articles_from_each_category(articles, NUM_SAMPLES_PER_CATEGORY)
-    # sampled_articles = sampled_articles[:1]
-
-    generated_articles = []
+    selected_categories = ["Biking", "Drone", "Car-sharing"]
+    sampled_articles = randomly_sample_articles_from_each_category(
+        articles,
+        selected_categories
+    )
     progress_bar = tqdm(
-        total=len(sampled_articles) * NUM_GENERATIONS,
+        total=len(selected_categories) * NUM_GENERATIONS_PER_CATEGORY,
         desc="Processing",
         unit="iteration"
     )
+    generated_articles = {}
+    for category in selected_categories:
+        generated_articles[category] = []
+        while len(generated_articles[category]) < NUM_GENERATIONS_PER_CATEGORY:
+            for article_id, title, text in ((a["id"], a["title"], a["text"]) for a in sampled_articles[category]):
+                text = truncate_article(text, article_id)
+                messages = construct_input(text, category, title)
+                response = generate_response(messages)
+                generated_articles[category].append({
+                    "id": article_id,
+                    "text": response.choices[0].message.content
+                })
+                progress_bar.update(1)
+                if len(generated_articles[category]) >= NUM_GENERATIONS_PER_CATEGORY:
+                    break
 
-    for article_id, title, text, category in ((a["id"], a["title"], a["text"], a["category"]) for a in sampled_articles):
-        current_generations = []
-        text = truncate_article(text)
-        for _ in range(NUM_GENERATIONS):
-            messages = construct_input(text, category, title)
-            response = generate_response(messages)
-            current_generations.append(response.choices[0].message.content)
-            progress_bar.update(1)
-        generated_articles.append({
-            "id": article_id,
-            "title": title,
-            "text": text,
-            "category": category,
-            "generations": current_generations
-        })
     # dump generated articles to json
-    with open('./generated_articles.json', 'w') as outfile:
+    with open(f'./generated_articles_{NUM_GENERATIONS_PER_CATEGORY}.json', 'w') as outfile:
         json.dump(generated_articles, outfile)
 
 

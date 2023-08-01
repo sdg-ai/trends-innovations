@@ -9,6 +9,7 @@ import random
 from tqdm import tqdm
 import tiktoken
 import numpy as np
+
 random.seed(42)
 system_template = "You are a language model with expertise in {domain}."
 prompt_template = """
@@ -37,10 +38,8 @@ openai.api_base = f"https://{AZURE_OPENAI_SERVICE}.openai.azure.com/"
 openai.api_version = OPENAI_API_VERSION
 openai.api_key = AZURE_OPENAI_API_KEY
 
-
-NUM_GENERATIONS_PER_CATEGORY = 250
+NUM_GENERATIONS_PER_CATEGORY = 50
 MIN_FRACTION_LEFT_FOR_TESTING = 0.3
-
 
 CONTEXT_LENGTH = 4096 if AZURE_OPENAI_MODEL_NAME == "gpt-3.5-turbo" else 16384
 
@@ -73,15 +72,19 @@ def randomly_sample_articles_from_each_category(articles, category_subset=None):
     sampled_articles = {}
     for category in categories:
         category_articles = [article for article in articles if article["category"] == category]
-        num_samples = int(np.floor(len(category_articles) * (1-MIN_FRACTION_LEFT_FOR_TESTING)))
+        num_samples = int(np.floor(len(category_articles) * (1 - MIN_FRACTION_LEFT_FOR_TESTING)))
         sampled_articles[category] = random.sample(category_articles, num_samples)
     return sampled_articles
 
 
 def generate_response(prompt):
-    completion = openai.ChatCompletion.create(engine=AZURE_OPENAI_DEPLOYMENT_NAME, messages=prompt, temperature=1,
-        stop=None, presence_penalty=1)
-    return completion
+    try:
+        completion = openai.ChatCompletion.create(engine=AZURE_OPENAI_DEPLOYMENT_NAME, messages=prompt, temperature=1,
+                                                  stop=None, presence_penalty=1)
+    except:
+        print("Error generating response")
+        return ""
+    return completion.choices[0].message.content
 
 
 def langchain_chatmsgs_to_openaimsgs(messages):
@@ -107,12 +110,13 @@ def construct_input(article, category, title):
     messages = langchain_chatmsgs_to_openaimsgs(chat_prompt.to_messages())
     return messages
 
+
 def truncate_article(article_text, article_id):
     encoder = tiktoken.encoding_for_model("gpt-3.5-turbo")
     e = encoder.encode(article_text)
-    if len(e) >= CONTEXT_LENGTH/2:
-        print(f"Truncating article [{article_id}] to {CONTEXT_LENGTH/2} tokens")
-        return encoder.decode(e[:CONTEXT_LENGTH//2])
+    if len(e) >= CONTEXT_LENGTH / 2:
+        print(f"Truncating article [{article_id}] to {CONTEXT_LENGTH / 2} tokens")
+        return encoder.decode(e[:CONTEXT_LENGTH // 2])
     return article_text
 
 
@@ -120,15 +124,9 @@ def main():
     filename = '../data/raw_data.jsonl'
     articles = load_articles(filename)
     selected_categories = ["Biking", "Drone", "Car-sharing"]
-    sampled_articles = randomly_sample_articles_from_each_category(
-        articles,
-        selected_categories
-    )
-    progress_bar = tqdm(
-        total=len(selected_categories) * NUM_GENERATIONS_PER_CATEGORY,
-        desc="Processing",
-        unit="iteration"
-    )
+    sampled_articles = randomly_sample_articles_from_each_category(articles, selected_categories)
+    progress_bar = tqdm(total=len(selected_categories) * NUM_GENERATIONS_PER_CATEGORY, desc="Processing",
+        unit="iteration")
     generated_articles = {}
     for category in selected_categories:
         generated_articles[category] = []
@@ -137,18 +135,15 @@ def main():
                 text = truncate_article(text, article_id)
                 messages = construct_input(text, category, title)
                 response = generate_response(messages)
-                generated_articles[category].append({
-                    "id": article_id,
-                    "text": response.choices[0].message.content
-                })
-                progress_bar.update(1)
+                if response != "":
+                    generated_articles[category].append({"id": article_id, "text": response})
+                    progress_bar.update(1)
                 if len(generated_articles[category]) >= NUM_GENERATIONS_PER_CATEGORY:
                     break
 
     # dump generated articles to json
     with open(f'./generated_articles_{NUM_GENERATIONS_PER_CATEGORY}.json', 'w') as outfile:
         json.dump(generated_articles, outfile)
-
 
 
 if __name__ == '__main__':

@@ -81,8 +81,8 @@ def generate_response(prompt):
     try:
         completion = openai.ChatCompletion.create(engine=AZURE_OPENAI_DEPLOYMENT_NAME, messages=prompt, temperature=1,
                                                   stop=None, presence_penalty=1)
-    except:
-        print("Error generating response")
+    except Exception as e:
+        print("Error generating response:", e)
         return ""
     return completion.choices[0].message.content
 

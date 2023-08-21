@@ -7,6 +7,7 @@ import pandas as pd
 from pickle import dump
 from sklearn import preprocessing
 from torch import Generator
+from transformers import AutoTokenizer
 from torch.utils.data import Dataset, DataLoader
 
 
@@ -66,39 +67,40 @@ class TAndIDataSet(Dataset):
         self.encoded_labels = label_encoder.fit_transform(self.data.label.tolist())
 
 
-def get_data_loaders(model, data_dir: str, batch_sizes: dict, dataset_splits=(0.7, 0.9)):
+def get_data_loaders(config):
     """
     Given a data-path, a model, and the batch-sizes, return a ready to use dictionary of data loaders for training
     hugging face transformer models
-    :param model:
-    :param data_dir: the path to the data directory where the data lies
-    :param batch_sizes: the batch-sizes for the train, val, and test data loaders
-    :param dataset_splits: tuple specifying the split ratio (e.g. (0.7,0.9) split data at 70% and 90% -> 70,20,10 split)
+    :param config: the training config
     :return: a dictionary of data loaders for train, val, and test
     """
     # load csv/json
-    df = load_json_data(data_dir)
+    df = load_json_data(config["data_dir"])
+    df = df.sample(n=100, random_state=42)
     # get encodings for labels
     le = preprocessing.LabelEncoder()
     le.fit(df.label)
     # save label encoder
     # create directory if it does not exist
-    if not os.path.exists(os.path.join("app/checkpoints", model.model_name)):
-        os.makedirs(os.path.join("app/checkpoints", model.model_name))
-    dump(le, open(os.path.join("app/checkpoints", model.model_name, "label_encoder.pkl"), 'wb'))
+    if not os.path.exists(config["save_model_dir"]):
+        os.makedirs(config["save_model_dir"])
+    dump(le, open(os.path.join(config["save_model_dir"], "label_encoder.pkl"), 'wb'))
     # split into train, test, val
     train_df, val_df, test_df = np.split(
         df.sample(frac=1, random_state=42),
-        [int(dataset_splits[0] * len(df)), int(dataset_splits[1] * len(df))]
+        [int(config["dataset_splits"][0] * len(df)), int(config["dataset_splits"][1] * len(df))]
     )
     train_df.reset_index(inplace=True, drop=True)
     val_df.reset_index(inplace=True, drop=True)
     test_df.reset_index(inplace=True, drop=True)
+    tokenizer = AutoTokenizer.from_pretrained(config["model_name"])
+    
     datasets = {
-        "train": DataLoader(TAndIDataSet(train_df, model.tokenizer, le), batch_size=batch_sizes["train"], shuffle=True,
+        "train": DataLoader(TAndIDataSet(train_df, tokenizer, le), batch_size=config["batch_sizes"]["train"], shuffle=True,
                             generator=Generator().manual_seed(2147483647)),
-        "val": DataLoader(TAndIDataSet(val_df, model.tokenizer, le), batch_size=batch_sizes["val"], shuffle=True,
+        "val": DataLoader(TAndIDataSet(val_df, tokenizer, le), batch_size=config["batch_sizes"]["val"], shuffle=True,
                           generator=Generator().manual_seed(2147483647)),
-        "test": DataLoader(TAndIDataSet(test_df, model.tokenizer, le), batch_size=batch_sizes["test"], shuffle=True,
+        "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["batch_sizes"]["test"], shuffle=True,
                            generator=Generator().manual_seed(2147483647))}
+    tokenizer.save_pretrained(config['save_model_dir'])
     return datasets

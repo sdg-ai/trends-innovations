@@ -1,19 +1,22 @@
 FROM python:3.11.4-bookworm
 
-RUN mkdir /trends-innovations
+RUN mkdir /app
+WORKDIR /app
+COPY requirements.txt /app/requirements.txt
+RUN pip3 install -r requirements.txt
 
-COPY requirements.txt /trends-innovations/requirements.txt
-COPY train.py /trends-innovations/train.py
-COPY app.py /trends-innovations/app.py
-ADD utils /trends-innovations/utils
-ADD models /trends-innovations/models
-ADD data /trends-innovations/data
+COPY train.py /app/train.py
+COPY app.py /app/main.py
+ADD utils /app/utils
+ADD models /app/models
+ADD data /app/data
+ADD checkpoints /app/checkpoints
+ADD templates /app/templates
 
-RUN pip3 install -r /trends-innovations/requirements.txt
-
-CMD python3 /trends-innovations/app.py
+EXPOSE 80
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--proxy-headers"]
 
 # build
-# docker build . -t trends-innovations
+#  docker build . -t tandic:latest
 # run
-# docker run --rm -it -p 8000:8000/tcp trends-innovations
+# docker run -d -p 80:80 tandic:latest

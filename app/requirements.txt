@@ -12,3 +12,7 @@ pydantic
 torch
 torchvision
 torchaudio
+azure-ai-ml
+azure-identity
+python-dotenv
+python-multipart

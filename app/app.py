@@ -9,20 +9,25 @@ from typing import List
 from models.transformer import TransformerTandIClassifier
 from fastapi.templating import Jinja2Templates
 
-print(os.getcwd())
-templates = Jinja2Templates(directory="app/templates")
-
+templates = Jinja2Templates(directory="templates")
 logging.basicConfig(level=logging.INFO)
 app = FastAPI()
 origins = ["*"]
-app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=True, allow_methods=["*"],
-    allow_headers=["*"])
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
 
-if os.path.exists(f"app/checkpoints/distilbert-base-uncased"):
-    MODEL = TransformerTandIClassifier(model_name="distilbert-base-uncased",
-                                       # TODO: create a default config somewhere else instead of hard coding it here
-                                       model_config={"device": 'cuda' if torch.cuda.is_available() else 'cpu',
-                                                     "num_labels": 17})
+if os.path.exists(f"checkpoints/distilbert-base-uncased"):
+    MODEL = TransformerTandIClassifier(
+        model_name="distilbert-base-uncased",
+        model_config={
+            "device": 'cuda' if torch.cuda.is_available() else 'cpu',
+            "num_labels": 17
+        })
 else:
     raise Exception("No model checkpoint found. Please train a model first.")
 
@@ -56,5 +61,5 @@ def form_post(request: Request, text: str = Form(...)):
     return templates.TemplateResponse('app.html', context={'request': request, 'result': result})
 
 
-if __name__ == "__main__":
-    uvicorn.run(app, port=8000)
+#if __name__ == "__main__":
+#    uvicorn.run(app, host="0.0.0.0", port=8000)

@@ -8,11 +8,3 @@ class TandIClassifier(ABC):
     @abstractmethod
     def predict(self, text):
         pass
-
-    @abstractmethod
-    def train(self, train_data, val_data):
-        pass
-
-    @abstractmethod
-    def test(self, test_data):
-        pass

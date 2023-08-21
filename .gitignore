@@ -5,3 +5,7 @@ __pycache__/
 /wandb/
 /experiments/classifier_experiments/
 /experiments/.env
+/app/.env
+/training/datasets/
+/training/checkpoints/
+/training/wandb/

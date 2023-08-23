@@ -9,3 +9,4 @@ __pycache__/
 /training/datasets/
 /training/checkpoints/
 /training/wandb/
+/training/.env

@@ -180,7 +180,7 @@ def test(model, test_loader: DataLoader, config) -> pd.DataFrame:
 
 if __name__ == "__main__":
     current_time = datetime.strftime(datetime.now(), format="%Y.%m.%d-%H:%M:%S")
-    current_config = DEFAULT_CONFIG
+    current_config = DEFAULT_CONFIG.copy()
     current_config["seed"] = current_config["initial_seed"]
     if args.model_name:
         current_config["model_name"] = args.model_name

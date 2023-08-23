@@ -6,21 +6,12 @@ channels:
 dependencies:
   - conda-forge::python=3.10
   - conda-forge::pip
-  - pytorch::pytorch-cuda
   - pytorch::pytorch
+  - pytorch::pytorch-cuda
   - pytorch::torchvision
-  - conda-forge::torchmetrics
-  - conda-forge::matplotlib
-  - conda-forge::scikit-learn
-  - conda-forge::pandas
-  - conda-forge::tqdm
-  - conda-forge::wandb
   - pip:
-    - numpy
     - transformers
     - fastapi
     - uvicorn
     - pydantic
-    - azure-ai-ml
-    - azure-identity
     - python-dotenv

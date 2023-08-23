@@ -18,9 +18,6 @@ dependencies:
   - pip:
     - numpy
     - transformers
-    - fastapi
-    - uvicorn
-    - pydantic
     - azure-ai-ml
     - azure-identity
     - python-dotenv

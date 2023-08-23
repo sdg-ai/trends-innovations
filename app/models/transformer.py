@@ -1,13 +1,12 @@
 from transformers import AutoTokenizer
 import torch
 import logging
-from ._model import TandIClassifier
 from typing import List
 from pickle import load
 from transformers import DistilBertForSequenceClassification
 
 
-class TransformerTandIClassifier(TandIClassifier):
+class TransformerTandIClassifier():
     """
     Wrapper class for fine-tuning hugging face BERT transformer models for the task of text classification
     """

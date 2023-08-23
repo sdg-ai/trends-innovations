@@ -28,7 +28,7 @@ def create_env(ml_client):
         name=custom_env_name,
         description="custom env to train trends and innovation classifier models", # tags={"scikit-learn": "0.24.2"},
         conda_file=os.path.join(os.getcwd(), "environment.yml"),
-        image="mcr.microsoft.com/azureml/nvidia/cuda:11.1.1-cudnn8-devel-ubuntu20.04"
+        image="mcr.microsoft.com/azureml/openmpi4.1.0-cuda11.6-cudnn8-ubuntu20.04"
     )
     custom_job_env = ml_client.environments.create_or_update(custom_job_env)
     print(

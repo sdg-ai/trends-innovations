@@ -1,7 +1,7 @@
 import os
 from azure.ai.ml import MLClient, command
 from azure.identity import DefaultAzureCredential
-from azure.ai.ml.entities import AmlCompute, Environment
+from azure.ai.ml.entities import AmlCompute, Environment, BuildContext
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -26,9 +26,9 @@ def create_env(ml_client):
     custom_env_name = "aml-tandic-pytorch"
     custom_job_env = Environment(
         name=custom_env_name,
-        description="custom env to train trends and innovation classifier models", # tags={"scikit-learn": "0.24.2"},
+        description="custom env to train trends and innovation classifier models",
         conda_file=os.path.join(os.getcwd(), "environment.yml"),
-        image="mcr.microsoft.com/azureml/openmpi4.1.0-cuda11.6-cudnn8-ubuntu20.04"
+        image="mcr.microsoft.com/azureml/curated/acpt-pytorch-1.13-cuda11.7:latest"
     )
     custom_job_env = ml_client.environments.create_or_update(custom_job_env)
     print(

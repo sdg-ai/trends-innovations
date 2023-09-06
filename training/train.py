@@ -33,7 +33,7 @@ DEFAULT_CONFIG = {
     # model details
     "model_name": "distilbert-base-uncased",
     "lr": 1e-5,
-    "epochs": 1,
+    "epochs": 20,
     "patience": 3,
     "batch_sizes": {
         "train": 5,
@@ -175,7 +175,6 @@ def test(model, test_loader: DataLoader, config) -> pd.DataFrame:
     wandb.log({"test": metrics})
     predictions = pd.DataFrame(predictions)
     return predictions
-
 
 
 if __name__ == "__main__":

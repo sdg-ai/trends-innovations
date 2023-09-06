@@ -76,7 +76,6 @@ def get_data_loaders(config):
     """
     # load csv/json
     df = load_json_data(config["data_dir"])
-    df = df.sample(n=100, random_state=42)
     # get encodings for labels
     le = preprocessing.LabelEncoder()
     le.fit(df.label)

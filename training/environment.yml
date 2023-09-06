@@ -2,20 +2,15 @@ name: trends-innovations-classifier
 channels:
   - conda-forge
 dependencies:
-  - python=3.10
   - pip
-  - pytorch::pytorch-cuda
-  - pytorch::pytorch
-  - pytorch::torchvision
-  - torchmetrics
-  - matplotlib
-  - scikit-learn
-  - pandas
-  - tqdm
-  - wandb
   - pip:
+    - torchvision
+    - torchmetrics
+    - matplotlib
+    - scikit-learn
+    - pandas
+    - tqdm
+    - wandb
     - numpy
     - transformers
-    - azure-ai-ml
-    - azure-identity
     - python-dotenv

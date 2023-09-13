@@ -3,16 +3,13 @@ from azure.ai.ml import MLClient, command
 from azure.identity import DefaultAzureCredential
 from azure.ai.ml.entities import AmlCompute, Environment, BuildContext
 from dotenv import load_dotenv
-import wandb
 
 load_dotenv()
 
 AZURE_SUBSCRIPTION_ID = os.environ.get("AZURE_SUBSCRIPTION_ID") or ""
 AZURE_RESOURCEGROUP_NAME = os.environ.get("AZURE_RESOURCEGROUP_NAME") or ""
 AZURE_ML_WORKSPACE_NAME = os.environ.get("AZURE_ML_WORKSPACE_NAME") or ""
-WANDB_KEY = os.environ.get("WANDB_KEY") or ""
 
-wandb.login(key=WANDB_KEY)
 
 def connect_to_workspace():
     credential = DefaultAzureCredential()

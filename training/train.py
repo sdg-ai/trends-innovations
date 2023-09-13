@@ -52,7 +52,7 @@ DEFAULT_CONFIG = {
     "num_seeds": 1,
     "save_model_dir": "./checkpoints",
 }
-
+print("device:", DEFAULT_CONFIG["device"])
 TRANSFORMERS_LIB = {
     "albert-base-v2": AlbertForSequenceClassification,
     "distilbert-base-uncased": DistilBertForSequenceClassification,

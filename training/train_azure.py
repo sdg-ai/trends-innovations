@@ -1,4 +1,5 @@
 import os
+import argparse
 from azure.ai.ml import MLClient, command
 from azure.identity import DefaultAzureCredential
 from azure.ai.ml.entities import AmlCompute, Environment, BuildContext
@@ -10,6 +11,9 @@ AZURE_SUBSCRIPTION_ID = os.environ.get("AZURE_SUBSCRIPTION_ID") or ""
 AZURE_RESOURCEGROUP_NAME = os.environ.get("AZURE_RESOURCEGROUP_NAME") or ""
 AZURE_ML_WORKSPACE_NAME = os.environ.get("AZURE_ML_WORKSPACE_NAME") or ""
 
+parser = argparse.ArgumentParser()
+parser.add_argument('--device', type=str, default='cpu')
+args = parser.parse_args()
 
 def connect_to_workspace():
     credential = DefaultAzureCredential()
@@ -38,18 +42,22 @@ def create_env(ml_client):
 
 
 def create_compute_resource(ml_client):
-    cpu_compute_target = "tandic-test-compute"
+    gpu_compute_target = "tandic-v100"
+    cpu_compute_target = "tancic-test-compute"
+    compute_target = gpu_compute_target if args.device == "gpu" else cpu_compute_target
     try:
-        compute_resource = ml_client.compute.get(cpu_compute_target)
-        print(f"You already have a cluster named {cpu_compute_target}, we'll reuse it as is.")
+        compute_resource = ml_client.compute.get(compute_target)
+        print(f"You already have a cluster named {compute_target}, we'll reuse it as is.")
     except Exception:
         print("Creating a new cpu compute target...")
         compute_resource = AmlCompute(
-            name=cpu_compute_target,
-            type="amlcompute",  # VM Family
-            size="STANDARD_DS3_V2",  # Minimum running nodes when there is no job running
-            min_instances=0,  # Nodes in cluster
-            max_instances=4,  # How many seconds will the node running after the job termination
+            name=compute_target,
+            size="Standard_NC6s_v3" if args.device == "gpu" else "Standard_DS3_v2",
+            # Minimum running nodes when there is no job running
+            min_instances=0,
+            # Nodes in cluster
+            max_instances=1,
+            # How many seconds will the node running after the job termination
             idle_time_before_scale_down=180,
             # Dedicated or LowPriority. The latter is cheaper but there is a chance of job termination
             tier="Dedicated"

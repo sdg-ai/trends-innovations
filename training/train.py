@@ -177,8 +177,7 @@ def test(model, test_loader: DataLoader, config) -> pd.DataFrame:
                 predictions.append({"y_hat_enc": pred, "y_enc": batch["labels"].flatten().tolist()[idx], })
         progress_bar.update(1)
     metrics = metrics.compute()
-    print(metrics)
-    wandb.log({"test": metrics})
+    wandb.log({f'test/{k}': v for k, v in metrics.items()})
     predictions = pd.DataFrame(predictions)
     return predictions
 

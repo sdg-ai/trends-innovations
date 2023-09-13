@@ -72,7 +72,11 @@ if __name__ == '__main__':
     ml_client = connect_to_workspace()
     compute_resource = create_compute_resource(ml_client)
     env = create_env(ml_client)
-    job = command(code="./",  # location of source code
-        command="python train.py --model_name distilbert-base-uncased", environment="aml-tandic-pytorch@latest",
-        display_name="tandic-distilbert-base-uncased", )
+    job = command(
+        code="./",  # location of source code
+        command="python train.py --model_name distilbert-base-uncased",
+        environment="aml-tandic-pytorch@latest",
+        display_name="tandic-distilbert-base-uncased",
+        compute=compute_resource,
+    )
     ml_client.create_or_update(job)

@@ -17,8 +17,6 @@ import pandas as pd
 load_dotenv()
 
 WANDB_KEY = os.environ.get("WANDB_KEY") or ""
-print("hello")
-print(WANDB_KEY)
 wandb.login(key=WANDB_KEY)
 
 parser = argparse.ArgumentParser()

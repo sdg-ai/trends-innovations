@@ -65,7 +65,7 @@ def create_compute_resource(ml_client):
         print(
             f"AMLCompute with name {compute_resource.name} will be created, with compute size {compute_resource.size}")
         compute_resource = ml_client.compute.begin_create_or_update(compute_resource)
-    return compute_resource
+    return compute_target
 
 
 if __name__ == '__main__':

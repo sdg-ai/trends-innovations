@@ -46,7 +46,7 @@ def create_compute_resource(ml_client):
     cpu_compute_target = "tancic-test-compute"
     compute_target = gpu_compute_target if args.device == "gpu" else cpu_compute_target
     try:
-        compute_resource = ml_client.compute.get(compute_target)
+        _ = ml_client.compute.get(compute_target)
         print(f"You already have a cluster named {compute_target}, we'll reuse it as is.")
     except Exception:
         print("Creating a new cpu compute target...")
@@ -64,7 +64,7 @@ def create_compute_resource(ml_client):
         )
         print(
             f"AMLCompute with name {compute_resource.name} will be created, with compute size {compute_resource.size}")
-        compute_resource = ml_client.compute.begin_create_or_update(compute_resource)
+        _ = ml_client.compute.begin_create_or_update(compute_resource)
     return compute_target
 
 

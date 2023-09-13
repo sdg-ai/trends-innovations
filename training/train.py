@@ -38,13 +38,13 @@ DEFAULT_CONFIG = {
 
     # model details
     "model_name": "distilbert-base-uncased",
-    "lr": 1e-5,
+    "lr": 5e-5,
     "epochs": 20,
     "patience": 3,
     "batch_sizes": {
-        "train": 5,
-        "val": 5,
-        "test": 5
+        "train": 16,
+        "val": 64,
+        "test": 64
     },
     # other details
     "device": 'cuda' if torch.cuda.is_available() else 'cpu',

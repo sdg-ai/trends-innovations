@@ -1,6 +1,8 @@
 import argparse
+from dotenv import load_dotenv
 import wandb
 import torch
+import os
 from datetime import datetime
 from typing import Tuple
 from torch.utils.data import DataLoader
@@ -12,6 +14,12 @@ from transformers import RobertaForSequenceClassification, get_scheduler, \
 from tqdm import tqdm
 import numpy as np
 import pandas as pd
+load_dotenv()
+
+WANDB_KEY = os.environ.get("WANDB_KEY") or ""
+print("hello")
+print(WANDB_KEY)
+wandb.login(key=WANDB_KEY)
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--model_name', type=str, default='distilbert-base-uncased')

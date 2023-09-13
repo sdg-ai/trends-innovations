@@ -51,7 +51,6 @@ class TransformerMetricCollection(MetricCollection):
     def compute(self) -> dict:
         """Compute the result for each metric in the collection."""
         res = {k: m(self.preds, self.targets) for k, m in self.items(keep_base=True, copy_state=False)}
-        res = _flatten_dict(res)
         return {self._set_name(k): v for k, v in res.items()}
 
     def update(self, preds: torch.Tensor, targets: torch.Tensor) -> None:

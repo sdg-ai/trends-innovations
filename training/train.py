@@ -79,8 +79,8 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config):
     progress_bar = tqdm(range(config["epochs"] * (len(train_loader) + len(val_loader))))
     # define metrics
     early_stopper = EarlyStopper(patience=config["patience"])
-    train_metrics = TransformerMetricCollection(n_classes=config["num_labels"]).to(config["device"])
-    val_metrics = TransformerMetricCollection(n_classes=config["num_labels"]).to(config["device"])
+    train_metrics = TransformerMetricCollection(n_classes=config["num_labels"], device=config["device"]).to(config["device"])
+    val_metrics = TransformerMetricCollection(n_classes=config["num_labels"], device=config["device"]).to(config["device"])
     avg_loss_meter = AvgDictMeter()
     # keep track of best val loss
     best_val_loss = np.inf
@@ -168,7 +168,7 @@ def test(model, test_loader: DataLoader, config) -> pd.DataFrame:
     """
     progress_bar = tqdm(range(len(test_loader)))
     predictions = []
-    metrics = TransformerMetricCollection(n_classes=config["num_labels"]).to(config["device"])
+    metrics = TransformerMetricCollection(n_classes=config["num_labels"], device=config["device"]).to(config["device"])
     model.eval()
     for batch in test_loader:
         batch = {k: v.to(config["device"]) for k, v in batch.items()}

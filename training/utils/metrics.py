@@ -32,20 +32,21 @@ class TransformerMetricCollection(MetricCollection):
     A collection of metrics for multi-class problem that can be updated and computed jointly for training and validation
     and testing.
     """
-    def __init__(self, n_classes):
+    def __init__(self, n_classes, device="cuda"):
+        self.device = device
         metrics_collection = {
-            "accuracy": tm.classification.MulticlassAccuracy(num_classes=n_classes).to("cuda"),
-            "precision_marco": tm.classification.MulticlassPrecision(average='macro', num_classes=n_classes).to("cuda"),
-            "precision_micro": tm.classification.MulticlassPrecision(average='micro', num_classes=n_classes).to("cuda"),
-            "recall_macro": tm.classification.MulticlassRecall(average='macro', num_classes=n_classes).to("cuda"),
-            "recall_micro": tm.classification.MulticlassRecall(average='micro', num_classes=n_classes).to("cuda"),
-            "f1_macro": tm.classification.MulticlassF1Score(average='macro', num_classes=n_classes).to("cuda"),
-            "f1_micro": tm.classification.MulticlassF1Score(average='micro', num_classes=n_classes).to("cuda")
+            "accuracy": tm.classification.MulticlassAccuracy(num_classes=n_classes).to(device),
+            "precision_marco": tm.classification.MulticlassPrecision(average='macro', num_classes=n_classes).to(device),
+            "precision_micro": tm.classification.MulticlassPrecision(average='micro', num_classes=n_classes).to(device),
+            "recall_macro": tm.classification.MulticlassRecall(average='macro', num_classes=n_classes).to(device),
+            "recall_micro": tm.classification.MulticlassRecall(average='micro', num_classes=n_classes).to(device),
+            "f1_macro": tm.classification.MulticlassF1Score(average='macro', num_classes=n_classes).to(device),
+            "f1_micro": tm.classification.MulticlassF1Score(average='micro', num_classes=n_classes).to(device)
         }
         super().__init__(metrics=metrics_collection)
 
-        self.preds = torch.Tensor().to("cuda")
-        self.targets = torch.Tensor().to("cuda")
+        self.preds = torch.Tensor().to(device)
+        self.targets = torch.Tensor().to(device)
 
     def compute(self) -> dict:
         """Compute the result for each metric in the collection."""
@@ -55,8 +56,8 @@ class TransformerMetricCollection(MetricCollection):
 
     def update(self, preds: torch.Tensor, targets: torch.Tensor) -> None:
         """Update the metric state."""
-        self.preds = self.preds.to("cuda")
-        self.targets = self.targets.to("cuda")
+        self.preds = self.preds.to(self.device)
+        self.targets = self.targets.to(self.device)
         self.preds = torch.cat([self.preds, preds])
         self.targets = torch.cat([self.targets, targets])
 

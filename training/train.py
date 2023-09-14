@@ -61,13 +61,13 @@ TRANSFORMERS_LIB = {
 }
 
 
-def log_training_progress_to_console(t_start, curr_epoch, epochs, step, train_results):
+def log_training_progress_to_console(t_start, steps, curr_step, train_results):
     log_msg = " - ".join([f'{k}: {v:.4f}' for k, v in train_results.items()])
-    log_msg = f"Iteration {step} - " + log_msg
+    log_msg = f"Iteration {curr_step} - " + log_msg
     elapsed_time = datetime.utcfromtimestamp(time() - t_start)
     log_msg += f" - time: {elapsed_time.strftime('%d-%H:%M:%S')}s"
-    time_per_epoch = ((time() - t_start) / curr_epoch) if curr_epoch > 0 else time() - t_start
-    remaining_time = (epochs - curr_epoch) * time_per_epoch
+    time_per_epoch = ((time() - t_start) / curr_step) if curr_step > 0 else time() - t_start
+    remaining_time = (steps - curr_step) * time_per_epoch
     time_left = int(remaining_time)
     time_duration = timedelta(seconds=time_left)
     days = time_duration.days
@@ -95,6 +95,7 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config):
     avg_train_loss_meter = AvgDictMeter()
     best_val_loss = np.inf
     i_step = 0
+    total_steps = config["epochs"] * (len(train_loader) + len(val_loader))
     t_start = time()
     for epoch in range(config["epochs"]):
         print(f"\nRunning Epoch {epoch + 1}/{config['epochs']}...")
@@ -112,9 +113,8 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config):
                 train_results = avg_train_loss_meter.compute()
                 log_training_progress_to_console(
                     t_start=t_start,
-                    curr_epoch=epoch,
-                    epochs=config["epochs"],
-                    step=i_step,
+                    steps=total_steps,
+                    curr_step=i_step,
                     train_results=train_results
                 )
                 wandb.log({f'train/{k}': v for k, v in train_results.items()}, step=i_step)

@@ -43,7 +43,7 @@ def create_env(ml_client):
 
 def create_compute_resource(ml_client):
     gpu_compute_target = "tandic-v100"
-    cpu_compute_target = "tancic-test-compute"
+    cpu_compute_target = "tandic-test-compute"
     compute_target = gpu_compute_target if args.device == "gpu" else cpu_compute_target
     try:
         _ = ml_client.compute.get(compute_target)

@@ -205,6 +205,7 @@ def test(model, test_loader: DataLoader, config) -> pd.DataFrame:
         progress_bar.update(1)
     metrics = metrics.compute()
     wandb.log({f'test/{k}': v for k, v in metrics.items()})
+    print("Test Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in metrics.items()]))
     predictions = pd.DataFrame(predictions)
     return predictions
 

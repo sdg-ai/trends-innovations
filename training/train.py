@@ -242,3 +242,5 @@ if __name__ == "__main__":
 
         train(current_model, data_loaders["train"], data_loaders["val"], current_config)
         test(current_model, data_loaders["test"], current_config)
+
+        wandb.finish()

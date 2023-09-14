@@ -3,7 +3,8 @@ from dotenv import load_dotenv
 import wandb
 import torch
 import os
-from datetime import datetime
+from time import time
+from datetime import datetime, timedelta
 from typing import Tuple
 from torch.utils.data import DataLoader
 from data.datasets import get_data_loaders
@@ -39,8 +40,8 @@ DEFAULT_CONFIG = {
     # model details
     "model_name": "distilbert-base-uncased",
     "lr": 5e-5,
-    "epochs": 20,
-    "patience": 3,
+    "epochs": 25,
+    "patience": 5,
     "batch_sizes": {
         "train": 16,
         "val": 64,
@@ -49,7 +50,7 @@ DEFAULT_CONFIG = {
     # other details
     "device": 'cuda' if torch.cuda.is_available() else 'cpu',
     "initial_seed": 1,
-    "num_seeds": 1,
+    "num_seeds": 3,
     "save_model_dir": "./checkpoints",
 }
 print("device:", DEFAULT_CONFIG["device"])
@@ -58,6 +59,23 @@ TRANSFORMERS_LIB = {
     "distilbert-base-uncased": DistilBertForSequenceClassification,
     "roberta-base": RobertaForSequenceClassification
 }
+
+
+def log_training_progress_to_console(t_start, curr_epoch, epochs, step, train_results):
+    log_msg = " - ".join([f'{k}: {v:.4f}' for k, v in train_results.items()])
+    log_msg = f"Iteration {step} - " + log_msg
+    elapsed_time = datetime.utcfromtimestamp(time() - t_start)
+    log_msg += f" - time: {elapsed_time.strftime('%d-%H:%M:%S')}s"
+    time_per_epoch = ((time() - t_start) / curr_epoch) if curr_epoch > 0 else time() - t_start
+    remaining_time = (epochs - curr_epoch) * time_per_epoch
+    time_left = int(remaining_time)
+    time_duration = timedelta(seconds=time_left)
+    days = time_duration.days
+    hours = time_duration.seconds // 3600
+    minutes = (time_duration.seconds // 60) % 60
+    seconds = time_duration.seconds % 60
+    log_msg += f" - remaining time: {days}d-{hours}h-{minutes}m-{seconds}s"
+    print(log_msg)
 
 
 def train(model, train_loader: DataLoader, val_loader: DataLoader, config):
@@ -73,15 +91,11 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config):
     # init lr scheduler
     lr_scheduler = get_scheduler(name="linear", optimizer=optimizer, num_warmup_steps=0,
                                  num_training_steps=config["epochs"] * len(train_loader))
-    # init progress bar
-    progress_bar = tqdm(range(config["epochs"] * (len(train_loader) + len(val_loader))))
-    # define metrics
     early_stopper = EarlyStopper(patience=config["patience"])
-    train_metrics = TransformerMetricCollection(n_classes=config["num_labels"], device=config["device"]).to(config["device"])
-    val_metrics = TransformerMetricCollection(n_classes=config["num_labels"], device=config["device"]).to(config["device"])
-    avg_loss_meter = AvgDictMeter()
-    # keep track of best val loss
+    avg_train_loss_meter = AvgDictMeter()
     best_val_loss = np.inf
+    i_step = 0
+    t_start = time()
     for epoch in range(config["epochs"]):
         print(f"\nRunning Epoch {epoch + 1}/{config['epochs']}...")
         # training loop
@@ -90,37 +104,50 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config):
             # move batch to gpu
             batch = {k: v.to(config["device"]) for k, v in batch.items()}
             loss, predictions = train_step(model, batch, optimizer)
-            train_metrics.update(predictions, batch["labels"])
-            avg_loss_meter.add({"train_loss": loss})
+            avg_train_loss_meter.add({"train_loss": loss})
             lr_scheduler.step()
-            progress_bar.update(1)
+            i_step += 1
+
+            if i_step % 100 == 0:
+                train_results = avg_train_loss_meter.compute()
+                log_training_progress_to_console(
+                    t_start=t_start,
+                    curr_epoch=epoch,
+                    epochs=config["epochs"],
+                    step=i_step,
+                    train_results=train_results
+                )
+                wandb.log({f'train/{k}': v for k, v in train_results.items()}, step=i_step)
+                avg_train_loss_meter.reset()
 
         # validation loop
         model.eval()
+        val_metrics = TransformerMetricCollection(
+            n_classes=config["num_labels"],
+            device=config["device"]
+        ).to(config["device"])
+        avg_val_loss_meter = AvgDictMeter()
         for batch in val_loader:
             batch = {k: v.to(config["device"]) for k, v in batch.items()}
             with torch.no_grad():
                 loss, predictions = val_step(model, batch)
             val_metrics.update(predictions, batch["labels"])
-            avg_loss_meter.add({"val_loss": loss})
-            progress_bar.update(1)
-
-        # compute avg loss
-        mean_epoch_loss = avg_loss_meter.compute()
+            avg_val_loss_meter.add({"val_loss": loss})
+        val_results = avg_val_loss_meter.compute()
 
         # log metrics
-        wandb.log({f'train/{k}': v for k, v in train_metrics.compute().items()})
         wandb.log({f'val/{k}': v for k, v in val_metrics.compute().items()})
-        wandb.log({f'loss/{k}': v for k, v in mean_epoch_loss.items()})
-        train_metrics.reset()
-        val_metrics.reset()
+        wandb.log({f'val/{k}': v for k, v in val_results.items()})
+        print("Validation Results:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_results.items()]))
+        print("Validation Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_metrics.compute().items()]))
 
         # save best model
-        if mean_epoch_loss["val_loss"] < best_val_loss:
+        if val_results["val_loss"] < best_val_loss:
             model_path = f"{config['save_model_dir']}"
             model.save_pretrained(model_path)
-            best_val_loss = mean_epoch_loss["val_loss"]
-        if early_stopper.early_stop(mean_epoch_loss["val_loss"]):
+            best_val_loss = val_results["val_loss"]
+            print(f"Saved model to {model_path}")
+        if early_stopper.early_stop(val_results["val_loss"]):
             print("Stopping early")
             break
 
@@ -188,6 +215,8 @@ if __name__ == "__main__":
     current_config["seed"] = current_config["initial_seed"]
     if args.model_name:
         current_config["model_name"] = args.model_name
+    # load data
+    data_loaders = get_data_loaders(current_config)
     for seed in range(current_config["num_seeds"]):
         # seed
         current_config["seed"] = current_config["initial_seed"] + seed
@@ -199,9 +228,6 @@ if __name__ == "__main__":
             current_config["model_name"],
             num_labels=current_config["num_labels"]
         ).to(current_config["device"])
-
-        # load data
-        data_loaders = get_data_loaders(current_config)
 
         wandb.init(
             entity=WANDB_CONFIG["entity"],

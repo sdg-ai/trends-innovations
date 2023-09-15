@@ -86,13 +86,14 @@ def log_training_progress_to_console(t_start, steps: int, curr_step: int, train_
     print(log_msg)
 
 
-def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict):
+def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict, log_dir: str):
     """
     The training loop for the transformer model
     :param model: the model to train
     :param train_loader: the torch dataloader for the training data
     :param val_loader:  the torch dataloader for the validation data
     :param config: the config for the training
+    :param log_dir: the directory to save the model to
     """
     # define optimizer
     optimizer = torch.optim.AdamW(model.parameters(), lr=config["lr"])
@@ -132,17 +133,16 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict)
 
         # save best model
         if val_loss < best_val_loss:
-            model_path = f"{config['save_model_dir']}"
-            model.save_pretrained(model_path)
+            model.save_pretrained(log_dir)
             best_val_loss = val_loss
-            print(f"Saved model to {model_path}")
+            print(f"Saved model to {log_dir}")
         if early_stopper.early_stop(val_loss):
             print("Stopping early")
             break
     return model
 
 
-def validation(model, val_loader, config:Dict) -> float:
+def validation(model, val_loader, config: Dict) -> float:
     model.eval()
     val_metrics = TransformerMetricCollection(
         n_classes=config["num_labels"],
@@ -225,6 +225,7 @@ def test(model, test_loader: DataLoader, config) -> pd.DataFrame:
 if __name__ == "__main__":
     current_time = datetime.strftime(datetime.now(), format="%Y-%m-%d %H:%M:%S")
     current_config = DEFAULT_CONFIG.copy()
+    current_config["save_model_dir"] = f"{current_config['save_model_dir']}/{current_time}-{current_config['model_name']}"
     current_config["seed"] = current_config["initial_seed"]
     if args.model_name:
         current_config["model_name"] = args.model_name
@@ -235,7 +236,7 @@ if __name__ == "__main__":
         current_config["seed"] = current_config["initial_seed"] + seed
         seed_everything(current_config["seed"])
         # change save model dir
-        current_config["save_model_dir"] = f"{current_config['save_model_dir']}/{current_time}-{current_config['model_name']}/seed_{current_config['seed']}"
+        curr_log_dir = current_config["save_model_dir"] + f"/seed_{current_config['seed']}"
         # init model
         current_model = TRANSFORMERS_LIB[current_config["model_name"]].from_pretrained(
             current_config["model_name"],
@@ -252,7 +253,7 @@ if __name__ == "__main__":
             name="seed_"+str(current_config["seed"])
         )
 
-        final_model = train(current_model, data_loaders["train"], data_loaders["val"], current_config)
+        final_model = train(current_model, data_loaders["train"], data_loaders["val"], current_config, curr_log_dir)
         print("Testing...")
         test(final_model, data_loaders["test"], current_config)
 

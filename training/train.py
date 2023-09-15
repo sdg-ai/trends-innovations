@@ -28,7 +28,7 @@ args = parser.parse_args()
 WANDB_CONFIG = {
   "entity": "j-getzner",
   "project": "Trends & Innovations Classifier",
-  "disabled": True
+  "disabled": False
 }
 
 DEFAULT_CONFIG = {

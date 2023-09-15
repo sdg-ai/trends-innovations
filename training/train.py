@@ -211,7 +211,7 @@ def test(model, test_loader: DataLoader, config) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    current_time = datetime.strftime(datetime.now(), format="%Y.%m.%d-%H:%M:%S")
+    current_time = datetime.strftime(datetime.now(), format="%Y-%m-%d %H:%M:%S")
     current_config = DEFAULT_CONFIG.copy()
     current_config["seed"] = current_config["initial_seed"]
     if args.model_name:
@@ -223,7 +223,7 @@ if __name__ == "__main__":
         current_config["seed"] = current_config["initial_seed"] + seed
         seed_everything(current_config["seed"])
         # change save model dir
-        current_config["save_model_dir"] = f"{current_config['save_model_dir']}/{current_config['model_name']}/seed_{current_config['seed']}"
+        current_config["save_model_dir"] = f"{current_config['save_model_dir']}/{current_time}-{current_config['model_name']}/seed_{current_config['seed']}"
         # init model
         current_model = TRANSFORMERS_LIB[current_config["model_name"]].from_pretrained(
             current_config["model_name"],

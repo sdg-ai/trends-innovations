@@ -92,7 +92,7 @@ def get_data_loaders(config):
     train_df.reset_index(inplace=True, drop=True)
     val_df.reset_index(inplace=True, drop=True)
     test_df.reset_index(inplace=True, drop=True)
-    tokenizer = AutoTokenizer.from_pretrained(config["model_name"])
+    tokenizer = AutoTokenizer.from_pretrained(config["model_name"], use_fast=False)
     
     datasets = {
         "train": DataLoader(TAndIDataSet(train_df, tokenizer, le), batch_size=config["batch_sizes"]["train"], shuffle=True,

@@ -1,20 +1,20 @@
-import argparse
-from dotenv import load_dotenv
+import os
 import wandb
 import torch
-import os
+import argparse
+import numpy as np
+import pandas as pd
+from tqdm import tqdm
 from time import time
-from datetime import datetime, timedelta
-from typing import Tuple
+from typing import Tuple, Dict
+from dotenv import load_dotenv
 from torch.utils.data import DataLoader
+from datetime import datetime, timedelta
 from data.datasets import get_data_loaders
 from utils.utils import EarlyStopper, seed_everything
 from utils.metrics import TransformerMetricCollection, AvgDictMeter
-from transformers import RobertaForSequenceClassification, get_scheduler, \
-    AlbertForSequenceClassification, DistilBertForSequenceClassification
-from tqdm import tqdm
-import numpy as np
-import pandas as pd
+from transformers import RobertaForSequenceClassification, get_scheduler, AlbertForSequenceClassification, DistilBertForSequenceClassification
+
 load_dotenv()
 
 WANDB_KEY = os.environ.get("WANDB_KEY") or ""
@@ -28,7 +28,7 @@ args = parser.parse_args()
 WANDB_CONFIG = {
   "entity": "j-getzner",
   "project": "Trends & Innovations Classifier",
-  "disabled": False
+  "disabled": True
 }
 
 DEFAULT_CONFIG = {
@@ -61,7 +61,15 @@ TRANSFORMERS_LIB = {
 }
 
 
-def log_training_progress_to_console(t_start, steps, curr_step, train_results):
+def log_training_progress_to_console(t_start, steps: int, curr_step: int, train_results) -> None:
+    """
+    Logs the training progress to the console
+    :param t_start:  the start time of the training
+    :param steps:  the total number of steps
+    :param curr_step:  the current step
+    :param train_results:  the training results (loss)
+    :return:
+    """
     log_msg = " - ".join([f'{k}: {v:.4f}' for k, v in train_results.items()])
     log_msg = f"Iteration {curr_step} - " + log_msg
     elapsed_time = datetime.utcfromtimestamp(time() - t_start)
@@ -78,7 +86,7 @@ def log_training_progress_to_console(t_start, steps, curr_step, train_results):
     print(log_msg)
 
 
-def train(model, train_loader: DataLoader, val_loader: DataLoader, config):
+def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict):
     """
     The training loop for the transformer model
     :param model: the model to train
@@ -120,36 +128,42 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config):
                 wandb.log({f'train/{k}': v for k, v in train_results.items()}, step=i_step)
                 avg_train_loss_meter.reset()
 
-        # validation loop
-        model.eval()
-        val_metrics = TransformerMetricCollection(
-            n_classes=config["num_labels"],
-            device=config["device"]
-        ).to(config["device"])
-        avg_val_loss_meter = AvgDictMeter()
-        for batch in val_loader:
-            batch = {k: v.to(config["device"]) for k, v in batch.items()}
-            with torch.no_grad():
-                loss, predictions = val_step(model, batch)
-            val_metrics.update(predictions, batch["labels"])
-            avg_val_loss_meter.add({"val_loss": loss})
-        val_results = avg_val_loss_meter.compute()
-
-        # log metrics
-        wandb.log({f'val/{k}': v for k, v in val_metrics.compute().items()})
-        wandb.log({f'val/{k}': v for k, v in val_results.items()})
-        print("Validation Results:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_results.items()]))
-        print("Validation Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_metrics.compute().items()]))
+        val_loss = validation(model, val_loader, config)
 
         # save best model
-        if val_results["val_loss"] < best_val_loss:
+        if val_loss < best_val_loss:
             model_path = f"{config['save_model_dir']}"
             model.save_pretrained(model_path)
-            best_val_loss = val_results["val_loss"]
+            best_val_loss = val_loss
             print(f"Saved model to {model_path}")
-        if early_stopper.early_stop(val_results["val_loss"]):
+        if early_stopper.early_stop(val_loss):
             print("Stopping early")
             break
+    return model
+
+
+def validation(model, val_loader, config:Dict) -> float:
+    model.eval()
+    val_metrics = TransformerMetricCollection(
+        n_classes=config["num_labels"],
+        device=config["device"]
+    ).to(config["device"])
+    avg_val_loss_meter = AvgDictMeter()
+    # validation loop
+    for batch in val_loader:
+        batch = {k: v.to(config["device"]) for k, v in batch.items()}
+        with torch.no_grad():
+            loss, predictions = val_step(model, batch)
+        val_metrics.update(predictions, batch["labels"])
+        avg_val_loss_meter.add({"val_loss": loss})
+    val_results = avg_val_loss_meter.compute()
+
+    # log metrics
+    wandb.log({f'val/{k}': v for k, v in val_metrics.compute().items()})
+    wandb.log({f'val/{k}': v for k, v in val_results.items()})
+    print("Validation Results:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_results.items()]))
+    print("Validation Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_metrics.compute().items()]))
+    return val_results["val_loss"]
 
 
 def train_step(model, batch: dict, optimizer) -> Tuple[float, torch.Tensor]:
@@ -191,7 +205,6 @@ def test(model, test_loader: DataLoader, config) -> pd.DataFrame:
     :param config: the config for the model
     :return: a dataframe containing the predictions from the test data
     """
-    progress_bar = tqdm(range(len(test_loader)))
     predictions = []
     metrics = TransformerMetricCollection(n_classes=config["num_labels"], device=config["device"]).to(config["device"])
     model.eval()
@@ -202,7 +215,6 @@ def test(model, test_loader: DataLoader, config) -> pd.DataFrame:
             metrics.update(preds, batch["labels"])
             for idx, pred in enumerate(preds.tolist()):
                 predictions.append({"y_hat_enc": pred, "y_enc": batch["labels"].flatten().tolist()[idx], })
-        progress_bar.update(1)
     metrics = metrics.compute()
     wandb.log({f'test/{k}': v for k, v in metrics.items()})
     print("Test Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in metrics.items()]))
@@ -240,7 +252,8 @@ if __name__ == "__main__":
             name="seed_"+str(current_config["seed"])
         )
 
-        train(current_model, data_loaders["train"], data_loaders["val"], current_config)
-        test(current_model, data_loaders["test"], current_config)
+        final_model = train(current_model, data_loaders["train"], data_loaders["val"], current_config)
+        print("Testing...")
+        test(final_model, data_loaders["test"], current_config)
 
         wandb.finish()

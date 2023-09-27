@@ -67,7 +67,7 @@ class TAndIDataSet(Dataset):
         self.encoded_labels = label_encoder.fit_transform(self.data.label.tolist())
 
 
-def get_data_loaders(config):
+def get_data_loaders(config, debug=False):
     """
     Given a data-path, a model, and the batch-sizes, return a ready to use dictionary of data loaders for training
     hugging face transformer models
@@ -76,6 +76,8 @@ def get_data_loaders(config):
     """
     # load csv/json
     df = load_json_data(config["data_dir"])
+    if debug:
+        df = df.sample(100)
     # get encodings for labels
     le = preprocessing.LabelEncoder()
     le.fit(df.label)
@@ -102,4 +104,4 @@ def get_data_loaders(config):
         "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["batch_sizes"]["test"], shuffle=True,
                            generator=Generator().manual_seed(2147483647))}
     tokenizer.save_pretrained(config['save_model_dir'])
-    return datasets
+    return datasets, le

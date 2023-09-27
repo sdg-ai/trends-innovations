@@ -22,6 +22,7 @@ wandb.login(key=WANDB_KEY)
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--model_name', type=str, default='distilbert-base-uncased')
+parser.add_argument('--debug', action='store_true', default=False)
 args = parser.parse_args()
 
 
@@ -40,12 +41,16 @@ DEFAULT_CONFIG = {
     # model details
     "model_name": "distilbert-base-uncased",
     "lr": 5e-5,
-    "epochs": 25,
+    "epochs": 25 if not args.debug else 1,
     "patience": 5,
     "batch_sizes": {
         "train": 16,
         "val": 64,
         "test": 64
+    } if not args.debug else {
+        "train": 5,
+        "val": 5,
+        "test": 5
     },
     # other details
     "device": 'cuda' if torch.cuda.is_available() else 'cpu',
@@ -197,7 +202,7 @@ def val_step(model, batch: dict) -> Tuple[float, torch.Tensor]:
     return output.loss.item(), predictions
 
 
-def test(model, test_loader: DataLoader, config) -> pd.DataFrame:
+def test(model, test_loader: DataLoader, config: Dict, le) -> pd.DataFrame:
     """
     Compute the predictions for the test data
     :param model: the model to use
@@ -215,10 +220,16 @@ def test(model, test_loader: DataLoader, config) -> pd.DataFrame:
             metrics.update(preds, batch["labels"])
             for idx, pred in enumerate(preds.tolist()):
                 predictions.append({"y_hat_enc": pred, "y_enc": batch["labels"].flatten().tolist()[idx], })
+
+    predictions = pd.DataFrame(predictions)
     metrics = metrics.compute()
+    wandb.log({"test/conf_mat": wandb.plot.confusion_matrix(
+        preds=predictions["y_hat_enc"].tolist(),
+        y_true=predictions["y_enc"].tolist(),
+        class_names=le.inverse_transform(range(config["num_labels"]))
+    )})
     wandb.log({f'test/{k}': v for k, v in metrics.items()})
     print("Test Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in metrics.items()]))
-    predictions = pd.DataFrame(predictions)
     return predictions
 
 
@@ -230,7 +241,7 @@ if __name__ == "__main__":
     if args.model_name:
         current_config["model_name"] = args.model_name
     # load data
-    data_loaders = get_data_loaders(current_config)
+    data_loaders, le = get_data_loaders(current_config, debug=args.debug)
     for seed in range(current_config["num_seeds"]):
         # seed
         current_config["seed"] = current_config["initial_seed"] + seed
@@ -255,6 +266,6 @@ if __name__ == "__main__":
 
         final_model = train(current_model, data_loaders["train"], data_loaders["val"], current_config, curr_log_dir)
         print("Testing...")
-        test(final_model, data_loaders["test"], current_config)
+        test(final_model, data_loaders["test"], current_config, le)
 
         wandb.finish()

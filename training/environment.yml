@@ -5,6 +5,7 @@ dependencies:
   - python=3.8
   - pip
   - pip:
+    - torch
     - torchvision
     - torchmetrics
     - matplotlib

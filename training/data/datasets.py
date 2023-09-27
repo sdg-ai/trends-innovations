@@ -32,9 +32,38 @@ def load_json_data(data_dir: str) -> pd.DataFrame:
                 except:
                     x = ast.literal_eval(result["spans"])
                     new_spans = [s["text"] for s in x]
-            new_row = {"text": text, "label": label, "spans": new_spans}
+            new_row = {
+                "text": text,
+                "label": label,
+                "spans": new_spans,
+                "article_id": result["meta"]["doc_id"],
+                "sentence_id": result["meta"]["sent_id"]
+            }
             rows.append(new_row)
         print(f"Loaded: {f}")
+    df = pd.DataFrame(rows)
+    # only keep rows with unique article_id and sentence_id
+    df.drop_duplicates(subset=["article_id", "sentence_id"], inplace=True)
+    return df
+
+
+def load_generated_data(data_dir: str, max_words_per_chunk:int = 65) -> pd.DataFrame:
+    with open(data_dir, 'r') as json_file:
+        # load json
+        raw_data = json.load(json_file)
+    rows = []
+    for key, value in raw_data.items():
+        for article in value:
+            # split article into chunks of max_words_per_chunk
+            words = article["text"].split(" ")
+            chunks = [" ".join(words[i:i + max_words_per_chunk]) for i in range(0, len(words), max_words_per_chunk)]
+            rows += [{
+                "text": chunk,
+                "label": key,
+                "article_id": article["id"],
+                "sentence_id":idx,
+                "spans": []
+            } for idx, chunk in enumerate(chunks)]
     df = pd.DataFrame(rows)
     return df
 
@@ -105,3 +134,10 @@ def get_data_loaders(config, debug=False):
                            generator=Generator().manual_seed(2147483647))}
     tokenizer.save_pretrained(config['save_model_dir'])
     return datasets, le
+
+
+def get_data_loaders_with_generated_data(config, debug=False):
+    df = load_json_data(config["data_dir"])
+    le = preprocessing.LabelEncoder()
+    le.fit(df.label)
+    return

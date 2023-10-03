@@ -16,3 +16,4 @@ dependencies:
     - numpy
     - transformers
     - python-dotenv
+    - PyYAML

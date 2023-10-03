@@ -1,6 +1,7 @@
 import os
 import ast
 import json
+import wandb
 import torch
 import numpy as np
 import pandas as pd
@@ -17,6 +18,7 @@ def load_json_data(data_dir: str) -> pd.DataFrame:
     :param data_dir: the path to the directory containing the json files (one per clas)
     :return: the data as a pd.Dataframe
     """
+    data_dir = os.path.join(data_dir, "annotated_data")
     rows = []
     for f in [f for f in os.listdir(data_dir) if f.endswith('jsonl')]:
         with open(f'{data_dir}/{f}', 'r') as json_file:
@@ -48,6 +50,7 @@ def load_json_data(data_dir: str) -> pd.DataFrame:
 
 
 def load_generated_data(data_dir: str, max_words_per_chunk:int = 65) -> pd.DataFrame:
+    data_dir = os.path.join(data_dir, "generated_articles_50.json")
     with open(data_dir, 'r') as json_file:
         # load json
         raw_data = json.load(json_file)
@@ -137,7 +140,46 @@ def get_data_loaders(config, debug=False):
 
 
 def get_data_loaders_with_generated_data(config, debug=False):
-    df = load_json_data(config["data_dir"])
+    print("Loading data...")
+    df_real = load_json_data(config["data_dir"])
+    df_real["generated"] = False
+    print("Loading generated data...")
+    df_generated = load_generated_data(config["data_dir"])
+    df_generated["generated"] = True
+    print("The following categories contain generated data:", df_generated.label.unique())
+
     le = preprocessing.LabelEncoder()
-    le.fit(df.label)
-    return
+    le.fit(df_real.label)
+    if not os.path.exists(config["save_model_dir"]):
+        os.makedirs(config["save_model_dir"])
+    dump(le, open(os.path.join(config["save_model_dir"], "label_encoder.pkl"), 'wb'))
+
+    # all the generated data goes into the training data set
+    # and all the articles that data was generated too as well
+    train_df_generated = df_generated
+    train_df_real_generated_from = df_real[df_real["article_id"].isin(df_generated["article_id"].unique())]
+    df_real_remaining = df_real[~df_real["article_id"].isin(df_generated["article_id"].unique())]
+    # split the remaining real data into train, val, test
+    train_df, val_df, test_df = np.split(
+        df_real_remaining.sample(frac=1, random_state=42),
+        [int(config["dataset_splits"][0] * len(df_real_remaining)), int(config["dataset_splits"][1] * len(df_real_remaining))])
+    # add train_df_generated and train_df_real_generated_from to train_df
+    train_df = pd.concat([train_df, train_df_generated, train_df_real_generated_from])
+    if debug:
+        train_df = train_df.sample(100)
+    print("Size of train_df:", len(train_df), "with % generated data:", round(len(train_df[train_df["generated"] == True]) / len(train_df)*100, 2))
+    print("Size of val_df:", len(val_df))
+    print("Size of test_df:", len(test_df))
+    train_df.reset_index(inplace=True, drop=True)
+    val_df.reset_index(inplace=True, drop=True)
+    test_df.reset_index(inplace=True, drop=True)
+    tokenizer = AutoTokenizer.from_pretrained(config["model_name"], use_fast=False)
+    datasets = {
+        "train": DataLoader(TAndIDataSet(train_df, tokenizer, le), batch_size=config["batch_sizes"]["train"],
+                                    shuffle=True, generator=Generator().manual_seed(2147483647)),
+        "val": DataLoader(TAndIDataSet(val_df, tokenizer, le), batch_size=config["batch_sizes"]["val"], shuffle=True,
+                          generator=Generator().manual_seed(2147483647)),
+        "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["batch_sizes"]["test"], shuffle=True,
+                           generator=Generator().manual_seed(2147483647))}
+    tokenizer.save_pretrained(config['save_model_dir'])
+    return datasets, le

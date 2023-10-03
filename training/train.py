@@ -1,4 +1,5 @@
 import os
+import yaml
 import wandb
 import torch
 import argparse
@@ -10,7 +11,7 @@ from typing import Tuple, Dict
 from dotenv import load_dotenv
 from torch.utils.data import DataLoader
 from datetime import datetime, timedelta
-from data.datasets import get_data_loaders
+from data.datasets import get_data_loaders, get_data_loaders_with_generated_data
 from utils.utils import EarlyStopper, seed_everything
 from utils.metrics import TransformerMetricCollection, AvgDictMeter
 from transformers import RobertaForSequenceClassification, get_scheduler, AlbertForSequenceClassification, DistilBertForSequenceClassification
@@ -23,18 +24,21 @@ wandb.login(key=WANDB_KEY)
 parser = argparse.ArgumentParser()
 parser.add_argument('--model_name', type=str, default='distilbert-base-uncased')
 parser.add_argument('--debug', action='store_true', default=False)
+parser.add_argument('--d', type=str, default=str(datetime.strftime(datetime.now(), format="%Y-%m-%d %H:%M:%S")))
 args = parser.parse_args()
 
 
 WANDB_CONFIG = {
-  "entity": "j-getzner",
-  "project": "Trends & Innovations Classifier",
-  "disabled": False
+    "entity": "j-getzner",
+    "project": "Trends & Innovations Classifier",
+    "disabled": False,
+    "job_type_modifier": ""
 }
 
 DEFAULT_CONFIG = {
     # data details
-    "data_dir": "./datasets/annotated_data",
+    "data_dir": "./datasets",
+    "use_generated_data": False,
     "num_labels": 17,
     "dataset_splits": [0.7, 0.9],
 
@@ -233,39 +237,58 @@ def test(model, test_loader: DataLoader, config: Dict, le) -> pd.DataFrame:
     return predictions
 
 
+def init_configurations():
+    with open("./train_run_configs.yml", "r") as f:
+        custom_configs = yaml.safe_load(f)
+    initialized_configs = []
+    for config_name, config in custom_configs.items():
+        run_config = DEFAULT_CONFIG.copy()
+        run_config.update(config)
+        run_config["save_model_dir"] = f"{run_config['save_model_dir']}/{args.d}-{args.model_name}"
+        run_config["seed"] = run_config["initial_seed"]
+        run_config["model_name"] = args.model_name
+        wandb_config = WANDB_CONFIG.copy()
+        wandb_config.update(config["wandb"])
+        initialized_configs.append((run_config, wandb_config))
+    return initialized_configs
+
+
 if __name__ == "__main__":
-    current_time = datetime.strftime(datetime.now(), format="%Y-%m-%d %H:%M:%S")
-    current_config = DEFAULT_CONFIG.copy()
-    current_config["save_model_dir"] = f"{current_config['save_model_dir']}/{current_time}-{current_config['model_name']}"
-    current_config["seed"] = current_config["initial_seed"]
-    if args.model_name:
-        current_config["model_name"] = args.model_name
-    # load data
-    data_loaders, le = get_data_loaders(current_config, debug=args.debug)
-    for seed in range(current_config["num_seeds"]):
-        # seed
-        current_config["seed"] = current_config["initial_seed"] + seed
-        seed_everything(current_config["seed"])
-        # change save model dir
-        curr_log_dir = current_config["save_model_dir"] + f"/seed_{current_config['seed']}"
-        # init model
-        current_model = TRANSFORMERS_LIB[current_config["model_name"]].from_pretrained(
-            current_config["model_name"],
-            num_labels=current_config["num_labels"]
-        ).to(current_config["device"])
+    configs = init_configurations()
+    for current_config, current_wandb_config in configs:
+        # load data
+        data_loading_func = get_data_loaders_with_generated_data if current_config["use_generated_data"] else get_data_loaders
+        data_loaders, le = data_loading_func(current_config, debug=args.debug)
+        for seed in range(current_config["num_seeds"]):
+            # seed
+            current_config["seed"] = current_config["initial_seed"] + seed
+            seed_everything(current_config["seed"])
+            # change save model dir
+            curr_log_dir = current_config["save_model_dir"] + f"/seed_{current_config['seed']}"
+            # init model
+            current_model = TRANSFORMERS_LIB[current_config["model_name"]].from_pretrained(
+                current_config["model_name"],
+                num_labels=current_config["num_labels"]
+            ).to(current_config["device"])
 
-        wandb.init(
-            entity=WANDB_CONFIG["entity"],
-            project=WANDB_CONFIG["project"],
-            config=current_config,
-            mode="disabled" if WANDB_CONFIG["disabled"] else "online",
-            group=f"{current_time}-{current_config['model_name']}",
-            job_type="train",
-            name="seed_"+str(current_config["seed"])
-        )
+            wandb.init(
+                entity=current_wandb_config["entity"],
+                project=current_wandb_config["project"],
+                config=current_config,
+                mode="disabled" if current_wandb_config["disabled"] else "online",
+                group=f"{args.d}-{current_config['model_name']}",
+                job_type="train" + current_wandb_config["job_type_modifier"],
+                name="seed_"+str(current_config["seed"])
+            )
+            wandb.run.summary["train_size"] = len(data_loaders["train"].dataset)
+            if current_config["use_generated_data"]:
+                df = data_loaders["train"].dataset.data
+                wandb.run.summary["generated_data_size"] = len(df.loc[df.generated == True])
+                wandb.run.summary["generated_article_labels"] = df.loc[df.generated == True].label.unique()
+            wandb.run.summary["val_size"] = len(data_loaders["val"].dataset)
+            wandb.run.summary["test_size"] = len(data_loaders["test"].dataset)
 
-        final_model = train(current_model, data_loaders["train"], data_loaders["val"], current_config, curr_log_dir)
-        print("Testing...")
-        test(final_model, data_loaders["test"], current_config, le)
-
-        wandb.finish()
+            final_model = train(current_model, data_loaders["train"], data_loaders["val"], current_config, curr_log_dir)
+            print("Testing...")
+            test(final_model, data_loaders["test"], current_config, le)
+            wandb.finish()

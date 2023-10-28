@@ -1,0 +1,23 @@
+name: tandic-experiments
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - pandas
+  - tqdm
+  - wandb
+  - pytorch
+  - torchvision
+  - torchmetrics
+  - transformers
+  - python-dotenv
+  - pyyaml
+  - openai
+  - tiktoken
+  - notebook
+  - matplotlib
+  - seaborn

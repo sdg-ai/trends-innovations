@@ -5,3 +5,4 @@ __pycache__/
 /wandb/
 /experiments/classifier_experiments/
 /experiments/.env
+/*env

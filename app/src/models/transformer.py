@@ -3,10 +3,12 @@ import torch
 import logging
 from typing import List
 from pickle import load
+from collections import Counter
 from transformers import AutoTokenizer
 from transformers import DistilBertForSequenceClassification
 from ..inference.models import ArticleChunk, ChunkResult, ArticleResult, Prediction
 
+MIN_CHUNK_CONFIDENCE = 0.5
 
 class TransformerTandIClassifier():
     """
@@ -63,20 +65,20 @@ class TransformerTandIClassifier():
             output = self.model(**encoded_chunks, output_attentions=False, output_hidden_states=False)
             class_probs_per_chunk = torch.nn.Softmax(dim=1)(output.logits)
         for chunk_idx, article_chunk in enumerate(article_chunks):
-            chunk_probs = class_probs_per_chunk[chunk_idx]
             chunk_results.append(ChunkResult(
                 chunk=article_chunk,
                 class_probabilities=[Prediction(
                     class_label=self.le.inverse_transform([class_idx]).item(),
                     probability=prob
-                ) for class_idx, prob in enumerate(chunk_probs)]
+                ) for class_idx, prob in enumerate(class_probs_per_chunk[chunk_idx])]
             ))
-        most_probable_class_per_chunk = torch.argmax(class_probs_per_chunk, dim=1)
-        class_counts = torch.bincount(most_probable_class_per_chunk)
-        most_occurring_class = class_counts.argmax().item()
+        most_probable_class_per_chunk = torch.argmax(class_probs_per_chunk, dim=1).tolist()
+        most_probable_class_per_chunk = [c if class_probs_per_chunk[i][c] > MIN_CHUNK_CONFIDENCE else -1 for i, c in enumerate(most_probable_class_per_chunk)]
+        counter = Counter(most_probable_class_per_chunk)
+        most_occurring_class, count = counter.most_common(1)[0]
         return ArticleResult(
             article_id=article_chunks[0].article_id,
             chunk_predictions=chunk_results,
-            class_label=self.le.inverse_transform([most_occurring_class]).item(),
-            probability=class_counts[most_occurring_class].item()/len(article_chunks)
+            class_label=self.le.inverse_transform([most_occurring_class]).item() if most_occurring_class != -1 else "unknown",
+            probability=count/len(article_chunks) if most_occurring_class != -1 else 0
         )

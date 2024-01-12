@@ -1,65 +1,43 @@
-import torch
-import os
-import uvicorn
 import logging
-from fastapi import FastAPI, Request, Form
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from typing import List
-from models.transformer import TransformerTandIClassifier
-from fastapi.templating import Jinja2Templates
+from src.api import api_router_root, api_router_v1
 
-templates = Jinja2Templates(directory="templates")
-logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
 app = FastAPI()
-origins = ["*"]
+api_root = FastAPI(title="Trends and Innovations Classifier App")
+api_v1 = FastAPI(
+    title="Trends and Innovations Classifier App",
+    description="Trends and Innovations Classifier App",
+    root_path="/api/v1",
+    docs_url=None,
+    openapi_url="/docs/openapi.json",
+    redoc_url="/docs",
+)
+
+# CORS
+origins = [
+    "*",
+]
+
+# Include middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"]
+    allow_headers=["*"],
 )
 
-if os.path.exists(f"checkpoints/distilbert-base-uncased"):
-    MODEL = TransformerTandIClassifier(
-        model_name="distilbert-base-uncased",
-        model_config={
-            "device": 'cuda' if torch.cuda.is_available() else 'cpu',
-            "num_labels": 17
-        })
-else:
-    raise Exception("No model checkpoint found. Please train a model first.")
+# Middleware based authentication currently not working
+# app.add_middleware(Authentication)
 
+# Include routes
+api_root.include_router(api_router_root)
+api_v1.include_router(api_router_v1)
 
-class Sample(BaseModel):
-    text: str
-
-
-@app.post("/predict")
-def predict(samples: List[Sample]) -> List[str]:
-    """
-    entrypoint for predicting the labels of a list of samples
-    :param samples: the samples to predict
-    :return: a list with a label for each sample
-    """
-    samples = [s.text for s in samples]
-    predictions, probs = MODEL.predict(samples)
-    return predictions
-
-
-@app.get("/")
-def form_post(request: Request):
-    result = ""
-    return templates.TemplateResponse('app.html', context={'request': request, 'result': result})
-
-
-@app.post("/")
-def form_post(request: Request, text: str = Form(...)):
-    prediction, probs = MODEL.predict([text])
-    result = f"category: {prediction[0]} ({round(probs[0].item(), 2)})"
-    return templates.TemplateResponse('app.html', context={'request': request, 'result': result})
-
-
-#if __name__ == "__main__":
-#    uvicorn.run(app, host="0.0.0.0", port=8000)
+# Mount API routes
+# Order matters! More specific routes must come first.
+app.mount("/api/v1", app=api_v1)
+app.mount("/", app=api_root)

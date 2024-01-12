@@ -5,11 +5,11 @@ WORKDIR /app
 COPY requirements.txt /app/requirements.txt
 RUN pip3 install -r requirements.txt
 
-COPY train.py /app/train.py
+# COPY train.py /app/train.py
 COPY app.py /app/main.py
-ADD utils /app/utils
+# ADD utils /app/utils
 ADD models /app/models
-ADD data /app/data
+#ADD data /app/data
 ADD checkpoints /app/checkpoints
 ADD templates /app/templates
 

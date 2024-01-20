@@ -3,17 +3,12 @@ load_dotenv()
 import openai
 import json
 import os
+import argparse
 import random
 random.seed(42)
 from tqdm import tqdm
 import time
 import tiktoken
-import numpy as np
-import pandas as pd
-from sklearn.metrics import confusion_matrix
-import seaborn as sns
-import matplotlib.pyplot as plt
-from classifier_experiments.experiment_utils import load_json_data
 from nltk import sent_tokenize, wordpunct_tokenize
 
 
@@ -33,12 +28,6 @@ openai.api_key = AZURE_OPENAI_API_KEY
 CONTEXT_LENGTH = 16384
 COST_PER_1k_TOKENS = 0.0015
 
-
-# add args parser
-import argparse
-parser = argparse.ArgumentParser()
-parser.add_argument('--fresh_start', action='store_true')
-args = parser.parse_args()
 
 def generate_response(messages):
     try:
@@ -60,10 +49,10 @@ def generate_response(messages):
 def get_templates(categories, title, section):
     categories_enumerated = "\n".join([f"- {cat}" for idx, cat in enumerate(categories)])
     system_template = f'''Your task is to classify sections of a news article into specific categories. These categories encompass a range of topics, such as artificial intelligence, autonomous transport, sustainable fabrics, and more. However, it can be challenging to clearly differentiate between these categories at times, as some articles may cover multiple topics. For instance, artificial intelligence might play a significant role in autonomous driving, drones, and various other applications. However, an article should only be labeled as "artificial intelligence" if this topic is the primary focus and not just a supporting element for another topic. A similar example can be made with "3D Printed Clothes" and "Sustainable fabrics". These are the available categories:
-{categories_enumerated}'''
+    {categories_enumerated}'''
     prompt_template = f'''Please categorize the following article segment by selecting the most appropriate category from the provided list. Your response should only include the category name. If you are uncertain, please reply with "unsure". If you believe the section lacks relevant information for any category, respond with "irrelevant". Do not use any other responses.
-Article title: {title}
-Segment: {section}'''
+    Article title: {title}
+    Segment: {section}'''
     return system_template, prompt_template
 
 
@@ -85,6 +74,7 @@ def split_article_into_sections(article, section_length=3, by="sentences"):
         section_formatted = {"text": s, "article_id": article["id"], "sentence_id": idx, "title": article["title"]}
         sections_formatted.append(section_formatted)
     return sections_formatted
+
 
 def truncate_messages(messages):
     encoder = tiktoken.encoding_for_model("gpt-3.5-turbo")
@@ -127,14 +117,15 @@ def load_raw_articles(filename):
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--fresh_start', action='store_true')
+    args = parser.parse_args()
     # get raw data
     raw_articles = load_raw_articles('../data/raw_data.jsonl')
     # where climate scanner True
     raw_articles = [a for a in raw_articles if a["climate_scanner"]]
     all_categories = set([a["category"].lower().replace(" ", "_") for a in raw_articles])
 
-    # assert (len(raw_articles) == len(set([a["id"] for a in raw_articles]))), f"IDs are not unique, number of articles: {len(raw_articles)}, number of unique IDs: {len(set([a['id'] for a in raw_articles]))} "
-    # assert (len(raw_articles) == len(set([a["title"] for a in raw_articles]))), f"Titles are not unique, number of articles: {len(raw_articles)}, number of unique titles: {len(set([a['title'] for a in raw_articles]))} "
     # drop duplicates by title
     raw_articles = [article for idx, article in enumerate(raw_articles) if article["title"] not in [a["title"] for a in raw_articles[idx+1:]]]
     # re-id articles

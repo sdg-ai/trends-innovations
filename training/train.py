@@ -14,7 +14,7 @@ from typing import Tuple, Dict
 from dotenv import load_dotenv
 from torch.utils.data import DataLoader
 from datetime import datetime, timedelta
-from data.datasets import get_data_loaders, get_data_loaders_with_generated_data
+from data.datasets import get_data_loaders, get_data_loaders_with_generated_data, get_data_loaders_with_chatgpt_annotated_data
 from utils.utils import EarlyStopper, seed_everything
 from utils.metrics import TransformerMetricCollection, AvgDictMeter
 from transformers import RobertaForSequenceClassification, get_scheduler, AlbertForSequenceClassification, DistilBertForSequenceClassification
@@ -28,6 +28,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--model_name', type=str, default='distilbert-base-uncased')
 parser.add_argument('--debug', action='store_true', default=False)
 parser.add_argument('--disable_wandb', action='store_true', default=False)
+parser.add_argument('--dataset', type=str, default='old_data')
 parser.add_argument('--d', type=str, default=str(datetime.strftime(datetime.now(), format="%Y-%m-%d %H:%M:%S")))
 args = parser.parse_args()
 
@@ -42,8 +43,7 @@ WANDB_CONFIG = {
 DEFAULT_CONFIG = {
     # data details
     "data_dir": "./datasets",
-    "use_generated_data": False,
-    "num_labels": 17,
+    "num_labels": 17 if (args.dataset == "old_data" or args.dataset == "generated_data") else 57,
     "dataset_splits": [0.7, 0.9],
 
     # model details
@@ -56,9 +56,9 @@ DEFAULT_CONFIG = {
         "val": 64,
         "test": 64
     } if not args.debug else {
-        "train": 5,
-        "val": 5,
-        "test": 5
+        "train": 3,
+        "val": 3,
+        "test": 3
     },
     # other details
     "device": 'cuda' if torch.cuda.is_available() else 'cpu',
@@ -266,7 +266,14 @@ if __name__ == "__main__":
         # load data
         logging.info(f"Running config: {current_config}")
         logging.info(f"Loading data.")
-        data_loading_func = get_data_loaders_with_generated_data if current_config["use_generated_data"] else get_data_loaders
+        if args.dataset == "old_data":
+            data_loading_func = get_data_loaders
+        elif args.dataset == "generated_data":
+            data_loading_func = get_data_loaders_with_generated_data
+        elif args.dataset == "chatgpt_annotated_data":
+            data_loading_func = get_data_loaders_with_chatgpt_annotated_data
+        else:
+            raise ValueError(f"Unknown dataset: {args.dataset}")
         data_loaders, le = data_loading_func(current_config, debug=args.debug)
         for seed in range(current_config["num_seeds"]):
             # seed
@@ -292,7 +299,7 @@ if __name__ == "__main__":
 
             )
             wandb.run.summary["train_size"] = len(data_loaders["train"].dataset)
-            if current_config["use_generated_data"]:
+            if args.dataset == "generated_data":
                 df = data_loaders["train"].dataset.data
                 wandb.run.summary["generated_data_size"] = len(df.loc[df.generated == True])
                 wandb.run.summary["generated_article_labels"] = df.loc[df.generated == True].label.unique()

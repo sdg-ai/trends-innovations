@@ -2,6 +2,9 @@ import os
 import yaml
 import wandb
 import torch
+import logging
+# set logging level to info
+logging.basicConfig(level=logging.INFO)
 import argparse
 import numpy as np
 import pandas as pd
@@ -24,6 +27,7 @@ wandb.login(key=WANDB_KEY)
 parser = argparse.ArgumentParser()
 parser.add_argument('--model_name', type=str, default='distilbert-base-uncased')
 parser.add_argument('--debug', action='store_true', default=False)
+parser.add_argument('--disable_wandb', action='store_true', default=False)
 parser.add_argument('--d', type=str, default=str(datetime.strftime(datetime.now(), format="%Y-%m-%d %H:%M:%S")))
 args = parser.parse_args()
 
@@ -31,7 +35,7 @@ args = parser.parse_args()
 WANDB_CONFIG = {
     "entity": "j-getzner",
     "project": "Trends & Innovations Classifier",
-    "disabled": False,
+    "disabled": True,
     "job_type_modifier": ""
 }
 
@@ -45,10 +49,10 @@ DEFAULT_CONFIG = {
     # model details
     "model_name": "distilbert-base-uncased",
     "lr": 5e-5,
-    "epochs": 25 if not args.debug else 1,
+    "epochs": 25 if not args.debug else 5,
     "patience": 5,
     "batch_sizes": {
-        "train": 16,
+        "train": 64,
         "val": 64,
         "test": 64
     } if not args.debug else {
@@ -92,7 +96,7 @@ def log_training_progress_to_console(t_start, steps: int, curr_step: int, train_
     minutes = (time_duration.seconds // 60) % 60
     seconds = time_duration.seconds % 60
     log_msg += f" - remaining time: {days}d-{hours}h-{minutes}m-{seconds}s"
-    print(log_msg)
+    logging.info(log_msg)
 
 
 def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict, log_dir: str):
@@ -115,8 +119,9 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict,
     i_step = 0
     total_steps = config["epochs"] * (len(train_loader) + len(val_loader))
     t_start = time()
+    log_every_i_steps = int(total_steps/config["epochs"]/10)
     for epoch in range(config["epochs"]):
-        print(f"\nRunning Epoch {epoch + 1}/{config['epochs']}...")
+        logging.info(f"\nRunning Epoch {epoch + 1}/{config['epochs']}...")
         # training loop
         model.train()
         for batch in train_loader:
@@ -127,7 +132,9 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict,
             lr_scheduler.step()
             i_step += 1
 
-            if i_step % 100 == 0:
+            # log 10 times per epoch
+
+            if i_step % log_every_i_steps == 0:
                 train_results = avg_train_loss_meter.compute()
                 log_training_progress_to_console(
                     t_start=t_start,
@@ -144,9 +151,9 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict,
         if val_loss < best_val_loss:
             model.save_pretrained(log_dir)
             best_val_loss = val_loss
-            print(f"Saved model to {log_dir}")
+            logging.info(f"Saved model to {log_dir}")
         if early_stopper.early_stop(val_loss):
-            print("Stopping early")
+            logging.info("Stopping early")
             break
     return model
 
@@ -170,8 +177,8 @@ def validation(model, val_loader, config: Dict) -> float:
     # log metrics
     wandb.log({f'val/{k}': v for k, v in val_metrics.compute().items()})
     wandb.log({f'val/{k}': v for k, v in val_results.items()})
-    print("Validation Results:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_results.items()]))
-    print("Validation Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_metrics.compute().items()]))
+    logging.info("Validation Results:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_results.items()]))
+    logging.info("Validation Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_metrics.compute().items()]))
     return val_results["val_loss"]
 
 
@@ -233,7 +240,7 @@ def test(model, test_loader: DataLoader, config: Dict, le) -> pd.DataFrame:
         class_names=le.inverse_transform(range(config["num_labels"]))
     )})
     wandb.log({f'test/{k}': v for k, v in metrics.items()})
-    print("Test Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in metrics.items()]))
+    logging.info("Test Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in metrics.items()]))
     return predictions
 
 
@@ -257,10 +264,13 @@ if __name__ == "__main__":
     configs = init_configurations()
     for current_config, current_wandb_config in configs:
         # load data
+        logging.info(f"Running config: {current_config}")
+        logging.info(f"Loading data.")
         data_loading_func = get_data_loaders_with_generated_data if current_config["use_generated_data"] else get_data_loaders
         data_loaders, le = data_loading_func(current_config, debug=args.debug)
         for seed in range(current_config["num_seeds"]):
             # seed
+            logging.info(f"-------- RUNNING SEED {seed} --------")
             current_config["seed"] = current_config["initial_seed"] + seed
             seed_everything(current_config["seed"])
             # change save model dir
@@ -275,10 +285,11 @@ if __name__ == "__main__":
                 entity=current_wandb_config["entity"],
                 project=current_wandb_config["project"],
                 config=current_config,
-                mode="disabled" if current_wandb_config["disabled"] else "online",
+                mode="disabled" if args.disable_wandb else "online",
                 group=f"{args.d}-{current_config['model_name']}",
                 job_type="train" + current_wandb_config["job_type_modifier"],
-                name="seed_"+str(current_config["seed"])
+                name="seed_"+str(current_config["seed"]),
+
             )
             wandb.run.summary["train_size"] = len(data_loaders["train"].dataset)
             if current_config["use_generated_data"]:
@@ -287,8 +298,8 @@ if __name__ == "__main__":
                 wandb.run.summary["generated_article_labels"] = df.loc[df.generated == True].label.unique()
             wandb.run.summary["val_size"] = len(data_loaders["val"].dataset)
             wandb.run.summary["test_size"] = len(data_loaders["test"].dataset)
-
+            logging.info("----- TRAINING -----")
             final_model = train(current_model, data_loaders["train"], data_loaders["val"], current_config, curr_log_dir)
-            print("Testing...")
+            logging.info("----- TESTING -----")
             test(final_model, data_loaders["test"], current_config, le)
             wandb.finish()

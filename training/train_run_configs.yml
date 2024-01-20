@@ -1,10 +1,8 @@
 ---
 normal:
-  use_generated_data: false
   wandb:
     job_type_modifier: "-normal"
 with_generated_data:
-  use_generated_data: true
   dataset_splits: [0.6, 0.8]
   wandb:
     job_type_modifier: "-with-generated-data"

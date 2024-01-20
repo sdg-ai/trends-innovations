@@ -1,4 +1,4 @@
-name: tandic
+name: tandic-training
 channels:
   - conda-forge
 dependencies:

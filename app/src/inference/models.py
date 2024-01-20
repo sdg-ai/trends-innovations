@@ -13,7 +13,6 @@ class ArticleChunk(BaseModel):
     start_pos: int
     end_pos: int
 
-
 class Prediction(BaseModel):
     class_label: str
     probability: float

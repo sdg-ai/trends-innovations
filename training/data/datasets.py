@@ -3,6 +3,7 @@ import ast
 import json
 import wandb
 import torch
+import logging
 import numpy as np
 import pandas as pd
 from pickle import dump
@@ -10,7 +11,35 @@ from sklearn import preprocessing
 from torch import Generator
 from transformers import AutoTokenizer
 from torch.utils.data import Dataset, DataLoader
+from sklearn.model_selection import train_test_split
 
+
+class TAndIDataSet(Dataset):
+    encodings: torch.Tensor
+    encoded_labels: torch.Tensor
+
+    def __init__(self, data: pd.DataFrame, tokenizer, label_encoder):
+        """
+        Custom PyTorch Dataset for training hugging face transformer models for the TandI usecase
+        :param data: the data to encode
+        :param tokenizer: the tokenizer to vectorize the text data
+        :param label_encoder: the label encoder for a numeric representation of the labels
+        """
+        self.data = data
+        self.label_encoder = label_encoder
+        self._encode(tokenizer, label_encoder)
+
+    def __getitem__(self, idx):
+        item = {k: torch.tensor(v[idx]) for k, v in self.encodings.items()}
+        item["labels"] = torch.tensor(self.encoded_labels[idx])
+        return item
+
+    def __len__(self):
+        return len(self.data)
+
+    def _encode(self, tokenizer, label_encoder):
+        self.encodings = tokenizer(self.data.text.tolist(), truncation=True, padding=True, max_length=512)
+        self.encoded_labels = label_encoder.fit_transform(self.data.label.tolist())
 
 def load_json_data(data_dir: str) -> pd.DataFrame:
     """
@@ -42,7 +71,7 @@ def load_json_data(data_dir: str) -> pd.DataFrame:
                 "sentence_id": result["meta"]["sent_id"]
             }
             rows.append(new_row)
-        print(f"Loaded: {f}")
+        logging.info(f"Loaded: {f}")
     df = pd.DataFrame(rows)
     # only keep rows with unique article_id and sentence_id
     df.drop_duplicates(subset=["article_id", "sentence_id"], inplace=True)
@@ -71,34 +100,6 @@ def load_generated_data(data_dir: str, max_words_per_chunk:int = 65) -> pd.DataF
     return df
 
 
-class TAndIDataSet(Dataset):
-    encodings: torch.Tensor
-    encoded_labels: torch.Tensor
-
-    def __init__(self, data: pd.DataFrame, tokenizer, label_encoder):
-        """
-        Custom PyTorch Dataset for training hugging face transformer models for the TandI usecase
-        :param data: the data to encode
-        :param tokenizer: the tokenizer to vectorize the text data
-        :param label_encoder: the label encoder for a numeric representation of the labels
-        """
-        self.data = data
-        self.label_encoder = label_encoder
-        self._encode(tokenizer, label_encoder)
-
-    def __getitem__(self, idx):
-        item = {k: torch.tensor(v[idx]) for k, v in self.encodings.items()}
-        item["labels"] = torch.tensor(self.encoded_labels[idx])
-        return item
-
-    def __len__(self):
-        return len(self.data)
-
-    def _encode(self, tokenizer, label_encoder):
-        self.encodings = tokenizer(self.data.text.tolist(), truncation=True, padding=True, max_length=512)
-        self.encoded_labels = label_encoder.fit_transform(self.data.label.tolist())
-
-
 def get_data_loaders(config, debug=False):
     """
     Given a data-path, a model, and the batch-sizes, return a ready to use dictionary of data loaders for training
@@ -109,7 +110,11 @@ def get_data_loaders(config, debug=False):
     # load csv/json
     df = load_json_data(config["data_dir"])
     if debug:
-        df = df.sample(100)
+        # sample from every label to get a small dataset
+        dfs = []
+        for label in df.label.unique():
+            dfs.append(df[df["label"] == label].sample(10))
+        df = pd.concat(dfs)
     # get encodings for labels
     le = preprocessing.LabelEncoder()
     le.fit(df.label)
@@ -119,15 +124,22 @@ def get_data_loaders(config, debug=False):
         os.makedirs(config["save_model_dir"])
     dump(le, open(os.path.join(config["save_model_dir"], "label_encoder.pkl"), 'wb'))
     # split into train, test, val
-    train_df, val_df, test_df = np.split(
-        df.sample(frac=1, random_state=42),
-        [int(config["dataset_splits"][0] * len(df)), int(config["dataset_splits"][1] * len(df))]
-    )
+    # Convert percentage splits to absolute counts
+    train_size = int(config["dataset_splits"][0] * len(df))
+    val_size = int((config["dataset_splits"][1] - config["dataset_splits"][0]) * len(df))
+    test_size = len(df) - train_size - val_size
+
+    # Perform stratified splits
+    train_df, temp_df = train_test_split(df, test_size=val_size + test_size, stratify=df['label'], random_state=42)
+    val_df, test_df = train_test_split(temp_df, test_size=test_size, stratify=temp_df['label'], random_state=42)
+
     train_df.reset_index(inplace=True, drop=True)
     val_df.reset_index(inplace=True, drop=True)
     test_df.reset_index(inplace=True, drop=True)
     tokenizer = AutoTokenizer.from_pretrained(config["model_name"], use_fast=False)
-    
+    logging.info(f"Size of train_df: {len(train_df)}")
+    logging.info(f"Size of val_df: {len(val_df)}")
+    logging.info(f"Size of test_df: {len(test_df)}")
     datasets = {
         "train": DataLoader(TAndIDataSet(train_df, tokenizer, le), batch_size=config["batch_sizes"]["train"], shuffle=True,
                             generator=Generator().manual_seed(2147483647)),
@@ -140,13 +152,12 @@ def get_data_loaders(config, debug=False):
 
 
 def get_data_loaders_with_generated_data(config, debug=False):
-    print("Loading data...")
+    logging.info("Loading generated data.")
     df_real = load_json_data(config["data_dir"])
     df_real["generated"] = False
-    print("Loading generated data...")
     df_generated = load_generated_data(config["data_dir"])
     df_generated["generated"] = True
-    print("The following categories contain generated data:", df_generated.label.unique())
+    logging.info("The following categories contain generated data:", df_generated.label.unique())
 
     le = preprocessing.LabelEncoder()
     le.fit(df_real.label)
@@ -167,9 +178,9 @@ def get_data_loaders_with_generated_data(config, debug=False):
     train_df = pd.concat([train_df, train_df_generated, train_df_real_generated_from])
     if debug:
         train_df = train_df.sample(100)
-    print("Size of train_df:", len(train_df), "with % generated data:", round(len(train_df[train_df["generated"] == True]) / len(train_df)*100, 2))
-    print("Size of val_df:", len(val_df))
-    print("Size of test_df:", len(test_df))
+    logging.info(f"Size of train_df:{len(train_df)} with % generated data: {round(len(train_df[train_df['generated'] == True]) / len(train_df)*100, 2)}")
+    logging.info(f"Size of val_df:{len(val_df)}", )
+    logging.info(f"Size of test_df:{len(test_df)}", )
     train_df.reset_index(inplace=True, drop=True)
     val_df.reset_index(inplace=True, drop=True)
     test_df.reset_index(inplace=True, drop=True)

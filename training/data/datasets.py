@@ -148,7 +148,7 @@ def get_data_loaders_with_chatgpt_annotated_data(config, debug=False):
         "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["batch_sizes"]["test"], shuffle=True,
                            generator=Generator().manual_seed(2147483647))}
     tokenizer.save_pretrained(config['save_model_dir'])
-    return datasets, le
+    return datasets, le, tokenizer
 
 
 def get_data_loaders(config, debug=False):
@@ -192,14 +192,14 @@ def get_data_loaders(config, debug=False):
         "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["batch_sizes"]["test"], shuffle=True,
                            generator=Generator().manual_seed(2147483647))}
     tokenizer.save_pretrained(config['save_model_dir'])
-    return datasets, le
+    return datasets, le, tokenizer
 
 
 def init_tokenizer(train_df, config):
+    tokenizer = AutoTokenizer.from_pretrained(config["model_name"], use_fast=False, max_len=512)
     new_spans = set(itertools.chain.from_iterable(train_df.spans.tolist()))
-    tokenizer = AutoTokenizer.from_pretrained(config["model_name"], use_fast=True, max_len=512)
-    new_tokens = set(new_spans) - set(tokenizer.vocab.keys())
-    tokenizer.add_tokens(list(new_tokens))
+    new_tokens = list(new_spans - set(tokenizer.vocab.keys()))
+    tokenizer.add_tokens(new_tokens)
     return tokenizer
 
 
@@ -241,4 +241,4 @@ def get_data_loaders_with_generated_data(config, debug=False):
         "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["batch_sizes"]["test"], shuffle=True,
                            generator=Generator().manual_seed(2147483647))}
     tokenizer.save_pretrained(config['save_model_dir'])
-    return datasets, le
+    return datasets, le, tokenizer

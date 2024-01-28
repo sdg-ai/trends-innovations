@@ -274,7 +274,7 @@ if __name__ == "__main__":
             data_loading_func = get_data_loaders_with_chatgpt_annotated_data
         else:
             raise ValueError(f"Unknown dataset: {args.dataset}")
-        data_loaders, le = data_loading_func(current_config, debug=args.debug)
+        data_loaders, le, tokenizer = data_loading_func(current_config, debug=args.debug)
         for seed in range(current_config["num_seeds"]):
             # seed
             logging.info(f"-------- RUNNING SEED {seed} --------")
@@ -287,7 +287,7 @@ if __name__ == "__main__":
                 current_config["model_name"],
                 num_labels=current_config["num_labels"]
             ).to(current_config["device"])
-
+            current_model.resize_token_embeddings(len(tokenizer))
             wandb.init(
                 entity=current_wandb_config["entity"],
                 project=current_wandb_config["project"],

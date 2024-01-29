@@ -36,7 +36,7 @@ args = parser.parse_args()
 WANDB_CONFIG = {
     "entity": "j-getzner",
     "project": "Trends & Innovations Classifier",
-    "disabled": True,
+    "disabled": False,
     "job_type_modifier": ""
 }
 
@@ -49,10 +49,10 @@ DEFAULT_CONFIG = {
     # model details
     "model_name": "distilbert-base-uncased",
     "lr": 5e-5,
-    "epochs": 25 if not args.debug else 5,
+    "epochs": 30 if not args.debug else 5,
     "patience": 5,
     "batch_sizes": {
-        "train": 64,
+        "train": 16,
         "val": 64,
         "test": 64
     } if not args.debug else {
@@ -63,7 +63,7 @@ DEFAULT_CONFIG = {
     # other details
     "device": 'cuda' if torch.cuda.is_available() else 'cpu',
     "initial_seed": 1,
-    "num_seeds": 3,
+    "num_seeds": 10,
     "save_model_dir": "./checkpoints",
 }
 print("device:", DEFAULT_CONFIG["device"])
@@ -293,8 +293,8 @@ if __name__ == "__main__":
                 project=current_wandb_config["project"],
                 config=current_config,
                 mode="disabled" if args.disable_wandb else "online",
-                group=f"{args.d}-{current_config['model_name']}",
-                job_type="train" + current_wandb_config["job_type_modifier"],
+                group=f"{args.d}-{current_config['model_name']}-{current_wandb_config['group_name_modifier']}",
+                job_type=f"train-{current_wandb_config['job_type_modifier']}",
                 name="seed_"+str(current_config["seed"]),
 
             )

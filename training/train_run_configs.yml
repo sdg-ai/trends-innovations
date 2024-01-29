@@ -1,8 +1,5 @@
 ---
 normal:
   wandb:
-    job_type_modifier: "-normal"
-with_generated_data:
-  dataset_splits: [0.6, 0.8]
-  wandb:
-    job_type_modifier: "-with-generated-data"
+    job_type_modifier: "normal"
+    group_name_modifier: "all-categories"

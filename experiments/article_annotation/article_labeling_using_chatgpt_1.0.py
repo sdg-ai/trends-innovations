@@ -116,6 +116,64 @@ def load_raw_articles(filename):
     return articles
 
 
+def run():
+    # classify sections
+    predictions = []
+    progressbar = tqdm(total=num_sections, position=0, leave=True)
+    total_tokens = 0
+    start_time = time.time()
+    failed_predictions = []
+    for article_id, article_sections in sections_to_classify.items():
+        if article_id < last_article_id:
+            progressbar.update(len(article_sections))
+            continue
+        elif article_id == last_article_id:
+            article_sections = article_sections[last_sentence_id + 1:]
+            if len(article_sections) == 0:
+                progressbar.update(len(article_sections))
+                continue
+        progressbar.set_description(f'{article_id} - {article_sections[0]["title"]}')
+        for idx, section in enumerate(article_sections):
+            prediction, second_prediction, response_is_invalid, second_response_is_invalid, tokens = classify_section(
+                section, all_categories)
+            if prediction == "":
+                failed_predictions.append(section)
+                continue
+            prediction_formatted = {
+                "text": section,
+                "label": prediction,
+                "label2": second_prediction,
+                "spans": [],
+                "article_id": article_id,
+                "sentence_id": idx,
+                "answer": "",
+                "priority": None,
+                "score": None,
+                "title": section["title"],
+                "gpt_first_response_is_invalid": response_is_invalid,
+                "gpt_second_response_is_invalid": second_response_is_invalid,
+            }
+            total_tokens += tokens
+            seconds_elapsed = time.time() - start_time
+            estimated_tokens_per_minute = total_tokens / (seconds_elapsed / 60)
+            current_cost = (total_tokens / 1000) * COST_PER_1k_TOKENS
+            estimated_cost = current_cost * progressbar.total / (progressbar.n + 1)
+            if (seconds_elapsed > 60.0) and (estimated_tokens_per_minute > 100000.0):
+                time.sleep(30)
+            progressbar.set_postfix({
+                "tokens": total_tokens,
+                "est_tokens_per_minute": str(round(estimated_tokens_per_minute, 2)),
+                "cost": f"€{round(current_cost, 2)}",
+                "est_cost": f"€{round(estimated_cost, 2)}"
+            })
+            predictions.append(prediction_formatted)
+            progressbar.update(1)
+        # save all intermediate results
+        with open('../data/raw_data_annotated_with_chatgpt.json', 'w') as outfile:
+            json.dump(predictions, outfile)
+    return predictions, failed_predictions
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--fresh_start', action='store_true')
@@ -152,57 +210,6 @@ if __name__ == '__main__':
     else:
         print("No existing file found do delete or continue from, starting from scratch")
     num_sections = sum([len(sections) for _, sections in sections_to_classify.items()])
+    predictions, failed_predictions = run()
 
-    # classify sections
-    predictions = []
-    progressbar = tqdm(total=num_sections, position=0, leave=True)
-    total_tokens = 0
-    start_time = time.time()
-    failed_predictions = []
-    for article_id, article_sections in sections_to_classify.items():
-        if article_id < last_article_id:
-            progressbar.update(len(article_sections))
-            continue
-        elif article_id == last_article_id:
-            article_sections = article_sections[last_sentence_id+1:]
-            if len(article_sections) == 0:
-                progressbar.update(len(article_sections))
-                continue
-        progressbar.set_description(f'{article_id} - {article_sections[0]["title"]}')
-        for idx, section in enumerate(article_sections):
-            prediction, second_prediction, response_is_invalid, second_response_is_invalid, tokens = classify_section(section, all_categories)
-            if prediction == "":
-                failed_predictions.append(section)
-                continue
-            prediction_formatted = {
-                "text": section,
-                "label": prediction,
-                "label2": second_prediction,
-                "spans": [],
-                "article_id": article_id,
-                "sentence_id": idx,
-                "answer": "",
-                "priority": None,
-                "score": None,
-                "title": section["title"],
-                "gpt_first_response_is_invalid": response_is_invalid,
-                "gpt_second_response_is_invalid": second_response_is_invalid,
-            }
-            total_tokens += tokens
-            seconds_elapsed = time.time() - start_time
-            estimated_tokens_per_minute = total_tokens/(seconds_elapsed/60)
-            current_cost = (total_tokens/1000)*COST_PER_1k_TOKENS
-            estimated_cost = current_cost * progressbar.total/(progressbar.n+1)
-            if (seconds_elapsed > 60.0) and (estimated_tokens_per_minute > 100000.0):
-                time.sleep(30)
-            progressbar.set_postfix({
-                "tokens": total_tokens,
-                "est_tokens_per_minute": str(round(estimated_tokens_per_minute, 2)),
-                "cost": f"€{round(current_cost, 2)}",
-                "est_cost": f"€{round(estimated_cost, 2)}"
-            })
-            predictions.append(prediction_formatted)
-            progressbar.update(1)
-        # save all intermediate results
-        with open('../data/raw_data_annotated_with_chatgpt.json', 'w') as outfile:
-            json.dump(predictions, outfile)
+

@@ -567,23 +567,55 @@ def init_run(sections_by_article, skip_user_input=False):
     return sections_by_article
 
 
+def create_test_dataset_from_annotated(raw_articles):
+    from training.data.datasets import load_json_data
+    old_data = load_json_data("../../training/datasets")
+    # sort by article id
+    old_data = old_data.sort_values(by="article_id")
+    data = {}
+    data_annotations = {}
+    for article_id in old_data.article_id.unique():
+        article_rows = old_data[old_data.article_id == article_id]
+        # get raw article from list of raw articles where old_id == article_id
+        raw_article = [article for article in raw_articles if article["old_id"] == article_id]
+        if len(raw_article) == 0:
+            logging.warning(f"No raw article found for article id: {article_id}")
+            continue
+        else:
+            raw_article = raw_article[0]
+        data[article_id] = []
+        data_annotations[article_id] = []
+        for idx, row in article_rows.iterrows():
+            data[article_id].append({
+                "text": row.text,
+                "article_id": article_id,
+                "section_id": row["sentence_id"],
+                "title": raw_article["title"]
+            })
+            data_annotations[article_id].append(row.label)
+    # dump data_annotations to json file
+    with open('./test_data_annotations.json', 'w') as outfile:
+        json.dump({str(k): v for k, v in data_annotations.items()}, outfile)
+    return data
+
 def main():
     raw_articles = load_raw_articles('../../data/raw_data.jsonl')
     raw_articles, categories = preprocess_articles(raw_articles)
-    raw_articles = raw_articles[:100]
     sections_by_article = {article["id"]: split_articles_into_sections(article, section_length=3) for article in raw_articles}
     logging.info("Total number of articles: %s", len(raw_articles))
     logging.info("Total number of sections: %s", sum([len(sections) for sections in sections_by_article.values()]))
     random.shuffle(categories)
     logging.info("Categories: %s", categories)
     sections_by_article = init_run(sections_by_article)
+    # TODO: only for testing
+    sections_by_article = create_test_dataset_from_annotated(raw_articles)
     while True:
         try:
             for predictions in run(sections_by_article, categories):
                 logging.info("Writing predictions to file.")
                 with open('./predictions.jsonl', 'a') as outfile:
                     try:
-                        json.dump(predictions, outfile)
+                        json.dump({str(k): v for k, v in predictions.items()}, outfile)
                         outfile.write('\n')
                     except Exception as e:
                         logging.error(f"Error writing predictions to file: {e}. ")

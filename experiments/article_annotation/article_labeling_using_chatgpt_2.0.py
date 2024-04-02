@@ -5,11 +5,49 @@ import random
 import logging
 import argparse
 import concurrent.futures
+import pandas as pd
+import ast
 from tqdm import tqdm
 from datetime import datetime
 from dotenv import load_dotenv
 from openai import AzureOpenAI
 from nltk.tokenize import sent_tokenize
+
+def load_json_data() -> pd.DataFrame:
+    """
+    Load all jsonl files in the data directory and returns a dataframe
+    :param data_dir: the path to the directory containing the json files (one per clas)
+    :return: the data as a pd.Dataframe
+    """
+    data_dir = os.path.join("training/datasets/annotated_data")
+    rows = []
+    for f in [f for f in os.listdir(data_dir) if f.endswith('jsonl')]:
+        with open(f'{data_dir}/{f}', 'r') as json_file:
+            json_list = list(json_file)
+        for json_str in json_list:
+            result = json.loads(json_str)
+            label = result["label"]
+            text = result["text"]
+            new_spans = []
+            if result["spans"] and len(result["spans"]) != 0:
+                try:
+                    new_spans = [s["text"] for s in result["spans"]]
+                except:
+                    x = ast.literal_eval(result["spans"])
+                    new_spans = [s["text"] for s in x]
+            new_row = {
+                "text": text,
+                "label": label,
+                "spans": new_spans,
+                "article_id": result["meta"]["doc_id"],
+                "sentence_id": result["meta"]["sent_id"]
+            }
+            rows.append(new_row)
+        logging.info(f"Loaded: {f}")
+    df = pd.DataFrame(rows)
+    # only keep rows with unique article_id and sentence_id
+    df.drop_duplicates(subset=["article_id", "sentence_id"], inplace=True)
+    return df
 
 # Set seed for random number generator
 seed = 42
@@ -20,7 +58,8 @@ logging.basicConfig(level=logging.INFO)
 logging.getLogger('httpx').setLevel(logging.WARNING)
 
 # Load environment variables
-load_dotenv("../.env")
+print(os.getcwd())
+load_dotenv("experiments/.env")
 
 # Initialize OpenAI client
 OpenaiClient = AzureOpenAI(
@@ -68,7 +107,7 @@ The available categories are:
 <categories>
 {categories}
 </categories>
-If an annotator chose "unsure" due to a lack of relevant information, consider it a valid choice. If the any of the information provided by the annotator is "None" or missing information, immediately respond with "invalid."
+If an annotator chose "unsure" due to a lack of relevant information, consider it a valid choice. If the any of the information provided by the annotator is "None" or missing information, immediately respond with "invalid". If the category choice is not part of the available categories, respond with "invalid".
 '''
 
 # Evaluation User Prompt
@@ -136,7 +175,7 @@ def get_tools(categories):
                         "conclusion": {
                             "type": "string",
                             "enum": ["valid", "invalid"],
-                            "description": "Whether the reasoning is valid and justifies the category choice. Respond with 'valid' if you AGREE with the annotator, and 'invalid' if you DO NOT AGREE."
+                            "description": "Whether the reasoning is valid and justifies the category choice. Respond with 'valid' if you AGREE with the annotator, and 'invalid' if you DO NOT AGREE. Respond with 'invalid' if the category choice is not part of the available categories"
                         },
                         "reasoning": {
                             "type": "string",
@@ -224,7 +263,7 @@ def preprocess_articles(articles):
         article["old_id"] = article["id"]
         article["id"] = idx
     # Save the preprocessed articles to a JSONL file
-    with open('./data_used_for_annotation_with_chatgpt.jsonl', 'w') as outfile:
+    with open('experiments/article_annotation/data_used_for_annotation_with_chatgpt.jsonl', 'w') as outfile:
         for article in articles:
             json.dump(article, outfile)
             outfile.write('\n')
@@ -267,8 +306,11 @@ def cost_decorator(func):
         global TOKENS_PER_MINUTE
         global TOTAL_TOKENS
         response = func(*args, **kwargs)
-        prompt_tokens = response.usage.prompt_tokens
-        completion_tokens = response.usage.completion_tokens
+        try:
+            prompt_tokens = response.usage.prompt_tokens
+            completion_tokens = response.usage.completion_tokens
+        except AttributeError:
+            pass
         if AZURE_OPENAI_MODEL_NAME == "gpt-35-turbo":
             cost = prompt_tokens / 1000 * 0.0005 + completion_tokens / 1000 * 0.0015
         elif AZURE_OPENAI_MODEL_NAME == "gpt-4":
@@ -312,7 +354,7 @@ def get_response(messages, tools=None, tool_choice=None):
         return e
 
 
-def evaluate_response(response):
+def evaluate_response(response, conversation, tools, category_group):
     """
     Evaluates the response from the OpenAI API.
 
@@ -333,7 +375,7 @@ def evaluate_response(response):
     if tool_calls:
         tool_call = tool_calls[0]
     else:
-        raise ValueError("No tool calls in assistant message")
+        raise ValueError("No tool calls in assistant message.")
     assistant_message.content = str(assistant_message.tool_calls[0].function)
     response_messages = [{"role": assistant_message.role, "content": assistant_message.content}]
     response_messages.append(
@@ -342,23 +384,58 @@ def evaluate_response(response):
     )
     if tool_call.function.name == "get_section_annotation":
         parsed_response = {
-            "category": json.loads(tool_call.function.arguments).get("category"),
-            "reasoning": json.loads(tool_call.function.arguments).get("reasoning"),
-            "keywords": json.loads(tool_call.function.arguments).get("keywords")
-        }
+                "category": json.loads(tool_call.function.arguments).get("category"),
+                "reasoning": json.loads(tool_call.function.arguments).get("reasoning"),
+                "keywords": json.loads(tool_call.function.arguments).get("keywords")
+            }
+        
+        if parsed_response["category"] not in category_group + ["unsure"]:
+            patience = 1
+            logging.info (f"Invalid category choice: {parsed_response['category']}")
+            while True and patience < 3:
+                parsed_response = redo_because_of_invalid_category(conversation+response_messages, tools, category_group)
+                patience += 1
+            logging.info(f"New category choice: {parsed_response['category']}")
     elif tool_call.function.name == "get_annotation_evaluation":
         parsed_response = {
-            "conclusion": json.loads(tool_call.function.arguments).get("conclusion"),
-            "reasoning": json.loads(tool_call.function.arguments).get("reasoning")
-        }
+                "conclusion": json.loads(tool_call.function.arguments).get("conclusion"),
+                "reasoning": json.loads(tool_call.function.arguments).get("reasoning")
+            }
     elif tool_call.function.name == "get_final_annotation_decision":
         parsed_response = {
-            "category": json.loads(tool_call.function.arguments).get("category"),
-            "reasoning": json.loads(tool_call.function.arguments).get("reasoning")
-        }
+                "category": json.loads(tool_call.function.arguments).get("category"),
+                "reasoning": json.loads(tool_call.function.arguments).get("reasoning")
+            }
     else:
         raise ValueError("Tool call not supported")
     return parsed_response, response_messages
+
+
+def redo_because_of_invalid_category(conversation_with_annotator, tools, category_group):
+    """
+    Redo the conversation with the annotator because of an invalid category choice.
+
+    This function appends a message to the conversation with the annotator to inform them that their category choice is invalid and asks them to review their decision.
+
+    Parameters:
+    conversation_with_annotator (list): A list of messages in the conversation with the annotator.
+    """
+    conversation_with_annotator.append({
+        "role": "user",
+        "content": "You chose a category that is not part of the available categories. Please review your decision and choose a category from the list provided. If you chose '3d_printed_fashion' or similar, please consider '3d_printed_apparel' instead."
+    })
+    response = get_response(
+        conversation_with_annotator,
+        tools=tools,
+        tool_choice=tools[0]
+        )
+    tool_call = response.choices[0].message.tool_calls[0]
+    parsed_response = {
+        "category": json.loads(tool_call.function.arguments).get("category"),
+        "reasoning": json.loads(tool_call.function.arguments).get("reasoning"),
+        "keywords": json.loads(tool_call.function.arguments).get("keywords")
+    }
+    return parsed_response
 
 
 def evaluate_section(section, category_groups):
@@ -402,7 +479,10 @@ def evaluate_section(section, category_groups):
                 conversation_with_annotator,
                 tools=tools,
                 tool_choice={"type": "function", "function": {"name": tools[0]["function"]["name"]}}
-            )
+            ),
+            conversation_with_annotator,
+            tools,
+            category_group
         )
         chain_of_results["prediction_1"] = cg_level_pred
         conversation_with_evaluator = [
@@ -418,7 +498,10 @@ def evaluate_section(section, category_groups):
                 conversation_with_evaluator,
                 tools=tools,
                 tool_choice={"type": "function", "function": {"name": tools[1]["function"]["name"]}}
-            )
+            ),
+            conversation_with_evaluator,
+            tools,
+            category_group
         )
         chain_of_results["evaluation_1"] = evaluation
         finished = evaluation["conclusion"] == "valid"
@@ -430,7 +513,11 @@ def evaluate_section(section, category_groups):
                 get_response(
                     conversation_with_annotator,
                     tools=tools,
-                    tool_choice={"type": "function", "function": {"name": tools[0]["function"]["name"]}})
+                    tool_choice={"type": "function", "function": {"name": tools[0]["function"]["name"]}}
+                ),
+                conversation_with_annotator,
+                tools,
+                category_group
             )
             conversation_with_evaluator += evaluator_response
             conversation_with_evaluator.append({"role": "user", "content": f"I have given your evaluation some thought. {cg_level_pred['reasoning']} As a result I chose this category: {cg_level_pred['category']}."})
@@ -439,7 +526,10 @@ def evaluate_section(section, category_groups):
                     conversation_with_evaluator,
                     tools=tools,
                     tool_choice={"type": "function", "function": {"name": tools[1][ "function"]["name"]}}
-                )
+                ),
+                conversation_with_evaluator,
+                tools,
+                category_group
             )
             finished = evaluation["conclusion"] == "valid"
             current_round += 1
@@ -468,15 +558,28 @@ def evaluate_section(section, category_groups):
     ]
     tools = get_tools([p["category"] for p in predictions_from_annotators])
     final_decision, final_decision_response = evaluate_response(
-        get_response(conversation_with_final_decision_maker, tools=tools,
-                     tool_choice={"type": "function", "function": {"name": tools[2]["function"]["name"]}}))
+        get_response(
+            conversation_with_final_decision_maker, 
+            tools=tools,
+            tool_choice={"type": "function", "function": {"name": tools[2]["function"]["name"]}}
+            ),
+        conversation_with_final_decision_maker,
+        tools,
+        [p["category"] for p in predictions_from_annotators]
+    )
     if final_decision["category"] not in [p["category"] for p in predictions_from_annotators] + ["none"]:
         logging.warning(f"Final decision not among annotators' choices: {final_decision['category']}")
         conversation_with_final_decision_maker += final_decision_response
         conversation_with_final_decision_maker.append({"role": "user", "content": f"The category you chose is not among the categories chosen by the annotators. Your task is to choose one of the categories chosen by the annotators or 'none' if none of the annotators choices are suitable."})
         final_decision, final_decision_response = evaluate_response(
-            get_response(conversation_with_final_decision_maker, tools=tools,
-                         tool_choice={"type": "function", "function": {"name": tools[2]["function"]["name"]}}))
+            get_response(conversation_with_final_decision_maker, 
+                         tools=tools,
+                         tool_choice={"type": "function", "function": {"name": tools[2]["function"]["name"]}}
+            ),
+            conversation_with_final_decision_maker,
+            tools,
+            [p["category"] for p in predictions_from_annotators]
+        )
     final_decision["section_id"] = section["section_id"]
     final_decision["text"] = section["text"]
     final_decision["explanation"] = chains_of_results
@@ -508,24 +611,26 @@ def run(sections_by_article, categories):
     category_groups = [categories[i:i + num_categories_per_annotator] for i in
                        range(0, len(categories), num_categories_per_annotator)]
     logging.info(f"Number of categories in groups (one per annotator): {[len(group) for group in category_groups]}")
-    progress_bar = tqdm(total=sum([len(sections) for sections in sections_by_article.values()]))
+    total_sections = sum([len(sections) for sections in sections_by_article.values()])
+    sections_done = 0
     for article_id, article_sections in sections_by_article.items():
+        logging.info(f"Starting article ID: {article_id}")
         predictions = {article_id: []}
-        for section_id, section in enumerate(article_sections):
+        for idx, section in enumerate(article_sections):
             prediction = evaluate_section(section, category_groups)
             predictions[article_id].append(prediction)
-            progress_bar.set_postfix({"total cost": f"${TOTAL_COST:.6f}", "total requests": f"{TOTAL_NUM_REQUESTS}", "tokens per minute": f"{TOKENS_PER_MINUTE:.2f}", "avg. tokens per request": f"{TOTAL_TOKENS / TOTAL_NUM_REQUESTS:.2f}"})
-            progress_bar.update(1)
             if TOKENS_PER_MINUTE > 250000:
-                logging.info("Approaching token limit reached. Pausing for 1 minute.")
+                logging.warning("Approaching token limit reached. Pausing for 1 minute.")
                 time.sleep(60)
+            sections_done += 1
+            logging.info(f"Finished section {idx+1} out of {len(article_sections)}")
+        logging.info(f"Finished article ID: {article_id}, %Done: {sections_done / total_sections:.2%}")
+        logging.info(f"Current: total cost: ${TOTAL_COST:.6f}, tokens per minute: {TOKENS_PER_MINUTE:.2f}, total tokens: {TOTAL_TOKENS}, total number of requests: {TOTAL_NUM_REQUESTS}, average tokens per request: {TOTAL_TOKENS / TOTAL_NUM_REQUESTS:.2f}")
         yield predictions
-
-    progress_bar.close()
-    logging.info(f"Total cost: ${TOTAL_COST:.6f}")
-    logging.info(f"Total tokens: {TOTAL_TOKENS}")
-    logging.info(f"Tokens per minute: {TOKENS_PER_MINUTE:.2f}")
-    logging.info(f"Total number of requests: {TOTAL_NUM_REQUESTS}")
+    logging.info(f"Final Total cost: ${TOTAL_COST:.6f}")
+    logging.info(f"Final Total tokens: {TOTAL_TOKENS}")
+    logging.info(f"Final Tokens per minute: {TOKENS_PER_MINUTE:.2f}")
+    logging.info(f"Final Total number of requests: {TOTAL_NUM_REQUESTS}")
 
 
 def init_run(sections_by_article, skip_user_input=False):
@@ -542,13 +647,13 @@ def init_run(sections_by_article, skip_user_input=False):
     Returns:
     dict: A dictionary containing the sections of the articles to be evaluated.
     """
-    previous_predictions_exist = os.path.exists('./predictions.jsonl')
+    previous_predictions_exist = os.path.exists('experiments/article_annotation/predictions.jsonl')
     if previous_predictions_exist and not skip_user_input:
         i = input("Predictions already exist. Do you want to overwrite them? (y/n): ")
         if i.lower() == "y":
             i = input("Are you sure? (y/n): ")
             if i.lower() == "y":
-                os.remove('./predictions.jsonl')
+                os.remove('experiments/article_annotation/predictions.jsonl')
                 logging.info("Will overwrite existing predictions.")
                 previous_predictions_exist = False
             else:
@@ -557,10 +662,13 @@ def init_run(sections_by_article, skip_user_input=False):
             logging.info("Will append to existing predictions.")
     if previous_predictions_exist:
         # get last article id
-        with open('./predictions.jsonl', 'r') as file:
+        with open('experiments/article_annotation/predictions.jsonl', 'r') as file:
             lines = file.readlines()
-            last_line = json.loads(lines[-1])
-            last_article_id = int(list(last_line.keys())[0])
+            # get the id from the json string. the string starts with {"<ID>": ...}, get it by regex
+            import re
+            last_article_id = int(re.search(r'{"(\d+)":', lines[-1]).group(1))
+            #last_line = json.loads(lines[-1])
+            #last_article_id = int(list(last_line.keys())[0])
             sections_by_article = {article_id: sections for article_id, sections in sections_by_article.items() if
                                    article_id > last_article_id}
             logging.info("Resuming from article id: %s", last_article_id + 1)
@@ -568,8 +676,7 @@ def init_run(sections_by_article, skip_user_input=False):
 
 
 def create_test_dataset_from_annotated(raw_articles):
-    from training.data.datasets import load_json_data
-    old_data = load_json_data("../../training/datasets")
+    old_data = load_json_data()
     # sort by article id
     old_data = old_data.sort_values(by="article_id")
     data = {}
@@ -585,7 +692,7 @@ def create_test_dataset_from_annotated(raw_articles):
             raw_article = raw_article[0]
         data[article_id] = []
         data_annotations[article_id] = []
-        for idx, row in article_rows.iterrows():
+        for _, row in article_rows.iterrows():
             data[article_id].append({
                 "text": row.text,
                 "article_id": article_id,
@@ -594,38 +701,39 @@ def create_test_dataset_from_annotated(raw_articles):
             })
             data_annotations[article_id].append(row.label)
     # dump data_annotations to json file
-    with open('./test_data_annotations.json', 'w') as outfile:
+    with open('experiments/article_annotation/test_data_annotations.json', 'w') as outfile:
         json.dump({str(k): v for k, v in data_annotations.items()}, outfile)
     return data
 
 def main():
-    raw_articles = load_raw_articles('../../data/raw_data.jsonl')
+    raw_articles = load_raw_articles('data/raw_data.jsonl')
     raw_articles, categories = preprocess_articles(raw_articles)
     sections_by_article = {article["id"]: split_articles_into_sections(article, section_length=3) for article in raw_articles}
     logging.info("Total number of articles: %s", len(raw_articles))
     logging.info("Total number of sections: %s", sum([len(sections) for sections in sections_by_article.values()]))
     random.shuffle(categories)
     logging.info("Categories: %s", categories)
-    sections_by_article = init_run(sections_by_article)
     # TODO: only for testing
     sections_by_article = create_test_dataset_from_annotated(raw_articles)
+    sections_by_article = init_run(sections_by_article)
     while True:
-        try:
+        #try:
             for predictions in run(sections_by_article, categories):
                 logging.info("Writing predictions to file.")
-                with open('./predictions.jsonl', 'a') as outfile:
+                with open('experiments/article_annotation/predictions.jsonl', 'a') as outfile:
+                    to_write = {str(k): v for k, v in predictions.items()}
                     try:
-                        json.dump({str(k): v for k, v in predictions.items()}, outfile)
+                        json.dump(to_write, outfile)
                         outfile.write('\n')
                     except Exception as e:
                         logging.error(f"Error writing predictions to file: {e}. ")
-        except Exception as ex:
-            logging.error(f"Error during generator iteration: {ex}. Reinitializing run and retrying.")
-            logging.warning("Reinitializing run and retrying.")
-            sections_by_article = init_run(sections_by_article, skip_user_input=True)
-        else:
+        #except Exception as ex:
+        #    logging.error(f"Error during generator iteration: {ex}. Reinitializing run and retrying.")
+        #    logging.info("Reinitializing run and retrying.")
+        #    sections_by_article = init_run(sections_by_article, skip_user_input=True)
+        #else:
             # Break out of the loop if the generator completes successfully
-            break
+        #    break
 
 
 if __name__ == '__main__':

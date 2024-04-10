@@ -1,0 +1,9 @@
+version: '3'
+services:
+  trends-innovations:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: trends-innovations
+    ports:
+      - "80:80"

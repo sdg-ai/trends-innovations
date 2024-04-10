@@ -1,0 +1,5 @@
+---
+normal:
+  wandb:
+    job_type_modifier: "normal"
+    group_name_modifier: "all-categories"

@@ -1,0 +1,17 @@
+name: tandic-app
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - conda-forge::python=3.10
+  - conda-forge::pip
+  - pytorch::pytorch
+  - pytorch::pytorch-cuda
+  - pytorch::torchvision
+  - pip:
+    - transformers
+    - fastapi
+    - uvicorn
+    - pydantic
+    - python-dotenv

@@ -10,3 +10,8 @@ __pycache__/
 /training/checkpoints/
 /training/wandb/
 /training/.env
+experiments/article_annotation/*.jsonl
+experiments/article_annotation/results/*.jsonl
+experiments/article_annotation/*.json
+experiments/article_annotation/results/*.json
+

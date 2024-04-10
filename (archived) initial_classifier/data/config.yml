@@ -1,7 +1,0 @@
-data:
-  path_to_model: "data/model/"
-
-predict:
-  threshold: 0.42
-  count: 4
-

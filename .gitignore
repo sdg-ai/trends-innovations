@@ -6,8 +6,8 @@ __pycache__/
 /experiments/classifier_experiments/
 /experiments/.env
 /app/.env
-/training/datasets/
-/training/checkpoints/*
+training/datasets/
+training/checkpoints/
 /training/wandb/
 /training/.env
 experiments/article_annotation/*.jsonl

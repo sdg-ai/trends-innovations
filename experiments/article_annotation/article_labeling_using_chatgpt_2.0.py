@@ -2,13 +2,25 @@ import os
 import json
 import time
 import random
+# fix seed
+random.seed(42)
 import logging
+from datetime import datetime
+# set to most verbose logging level
+import os
+
+log_dir = "experiments/article_annotation/logs"
+os.makedirs(log_dir, exist_ok=True)
+
+now = datetime.now()
+logging.basicConfig(level=logging.INFO, filename=f"{log_dir}/{now.strftime('%Y-%m-%d_%H-%M-%S')}.log", filemode='w')
+logging.getLogger().addHandler(logging.StreamHandler())
 import argparse
 import concurrent.futures
 import pandas as pd
 import ast
 from tqdm import tqdm
-from datetime import datetime
+
 from dotenv import load_dotenv
 from openai import AzureOpenAI
 from nltk.tokenize import sent_tokenize
@@ -81,6 +93,8 @@ START_TIME = None
 parser = argparse.ArgumentParser(description='Article Labeling using ChatGPT 2.0')
 parser.add_argument('--num-annotators', type=int, default=2, help='Number of annotators to simulate')
 parser.add_argument('--patience', type=int, default=3, help='Number of rounds of evaluation before evaluator gives up')
+parser.add_argument('--results_dir', type=str, default='experiments/article_annotation/results', help='Directory to save the results')
+parser.add_argument('--testing', action='store_true', help='Whether to run in testing mode')
 args = parser.parse_args()
 
 # Annotation System Prompt
@@ -263,7 +277,7 @@ def preprocess_articles(articles):
         article["old_id"] = article["id"]
         article["id"] = idx
     # Save the preprocessed articles to a JSONL file
-    with open('experiments/article_annotation/data_used_for_annotation_with_chatgpt.jsonl', 'w') as outfile:
+    with open(f'{args.results_dir}/data_used_for_annotation_with_chatgpt.jsonl', 'w') as outfile:
         for article in articles:
             json.dump(article, outfile)
             outfile.write('\n')
@@ -305,10 +319,10 @@ def cost_decorator(func):
         global TOTAL_NUM_REQUESTS
         global TOKENS_PER_MINUTE
         global TOTAL_TOKENS
-        response = func(*args, **kwargs)
+        usage, assistant_message, tool_call = func(*args, **kwargs)
         try:
-            prompt_tokens = response.usage.prompt_tokens
-            completion_tokens = response.usage.completion_tokens
+            prompt_tokens = usage.prompt_tokens
+            completion_tokens = usage.completion_tokens
         except AttributeError:
             pass
         if AZURE_OPENAI_MODEL_NAME == "gpt-35-turbo":
@@ -322,8 +336,7 @@ def cost_decorator(func):
         TOTAL_TOKENS += prompt_tokens + completion_tokens
         minutes_since_start = (datetime.now() - START_TIME).total_seconds() / 60
         TOKENS_PER_MINUTE = int(TOTAL_TOKENS / minutes_since_start) if minutes_since_start > 1 else TOTAL_TOKENS
-        return response
-
+        return assistant_message, tool_call
     return wrapper
 
 
@@ -340,21 +353,35 @@ def get_response(messages, tools=None, tool_choice=None):
     Returns:
     function: The wrapper function that calculates the cost and updates global variables accordingly.
     """
-    try:
-        response = OpenaiClient.chat.completions.create(
-            model=AZURE_OPENAI_MODEL_NAME,
-            messages=messages,
-            tools=tools,
-            tool_choice=tool_choice,
+    patience = 3
+    current_patience = 0
+    while current_patience < patience:
+        try:
+            response = OpenaiClient.chat.completions.create(
+                model=AZURE_OPENAI_MODEL_NAME,
+                messages=messages,
+                tools=tools,
+                tool_choice=tool_choice,
 
-        )
-        return response
-    except Exception as e:
-        logging.error(f"Error in get_response: {e}")
-        return e
+            )
+            assistant_message = response.choices[0].message
+            tool_calls = assistant_message.tool_calls
+            if tool_calls:
+                tool_call = tool_calls[0]
+                # check if tool_call.function.arguments is valid json
+            else:
+                raise ValueError("No tool calls in assistant message.")
+            # check if tool_call.function.arguments is valid json
+            json.loads(tool_call.function.arguments)
+            return response.usage, assistant_message, tool_call
+        except Exception as e:
+            logging.error(f"Error in get_response: {e}")
+            logging.info(f"Retrying request. Patience: {current_patience + 1}/{patience}")
+        current_patience += 1
+    raise ValueError("Exceeded patience limit. Failed to get response.")
 
 
-def evaluate_response(response, conversation, tools, category_group):
+def evaluate_response(assistant_message, tool_call, conversation, tools, category_group):
     """
     Evaluates the response from the OpenAI API.
 
@@ -370,12 +397,7 @@ def evaluate_response(response, conversation, tools, category_group):
     Raises:
     ValueError: If the function name in the tool call is not supported.
     """
-    assistant_message = response.choices[0].message
-    tool_calls = assistant_message.tool_calls
-    if tool_calls:
-        tool_call = tool_calls[0]
-    else:
-        raise ValueError("No tool calls in assistant message.")
+    
     assistant_message.content = str(assistant_message.tool_calls[0].function)
     response_messages = [{"role": assistant_message.role, "content": assistant_message.content}]
     response_messages.append(
@@ -424,12 +446,11 @@ def redo_because_of_invalid_category(conversation_with_annotator, tools, categor
         "role": "user",
         "content": "You chose a category that is not part of the available categories. Please review your decision and choose a category from the list provided. If you chose '3d_printed_fashion' or similar, please consider '3d_printed_apparel' instead."
     })
-    response = get_response(
+    _, tool_call = get_response(
         conversation_with_annotator,
         tools=tools,
         tool_choice=tools[0]
         )
-    tool_call = response.choices[0].message.tool_calls[0]
     parsed_response = {
         "category": json.loads(tool_call.function.arguments).get("category"),
         "reasoning": json.loads(tool_call.function.arguments).get("reasoning"),
@@ -475,7 +496,7 @@ def evaluate_section(section, category_groups):
             {"role": "user", "content": ANNOTATION_USER_PROMPT.format(title=section["title"], text=section["text"])}
         ]
         cg_level_pred, annotator_response = evaluate_response(
-            get_response(
+            *get_response(
                 conversation_with_annotator,
                 tools=tools,
                 tool_choice={"type": "function", "function": {"name": tools[0]["function"]["name"]}}
@@ -494,7 +515,7 @@ def evaluate_section(section, category_groups):
              }
         ]
         evaluation, evaluator_response = evaluate_response(
-            get_response(
+            *get_response(
                 conversation_with_evaluator,
                 tools=tools,
                 tool_choice={"type": "function", "function": {"name": tools[1]["function"]["name"]}}
@@ -510,7 +531,7 @@ def evaluate_section(section, category_groups):
             conversation_with_annotator += annotator_response
             conversation_with_annotator.append({"role": "user", "content": f"Sorry, but I don't agree with you. Given your reasoning, I found your category choice questionable. {evaluation['reasoning']} Please review your decision."})
             cg_level_pred, annotator_response = evaluate_response(
-                get_response(
+                *get_response(
                     conversation_with_annotator,
                     tools=tools,
                     tool_choice={"type": "function", "function": {"name": tools[0]["function"]["name"]}}
@@ -522,7 +543,7 @@ def evaluate_section(section, category_groups):
             conversation_with_evaluator += evaluator_response
             conversation_with_evaluator.append({"role": "user", "content": f"I have given your evaluation some thought. {cg_level_pred['reasoning']} As a result I chose this category: {cg_level_pred['category']}."})
             evaluation, evaluator_response = evaluate_response(
-                get_response(
+                *get_response(
                     conversation_with_evaluator,
                     tools=tools,
                     tool_choice={"type": "function", "function": {"name": tools[1][ "function"]["name"]}}
@@ -558,7 +579,7 @@ def evaluate_section(section, category_groups):
     ]
     tools = get_tools([p["category"] for p in predictions_from_annotators])
     final_decision, final_decision_response = evaluate_response(
-        get_response(
+        *get_response(
             conversation_with_final_decision_maker, 
             tools=tools,
             tool_choice={"type": "function", "function": {"name": tools[2]["function"]["name"]}}
@@ -572,7 +593,7 @@ def evaluate_section(section, category_groups):
         conversation_with_final_decision_maker += final_decision_response
         conversation_with_final_decision_maker.append({"role": "user", "content": f"The category you chose is not among the categories chosen by the annotators. Your task is to choose one of the categories chosen by the annotators or 'none' if none of the annotators choices are suitable."})
         final_decision, final_decision_response = evaluate_response(
-            get_response(conversation_with_final_decision_maker, 
+            *get_response(conversation_with_final_decision_maker, 
                          tools=tools,
                          tool_choice={"type": "function", "function": {"name": tools[2]["function"]["name"]}}
             ),
@@ -633,7 +654,7 @@ def run(sections_by_article, categories):
     logging.info(f"Final Total number of requests: {TOTAL_NUM_REQUESTS}")
 
 
-def init_run(sections_by_article, skip_user_input=False):
+def init_run(sections_by_article, outfile_path, skip_user_input=False):
     """
     Initializes the article evaluation process.
 
@@ -647,13 +668,13 @@ def init_run(sections_by_article, skip_user_input=False):
     Returns:
     dict: A dictionary containing the sections of the articles to be evaluated.
     """
-    previous_predictions_exist = os.path.exists('experiments/article_annotation/predictions.jsonl')
+    previous_predictions_exist = os.path.exists(outfile_path)
     if previous_predictions_exist and not skip_user_input:
         i = input("Predictions already exist. Do you want to overwrite them? (y/n): ")
         if i.lower() == "y":
             i = input("Are you sure? (y/n): ")
             if i.lower() == "y":
-                os.remove('experiments/article_annotation/predictions.jsonl')
+                os.remove(outfile_path)
                 logging.info("Will overwrite existing predictions.")
                 previous_predictions_exist = False
             else:
@@ -662,7 +683,7 @@ def init_run(sections_by_article, skip_user_input=False):
             logging.info("Will append to existing predictions.")
     if previous_predictions_exist:
         # get last article id
-        with open('experiments/article_annotation/predictions.jsonl', 'r') as file:
+        with open(outfile_path, 'r') as file:
             lines = file.readlines()
             # get the id from the json string. the string starts with {"<ID>": ...}, get it by regex
             import re
@@ -701,39 +722,40 @@ def create_test_dataset_from_annotated(raw_articles):
             })
             data_annotations[article_id].append(row.label)
     # dump data_annotations to json file
-    with open('experiments/article_annotation/test_data_annotations.json', 'w') as outfile:
+    with open(f'{args.results_dir}/test_run/test_data_annotations.json', 'w') as outfile:
         json.dump({str(k): v for k, v in data_annotations.items()}, outfile)
     return data
+
 
 def main():
     raw_articles = load_raw_articles('data/raw_data.jsonl')
     raw_articles, categories = preprocess_articles(raw_articles)
-    sections_by_article = {article["id"]: split_articles_into_sections(article, section_length=3) for article in raw_articles}
-    logging.info("Total number of articles: %s", len(raw_articles))
-    logging.info("Total number of sections: %s", sum([len(sections) for sections in sections_by_article.values()]))
+    if args.testing:
+        # /test_run
+        now = datetime.now()
+        outfile_path = args.results_dir + f"/test_run/predictions_{now.strftime('%Y-%m-%d_%H-%M-%S')}.jsonl"
+        sections_by_article = create_test_dataset_from_annotated(raw_articles)
+    else:
+        outfile_path = args.results_dir + '/predictions.jsonl'
+        sections_by_article = {article["id"]: split_articles_into_sections(article, section_length=3) for article in raw_articles}
+        # filter already annotated articles 
+        annotaded_articles_ids = [int(k) for k in load_json_data().article_id.unique()]
+        logging.info(f"Number of articles already annotated: {len(annotaded_articles_ids)}")
+        sections_by_article = {k: v for k, v in sections_by_article.items() if k not in annotaded_articles_ids}
+    sections_by_article = init_run(sections_by_article, outfile_path)
+    logging.info(f"Total number of articles/sections to annotate: {len(raw_articles)}/{sum([len(sections) for sections in sections_by_article.values()])}")
     random.shuffle(categories)
     logging.info("Categories: %s", categories)
-    # TODO: only for testing
-    sections_by_article = create_test_dataset_from_annotated(raw_articles)
-    sections_by_article = init_run(sections_by_article)
-    while True:
-        #try:
-            for predictions in run(sections_by_article, categories):
-                logging.info("Writing predictions to file.")
-                with open('experiments/article_annotation/predictions.jsonl', 'a') as outfile:
-                    to_write = {str(k): v for k, v in predictions.items()}
-                    try:
-                        json.dump(to_write, outfile)
-                        outfile.write('\n')
-                    except Exception as e:
-                        logging.error(f"Error writing predictions to file: {e}. ")
-        #except Exception as ex:
-        #    logging.error(f"Error during generator iteration: {ex}. Reinitializing run and retrying.")
-        #    logging.info("Reinitializing run and retrying.")
-        #    sections_by_article = init_run(sections_by_article, skip_user_input=True)
-        #else:
-            # Break out of the loop if the generator completes successfully
-        #    break
+    for predictions in run(sections_by_article, categories):
+        logging.info("Writing predictions to file.")
+        
+        with open(outfile_path, 'a') as outfile:
+            to_write = {str(k): v for k, v in predictions.items()}
+            try:
+                json.dump(to_write, outfile)
+                outfile.write('\n')
+            except Exception as e:
+                logging.error(f"Error writing predictions to file: {e}. ")
 
 
 if __name__ == '__main__':

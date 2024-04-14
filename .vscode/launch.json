@@ -11,6 +11,10 @@
             "program": "${workspaceFolder}/experiments/article_annotation/article_labeling_using_chatgpt_2.0.py",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
+            // add testing argument
+            //"args": [
+            //    "--testing"
+            //]
         }
     ]
 }

@@ -15,3 +15,4 @@ experiments/article_annotation/results/**/*.jsonl
 experiments/article_annotation/**/*.json
 experiments/article_annotation/results/**/*.json
 
+experiments/article_annotation/logs/

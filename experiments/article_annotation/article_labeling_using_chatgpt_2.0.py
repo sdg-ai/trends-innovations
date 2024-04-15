@@ -355,7 +355,8 @@ def get_response(messages, tools=None, tool_choice=None):
     """
     patience = 3
     current_patience = 0
-    while current_patience < patience:
+    e = None
+    while True:
         try:
             response = OpenaiClient.chat.completions.create(
                 model=AZURE_OPENAI_MODEL_NAME,
@@ -374,11 +375,13 @@ def get_response(messages, tools=None, tool_choice=None):
             # check if tool_call.function.arguments is valid json
             json.loads(tool_call.function.arguments)
             return response.usage, assistant_message, tool_call
-        except Exception as e:
-            logging.error(f"Error in get_response: {e}")
-            logging.info(f"Retrying request. Patience: {current_patience + 1}/{patience}")
+        except Exception as ex:
+            if current_patience >= patience:
+                raise ValueError("Exceeded patience limit. Failed to get response.") from ex
+            else:
+                logging.error(f"Error in get_response: {ex}")
+                logging.info(f"Retrying request. Patience: {current_patience + 1}/{patience}")
         current_patience += 1
-    raise ValueError("Exceeded patience limit. Failed to get response.")
 
 
 def evaluate_response(assistant_message, tool_call, conversation, tools, category_group):
@@ -638,8 +641,14 @@ def run(sections_by_article, categories):
         logging.info(f"Starting article ID: {article_id}")
         predictions = {article_id: []}
         for idx, section in enumerate(article_sections):
-            prediction = evaluate_section(section, category_groups)
-            predictions[article_id].append(prediction)
+            try:
+                prediction = evaluate_section(section, category_groups)
+                predictions[article_id].append(prediction)
+            except Exception as e:
+                # check if e has 'code' attribute
+                if hasattr(e.__cause__, 'code') and e.__cause__.code == "content_filter":
+                    logging.warning(f"Content filter triggered. Skipping section {idx+1} in article ID: {article_id}")
+                    continue
             if TOKENS_PER_MINUTE > 250000:
                 logging.warning("Approaching token limit reached. Pausing for 1 minute.")
                 time.sleep(60)

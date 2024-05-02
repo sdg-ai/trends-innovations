@@ -298,7 +298,7 @@ def split_articles_into_sections(article, section_length=3):
     tokens = sent_tokenize(article["text"])
     sections = [tokens[i:i + section_length] for i in range(0, len(tokens), section_length)]
     sections = [" ".join(s) for s in sections]
-    sections_formatted = [{"text": s, "article_id": article["id"], "section_id": idx, "title": article["title"]} for idx, s in enumerate(sections)]
+    sections_formatted = [{"text": s, "article_id": article["id"], "old_article_id":article["old_id"], "section_id": idx, "title": article["title"]} for idx, s in enumerate(sections)]
     return sections_formatted
 
 
@@ -748,7 +748,7 @@ def main():
         outfile_path = args.results_dir + '/predictions.jsonl'
         sections_by_article = {article["id"]: split_articles_into_sections(article, section_length=3) for article in raw_articles}
         # filter already annotated articles 
-        annotaded_articles_ids = [int(k) for k in load_json_data().article_id.unique()]
+        annotaded_articles_ids = [int(k) for k in load_json_data().old_article_id.unique()]
         logging.info(f"Number of articles already annotated: {len(annotaded_articles_ids)}")
         sections_by_article = {k: v for k, v in sections_by_article.items() if k not in annotaded_articles_ids}
     sections_by_article = init_run(sections_by_article, outfile_path)

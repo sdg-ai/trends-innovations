@@ -111,10 +111,15 @@ def encode_labels(df, config):
 
 def split_data_into_train_val_test(df, config):
     # Convert percentage splits to absolute counts
+    # get row count for each unique label
+    label_counts = df.label.value_counts()
+    logging.info(f"Number of classes: {len(label_counts)}")
+    labels_with_less_than_4_samples = label_counts[label_counts <= 3]
+    # drop rows with labels that have less than 4 samples
+    df = df[~df["label"].isin(labels_with_less_than_4_samples.index)]
     train_size = int(config["dataset_splits"][0] * len(df))
     val_size = int((config["dataset_splits"][1] - config["dataset_splits"][0]) * len(df))
     test_size = len(df) - train_size - val_size
-    # Perform stratified splits
     train_df, temp_df = train_test_split(df, test_size=val_size + test_size, stratify=df['label'], random_state=42)
     val_df, test_df = train_test_split(temp_df, test_size=test_size, stratify=temp_df['label'], random_state=42)
     return train_df, val_df, test_df
@@ -122,7 +127,7 @@ def split_data_into_train_val_test(df, config):
 
 def get_data_loaders_with_chatgpt_annotated_data(config, debug=False):
     # load parquet file
-    df = pd.read_parquet(os.path.join(config["data_dir"], "chat_gpt_annotated_data.parquet"))
+    df = pd.read_parquet(os.path.join(config["data_dir"], "openai_annotated_data.parquet"))
     if debug:
         # sample from every label to get a small dataset
         dfs = []

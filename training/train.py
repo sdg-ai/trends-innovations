@@ -35,7 +35,7 @@ args = parser.parse_args()
 
 WANDB_CONFIG = {
     "entity": "j-getzner",
-    "project": "Trends & Innovations Classifier",
+    "project": "tandic",
     "disabled": False,
     "job_type_modifier": ""
 }
@@ -43,7 +43,7 @@ WANDB_CONFIG = {
 DEFAULT_CONFIG = {
     # data details
     "data_dir": "./datasets",
-    "num_labels": 17 if (args.dataset == "old_data" or args.dataset == "generated_data") else 57,
+    "num_labels": 17 if (args.dataset == "old_data" or args.dataset == "generated_data") else 75,
     "dataset_splits": [0.7, 0.9],
 
     # model details
@@ -270,7 +270,7 @@ if __name__ == "__main__":
             data_loading_func = get_data_loaders
         elif args.dataset == "generated_data":
             data_loading_func = get_data_loaders_with_generated_data
-        elif args.dataset == "chatgpt_annotated_data":
+        elif args.dataset == "openai_annotated_data":
             data_loading_func = get_data_loaders_with_chatgpt_annotated_data
         else:
             raise ValueError(f"Unknown dataset: {args.dataset}")

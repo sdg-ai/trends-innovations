@@ -15,6 +15,15 @@
             //"args": [
             //    "--testing"
             //]
+        },
+        {
+            "name": "Train",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/training/train.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/training",
+            "args": ["--dataset", "openai_annotated_data"]
         }
     ]
 }

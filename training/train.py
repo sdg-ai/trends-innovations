@@ -63,7 +63,7 @@ DEFAULT_CONFIG = {
     # other details
     "device": 'cuda' if torch.cuda.is_available() else 'cpu',
     "initial_seed": 1,
-    "num_seeds": 10,
+    "num_seeds": 5,
     "save_model_dir": "./checkpoints",
 }
 print("device:", DEFAULT_CONFIG["device"])
@@ -248,7 +248,7 @@ def init_configurations():
     with open("./train_run_configs.yml", "r") as f:
         custom_configs = yaml.safe_load(f)
     initialized_configs = []
-    for config_name, config in custom_configs.items():
+    for _, config in custom_configs.items():
         run_config = DEFAULT_CONFIG.copy()
         run_config.update(config)
         run_config["save_model_dir"] = f"{run_config['save_model_dir']}/{args.d}-{args.model_name}"

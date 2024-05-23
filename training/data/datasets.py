@@ -117,6 +117,7 @@ def split_data_into_train_val_test(df, config):
     labels_with_less_than_4_samples = label_counts[label_counts <= 3]
     # drop rows with labels that have less than 4 samples
     df = df[~df["label"].isin(labels_with_less_than_4_samples.index)]
+    config["num_labels"] = len(df.label.unique())
     train_size = int(config["dataset_splits"][0] * len(df))
     val_size = int((config["dataset_splits"][1] - config["dataset_splits"][0]) * len(df))
     test_size = len(df) - train_size - val_size

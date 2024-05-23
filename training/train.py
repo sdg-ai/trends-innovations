@@ -43,7 +43,6 @@ WANDB_CONFIG = {
 DEFAULT_CONFIG = {
     # data details
     "data_dir": "./datasets",
-    "num_labels": 17 if (args.dataset == "old_data" or args.dataset == "generated_data") else 75,
     "dataset_splits": [0.7, 0.9],
 
     # model details
@@ -131,9 +130,7 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict,
             avg_train_loss_meter.add({"train_loss": loss})
             lr_scheduler.step()
             i_step += 1
-
             # log 10 times per epoch
-
             if i_step % log_every_i_steps == 0:
                 train_results = avg_train_loss_meter.compute()
                 log_training_progress_to_console(
@@ -231,7 +228,6 @@ def test(model, test_loader: DataLoader, config: Dict, le) -> pd.DataFrame:
             metrics.update(preds, batch["labels"])
             for idx, pred in enumerate(preds.tolist()):
                 predictions.append({"y_hat_enc": pred, "y_enc": batch["labels"].flatten().tolist()[idx], })
-
     predictions = pd.DataFrame(predictions)
     metrics = metrics.compute()
     wandb.log({"test/conf_mat": wandb.plot.confusion_matrix(
@@ -285,7 +281,7 @@ if __name__ == "__main__":
             # init model
             current_model = TRANSFORMERS_LIB[current_config["model_name"]].from_pretrained(
                 current_config["model_name"],
-                num_labels=current_config["num_labels"]
+                num_labels=len(le.classes_)
             ).to(current_config["device"])
             current_model.resize_token_embeddings(len(tokenizer))
             wandb.init(

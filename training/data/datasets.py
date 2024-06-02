@@ -1,11 +1,9 @@
 import os
 import ast
 import json
-import wandb
 import torch
 import logging
 import itertools
-import numpy as np
 import pandas as pd
 from pickle import dump
 from sklearn import preprocessing
@@ -41,6 +39,7 @@ class TAndIDataSet(Dataset):
     def _encode(self, tokenizer, label_encoder):
         self.encodings = tokenizer(self.data.text.tolist(), truncation=True, padding=True, max_length=512)
         self.encoded_labels = label_encoder.fit_transform(self.data.label.tolist())
+
 
 def load_json_data(data_dir: str) -> pd.DataFrame:
     """
@@ -104,10 +103,11 @@ def load_generated_data(data_dir: str, max_words_per_chunk:int = 65) -> pd.DataF
 def encode_labels(df, config):
     le = preprocessing.LabelEncoder()
     le.fit(df.label)
-    if not os.path.exists(config["save_model_dir"]):
-        os.makedirs(config["save_model_dir"])
-    dump(le, open(os.path.join(config["save_model_dir"], "label_encoder.pkl"), 'wb'))
+    if not os.path.exists(config["checkpoints_dir"]):
+        os.makedirs(config["checkpoints_dir"])
+    dump(le, open(os.path.join(config["checkpoints_dir"], "label_encoder.pkl"), 'wb'))
     return df, le
+
 
 def split_data_into_train_val_test(df, config):
     # Convert percentage splits to absolute counts
@@ -127,7 +127,6 @@ def split_data_into_train_val_test(df, config):
 
 
 def get_data_loaders_with_chatgpt_annotated_data(config, debug=False):
-    # load parquet file
     df = pd.read_parquet(os.path.join(config["data_dir"], "openai_annotated_data.parquet"))
     if debug:
         # sample from every label to get a small dataset
@@ -153,7 +152,7 @@ def get_data_loaders_with_chatgpt_annotated_data(config, debug=False):
                           generator=Generator().manual_seed(2147483647)),
         "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["batch_sizes"]["test"], shuffle=True,
                            generator=Generator().manual_seed(2147483647))}
-    tokenizer.save_pretrained(config['save_model_dir'])
+    tokenizer.save_pretrained(config['checkpoints_dir'])
     return datasets, le, tokenizer
 
 
@@ -178,9 +177,9 @@ def get_data_loaders(config, debug=False):
     le.fit(df.label)
     # save label encoder
     # create directory if it does not exist
-    if not os.path.exists(config["save_model_dir"]):
-        os.makedirs(config["save_model_dir"])
-    dump(le, open(os.path.join(config["save_model_dir"], "label_encoder.pkl"), 'wb'))
+    if not os.path.exists(config["checkpoints_dir"]):
+        os.makedirs(config["checkpoints_dir"])
+    dump(le, open(os.path.join(config["checkpoints_dir"], "label_encoder.pkl"), 'wb'))
     # split into train, test, val
     train_df, val_df, test_df = split_data_into_train_val_test(df, config)
     train_df.reset_index(inplace=True, drop=True)
@@ -197,7 +196,7 @@ def get_data_loaders(config, debug=False):
                           generator=Generator().manual_seed(2147483647)),
         "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["batch_sizes"]["test"], shuffle=True,
                            generator=Generator().manual_seed(2147483647))}
-    tokenizer.save_pretrained(config['save_model_dir'])
+    tokenizer.save_pretrained(config['checkpoints_dir'])
     return datasets, le, tokenizer
 
 
@@ -246,5 +245,5 @@ def get_data_loaders_with_generated_data(config, debug=False):
                           generator=Generator().manual_seed(2147483647)),
         "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["batch_sizes"]["test"], shuffle=True,
                            generator=Generator().manual_seed(2147483647))}
-    tokenizer.save_pretrained(config['save_model_dir'])
+    tokenizer.save_pretrained(config['checkpoints_dir'])
     return datasets, le, tokenizer

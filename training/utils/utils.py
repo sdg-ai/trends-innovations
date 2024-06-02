@@ -1,7 +1,15 @@
-import numpy as np
-import random
-import torch
 import os
+import yaml
+import wandb
+import torch
+import random
+import numpy as np
+from data.datasets import get_data_loaders, get_data_loaders_with_generated_data, get_data_loaders_with_chatgpt_annotated_data
+
+WANDB_KEY = os.environ.get("WANDB_KEY") or ""
+WANDB_ENTITY = os.environ.get("WANDB_ENTITY") or ""
+WANDB_PROJECT = os.environ.get("WANDB_PROJECT") or ""
+wandb.login(key=WANDB_KEY)
 
 def seed_everything(seed):
     """
@@ -42,3 +50,57 @@ class EarlyStopper:
             if self.counter >= self.patience:
                 return True
         return False
+
+
+def get_data_loader(dataset:str):
+    if dataset == "old_data":
+        return get_data_loaders
+    elif dataset == "generated_data":
+        return get_data_loaders_with_generated_data
+    elif dataset == "openai_annotated_data":
+        return get_data_loaders_with_chatgpt_annotated_data
+    else:
+        raise ValueError(f"Unknown dataset: {dataset}")
+
+
+def init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG):
+    with open("training/train_configs.yml", "r") as f:
+        custom_configs = yaml.safe_load(f)
+    initialized_configs = []
+    for config_name, config in custom_configs.items():
+        run_config = DEFAULT_CONFIG.copy()
+        run_config.update(config)
+        # directory where checkpoints are saved is modified to include the date and model name
+        run_config["checkpoints_dir"] = f"{run_config['checkpoints_dir']}/{args.d}-{args.model_name}"
+        # set seed
+        run_config["seed"] = run_config["initial_seed"]
+        # set model name
+        run_config["model_name"] = args.model_name
+        # create seperate config dict for wandb
+        run_config.pop("wandb")
+        wandb_config = WANDB_CONFIG.copy()
+        wandb_config.update(config["wandb"])
+        initialized_configs.append((config_name, run_config, wandb_config))
+        # add args to config
+        run_config.update(vars(args))
+    return initialized_configs
+
+
+def init_wandb(config_name, config, wandb_config, data_loaders):
+    wandb.init(
+        entity=WANDB_ENTITY,
+        project=WANDB_PROJECT,
+        config=config,
+        mode="disabled" if wandb_config["disabled"] else "online",
+        group=f"{config['d']}-{config_name}-{config['model_name']}{('-' + wandb_config['group_name_modifier']) if wandb_config['group_name_modifier'] != '' else ''}",
+        job_type=f"train-{wandb_config['job_type_modifier']}" if wandb_config["job_type_modifier"] != '' else "train",
+        name="seed_"+str(config["seed"]),
+        tags=["debug" if config["debug"] else "valid", config["model_name"]],
+    )
+    wandb.run.summary["train_size"] = len(data_loaders["train"].dataset)
+    if config["dataset"] == "generated_data":
+        df = data_loaders["train"].dataset.data
+        wandb.run.summary["generated_data_size"] = len(df.loc[df.generated == True])
+        wandb.run.summary["generated_article_labels"] = df.loc[df.generated == True].label.unique()
+        wandb.run.summary["val_size"] = len(data_loaders["val"].dataset)
+        wandb.run.summary["test_size"] = len(data_loaders["test"].dataset)

@@ -1,0 +1,5 @@
+---
+baseline:
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""

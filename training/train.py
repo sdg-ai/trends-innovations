@@ -1,28 +1,26 @@
-import os
-import yaml
+from dotenv import load_dotenv
+load_dotenv()
 import wandb
 import torch
 import logging
-# set logging level to info
 logging.basicConfig(level=logging.INFO)
 import argparse
 import numpy as np
 import pandas as pd
-from tqdm import tqdm
 from time import time
 from typing import Tuple, Dict
-from dotenv import load_dotenv
 from torch.utils.data import DataLoader
 from datetime import datetime, timedelta
-from data.datasets import get_data_loaders, get_data_loaders_with_generated_data, get_data_loaders_with_chatgpt_annotated_data
-from utils.utils import EarlyStopper, seed_everything
+from utils.utils import (
+    EarlyStopper, 
+    seed_everything,
+    get_data_loader,
+    init_configurations,
+    init_wandb
+)
 from utils.metrics import TransformerMetricCollection, AvgDictMeter
 from transformers import RobertaForSequenceClassification, get_scheduler, AlbertForSequenceClassification, DistilBertForSequenceClassification
 
-load_dotenv()
-
-WANDB_KEY = os.environ.get("WANDB_KEY") or ""
-wandb.login(key=WANDB_KEY)
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--model_name', type=str, default='distilbert-base-uncased')
@@ -34,22 +32,20 @@ args = parser.parse_args()
 
 
 WANDB_CONFIG = {
-    "entity": "j-getzner",
-    "project": "tandic",
     "disabled": False,
-    "job_type_modifier": ""
+    "job_type_modifier": "",
+    "group_name_modifier": "",
 }
-
 DEFAULT_CONFIG = {
     # data details
-    "data_dir": "./datasets",
+    "data_dir": "datasets", 
     "dataset_splits": [0.7, 0.9],
 
     # model details
     "model_name": "distilbert-base-uncased",
     "lr": 5e-5,
     "epochs": 30 if not args.debug else 5,
-    "patience": 5,
+    "patience": 10,
     "batch_sizes": {
         "train": 16,
         "val": 64,
@@ -63,10 +59,13 @@ DEFAULT_CONFIG = {
     "device": 'cuda' if torch.cuda.is_available() else 'cpu',
     "initial_seed": 1,
     "num_seeds": 5,
-    "save_model_dir": "./checkpoints",
+    "checkpoints_dir": "training/results/checkpoints",
 }
-print("device:", DEFAULT_CONFIG["device"])
-TRANSFORMERS_LIB = {
+logging.info(f"Using device: {DEFAULT_CONFIG['device']}")
+logging.warning("CUDA not available" if DEFAULT_CONFIG["device"] == "cpu" else "CUDA available")
+
+
+MODELS_LIB = {
     "albert-base-v2": AlbertForSequenceClassification,
     "distilbert-base-uncased": DistilBertForSequenceClassification,
     "roberta-base": RobertaForSequenceClassification
@@ -97,6 +96,22 @@ def log_training_progress_to_console(t_start, steps: int, curr_step: int, train_
     log_msg += f" - remaining time: {days}d-{hours}h-{minutes}m-{seconds}s"
     logging.info(log_msg)
 
+def train_step(model, batch: dict, optimizer) -> Tuple[float, torch.Tensor]:
+    """
+    Performs a single training step with backpropagation
+    :param model: the model to use
+    :param optimizer: the optimizer to use
+    :param batch: the batch to train on
+    :return: the loss for the current batch and the predictions
+    """
+    # forward pass
+    output = model(**batch)
+    predictions = torch.argmax(output.logits, dim=-1)
+    loss = output.loss
+    loss.backward()
+    optimizer.step()
+    optimizer.zero_grad()
+    return loss.item(), predictions
 
 def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict, log_dir: str):
     """
@@ -154,6 +169,17 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict,
             break
     return model
 
+def val_step(model, batch: dict) -> Tuple[float, torch.Tensor]:
+    """
+    Performs a single validation step
+    :param model: the model to use
+    :param batch: the batch to train on
+    :return: the loss for the current batch and the predictions
+    """
+    with torch.no_grad():
+        output = model(**batch)
+        predictions = torch.argmax(output.logits, dim=-1)
+    return output.loss.item(), predictions
 
 def validation(model, val_loader, config: Dict) -> float:
     model.eval()
@@ -177,38 +203,6 @@ def validation(model, val_loader, config: Dict) -> float:
     logging.info("Validation Results:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_results.items()]))
     logging.info("Validation Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_metrics.compute().items()]))
     return val_results["val_loss"]
-
-
-def train_step(model, batch: dict, optimizer) -> Tuple[float, torch.Tensor]:
-    """
-    Performs a single training step with backpropagation
-    :param model: the model to use
-    :param optimizer: the optimizer to use
-    :param batch: the batch to train on
-    :return: the loss for the current batch and the predictions
-    """
-    # forward pass
-    output = model(**batch)
-    predictions = torch.argmax(output.logits, dim=-1)
-    loss = output.loss
-    loss.backward()
-    optimizer.step()
-    optimizer.zero_grad()
-    return loss.item(), predictions
-
-
-def val_step(model, batch: dict) -> Tuple[float, torch.Tensor]:
-    """
-    Performs a single validation step
-    :param model: the model to use
-    :param batch: the batch to train on
-    :return: the loss for the current batch and the predictions
-    """
-    with torch.no_grad():
-        output = model(**batch)
-        predictions = torch.argmax(output.logits, dim=-1)
-    return output.loss.item(), predictions
-
 
 def test(model, test_loader: DataLoader, config: Dict, le) -> pd.DataFrame:
     """
@@ -240,69 +234,37 @@ def test(model, test_loader: DataLoader, config: Dict, le) -> pd.DataFrame:
     return predictions
 
 
-def init_configurations():
-    with open("./train_run_configs.yml", "r") as f:
-        custom_configs = yaml.safe_load(f)
-    initialized_configs = []
-    for _, config in custom_configs.items():
-        run_config = DEFAULT_CONFIG.copy()
-        run_config.update(config)
-        run_config["save_model_dir"] = f"{run_config['save_model_dir']}/{args.d}-{args.model_name}"
-        run_config["seed"] = run_config["initial_seed"]
-        run_config["model_name"] = args.model_name
-        wandb_config = WANDB_CONFIG.copy()
-        wandb_config.update(config["wandb"])
-        initialized_configs.append((run_config, wandb_config))
-    return initialized_configs
+def run():
+    configs = init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG)
+    for config_name, config, wandb_config in configs:
+        # load data
+        logging.info(f"Running config: {config}")
+        logging.info(f"Loading data.")
+        data_loading_func = get_data_loader(args.dataset)
+        data_loaders, label_encoder, tokenizer = data_loading_func(config, debug=args.debug)
+        # run seeds
+        for seed in range(config["num_seeds"]):
+            logging.info(f"-------- RUNNING SEED {seed} --------")
+            config["seed"] = config["initial_seed"] + seed
+            # set seed
+            seed_everything(config["seed"])
+            # append seed to checkpoint save dir
+            curr_log_dir = config["checkpoints_dir"] + f"/seed_{config['seed']}"
+            # init model
+            current_model = MODELS_LIB[config["model_name"]].from_pretrained(
+                config["model_name"],
+                num_labels=len(label_encoder.classes_)
+            ).to(config["device"])
+            # resize token embeddings
+            current_model.resize_token_embeddings(len(tokenizer))
+            # init wandb
+            init_wandb(config_name, config, wandb_config, data_loaders)
+            logging.info("----- TRAINING -----")
+            final_model = train(current_model, data_loaders["train"], data_loaders["val"], config, curr_log_dir)
+            logging.info("----- TESTING -----")
+            test(final_model, data_loaders["test"], config, label_encoder)
+            wandb.finish()
 
 
 if __name__ == "__main__":
-    configs = init_configurations()
-    for current_config, current_wandb_config in configs:
-        # load data
-        logging.info(f"Running config: {current_config}")
-        logging.info(f"Loading data.")
-        if args.dataset == "old_data":
-            data_loading_func = get_data_loaders
-        elif args.dataset == "generated_data":
-            data_loading_func = get_data_loaders_with_generated_data
-        elif args.dataset == "openai_annotated_data":
-            data_loading_func = get_data_loaders_with_chatgpt_annotated_data
-        else:
-            raise ValueError(f"Unknown dataset: {args.dataset}")
-        data_loaders, le, tokenizer = data_loading_func(current_config, debug=args.debug)
-        for seed in range(current_config["num_seeds"]):
-            # seed
-            logging.info(f"-------- RUNNING SEED {seed} --------")
-            current_config["seed"] = current_config["initial_seed"] + seed
-            seed_everything(current_config["seed"])
-            # change save model dir
-            curr_log_dir = current_config["save_model_dir"] + f"/seed_{current_config['seed']}"
-            # init model
-            current_model = TRANSFORMERS_LIB[current_config["model_name"]].from_pretrained(
-                current_config["model_name"],
-                num_labels=len(le.classes_)
-            ).to(current_config["device"])
-            current_model.resize_token_embeddings(len(tokenizer))
-            wandb.init(
-                entity=current_wandb_config["entity"],
-                project=current_wandb_config["project"],
-                config=current_config,
-                mode="disabled" if args.disable_wandb else "online",
-                group=f"{args.d}-{current_config['model_name']}-{current_wandb_config['group_name_modifier']}",
-                job_type=f"train-{current_wandb_config['job_type_modifier']}",
-                name="seed_"+str(current_config["seed"]),
-
-            )
-            wandb.run.summary["train_size"] = len(data_loaders["train"].dataset)
-            if args.dataset == "generated_data":
-                df = data_loaders["train"].dataset.data
-                wandb.run.summary["generated_data_size"] = len(df.loc[df.generated == True])
-                wandb.run.summary["generated_article_labels"] = df.loc[df.generated == True].label.unique()
-            wandb.run.summary["val_size"] = len(data_loaders["val"].dataset)
-            wandb.run.summary["test_size"] = len(data_loaders["test"].dataset)
-            logging.info("----- TRAINING -----")
-            final_model = train(current_model, data_loaders["train"], data_loaders["val"], current_config, curr_log_dir)
-            logging.info("----- TESTING -----")
-            test(final_model, data_loaders["test"], current_config, le)
-            wandb.finish()
+    run()

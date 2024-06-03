@@ -1,15 +1,22 @@
 import os
 import yaml
 import wandb
+import logging
 import torch
 import random
 import numpy as np
-from data.datasets import get_data_loaders, get_data_loaders_with_generated_data, get_data_loaders_with_chatgpt_annotated_data
 
 WANDB_KEY = os.environ.get("WANDB_KEY") or ""
 WANDB_ENTITY = os.environ.get("WANDB_ENTITY") or ""
 WANDB_PROJECT = os.environ.get("WANDB_PROJECT") or ""
 wandb.login(key=WANDB_KEY)
+
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)  # Set logger's level
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)
+logger.addHandler(console_handler)
 
 def seed_everything(seed):
     """
@@ -52,17 +59,6 @@ class EarlyStopper:
         return False
 
 
-def get_data_loader(dataset:str):
-    if dataset == "old_data":
-        return get_data_loaders
-    elif dataset == "generated_data":
-        return get_data_loaders_with_generated_data
-    elif dataset == "openai_annotated_data":
-        return get_data_loaders_with_chatgpt_annotated_data
-    else:
-        raise ValueError(f"Unknown dataset: {dataset}")
-
-
 def init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG):
     with open("training/train_configs.yml", "r") as f:
         custom_configs = yaml.safe_load(f)
@@ -71,11 +67,11 @@ def init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG):
         run_config = DEFAULT_CONFIG.copy()
         run_config.update(config)
         # directory where checkpoints are saved is modified to include the date and model name
-        run_config["checkpoints_dir"] = f"{run_config['checkpoints_dir']}/{args.d}-{args.model_name}"
+        run_config["checkpoints_dir"] = f"{run_config['checkpoints_dir']}/{args.d}-{config['model_name']}"
         # set seed
         run_config["seed"] = run_config["initial_seed"]
         # set model name
-        run_config["model_name"] = args.model_name
+        run_config["model_name"] = config["model_name"]
         # create seperate config dict for wandb
         run_config.pop("wandb")
         wandb_config = WANDB_CONFIG.copy()
@@ -92,7 +88,7 @@ def init_wandb(config_name, config, wandb_config, data_loaders):
         project=WANDB_PROJECT,
         config=config,
         mode="disabled" if wandb_config["disabled"] else "online",
-        group=f"{config['d']}-{config_name}-{config['model_name']}{('-' + wandb_config['group_name_modifier']) if wandb_config['group_name_modifier'] != '' else ''}",
+        group=f"{config['d']}-{config_name}{('-' + wandb_config['group_name_modifier']) if wandb_config['group_name_modifier'] != '' else ''}",
         job_type=f"train-{wandb_config['job_type_modifier']}" if wandb_config["job_type_modifier"] != '' else "train",
         name="seed_"+str(config["seed"]),
         tags=["debug" if config["debug"] else "valid", config["model_name"]],
@@ -104,3 +100,19 @@ def init_wandb(config_name, config, wandb_config, data_loaders):
         wandb.run.summary["generated_article_labels"] = df.loc[df.generated == True].label.unique()
         wandb.run.summary["val_size"] = len(data_loaders["val"].dataset)
         wandb.run.summary["test_size"] = len(data_loaders["test"].dataset)
+
+
+def add_file_logger(log_path):
+    """
+    Adds a file logger to the specified path, removing all previous file loggers.
+    :param log_path: the path to the log file
+    """
+    # Remove all previous file loggers
+    for handler in logger.handlers:
+        if isinstance(handler, logging.FileHandler):
+            logger.removeHandler(handler)
+            
+    # Add file logger
+    file_handler = logging.FileHandler(log_path)
+    file_handler.setLevel(logging.INFO)
+    logger.addHandler(file_handler)

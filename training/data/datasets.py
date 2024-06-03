@@ -2,16 +2,15 @@ import os
 import ast
 import json
 import torch
-import logging
 import itertools
 import pandas as pd
 from pickle import dump
 from sklearn import preprocessing
 from torch import Generator
-from transformers import AutoTokenizer
+from transformers import AutoTokenizer, RobertaTokenizer
 from torch.utils.data import Dataset, DataLoader
 from sklearn.model_selection import train_test_split
-
+from utils.utils import logger
 
 class TAndIDataSet(Dataset):
     encodings: torch.Tensor
@@ -71,7 +70,7 @@ def load_json_data(data_dir: str) -> pd.DataFrame:
                 "sentence_id": result["meta"]["sent_id"]
             }
             rows.append(new_row)
-        logging.info(f"Loaded: {f}")
+        logger.info(f"Loaded: {f}")
     df = pd.DataFrame(rows)
     # only keep rows with unique article_id and sentence_id
     df.drop_duplicates(subset=["article_id", "sentence_id"], inplace=True)
@@ -113,7 +112,7 @@ def split_data_into_train_val_test(df, config):
     # Convert percentage splits to absolute counts
     # get row count for each unique label
     label_counts = df.label.value_counts()
-    logging.info(f"Number of classes: {len(label_counts)}")
+    logger.info(f"Number of classes: {len(label_counts)}")
     labels_with_less_than_4_samples = label_counts[label_counts <= 3]
     # drop rows with labels that have less than 4 samples
     df = df[~df["label"].isin(labels_with_less_than_4_samples.index)]
@@ -143,9 +142,9 @@ def get_data_loaders_with_chatgpt_annotated_data(config, debug=False):
     val_df.reset_index(inplace=True, drop=True)
     test_df.reset_index(inplace=True, drop=True)
     tokenizer = init_tokenizer(train_df, config)
-    logging.info(f"Size of train_df: {len(train_df)}")
-    logging.info(f"Size of val_df: {len(val_df)}")
-    logging.info(f"Size of test_df: {len(test_df)}")
+    logger.info(f"Size of train_df: {len(train_df)}")
+    logger.info(f"Size of val_df: {len(val_df)}")
+    logger.info(f"Size of test_df: {len(test_df)}")
     datasets = {"train": DataLoader(TAndIDataSet(train_df, tokenizer, le), batch_size=config["batch_sizes"]["train"],
                                     shuffle=True, generator=Generator().manual_seed(2147483647)),
         "val": DataLoader(TAndIDataSet(val_df, tokenizer, le), batch_size=config["batch_sizes"]["val"], shuffle=True,
@@ -186,9 +185,9 @@ def get_data_loaders(config, debug=False):
     val_df.reset_index(inplace=True, drop=True)
     test_df.reset_index(inplace=True, drop=True)
     tokenizer = init_tokenizer(train_df, config)
-    logging.info(f"Size of train_df: {len(train_df)}")
-    logging.info(f"Size of val_df: {len(val_df)}")
-    logging.info(f"Size of test_df: {len(test_df)}")
+    logger.info(f"Size of train_df: {len(train_df)}")
+    logger.info(f"Size of val_df: {len(val_df)}")
+    logger.info(f"Size of test_df: {len(test_df)}")
     datasets = {
         "train": DataLoader(TAndIDataSet(train_df, tokenizer, le), batch_size=config["batch_sizes"]["train"], shuffle=True,
                             generator=Generator().manual_seed(2147483647)),
@@ -201,20 +200,23 @@ def get_data_loaders(config, debug=False):
 
 
 def init_tokenizer(train_df, config):
-    tokenizer = AutoTokenizer.from_pretrained(config["model_name"], use_fast=False, max_len=512)
-    new_spans = set(itertools.chain.from_iterable(train_df.spans.tolist()))
-    new_tokens = list(new_spans - set(tokenizer.vocab.keys()))
-    tokenizer.add_tokens(new_tokens)
+    if config["model_name"] == "roberta-base":
+        tokenizer = RobertaTokenizer.from_pretrained("roberta-base", use_fast=False, max_len=512)
+    else:
+        tokenizer = AutoTokenizer.from_pretrained(config["model_name"], use_fast=False, max_len=512)
+        new_spans = set(itertools.chain.from_iterable(train_df.spans.tolist()))
+        new_tokens = list(new_spans - set(tokenizer.vocab.keys()))
+        tokenizer.add_tokens(new_tokens)
     return tokenizer
 
 
 def get_data_loaders_with_generated_data(config, debug=False):
-    logging.info("Loading generated data.")
+    logger.info("Loading generated data.")
     df_real = load_json_data(config["data_dir"])
     df_real["generated"] = False
     df_generated = load_generated_data(config["data_dir"])
     df_generated["generated"] = True
-    logging.info("The following categories contain generated data:", df_generated.label.unique())
+    logger.info("The following categories contain generated data:", df_generated.label.unique())
     df_real, le = encode_labels(df_real, config)
     # all the generated data goes into the training data set
     # and all the articles that data was generated too as well
@@ -231,9 +233,9 @@ def get_data_loaders_with_generated_data(config, debug=False):
         for label in train_df.label.unique():
             dfs.append(train_df[train_df["label"] == label].sample(10))
         train_df = pd.concat(dfs)
-    logging.info(f"Size of train_df:{len(train_df)} with % generated data: {round(len(train_df[train_df['generated'] == True]) / len(train_df)*100, 2)}")
-    logging.info(f"Size of val_df:{len(val_df)}", )
-    logging.info(f"Size of test_df:{len(test_df)}", )
+    logger.info(f"Size of train_df:{len(train_df)} with % generated data: {round(len(train_df[train_df['generated'] == True]) / len(train_df)*100, 2)}")
+    logger.info(f"Size of val_df:{len(val_df)}", )
+    logger.info(f"Size of test_df:{len(test_df)}", )
     train_df.reset_index(inplace=True, drop=True)
     val_df.reset_index(inplace=True, drop=True)
     test_df.reset_index(inplace=True, drop=True)
@@ -247,3 +249,14 @@ def get_data_loaders_with_generated_data(config, debug=False):
                            generator=Generator().manual_seed(2147483647))}
     tokenizer.save_pretrained(config['checkpoints_dir'])
     return datasets, le, tokenizer
+
+
+def get_data_loader(dataset:str):
+    if dataset == "old_data":
+        return get_data_loaders
+    elif dataset == "generated_data":
+        return get_data_loaders_with_generated_data
+    elif dataset == "openai_annotated_data":
+        return get_data_loaders_with_chatgpt_annotated_data
+    else:
+        raise ValueError(f"Unknown dataset: {dataset}")

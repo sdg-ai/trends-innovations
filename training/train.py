@@ -1,9 +1,8 @@
+import os
 from dotenv import load_dotenv
 load_dotenv()
 import wandb
 import torch
-import logging
-logging.basicConfig(level=logging.INFO)
 import argparse
 import numpy as np
 import pandas as pd
@@ -14,16 +13,15 @@ from datetime import datetime, timedelta
 from utils.utils import (
     EarlyStopper, 
     seed_everything,
-    get_data_loader,
     init_configurations,
     init_wandb
 )
+from data.datasets import get_data_loader
 from utils.metrics import TransformerMetricCollection, AvgDictMeter
 from transformers import RobertaForSequenceClassification, get_scheduler, AlbertForSequenceClassification, DistilBertForSequenceClassification
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--model_name', type=str, default='distilbert-base-uncased')
 parser.add_argument('--debug', action='store_true', default=False)
 parser.add_argument('--disable_wandb', action='store_true', default=False)
 parser.add_argument('--dataset', type=str, default='old_data')
@@ -46,6 +44,7 @@ DEFAULT_CONFIG = {
     "lr": 5e-5,
     "epochs": 30 if not args.debug else 5,
     "patience": 10,
+    "num_warmup_steps": 500,
     "batch_sizes": {
         "train": 16,
         "val": 64,
@@ -61,8 +60,10 @@ DEFAULT_CONFIG = {
     "num_seeds": 5,
     "checkpoints_dir": "training/results/checkpoints",
 }
-logging.info(f"Using device: {DEFAULT_CONFIG['device']}")
-logging.warning("CUDA not available" if DEFAULT_CONFIG["device"] == "cpu" else "CUDA available")
+
+from utils.utils import logger as logger, add_file_logger
+logger.info(f"Using device: {DEFAULT_CONFIG['device']}")
+logger.warning("CUDA not available" if DEFAULT_CONFIG["device"] == "cpu" else "CUDA available")
 
 
 MODELS_LIB = {
@@ -94,8 +95,9 @@ def log_training_progress_to_console(t_start, steps: int, curr_step: int, train_
     minutes = (time_duration.seconds // 60) % 60
     seconds = time_duration.seconds % 60
     log_msg += f" - remaining time: {days}d-{hours}h-{minutes}m-{seconds}s"
-    logging.info(log_msg)
+    logger.info(log_msg)
 
+    
 def train_step(model, batch: dict, optimizer) -> Tuple[float, torch.Tensor]:
     """
     Performs a single training step with backpropagation
@@ -125,7 +127,7 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict,
     # define optimizer
     optimizer = torch.optim.AdamW(model.parameters(), lr=config["lr"])
     # init lr scheduler
-    lr_scheduler = get_scheduler(name="linear", optimizer=optimizer, num_warmup_steps=0,
+    lr_scheduler = get_scheduler(name="linear", optimizer=optimizer, num_warmup_steps=config["num_warmup_steps"],
                                  num_training_steps=config["epochs"] * len(train_loader))
     early_stopper = EarlyStopper(patience=config["patience"])
     avg_train_loss_meter = AvgDictMeter()
@@ -135,7 +137,7 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict,
     t_start = time()
     log_every_i_steps = int(total_steps/config["epochs"]/10)
     for epoch in range(config["epochs"]):
-        logging.info(f"\nRunning Epoch {epoch + 1}/{config['epochs']}...")
+        logger.info(f"\nRunning Epoch {epoch + 1}/{config['epochs']}...")
         # training loop
         model.train()
         for batch in train_loader:
@@ -158,14 +160,13 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict,
                 avg_train_loss_meter.reset()
 
         val_loss = validation(model, val_loader, config)
-
         # save best model
         if val_loss < best_val_loss:
             model.save_pretrained(log_dir)
             best_val_loss = val_loss
-            logging.info(f"Saved model to {log_dir}")
+            logger.info(f"Saved model to {log_dir}")
         if early_stopper.early_stop(val_loss):
-            logging.info("Stopping early")
+            logger.info("Stopping early")
             break
     return model
 
@@ -200,8 +201,8 @@ def validation(model, val_loader, config: Dict) -> float:
     # log metrics
     wandb.log({f'val/{k}': v for k, v in val_metrics.compute().items()})
     wandb.log({f'val/{k}': v for k, v in val_results.items()})
-    logging.info("Validation Results:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_results.items()]))
-    logging.info("Validation Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_metrics.compute().items()]))
+    logger.info("Validation Results:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_results.items()]))
+    logger.info("Validation Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in val_metrics.compute().items()]))
     return val_results["val_loss"]
 
 def test(model, test_loader: DataLoader, config: Dict, le) -> pd.DataFrame:
@@ -230,26 +231,28 @@ def test(model, test_loader: DataLoader, config: Dict, le) -> pd.DataFrame:
         class_names=le.inverse_transform(range(config["num_labels"]))
     )})
     wandb.log({f'test/{k}': v for k, v in metrics.items()})
-    logging.info("Test Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in metrics.items()]))
+    logger.info("Test Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in metrics.items()]))
     return predictions
-
 
 def run():
     configs = init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG)
     for config_name, config, wandb_config in configs:
         # load data
-        logging.info(f"Running config: {config}")
-        logging.info(f"Loading data.")
+        logger.info(f"Running config: {config}")
+        logger.info(f"Loading data.")
         data_loading_func = get_data_loader(args.dataset)
         data_loaders, label_encoder, tokenizer = data_loading_func(config, debug=args.debug)
         # run seeds
         for seed in range(config["num_seeds"]):
-            logging.info(f"-------- RUNNING SEED {seed} --------")
+            logger.info(f"-------- RUNNING SEED {seed} --------")
             config["seed"] = config["initial_seed"] + seed
             # set seed
             seed_everything(config["seed"])
             # append seed to checkpoint save dir
             curr_log_dir = config["checkpoints_dir"] + f"/seed_{config['seed']}"
+            # create the dir
+            os.makedirs(curr_log_dir, exist_ok=True)
+            add_file_logger(curr_log_dir + "/train.log")
             # init model
             current_model = MODELS_LIB[config["model_name"]].from_pretrained(
                 config["model_name"],
@@ -259,9 +262,9 @@ def run():
             current_model.resize_token_embeddings(len(tokenizer))
             # init wandb
             init_wandb(config_name, config, wandb_config, data_loaders)
-            logging.info("----- TRAINING -----")
+            logger.info("----- TRAINING -----")
             final_model = train(current_model, data_loaders["train"], data_loaders["val"], config, curr_log_dir)
-            logging.info("----- TESTING -----")
+            logger.info("----- TESTING -----")
             test(final_model, data_loaders["test"], config, label_encoder)
             wandb.finish()
 

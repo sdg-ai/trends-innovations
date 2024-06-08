@@ -1,4 +1,11 @@
 ---
+baseline-distilbert-base-uncased:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
 baseline-roberta-base:
   model_name: "roberta-base"
   lr: 0.00005
@@ -13,3 +20,23 @@ baseline-albert-base-v2:
   wandb:
     job_type_modifier: ""
     group_name_modifier: ""
+baseline-distilbert-base-uncased-sweep:
+  model_name: "distilbert-base-uncased"
+  lr: 5
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  sweep_config:
+    method: 'grid'
+    metric: 
+      name: 'val_loss'
+      goal: 'minimize'
+    parameters:
+      lr:
+        values: [0.00001, 0.00005, 0.0001]
+      num_warmup_steps:
+        values: [100, 500, 1000]
+      train_batch_size:
+        values: [8, 16, 32, 64]
+      

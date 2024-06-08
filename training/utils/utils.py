@@ -8,7 +8,7 @@ import numpy as np
 
 WANDB_KEY = os.environ.get("WANDB_KEY") or ""
 WANDB_ENTITY = os.environ.get("WANDB_ENTITY") or ""
-WANDB_PROJECT = os.environ.get("WANDB_PROJECT") or ""
+
 wandb.login(key=WANDB_KEY)
 
 
@@ -62,7 +62,7 @@ class EarlyStopper:
 def init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG):
     with open("training/train_configs.yml", "r") as f:
         custom_configs = yaml.safe_load(f)
-    initialized_configs = []
+    initialized_configs = {}
     for config_name, config in custom_configs.items():
         run_config = DEFAULT_CONFIG.copy()
         run_config.update(config)
@@ -76,16 +76,16 @@ def init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG):
         run_config.pop("wandb")
         wandb_config = WANDB_CONFIG.copy()
         wandb_config.update(config["wandb"])
-        initialized_configs.append((config_name, run_config, wandb_config))
         # add args to config
         run_config.update(vars(args))
+        initialized_configs[config_name] = (run_config, wandb_config)
     return initialized_configs
 
 
 def init_wandb(config_name, config, wandb_config, data_loaders):
     wandb.init(
         entity=WANDB_ENTITY,
-        project=WANDB_PROJECT,
+        project=wandb_config["project"],
         config=config,
         mode="disabled" if wandb_config["disabled"] else "online",
         group=f"{config['d']}-{config_name}{('-' + wandb_config['group_name_modifier']) if wandb_config['group_name_modifier'] != '' else ''}",
@@ -100,6 +100,7 @@ def init_wandb(config_name, config, wandb_config, data_loaders):
         wandb.run.summary["generated_article_labels"] = df.loc[df.generated == True].label.unique()
         wandb.run.summary["val_size"] = len(data_loaders["val"].dataset)
         wandb.run.summary["test_size"] = len(data_loaders["test"].dataset)
+    return wandb.config
 
 
 def add_file_logger(log_path):

@@ -19,13 +19,14 @@ from utils.utils import (
 from data.datasets import get_data_loader
 from utils.metrics import TransformerMetricCollection, AvgDictMeter
 from transformers import RobertaForSequenceClassification, get_scheduler, AlbertForSequenceClassification, DistilBertForSequenceClassification
-
+from sklearn.metrics import classification_report
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--debug', action='store_true', default=False)
 parser.add_argument('--disable_wandb', action='store_true', default=False)
 parser.add_argument('--dataset', type=str, default='old_data')
 parser.add_argument('--d', type=str, default=str(datetime.strftime(datetime.now(), format="%Y-%m-%d %H:%M:%S")))
+parser.add_argument('--config_name', type=str)
 args = parser.parse_args()
 
 
@@ -33,7 +34,10 @@ WANDB_CONFIG = {
     "disabled": False,
     "job_type_modifier": "",
     "group_name_modifier": "",
+    "project": "Trends and Innovations Classifier | AI For Good"
 }
+
+
 DEFAULT_CONFIG = {
     # data details
     "data_dir": "datasets", 
@@ -42,18 +46,12 @@ DEFAULT_CONFIG = {
     # model details
     "model_name": "distilbert-base-uncased",
     "lr": 5e-5,
-    "epochs": 30 if not args.debug else 5,
-    "patience": 10,
+    "epochs": 30 if not args.debug else 1,
+    "patience": 5,
     "num_warmup_steps": 500,
-    "batch_sizes": {
-        "train": 16,
-        "val": 64,
-        "test": 64
-    } if not args.debug else {
-        "train": 3,
-        "val": 3,
-        "test": 3
-    },
+    "train_batch_size": 16 if not args.debug else 3,
+    "val_batch_size": 64 if not args.debug else 3,
+    "test_batch_size": 64 if not args.debug else 3,
     # other details
     "device": 'cuda' if torch.cuda.is_available() else 'cpu',
     "initial_seed": 1,
@@ -225,16 +223,25 @@ def test(model, test_loader: DataLoader, config: Dict, le) -> pd.DataFrame:
                 predictions.append({"y_hat_enc": pred, "y_enc": batch["labels"].flatten().tolist()[idx], })
     predictions = pd.DataFrame(predictions)
     metrics = metrics.compute()
-    wandb.log({"test/conf_mat": wandb.plot.confusion_matrix(
-        preds=predictions["y_hat_enc"].tolist(),
-        y_true=predictions["y_enc"].tolist(),
-        class_names=le.inverse_transform(range(config["num_labels"]))
-    )})
+    # wandb.log({"test/conf_mat": wandb.plot.confusion_matrix(
+    #     preds=predictions["y_hat_enc"].tolist(),
+    #     y_true=predictions["y_enc"].tolist(),
+    #     class_names=le.inverse_transform(range(config["num_labels"]))
+    # )})
+    performance = classification_report(predictions["y_enc"], predictions["y_hat_enc"], target_names=le.classes_, output_dict=True)
+    performance = pd.DataFrame(performance).transpose()
+    performance["label"] = performance.index.astype(str)
+    performance.reset_index(drop=True, inplace=True)
+    data = performance.values.tolist()
+    columns = performance.columns.tolist()
+    wandb_performance_table = wandb.Table(data=data, columns=columns, allow_mixed_types=True)
+    wandb.log({"test/performance": wandb_performance_table})
     wandb.log({f'test/{k}': v for k, v in metrics.items()})
     logger.info("Test Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in metrics.items()]))
     return predictions
 
-def run():
+
+def run_all_configs():
     configs = init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG)
     for config_name, config, wandb_config in configs:
         # load data
@@ -252,6 +259,9 @@ def run():
             curr_log_dir = config["checkpoints_dir"] + f"/seed_{config['seed']}"
             # create the dir
             os.makedirs(curr_log_dir, exist_ok=True)
+            # save config dict as json to dir
+            with open(curr_log_dir + "/run_config.json", "w") as f:
+                f.write(str(config))
             add_file_logger(curr_log_dir + "/train.log")
             # init model
             current_model = MODELS_LIB[config["model_name"]].from_pretrained(
@@ -269,5 +279,43 @@ def run():
             wandb.finish()
 
 
+def run_sweep_config(config_name):
+    def a_run(config=None, wandb_config=None):
+        data_loading_func = get_data_loader(args.dataset)
+        data_loaders, label_encoder, tokenizer = data_loading_func(config, debug=args.debug)
+        config = init_wandb(config_name, config, wandb_config, data_loaders)
+        seed_everything(config["seed"])
+        # append seed to checkpoint save dir
+        curr_log_dir = config["checkpoints_dir"] + f"/seed_{config['seed']}"
+        # create the dir
+        os.makedirs(curr_log_dir, exist_ok=True)
+        # save config dict as json to dir
+        with open(curr_log_dir + "/run_config.json", "w") as f:
+            f.write(str(config))
+        add_file_logger(curr_log_dir + "/train.log")
+        # init model
+        current_model = MODELS_LIB[config["model_name"]].from_pretrained(
+            config["model_name"],
+            num_labels=len(label_encoder.classes_)
+        ).to(config["device"])
+        # resize token embeddings
+        current_model.resize_token_embeddings(len(tokenizer))
+        logger.info("----- TRAINING -----")
+        final_model = train(current_model, data_loaders["train"], data_loaders["val"], config, curr_log_dir)
+        logger.info("----- TESTING -----")
+        test(final_model, data_loaders["test"], config, label_encoder)
+        wandb.finish()
+
+    config, wandb_config = init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG)[config_name]
+    sweep_id = wandb.sweep(config["sweep_config"], project=wandb_config["project"])
+    sweep_func = lambda: a_run(config, wandb_config)
+    wandb.agent(sweep_id, function=sweep_func)
+
+
 if __name__ == "__main__":
-    run()
+    if args.config_name and "sweep" in args.config_name:
+        run_sweep_config(args.config_name)
+    elif args.config_name:
+        raise NotImplementedError("Single config runs not implemented yet")
+    else:
+        run_all_configs()

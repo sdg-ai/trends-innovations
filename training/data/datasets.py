@@ -125,7 +125,7 @@ def split_data_into_train_val_test(df, config):
     return train_df, val_df, test_df
 
 
-def get_data_loaders_with_chatgpt_annotated_data(config, debug=False):
+def get_data_loaders_with_chatgpt_annotated_data(config, debug=False, inference=False):
     df = pd.read_parquet(os.path.join(config["data_dir"], "openai_annotated_data.parquet"))
     if debug:
         # sample from every label to get a small dataset
@@ -145,13 +145,14 @@ def get_data_loaders_with_chatgpt_annotated_data(config, debug=False):
     logger.info(f"Size of train_df: {len(train_df)}")
     logger.info(f"Size of val_df: {len(val_df)}")
     logger.info(f"Size of test_df: {len(test_df)}")
-    datasets = {"train": DataLoader(TAndIDataSet(train_df, tokenizer, le), batch_size=config["batch_sizes"]["train"],
+    datasets = {"train": DataLoader(TAndIDataSet(train_df, tokenizer, le), batch_size=config["train_batch_size"],
                                     shuffle=True, generator=Generator().manual_seed(2147483647)),
-        "val": DataLoader(TAndIDataSet(val_df, tokenizer, le), batch_size=config["batch_sizes"]["val"], shuffle=True,
+        "val": DataLoader(TAndIDataSet(val_df, tokenizer, le), batch_size=config["val_batch_size"], shuffle=True,
                           generator=Generator().manual_seed(2147483647)),
-        "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["batch_sizes"]["test"], shuffle=True,
+        "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["test_batch_size"], shuffle=True,
                            generator=Generator().manual_seed(2147483647))}
-    tokenizer.save_pretrained(config['checkpoints_dir'])
+    if not inference:
+        tokenizer.save_pretrained(config['checkpoints_dir'])
     return datasets, le, tokenizer
 
 
@@ -189,11 +190,11 @@ def get_data_loaders(config, debug=False):
     logger.info(f"Size of val_df: {len(val_df)}")
     logger.info(f"Size of test_df: {len(test_df)}")
     datasets = {
-        "train": DataLoader(TAndIDataSet(train_df, tokenizer, le), batch_size=config["batch_sizes"]["train"], shuffle=True,
+        "train": DataLoader(TAndIDataSet(train_df, tokenizer, le), batch_size=config["train_batch_size"], shuffle=True,
                             generator=Generator().manual_seed(2147483647)),
-        "val": DataLoader(TAndIDataSet(val_df, tokenizer, le), batch_size=config["batch_sizes"]["val"], shuffle=True,
+        "val": DataLoader(TAndIDataSet(val_df, tokenizer, le), batch_size=config["val_batch_size"], shuffle=True,
                           generator=Generator().manual_seed(2147483647)),
-        "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["batch_sizes"]["test"], shuffle=True,
+        "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["test_batch_size"], shuffle=True,
                            generator=Generator().manual_seed(2147483647))}
     tokenizer.save_pretrained(config['checkpoints_dir'])
     return datasets, le, tokenizer
@@ -241,11 +242,11 @@ def get_data_loaders_with_generated_data(config, debug=False):
     test_df.reset_index(inplace=True, drop=True)
     tokenizer = init_tokenizer(train_df, config)
     datasets = {
-        "train": DataLoader(TAndIDataSet(train_df, tokenizer, le), batch_size=config["batch_sizes"]["train"],
+        "train": DataLoader(TAndIDataSet(train_df, tokenizer, le), batch_size=config["train_batch_size"],
                                     shuffle=True, generator=Generator().manual_seed(2147483647)),
-        "val": DataLoader(TAndIDataSet(val_df, tokenizer, le), batch_size=config["batch_sizes"]["val"], shuffle=True,
+        "val": DataLoader(TAndIDataSet(val_df, tokenizer, le), batch_size=config["val_batch_size"], shuffle=True,
                           generator=Generator().manual_seed(2147483647)),
-        "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["batch_sizes"]["test"], shuffle=True,
+        "test": DataLoader(TAndIDataSet(test_df, tokenizer, le), batch_size=config["test_batch_size"], shuffle=True,
                            generator=Generator().manual_seed(2147483647))}
     tokenizer.save_pretrained(config['checkpoints_dir'])
     return datasets, le, tokenizer

@@ -109,8 +109,6 @@ def encode_labels(df, config):
 
 
 def split_data_into_train_val_test(df, config):
-    # Convert percentage splits to absolute counts
-    # get row count for each unique label
     label_counts = df.label.value_counts()
     logger.info(f"Number of classes: {len(label_counts)}")
     labels_with_less_than_4_samples = label_counts[label_counts <= 3]
@@ -127,6 +125,7 @@ def split_data_into_train_val_test(df, config):
 
 def get_data_loaders_with_chatgpt_annotated_data(config, debug=False, inference=False):
     df = pd.read_parquet(os.path.join(config["data_dir"], "openai_annotated_data.parquet"))
+    df.loc[df["label"] == "3d_printed_apparel", "label"] = "3d_printed_clothes"
     if debug:
         # sample from every label to get a small dataset
         dfs = []

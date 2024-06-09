@@ -28,7 +28,7 @@ baseline-distilbert-base-uncased-sweep:
     job_type_modifier: ""
     group_name_modifier: ""
   sweep_config:
-    method: 'grid'
+    method: 'random'
     metric: 
       name: 'val_loss'
       goal: 'minimize'

@@ -82,7 +82,7 @@ def init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG):
     return initialized_configs
 
 
-def init_wandb(config_name, config, wandb_config, data_loaders):
+def init_wandb(config_name, config, wandb_config, sweep=False):
     wandb.init(
         entity=WANDB_ENTITY,
         project=wandb_config["project"],
@@ -90,16 +90,9 @@ def init_wandb(config_name, config, wandb_config, data_loaders):
         mode="disabled" if wandb_config["disabled"] else "online",
         group=f"{config['d']}-{config_name}{('-' + wandb_config['group_name_modifier']) if wandb_config['group_name_modifier'] != '' else ''}",
         job_type=f"train-{wandb_config['job_type_modifier']}" if wandb_config["job_type_modifier"] != '' else "train",
-        name="seed_"+str(config["seed"]),
+        name="seed_"+str(config["seed"]) if not sweep else None,
         tags=["debug" if config["debug"] else "valid", config["model_name"]],
     )
-    wandb.run.summary["train_size"] = len(data_loaders["train"].dataset)
-    if config["dataset"] == "generated_data":
-        df = data_loaders["train"].dataset.data
-        wandb.run.summary["generated_data_size"] = len(df.loc[df.generated == True])
-        wandb.run.summary["generated_article_labels"] = df.loc[df.generated == True].label.unique()
-        wandb.run.summary["val_size"] = len(data_loaders["val"].dataset)
-        wandb.run.summary["test_size"] = len(data_loaders["test"].dataset)
     return wandb.config
 
 

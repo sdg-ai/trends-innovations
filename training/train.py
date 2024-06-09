@@ -41,7 +41,7 @@ WANDB_CONFIG = {
 DEFAULT_CONFIG = {
     # data details
     "data_dir": "datasets", 
-    "dataset_splits": [0.7, 0.9],
+    "dataset_splits": [0.7, 0.85],
 
     # model details
     "model_name": "distilbert-base-uncased",
@@ -282,8 +282,10 @@ def run_all_configs():
 def run_sweep_config(config_name):
     def a_run(config=None, wandb_config=None):
         data_loading_func = get_data_loader(args.dataset)
+        config = init_wandb(config_name, config, wandb_config, sweep=True)
         data_loaders, label_encoder, tokenizer = data_loading_func(config, debug=args.debug)
-        config = init_wandb(config_name, config, wandb_config, data_loaders)
+        wandb.run.summary["train_size"] = len(data_loaders["train"].dataset)
+        
         seed_everything(config["seed"])
         # append seed to checkpoint save dir
         curr_log_dir = config["checkpoints_dir"] + f"/seed_{config['seed']}"
@@ -313,6 +315,7 @@ def run_sweep_config(config_name):
 
 
 if __name__ == "__main__":
+    #args.config_name = "baseline-distilbert-base-uncased-sweep"
     if args.config_name and "sweep" in args.config_name:
         run_sweep_config(args.config_name)
     elif args.config_name:

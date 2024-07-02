@@ -315,7 +315,7 @@ def run_sweep_config(config_name):
 
 
 if __name__ == "__main__":
-    #args.config_name = "baseline-distilbert-base-uncased-sweep"
+    args.config_name = "baseline-distilbert-base-uncased-sweep"
     if args.config_name and "sweep" in args.config_name:
         run_sweep_config(args.config_name)
     elif args.config_name:

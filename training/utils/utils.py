@@ -8,12 +8,10 @@ import numpy as np
 
 WANDB_KEY = os.environ.get("WANDB_KEY") or ""
 WANDB_ENTITY = os.environ.get("WANDB_ENTITY") or ""
-
 wandb.login(key=WANDB_KEY)
 
-
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)  # Set logger's level
+logger.setLevel(logging.INFO)  
 console_handler = logging.StreamHandler()
 console_handler.setLevel(logging.INFO)
 logger.addHandler(console_handler)

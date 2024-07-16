@@ -16,7 +16,8 @@ from utils.utils import (
     init_configurations,
     init_wandb
 )
-from data.datasets import get_data_loader
+from utils.utils import logger as logger, add_file_logger
+from data.datasets import get_data_loaders
 from utils.metrics import TransformerMetricCollection, AvgDictMeter
 from transformers import RobertaForSequenceClassification, get_scheduler, AlbertForSequenceClassification, DistilBertForSequenceClassification
 from sklearn.metrics import classification_report
@@ -24,10 +25,16 @@ from sklearn.metrics import classification_report
 parser = argparse.ArgumentParser()
 parser.add_argument('--debug', action='store_true', default=False)
 parser.add_argument('--disable_wandb', action='store_true', default=False)
-parser.add_argument('--dataset', type=str, default='old_data')
 parser.add_argument('--d', type=str, default=str(datetime.strftime(datetime.now(), format="%Y-%m-%d %H:%M:%S")))
 parser.add_argument('--config_name', type=str)
 args = parser.parse_args()
+
+
+MODELS_LIB = {
+    "albert-base-v2": AlbertForSequenceClassification,
+    "distilbert-base-uncased": DistilBertForSequenceClassification,
+    "roberta-base": RobertaForSequenceClassification
+}
 
 
 WANDB_CONFIG = {
@@ -40,8 +47,20 @@ WANDB_CONFIG = {
 
 DEFAULT_CONFIG = {
     # data details
-    "data_dir": "datasets", 
-    "dataset_splits": [0.7, 0.85],
+    "data_dir": "datasets",
+    "keep_ignores": False,
+    "keep_rejects": False,
+    "label_reject_and_ignore_as_irrelevant": False,
+    "drop_conflicting_answers": True,
+    "use_chatgpt_annotated_data": True,
+    "use_human_annotated_data": True,
+    "min_samples_per_label": 10,
+    "stratify": True,
+    "train_size": 0.7,
+    "val_size": 0.2,
+    "test_size": 0.1,
+    "undersample": False,
+    "upsample": True,
 
     # model details
     "model_name": "distilbert-base-uncased",
@@ -49,7 +68,7 @@ DEFAULT_CONFIG = {
     "epochs": 30 if not args.debug else 1,
     "patience": 5,
     "num_warmup_steps": 500,
-    "train_batch_size": 16 if not args.debug else 3,
+    "train_batch_size": 32 if not args.debug else 3,
     "val_batch_size": 64 if not args.debug else 3,
     "test_batch_size": 64 if not args.debug else 3,
     # other details
@@ -59,17 +78,8 @@ DEFAULT_CONFIG = {
     "checkpoints_dir": "training/results/checkpoints",
 }
 
-from utils.utils import logger as logger, add_file_logger
 logger.info(f"Using device: {DEFAULT_CONFIG['device']}")
 logger.warning("CUDA not available" if DEFAULT_CONFIG["device"] == "cpu" else "CUDA available")
-
-
-MODELS_LIB = {
-    "albert-base-v2": AlbertForSequenceClassification,
-    "distilbert-base-uncased": DistilBertForSequenceClassification,
-    "roberta-base": RobertaForSequenceClassification
-}
-
 
 def log_training_progress_to_console(t_start, steps: int, curr_step: int, train_results) -> None:
     """
@@ -95,7 +105,6 @@ def log_training_progress_to_console(t_start, steps: int, curr_step: int, train_
     log_msg += f" - remaining time: {days}d-{hours}h-{minutes}m-{seconds}s"
     logger.info(log_msg)
 
-    
 def train_step(model, batch: dict, optimizer) -> Tuple[float, torch.Tensor]:
     """
     Performs a single training step with backpropagation
@@ -240,85 +249,58 @@ def test(model, test_loader: DataLoader, config: Dict, le) -> pd.DataFrame:
     logger.info("Test Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in metrics.items()]))
     return predictions
 
+def run_config(config:Dict, config_name:str, wandb_config:Dict, sweep=False):
+    logger.info(f"Running config: {config}")
+    logger.info(f"Loading data.")
+    config = init_wandb(config_name, config, wandb_config, sweep=True)
+    data_loaders, le, tokenizer = get_data_loaders(**config)
+    # run seeds
+    wandb.run.summary["train_size"] = len(data_loaders["train"].dataset)
+    seed_everything(config["seed"])
+    # append seed to checkpoint save dir
+    curr_log_dir = config["checkpoints_dir"] + f"/seed_{config['seed']}"
+    # create the dir
+    os.makedirs(curr_log_dir, exist_ok=True)
+    # save config dict as json to dir
+    with open(curr_log_dir + "/run_config.json", "w") as f:
+        f.write(str(config))
+    add_file_logger(curr_log_dir + "/train.log")
+    # init model
+    current_model = MODELS_LIB[config["model_name"]].from_pretrained(
+        config["model_name"],
+        num_labels=len(le.classes_)
+    ).to(config["device"])
+    # resize token embeddings
+    current_model.resize_token_embeddings(len(tokenizer))
+    if not sweep:
+        init_wandb(config_name, config, wandb_config, data_loaders)
+    logger.info("----- TRAINING -----")
+    final_model = train(current_model, data_loaders["train"], data_loaders["val"], config, curr_log_dir)
+    logger.info("----- TESTING -----")
+    test(final_model, data_loaders["test"], config, le)
+    wandb.finish()
 
 def run_all_configs():
     configs = init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG)
-    for config_name, config, wandb_config in configs:
-        # load data
-        logger.info(f"Running config: {config}")
-        logger.info(f"Loading data.")
-        data_loading_func = get_data_loader(args.dataset)
-        data_loaders, label_encoder, tokenizer = data_loading_func(config, debug=args.debug)
-        # run seeds
+    for config_name, (config, wandb_config) in configs.items():
         for seed in range(config["num_seeds"]):
             logger.info(f"-------- RUNNING SEED {seed} --------")
             config["seed"] = config["initial_seed"] + seed
-            # set seed
-            seed_everything(config["seed"])
-            # append seed to checkpoint save dir
-            curr_log_dir = config["checkpoints_dir"] + f"/seed_{config['seed']}"
-            # create the dir
-            os.makedirs(curr_log_dir, exist_ok=True)
-            # save config dict as json to dir
-            with open(curr_log_dir + "/run_config.json", "w") as f:
-                f.write(str(config))
-            add_file_logger(curr_log_dir + "/train.log")
-            # init model
-            current_model = MODELS_LIB[config["model_name"]].from_pretrained(
-                config["model_name"],
-                num_labels=len(label_encoder.classes_)
-            ).to(config["device"])
-            # resize token embeddings
-            current_model.resize_token_embeddings(len(tokenizer))
-            # init wandb
-            init_wandb(config_name, config, wandb_config, data_loaders)
-            logger.info("----- TRAINING -----")
-            final_model = train(current_model, data_loaders["train"], data_loaders["val"], config, curr_log_dir)
-            logger.info("----- TESTING -----")
-            test(final_model, data_loaders["test"], config, label_encoder)
-            wandb.finish()
-
+            run_config(config, config_name, wandb_config)
 
 def run_sweep_config(config_name):
-    def a_run(config=None, wandb_config=None):
-        data_loading_func = get_data_loader(args.dataset)
-        config = init_wandb(config_name, config, wandb_config, sweep=True)
-        data_loaders, label_encoder, tokenizer = data_loading_func(config, debug=args.debug)
-        wandb.run.summary["train_size"] = len(data_loaders["train"].dataset)
-        
-        seed_everything(config["seed"])
-        # append seed to checkpoint save dir
-        curr_log_dir = config["checkpoints_dir"] + f"/seed_{config['seed']}"
-        # create the dir
-        os.makedirs(curr_log_dir, exist_ok=True)
-        # save config dict as json to dir
-        with open(curr_log_dir + "/run_config.json", "w") as f:
-            f.write(str(config))
-        add_file_logger(curr_log_dir + "/train.log")
-        # init model
-        current_model = MODELS_LIB[config["model_name"]].from_pretrained(
-            config["model_name"],
-            num_labels=len(label_encoder.classes_)
-        ).to(config["device"])
-        # resize token embeddings
-        current_model.resize_token_embeddings(len(tokenizer))
-        logger.info("----- TRAINING -----")
-        final_model = train(current_model, data_loaders["train"], data_loaders["val"], config, curr_log_dir)
-        logger.info("----- TESTING -----")
-        test(final_model, data_loaders["test"], config, label_encoder)
-        wandb.finish()
-
     config, wandb_config = init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG)[config_name]
     sweep_id = wandb.sweep(config["sweep_config"], project=wandb_config["project"])
-    sweep_func = lambda: a_run(config, wandb_config)
+    sweep_func = lambda: run_config(config, config_name, wandb_config, sweep=True)
     wandb.agent(sweep_id, function=sweep_func)
 
 
 if __name__ == "__main__":
-    args.config_name = "baseline-distilbert-base-uncased-sweep"
+    #args.config_name = "baseline-distilbert-base-uncased-sweep"
     if args.config_name and "sweep" in args.config_name:
         run_sweep_config(args.config_name)
     elif args.config_name:
-        raise NotImplementedError("Single config runs not implemented yet")
+        config, wandb_config = init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG)[args.config_name]
+        run_config(config, args.config_name, wandb_config)
     else:
         run_all_configs()

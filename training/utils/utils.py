@@ -5,6 +5,7 @@ import logging
 import torch
 import random
 import numpy as np
+from typing import Dict, Tuple
 
 WANDB_KEY = os.environ.get("WANDB_KEY") or ""
 WANDB_ENTITY = os.environ.get("WANDB_ENTITY") or ""
@@ -15,6 +16,7 @@ logger.setLevel(logging.INFO)
 console_handler = logging.StreamHandler()
 console_handler.setLevel(logging.INFO)
 logger.addHandler(console_handler)
+
 
 def seed_everything(seed):
     """
@@ -57,7 +59,7 @@ class EarlyStopper:
         return False
 
 
-def init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG):
+def init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG) -> Dict[str, Tuple[Dict, Dict]]:
     with open("training/train_configs.yml", "r") as f:
         custom_configs = yaml.safe_load(f)
     initialized_configs = {}
@@ -80,7 +82,7 @@ def init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG):
     return initialized_configs
 
 
-def init_wandb(config_name, config, wandb_config, sweep=False):
+def init_wandb(config_name, config, wandb_config, sweep=False) -> Dict:
     wandb.init(
         entity=WANDB_ENTITY,
         project=wandb_config["project"],
@@ -94,7 +96,7 @@ def init_wandb(config_name, config, wandb_config, sweep=False):
     return wandb.config
 
 
-def add_file_logger(log_path):
+def add_file_logger(log_path) -> None:
     """
     Adds a file logger to the specified path, removing all previous file loggers.
     :param log_path: the path to the log file

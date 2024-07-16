@@ -23,7 +23,7 @@
             "program": "${workspaceFolder}/training/train.py",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
-            "args": ["--dataset", "openai_annotated_data", "--debug"]
+            "args": ["--debug"]
         }
     ]
 }

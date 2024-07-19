@@ -17,13 +17,7 @@ from typing import Tuple
 from sklearn import preprocessing
 from pickle import dump
 from transformers import AutoTokenizer, RobertaTokenizer
-
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-# log to console
-ch = logging.StreamHandler()
-ch.setLevel(logging.INFO)
-logger.addHandler(ch)
+from utils.utils import logger as logger
 
 import os
 import pandas as pd
@@ -35,6 +29,12 @@ from transformers import AutoTokenizer, RobertaTokenizer
 
 human_categories_to_chatgpt_categories = {
     "3d_printed_clothes": "3d_printed_apparel",
+}
+
+categories_to_combine = {
+    "energy": ["solar_energy","solar_energy","solar_energy", "hydropower","energy_storage"],
+    "sustainable_clothing": ["3d_printed_apparel", "capsule_wardrobe", "clothes_designed_for_a_circular_economy", "rent_apparel"],
+    "sharing_economy": ["sharing_economy", "car_sharing"]
 }
 
 
@@ -170,12 +170,21 @@ def load_chatgpt_annotated_data() -> pd.DataFrame:
     return df
 
 
+def merge_categories(df: pd.DataFrame) -> pd.DataFrame:
+    for new_category, categories in categories_to_combine.items():
+        for category in categories:
+            df.loc[df["label"] == category, "label"] = new_category
+    return df
+
+
 def load_data(
         min_samples_per_label: int,
         use_human_annotated_data: bool,
         use_chatgpt_annotated_data: bool,
         undersample: bool,
         upsample: bool,
+        combine_categories:bool,
+        debug:bool,
         **kwargs
 ) ->  pd.DataFrame:
     if use_human_annotated_data:
@@ -216,6 +225,10 @@ def load_data(
             df.drop(duplicates.index, inplace=True)
     else:
         df = df_human if use_human_annotated_data else df_chatgpt
+    if combine_categories:
+        logger.info(f"Combining categories into new categories. Number of categories before combining: {len(df.label.unique())}")
+        df = merge_categories(df) 
+        logger.info(f"Number of categories after combining: {len(df.label.unique())}")
     label_counts = df.label.value_counts()
     logger.info(f"Found {len(label_counts)} unique labels in the dataset with the following counts: {label_counts.to_dict()}")
     low_count_labels = label_counts[label_counts <= min_samples_per_label]
@@ -234,6 +247,12 @@ def load_data(
         max_samples = df["label"].value_counts().max()
         df = df.groupby("label", as_index=False).apply(lambda x: x.sample(max_samples, replace=True))
         logger.info(f"Upsampled data to {len(df)} samples ({max_samples} per label).")
+    if debug:
+        dfs = []
+        for label in df.label.unique():
+            dfs.append(df[df["label"] == label].sample(10))
+        df = pd.concat(dfs)
+        logger.info(f"Debug mode: Reduced dataset to {len(df)} samples. From each label 10 samples are taken.")
     return df
 
 
@@ -241,15 +260,9 @@ def get_data_loaders(
         train_batch_size: int,
         val_batch_size: int,
         test_batch_size: int,
-        debug:bool = False,
         **kwargs
     ) -> Tuple[Dict[str, DataLoader], preprocessing.LabelEncoder, AutoTokenizer]:
     df = load_data(**kwargs)
-    if debug:
-        dfs = []
-        for label in df.label.unique():
-            dfs.append(df[df["label"] == label].sample(10))
-        df = pd.concat(dfs)
     df, le = encode_labels(df, kwargs["checkpoints_dir"]) 
     train_df, val_df, test_df = split_data_into_train_val_test(df, kwargs["train_size"], kwargs["val_size"], kwargs["test_size"])
     train_df.reset_index(inplace=True, drop=True)

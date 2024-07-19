@@ -23,7 +23,7 @@
             "program": "${workspaceFolder}/training/train.py",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
-            "args": ["--debug"]
+            "args": ["--debug", "--disable_wandb"]
         }
     ]
 }

@@ -38,7 +38,7 @@ MODELS_LIB = {
 
 
 WANDB_CONFIG = {
-    "disabled": False,
+    "disabled": args.disable_wandb,
     "job_type_modifier": "",
     "group_name_modifier": "",
     "project": "Trends and Innovations Classifier | AI For Good"
@@ -54,13 +54,14 @@ DEFAULT_CONFIG = {
     "drop_conflicting_answers": True,
     "use_chatgpt_annotated_data": True,
     "use_human_annotated_data": True,
+    "combine_categories": False,
     "min_samples_per_label": 10,
     "stratify": True,
     "train_size": 0.7,
     "val_size": 0.2,
     "test_size": 0.1,
     "undersample": False,
-    "upsample": True,
+    "upsample": False,
 
     # model details
     "model_name": "distilbert-base-uncased",
@@ -250,21 +251,21 @@ def test(model, test_loader: DataLoader, config: Dict, le) -> pd.DataFrame:
     return predictions
 
 def run_config(config:Dict, config_name:str, wandb_config:Dict, sweep=False):
-    logger.info(f"Running config: {config}")
-    logger.info(f"Loading data.")
     config = init_wandb(config_name, config, wandb_config, sweep=True)
-    data_loaders, le, tokenizer = get_data_loaders(**config)
-    # run seeds
-    wandb.run.summary["train_size"] = len(data_loaders["train"].dataset)
-    seed_everything(config["seed"])
     # append seed to checkpoint save dir
     curr_log_dir = config["checkpoints_dir"] + f"/seed_{config['seed']}"
     # create the dir
     os.makedirs(curr_log_dir, exist_ok=True)
-    # save config dict as json to dir
+     # save config dict as json to dir
     with open(curr_log_dir + "/run_config.json", "w") as f:
         f.write(str(config))
-    add_file_logger(curr_log_dir + "/train.log")
+    add_file_logger(curr_log_dir + "/run.log")
+    logger.info(f"Running config: {config}")
+    logger.info(f"Loading data.")
+    data_loaders, le, tokenizer = get_data_loaders(**config)
+    # run seeds
+    wandb.run.summary["train_size"] = len(data_loaders["train"].dataset)
+    seed_everything(config["seed"])
     # init model
     current_model = MODELS_LIB[config["model_name"]].from_pretrained(
         config["model_name"],

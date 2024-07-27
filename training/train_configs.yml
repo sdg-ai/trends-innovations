@@ -1,11 +1,76 @@
 ---
-baseline-distilbert-base-uncased:
+# baseline
+baseline-distilbert:
   model_name: "distilbert-base-uncased"
   lr: 0.00005
   num_warmup_steps: 500
   wandb:
     job_type_modifier: ""
     group_name_modifier: ""
+  skip: False
+# keep ignores
+baseline-distilbert-keep-ignores:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  skip: False
+  keep_ignores: True
+# keep rejects
+baseline-distilbert-keep-rejects:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  skip: False
+  keep_rejects: True
+# keep ignores and rejects
+baseline-distilbert-keep-ignores-and-rejects:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  skip: False
+  keep_ignores: True
+  keep_rejects: True
+# label reject and irrelevant as irrelevant class
+baseline-distilbert-label-reject-and-ignore-as-irrelevant:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  skip: False
+  label_reject_and_ignore_as_irrelevant: True
+# undersample
+baseline-distilbert-undersample:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  skip: False
+  undersample: True
+# oversample
+baseline-distilbert-oversample:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  skip: False
+  oversample: True
+
+
 baseline-roberta-base:
   model_name: "roberta-base"
   lr: 0.00005
@@ -13,6 +78,7 @@ baseline-roberta-base:
   wandb:
     job_type_modifier: ""
     group_name_modifier: ""
+  skip: True
 baseline-albert-base-v2:
   model_name: "albert-base-v2"
   lr: 0.00002
@@ -20,6 +86,7 @@ baseline-albert-base-v2:
   wandb:
     job_type_modifier: ""
     group_name_modifier: ""
+  skip: True
 baseline-distilbert-base-uncased-sweep:
   model_name: "distilbert-base-uncased"
   lr: 5
@@ -39,4 +106,5 @@ baseline-distilbert-base-uncased-sweep:
         values: [100, 500, 1000]
       train_batch_size:
         values: [8, 16, 32, 64]
+  skip: True
       

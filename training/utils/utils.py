@@ -78,6 +78,8 @@ def init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG) -> Dict[str, Tuple[D
         wandb_config.update(config["wandb"])
         # add args to config
         run_config.update(vars(args))
+        if config["skip"]:
+            continue
         initialized_configs[config_name] = (run_config, wandb_config)
     return initialized_configs
 

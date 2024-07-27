@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 load_dotenv()
 import wandb
 import torch
+import json
 import argparse
 import numpy as np
 import pandas as pd
@@ -11,7 +12,7 @@ from typing import Tuple, Dict
 from torch.utils.data import DataLoader
 from datetime import datetime, timedelta
 from utils.utils import (
-    EarlyStopper, 
+    EarlyStopper,
     seed_everything,
     init_configurations,
     init_wandb
@@ -75,8 +76,9 @@ DEFAULT_CONFIG = {
     # other details
     "device": 'cuda' if torch.cuda.is_available() else 'cpu',
     "initial_seed": 1,
-    "num_seeds": 5,
+    "num_seeds": 3,
     "checkpoints_dir": "training/results/checkpoints",
+    "skip": False
 }
 
 logger.info(f"Using device: {DEFAULT_CONFIG['device']}")
@@ -148,7 +150,7 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict,
         logger.info(f"\nRunning Epoch {epoch + 1}/{config['epochs']}...")
         # training loop
         model.train()
-        for batch in train_loader:
+        for batch, _ in train_loader:
             # move batch to gpu
             batch = {k: v.to(config["device"]) for k, v in batch.items()}
             loss, predictions = train_step(model, batch, optimizer)
@@ -166,6 +168,8 @@ def train(model, train_loader: DataLoader, val_loader: DataLoader, config: Dict,
                 )
                 wandb.log({f'train/{k}': v for k, v in train_results.items()}, step=i_step)
                 avg_train_loss_meter.reset()
+            if config["debug"]:
+                break
 
         val_loss = validation(model, val_loader, config)
         # save best model
@@ -198,12 +202,14 @@ def validation(model, val_loader, config: Dict) -> float:
     ).to(config["device"])
     avg_val_loss_meter = AvgDictMeter()
     # validation loop
-    for batch in val_loader:
+    for batch, _ in val_loader:
         batch = {k: v.to(config["device"]) for k, v in batch.items()}
         with torch.no_grad():
             loss, predictions = val_step(model, batch)
         val_metrics.update(predictions, batch["labels"])
         avg_val_loss_meter.add({"val_loss": loss})
+        if config["debug"]:
+            break
     val_results = avg_val_loss_meter.compute()
 
     # log metrics
@@ -224,13 +230,19 @@ def test(model, test_loader: DataLoader, config: Dict, le) -> pd.DataFrame:
     predictions = []
     metrics = TransformerMetricCollection(n_classes=config["num_labels"], device=config["device"]).to(config["device"])
     model.eval()
-    for batch in test_loader:
+    for batch, batch_details in test_loader:
         batch = {k: v.to(config["device"]) for k, v in batch.items()}
         with torch.no_grad():
             _, preds = val_step(model, batch)
             metrics.update(preds, batch["labels"])
             for idx, pred in enumerate(preds.tolist()):
-                predictions.append({"y_hat_enc": pred, "y_enc": batch["labels"].flatten().tolist()[idx], })
+                predictions.append({
+                    "y_hat_enc": pred,
+                    "y_enc": batch["labels"].flatten().tolist()[idx],
+                    "text": batch_details["text"][idx],
+                    "article_id": batch_details["article_id"][idx].item(),
+                    "section_id": batch_details["section_id"][idx].item()
+                })
     predictions = pd.DataFrame(predictions)
     metrics = metrics.compute()
     # wandb.log({"test/conf_mat": wandb.plot.confusion_matrix(
@@ -248,35 +260,42 @@ def test(model, test_loader: DataLoader, config: Dict, le) -> pd.DataFrame:
     wandb.log({"test/performance": wandb_performance_table})
     wandb.log({f'test/{k}': v for k, v in metrics.items()})
     logger.info("Test Metrics:" + " - ".join([f'{k}: {v:.4f}' for k, v in metrics.items()]))
+    with open(config["checkpoints_dir"] + f"/seed_{config['seed']}/test_metrics.json", "w") as f:
+        metrics_to_dump = {k: v.item() for k, v in metrics.items()}
+        json.dump(metrics_to_dump, f)      
+    predictions.to_csv(config["checkpoints_dir"] + f"/seed_{config['seed']}/predictions.csv", index=False)
     return predictions
 
-def run_config(config:Dict, config_name:str, wandb_config:Dict, sweep=False):
-    config = init_wandb(config_name, config, wandb_config, sweep=True)
+def run_config(config: Dict,
+               config_name: str,
+               wandb_config: Dict,
+               sweep=False):
+    config = init_wandb(config_name, config, wandb_config, sweep=sweep)
     # append seed to checkpoint save dir
     curr_log_dir = config["checkpoints_dir"] + f"/seed_{config['seed']}"
     # create the dir
     os.makedirs(curr_log_dir, exist_ok=True)
-     # save config dict as json to dir
+    # save config dict as json to dir
     with open(curr_log_dir + "/run_config.json", "w") as f:
         f.write(str(config))
     add_file_logger(curr_log_dir + "/run.log")
     logger.info(f"Running config: {config}")
     logger.info(f"Loading data.")
     data_loaders, le, tokenizer = get_data_loaders(**config)
+    config["num_labels"] = le.classes_.shape[0]
     # run seeds
     wandb.run.summary["train_size"] = len(data_loaders["train"].dataset)
     seed_everything(config["seed"])
     # init model
     current_model = MODELS_LIB[config["model_name"]].from_pretrained(
-        config["model_name"],
-        num_labels=len(le.classes_)
-    ).to(config["device"])
+        config["model_name"], num_labels=len(le.classes_)).to(config["device"])
     # resize token embeddings
     current_model.resize_token_embeddings(len(tokenizer))
     if not sweep:
         init_wandb(config_name, config, wandb_config, data_loaders)
     logger.info("----- TRAINING -----")
-    final_model = train(current_model, data_loaders["train"], data_loaders["val"], config, curr_log_dir)
+    final_model = train(current_model, data_loaders["train"],
+                        data_loaders["val"], config, curr_log_dir)
     logger.info("----- TESTING -----")
     test(final_model, data_loaders["test"], config, le)
     wandb.finish()

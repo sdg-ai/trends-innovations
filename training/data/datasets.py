@@ -56,7 +56,12 @@ class TAndIDataSet(Dataset):
     def __getitem__(self, idx):
         item = {k: torch.tensor(v[idx]) for k, v in self.encodings.items()}
         item["labels"] = torch.tensor(self.encoded_labels[idx])
-        return item
+        item_details = {
+            "text": self.data.text.iloc[idx],
+            "article_id": self.data.article_id.iloc[idx],
+            "section_id": self.data.section_id.iloc[idx]
+        }
+        return item, item_details
 
     def __len__(self):
         return len(self.data)

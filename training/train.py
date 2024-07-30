@@ -63,7 +63,7 @@ DEFAULT_CONFIG = {
     "test_size": 0.1,
     "undersample": False,
     "upsample": False,
-
+    "only_top_n_categories_by": None,
     # model details
     "model_name": "distilbert-base-uncased",
     "lr": 5e-5,

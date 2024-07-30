@@ -38,6 +38,19 @@ categories_to_combine = {
 }
 
 
+def get_top_n_categories_by(metric:str, n:int=10):
+    df = pd.read_csv("training/data/category_performances.csv")
+    if metric not in df.columns:
+        raise ValueError(f"Metric '{metric}' not found in category_performances.csv. Can be 'precision', 'recall', 'f1'")
+    print(df.dtypes)
+    top_categories = list(df.sort_values(by=metric, ascending=False)["categories"])
+    return top_categories
+
+top_classes_by_precision_ordered_desc = get_top_n_categories_by("precision")
+
+top_classes_by_f1_ordered_desc = get_top_n_categories_by("f1")
+
+
 class TAndIDataSet(Dataset):
     encodings: torch.Tensor
     encoded_labels: torch.Tensor
@@ -190,6 +203,7 @@ def load_data(
         upsample: bool,
         combine_categories:bool,
         debug:bool,
+        only_top_n_categories_by: Tuple[str, int],
         **kwargs
 ) ->  pd.DataFrame:
     if use_human_annotated_data:
@@ -252,6 +266,16 @@ def load_data(
         max_samples = df["label"].value_counts().max()
         df = df.groupby("label", as_index=False).apply(lambda x: x.sample(max_samples, replace=True))
         logger.info(f"Upsampled data to {len(df)} samples ({max_samples} per label).")
+    if only_top_n_categories_by is not None:
+        logger.info(f"Filtering data to only include top {only_top_n_categories_by[1]} categories by {only_top_n_categories_by[0]}")
+        if only_top_n_categories_by[0] == "precision":
+            top_categories = top_classes_by_precision_ordered_desc[:only_top_n_categories_by[1]]
+        elif only_top_n_categories_by[0] == "f1":
+            top_categories = top_classes_by_f1_ordered_desc[:only_top_n_categories_by[1]]
+        else:
+            raise ValueError(f"Unknown metric '{only_top_n_categories_by[0]}'. Can be 'precision' or 'f1'")
+        df = df[df["label"].isin(top_categories)]
+        logger.info(f"Filtered data to {len(df)} samples.")
     if debug:
         dfs = []
         for label in df.label.unique():

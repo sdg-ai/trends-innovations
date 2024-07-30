@@ -39,16 +39,12 @@ categories_to_combine = {
 
 
 def get_top_n_categories_by(metric:str, n:int=10):
-    df = pd.read_csv("training/data/category_performances.csv")
+    df = pd.read_csv("training/data/category_performances.csv", sep=";")
     if metric not in df.columns:
         raise ValueError(f"Metric '{metric}' not found in category_performances.csv. Can be 'precision', 'recall', 'f1'")
     print(df.dtypes)
-    top_categories = list(df.sort_values(by=metric, ascending=False)["categories"])
+    top_categories = list(df.sort_values(by=metric, ascending=False)["category"])[:n]
     return top_categories
-
-top_classes_by_precision_ordered_desc = get_top_n_categories_by("precision")
-
-top_classes_by_f1_ordered_desc = get_top_n_categories_by("f1")
 
 
 class TAndIDataSet(Dataset):
@@ -268,12 +264,7 @@ def load_data(
         logger.info(f"Upsampled data to {len(df)} samples ({max_samples} per label).")
     if only_top_n_categories_by is not None:
         logger.info(f"Filtering data to only include top {only_top_n_categories_by[1]} categories by {only_top_n_categories_by[0]}")
-        if only_top_n_categories_by[0] == "precision":
-            top_categories = top_classes_by_precision_ordered_desc[:only_top_n_categories_by[1]]
-        elif only_top_n_categories_by[0] == "f1":
-            top_categories = top_classes_by_f1_ordered_desc[:only_top_n_categories_by[1]]
-        else:
-            raise ValueError(f"Unknown metric '{only_top_n_categories_by[0]}'. Can be 'precision' or 'f1'")
+        top_categories = get_top_n_categories_by(only_top_n_categories_by[0], only_top_n_categories_by[1])
         df = df[df["label"].isin(top_categories)]
         logger.info(f"Filtered data to {len(df)} samples.")
     if debug:

@@ -1,4 +1,82 @@
 ---
+# top 10 categories by precision
+top-10-by-precision-distilbert:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  skip: False
+  num_seeds: 5
+  min_samples_per_label: 1
+  only_top_n_categories_by: ["precision", 10]
+
+# top 30 categories by precision
+top-30-by-precision-distilbert:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  skip: False
+  num_seeds: 5
+  min_samples_per_label: 1
+  only_top_n_categories_by: ["precision", 30]
+
+# top 50 categories by precision
+top-50-by-precision-distilbert:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  skip: False
+  num_seeds: 5
+  min_samples_per_label: 1
+  only_top_n_categories_by: ["precision", 50]
+
+# top 10 categories by f1
+top-10-by-f1-distilbert:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  skip: False
+  num_seeds: 5
+  min_samples_per_label: 1
+  only_top_n_categories_by: ["f1", 10]
+
+# top 30 categories by f1
+top-30-by-f1-distilbert:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  skip: False
+  num_seeds: 5
+  min_samples_per_label: 1
+  only_top_n_categories_by: ["f1", 30]
+
+# top 50 categories by f1
+top-50-by-f1-distilbert:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  skip: False
+  num_seeds: 3
+  min_samples_per_label: 1
+  only_top_n_categories_by: ["f1", 50]
+
 # baseline
 baseline-distilbert:
   model_name: "distilbert-base-uncased"
@@ -7,143 +85,5 @@ baseline-distilbert:
   wandb:
     job_type_modifier: ""
     group_name_modifier: ""
-  skip: True
-  num_seeds: 3
-
-
-
-# manual annotation only
-baseline-distilbert-human-data:
-  model_name: "distilbert-base-uncased"
-  lr: 0.00005
-  num_warmup_steps: 500
-  wandb:
-    job_type_modifier: ""
-    group_name_modifier: ""
   skip: False
-  num_seeds: 3
-  use_chatgpt_annotated_data: False
-# gpt data only
-baseline-distilbert-gpt-data:
-  model_name: "distilbert-base-uncased"
-  lr: 0.00005
-  num_warmup_steps: 500
-  wandb:
-    job_type_modifier: ""
-    group_name_modifier: ""
-  skip: False
-  num_seeds: 3
-  use_human_annotated_data: False
-# min samples per category
-baseline-distilbert-min-samples-per-category:
-  model_name: "distilbert-base-uncased"
-  lr: 0.00005
-  num_warmup_steps: 500
-  wandb:
-    job_type_modifier: ""
-    group_name_modifier: ""
-  skip: False
-  num_seeds: 3
-  min_samples_per_label: 500
-
-
-
-# keep ignores
-baseline-distilbert-keep-ignores:
-  model_name: "distilbert-base-uncased"
-  lr: 0.00005
-  num_warmup_steps: 500
-  wandb:
-    job_type_modifier: ""
-    group_name_modifier: ""
-  skip: True
-  keep_ignores: True
-# keep rejects
-baseline-distilbert-keep-rejects:
-  model_name: "distilbert-base-uncased"
-  lr: 0.00005
-  num_warmup_steps: 500
-  wandb:
-    job_type_modifier: ""
-    group_name_modifier: ""
-  skip: True
-  keep_rejects: True
-# keep ignores and rejects
-baseline-distilbert-keep-ignores-and-rejects:
-  model_name: "distilbert-base-uncased"
-  lr: 0.00005
-  num_warmup_steps: 500
-  wandb:
-    job_type_modifier: ""
-    group_name_modifier: ""
-  skip: True
-  keep_ignores: True
-  keep_rejects: True
-# label reject and irrelevant as irrelevant class
-baseline-distilbert-label-reject-and-ignore-as-irrelevant:
-  model_name: "distilbert-base-uncased"
-  lr: 0.00005
-  num_warmup_steps: 500
-  wandb:
-    job_type_modifier: ""
-    group_name_modifier: ""
-  skip: True
-  label_reject_and_ignore_as_irrelevant: True
-# undersample
-baseline-distilbert-undersample:
-  model_name: "distilbert-base-uncased"
-  lr: 0.00005
-  num_warmup_steps: 500
-  wandb:
-    job_type_modifier: ""
-    group_name_modifier: ""
-  skip: True
-  undersample: True
-# oversample
-baseline-distilbert-oversample:
-  model_name: "distilbert-base-uncased"
-  lr: 0.00005
-  num_warmup_steps: 500
-  wandb:
-    job_type_modifier: ""
-    group_name_modifier: ""
-  skip: True
-  oversample: True
-# other
-baseline-roberta-base:
-  model_name: "roberta-base"
-  lr: 0.00005
-  num_warmup_steps: 500
-  wandb:
-    job_type_modifier: ""
-    group_name_modifier: ""
-  skip: True
-baseline-albert-base-v2:
-  model_name: "albert-base-v2"
-  lr: 0.00002
-  num_warmup_steps: 500
-  wandb:
-    job_type_modifier: ""
-    group_name_modifier: ""
-  skip: True
-baseline-distilbert-base-uncased-sweep:
-  model_name: "distilbert-base-uncased"
-  lr: 5
-  num_warmup_steps: 500
-  wandb:
-    job_type_modifier: ""
-    group_name_modifier: ""
-  sweep_config:
-    method: 'random'
-    metric: 
-      name: 'val_loss'
-      goal: 'minimize'
-    parameters:
-      lr:
-        values: [0.00001, 0.00005, 0.0001]
-      num_warmup_steps:
-        values: [100, 500, 1000]
-      train_batch_size:
-        values: [8, 16, 32, 64]
-  skip: True
-      
+  num_seeds: 5

@@ -7,7 +7,47 @@ baseline-distilbert:
   wandb:
     job_type_modifier: ""
     group_name_modifier: ""
+  skip: True
+  num_seeds: 3
+
+
+
+# manual annotation only
+baseline-distilbert-human-data:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
   skip: False
+  num_seeds: 3
+  use_chatgpt_annotated_data: False
+# gpt data only
+baseline-distilbert-gpt-data:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  skip: False
+  num_seeds: 3
+  use_human_annotated_data: False
+# min samples per category
+baseline-distilbert-min-samples-per-category:
+  model_name: "distilbert-base-uncased"
+  lr: 0.00005
+  num_warmup_steps: 500
+  wandb:
+    job_type_modifier: ""
+    group_name_modifier: ""
+  skip: False
+  num_seeds: 3
+  min_samples_per_label: 500
+
+
+
 # keep ignores
 baseline-distilbert-keep-ignores:
   model_name: "distilbert-base-uncased"
@@ -16,7 +56,7 @@ baseline-distilbert-keep-ignores:
   wandb:
     job_type_modifier: ""
     group_name_modifier: ""
-  skip: False
+  skip: True
   keep_ignores: True
 # keep rejects
 baseline-distilbert-keep-rejects:
@@ -26,7 +66,7 @@ baseline-distilbert-keep-rejects:
   wandb:
     job_type_modifier: ""
     group_name_modifier: ""
-  skip: False
+  skip: True
   keep_rejects: True
 # keep ignores and rejects
 baseline-distilbert-keep-ignores-and-rejects:
@@ -36,7 +76,7 @@ baseline-distilbert-keep-ignores-and-rejects:
   wandb:
     job_type_modifier: ""
     group_name_modifier: ""
-  skip: False
+  skip: True
   keep_ignores: True
   keep_rejects: True
 # label reject and irrelevant as irrelevant class
@@ -47,7 +87,7 @@ baseline-distilbert-label-reject-and-ignore-as-irrelevant:
   wandb:
     job_type_modifier: ""
     group_name_modifier: ""
-  skip: False
+  skip: True
   label_reject_and_ignore_as_irrelevant: True
 # undersample
 baseline-distilbert-undersample:
@@ -57,7 +97,7 @@ baseline-distilbert-undersample:
   wandb:
     job_type_modifier: ""
     group_name_modifier: ""
-  skip: False
+  skip: True
   undersample: True
 # oversample
 baseline-distilbert-oversample:
@@ -67,10 +107,9 @@ baseline-distilbert-oversample:
   wandb:
     job_type_modifier: ""
     group_name_modifier: ""
-  skip: False
+  skip: True
   oversample: True
-
-
+# other
 baseline-roberta-base:
   model_name: "roberta-base"
   lr: 0.00005

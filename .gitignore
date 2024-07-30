@@ -19,3 +19,34 @@ datasets/
 
 training/results/*
 !training/results/**/*.ipynb
+../(archived) initial_classifier/.amlignore
+../(archived) initial_classifier/.amlignore.amltmp
+../.amlignore
+../.amlignore.amltmp
+../.gitignore.swo
+../.gitignore.swp
+../app/.amlignore
+../app/.amlignore.amltmp
+../experiments/.amlignore
+../experiments/.amlignore.amltmp
+../experiments/article_annotation.zip
+../experiments/article_annotation/.amlignore
+../experiments/article_annotation/.amlignore.amltmp
+../experiments/article_annotation/article_labeling_using_chatgpt_2.0.py.amltmp
+../experiments/article_annotation/results/.amlignore
+../experiments/article_annotation/results/.amlignore.amltmp
+../experiments/article_annotation/results/test_run_a/.amlignore
+../experiments/article_annotation/results/test_run_a/.amlignore.amltmp
+.amlignore
+.amlignore.amltmp
+.env.ipynb.amltmp
+.ipynb_aml_checkpoints/
+data/.amlignore
+data/.amlignore.amltmp
+utils/.amlignore
+utils/.amlignore.amltmp
+../.gitignore.amltmp
+../.gitignore.swo
+../.gitignore.swp
+../experiments/article_annotation.zip
+../experiments/article_annotation/article_labeling_using_chatgpt_2.0.py.amltm

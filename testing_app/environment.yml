@@ -1,0 +1,14 @@
+name: tandi-classifier-test-app
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.11.7
+  - pip
+  - pip:
+      - streamlit
+      - torch==1.12.1
+      - transformers
+      - joblib
+  - cudatoolkit=11.3 

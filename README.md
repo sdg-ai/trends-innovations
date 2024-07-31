@@ -9,6 +9,7 @@
 - **/datasets**: Contains all relevant data used for training, both human-annotated and with generated labels.
 - **/experiments**: Contains scripts and notebooks detailing initial Bert-based classification approaches, article generation, and the labeling procedure.
 - **/training**: Contains all relevant code used to train the current Bert-based models.
+- **/testing_app**: Contains a small streamlit app that can be used to directly test the model after training. To do so simply copy one of the entire checkpoints folder from the training/results directory to the testing_app/checkpoint directory, update the path in the script, and run the streamlit app using the command `streamlit run app.py` in the testing_app directory.
 
 ## How to Train a Model
 Before you start training, ensure you have the correct Conda environment set up by running the following command in the training directory:

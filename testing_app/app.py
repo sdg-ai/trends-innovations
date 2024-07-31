@@ -6,9 +6,14 @@ import os
 import joblib
 
 print(os.getcwd())
-MODEL_DIR = './checkpoint/2024-07-30 22:10:25-distilbert-base-uncased/seed_1/'
-TOKENIZER_DIR = './checkpoint/2024-07-30 22:10:25-distilbert-base-uncased'
 
+
+# TODO: ADJUST CHECKPOINT and SEED
+CHECKPOINT = '2024-07-30 22:10:25-distilbert-base-uncased'
+SEED = 'seed_1'
+
+MODEL_DIR = f'./checkpoint/{CHECKPOINT}/{SEED}/'
+TOKENIZER_DIR = f'./checkpoint/{CHECKPOINT}'
 
 def load_model():
     model = DistilBertForSequenceClassification.from_pretrained(MODEL_DIR, local_files_only=True)

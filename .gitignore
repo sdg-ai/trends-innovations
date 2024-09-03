@@ -51,3 +51,7 @@ utils/.amlignore.amltmp
 ../experiments/article_annotation.zip
 ../experiments/article_annotation/article_labeling_using_chatgpt_2.0.py.amltm
 testing_app/checkpoint
+deliverables/entity_networks_master/
+deliverables/tic_checkpoints/
+deliverables/.env
+deliverables/data

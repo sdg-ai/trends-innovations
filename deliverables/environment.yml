@@ -1,0 +1,17 @@
+name: report_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - nltk
+  - pytorch
+  - joblib
+  - pandas
+  - tqdm
+  - transformers
+  - pip
+  - pip:
+      - torch
+      - transformers
+      - python-dotenv

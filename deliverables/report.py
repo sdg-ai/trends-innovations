@@ -12,6 +12,7 @@ import joblib
 import urllib.parse, urllib.request, json
 import pandas as pd
 from tqdm import tqdm
+from warnings import warn
 from dotenv import load_dotenv
 load_dotenv('deliverables/.env')
 from typing import List, Tuple, Any, Dict
@@ -55,7 +56,8 @@ class DocumentChunk:
 
 @dataclass
 class Document:
-    text: str
+    id: str = ''
+    text: str = ''
     country: str = ''
     chunks: List[DocumentChunk] = None
     
@@ -98,7 +100,7 @@ def load_documents(documents_dir: str = "deliverables/data") -> List[Document]:
         List[Document]: A list of `Document` objects with cleaned text and metadata.
     """
     documents = [f for f in os.listdir(documents_dir) if os.path.isfile(os.path.join(documents_dir, f))]
-    #documents = documents[14:]
+    #documents = documents[:3]
     url_pattern = r"https~____(www\..+\.[a-z]{2,3})__.*"
     cleaned_documents = []
     for doc in documents:
@@ -106,13 +108,19 @@ def load_documents(documents_dir: str = "deliverables/data") -> List[Document]:
         if match:
             tld = match.group(1).split('.')[-1]
         else:
+            warn(f"Could not extract TLD from filename: {doc}")
             tld = ''
         with open(os.path.join(documents_dir, doc), 'r') as file:
             lines = file.readlines()
             cleaned_lines = [line.strip() for line in lines if line.strip()]
             cleaned_text = ' '.join(cleaned_lines)
             chunks = get_sentence_chunks(cleaned_text)
-            cleaned_documents.append(Document(text=cleaned_text, chunks=chunks, country=DOMAIN_COUNTRY_MAPPING.get(tld, '')))
+            cleaned_documents.append(Document(
+                id=doc,
+                text=cleaned_text,
+                chunks=chunks,
+                country=DOMAIN_COUNTRY_MAPPING.get(tld, '')
+            ))
     print(f"Loaded {len(cleaned_documents)} documents.")
     print(f"Total number of chunks: {sum([len(doc.chunks) for doc in cleaned_documents])}")
     return cleaned_documents
@@ -130,9 +138,6 @@ def get_sentence_chunks(text: str) -> List[str]:
     sentences = nltk.sent_tokenize(text)
     chunks = [DocumentChunk(text="".join(sentences[i:i+3]), trend=None) for i in range(0, len(sentences), 3)]
     return chunks
-
-
-
 
 
 def call_wikifier_on_chunks(chunks:List[DocumentChunk], lang="en", threshold:float=0.8, **kwargs) -> List[DocumentChunk]:
@@ -217,9 +222,6 @@ def run_entity_extraction_via_wikifier(doc_chunks:List[DocumentChunk], **kwargs)
     return doc_chunks, countries
 
 
-
-
-
 def predict_ti(text, min_confidence=0.5) -> Tuple[str, float]:
     """
     Predict the text classification with a minimum confidence threshold.
@@ -241,6 +243,7 @@ def predict_ti(text, min_confidence=0.5) -> Tuple[str, float]:
     sorted_results = sorted(results, key=lambda x: x[1], reverse=True)
     return Trend(title=sorted_results[0][0], probability=sorted_results[0][1]) if sorted_results[0][1] > min_confidence else Trend(title='uncertain', probability=0.0)
 
+
 def get_trends_in_document(doc_chunks:List[DocumentChunk], **kwargs) -> List[DocumentChunk]:
     """
     Analyze document chunks to determine the most frequent trend.
@@ -257,10 +260,6 @@ def get_trends_in_document(doc_chunks:List[DocumentChunk], **kwargs) -> List[Doc
         chunk.trend = predict_ti(chunk.text)
     else:
         return doc_chunks
-
-
-
-
 
 
 def process_documents(documents:List[Document]) -> List[Document]:
@@ -282,14 +281,11 @@ def process_documents(documents:List[Document]) -> List[Document]:
             if doc.country == '':
                 doc.country = max(set(countries), key=countries.count)
             pb.update(1)
-            #with open('deliverables/parsed_documents.json', 'w') as f:
-            #    json.dump([asdict(doc) for doc in documents], f)
+            with open('deliverables/parsed_documents.json', 'w') as f:
+                json.dump([asdict(doc) for doc in documents], f)
         except Exception as e:
-            print(f"An error occurred, while processing document {idx+1}: {e}")
+            print(f"An error occurred, while processing document {idx+1} with name {doc.id}: {e}")
     return documents
-
-
-
 
 
 def conduct_analysis_a(documents:List[Document]) -> pd.DataFrame:
@@ -298,15 +294,17 @@ def conduct_analysis_a(documents:List[Document]) -> pd.DataFrame:
     ti_counts_per_country = {country: {} for country in countries}
     for doc in documents:
         for chunk in doc.chunks:
-            ti_counts_per_country[doc.country][chunk.trend.title] = ti_counts_per_country[doc.country].get(chunk.trend.title, 0) + 1
+            if chunk.trend.title != 'uncertain' and chunk.trend.title != 'irrelevant':
+                ti_counts_per_country[doc.country][chunk.trend.title] = ti_counts_per_country[doc.country].get(chunk.trend.title, 0) + 1
     analysis_output = []
     for country, counts in ti_counts_per_country.items():
         country_total = sum(counts.values())
         for ti, count in counts.items():
-            analysis_output.append([country, ti, count, count/country_total])
+            if ti != 'uncertain' and ti != 'irrelevant':
+                analysis_output.append([country, ti, count, count/country_total])
     data = pd.DataFrame(analysis_output, columns=["country", "ti", "ti_count", 'ti_percentage'])
-    data = data[data['ti'] != 'uncertain']
-    data = data[data['ti'] != 'irrelevant']
+    # compute accumulative sum of ti_percentage for each country
+    data['ti_percentage_accumulative'] = data.groupby('country')['ti_percentage'].cumsum()
     data.to_csv('deliverables/analysis_a.csv', index=False)
     print("Analysis A completed. Results saved to analysis_a.csv")
     return data
@@ -317,14 +315,19 @@ def conduct_analysis_b(documents:List[Document]) -> pd.DataFrame:
     analysis_output = []
     for country in set([doc.country for doc in documents]):
         docs_country = [doc for doc in documents if doc.country == country]
-        for chunk in docs_country[0].chunks:
-            for entity in chunk.entities:
-                if len(entity["dbPediaTypes"]) > 0:
-                    entity_type = entity["dbPediaTypes"][-1]
-                else:
-                    entity_type = ''
-                analysis_output.append([country, chunk.trend.title, entity_type, entity['title'], entity['supportLen']])
+        for chunk in [chunk for doc in docs_country for chunk in doc.chunks]:
+            if chunk.entities is not None:
+                for entity in chunk.entities:
+                    if len(entity["dbPediaTypes"]) > 0:
+                        entity_type = entity["dbPediaTypes"][-1]
+                    else:
+                        entity_type = ''
+                    analysis_output.append([country, chunk.trend.title, entity_type, entity['title'], entity['supportLen']])
+   
     data = pd.DataFrame(analysis_output, columns=["country", "ti", "entity_type", "entity", 'support_len'])
+    print("Length of data before grouping:", len(data))
+    data = data.groupby(['country', 'ti', 'entity_type', 'entity']).agg({'support_len': 'sum'}).reset_index()
+    print("Length of data after grouping:", len(data))
     # drop rows with ti = uncertain or ti = irrelevant
     data = data[data['ti'] != 'uncertain']
     data = data[data['ti'] != 'irrelevant']

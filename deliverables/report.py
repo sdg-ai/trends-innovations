@@ -136,7 +136,7 @@ def load_documents(documents_dir: str = "deliverables/data") -> List[Document]:
         List[Document]: A list of `Document` objects with cleaned text and metadata.
     """
     documents = [f for f in os.listdir(documents_dir) if os.path.isfile(os.path.join(documents_dir, f))]
-    documents = documents[:3]
+    #documents = documents[:3]
     url_pattern = r"https~____(www\..+\.[a-z]{2,3})__.*"
     cleaned_documents = []
     for doc in documents:

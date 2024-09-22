@@ -1,3 +1,4 @@
+import csv
 import os
 import re
 import sys
@@ -69,7 +70,26 @@ class Document:
     text: str = ''
     country: str = ''
     chunks: List[DocumentChunk] = None
-    
+
+
+def load_needs_mapping():
+    needs_mapping = {}
+    with open(get_data('Database_1.0_for_AI-Driven_Transformative.csv'), 'rt') as csv_f:
+        csv_f = csv.reader(f)
+        for row in f:
+            innovation = row[4]
+            if row[1]:
+                level_1 = row[1]
+            if row[2]:
+                level_2 = row[2]
+            if 'N/A' in row[3]:
+                level_3 = None
+            else:
+                level_3 = row[3]
+            needs_mapping[innovation] = {'level_1': level_1, 'level_2': level_2, 'level_3': level_3}
+
+    return needs_mapping
+
 
 
 

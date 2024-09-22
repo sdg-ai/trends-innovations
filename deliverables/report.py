@@ -1,4 +1,3 @@
-
 import os
 import re
 import sys
@@ -22,6 +21,16 @@ from torch.nn.functional import softmax
 from transformers import DistilBertForSequenceClassification, AutoTokenizer
 from deliverables.entity_networks_master.app.entity_extraction import EntityExtractor
 import concurrent.futures
+
+#############################################################################
+#
+# 	A necessary utility for accessing the data local to the installation.
+#
+#############################################################################
+
+_ROOT = os.path.abspath(os.path.dirname(__file__))
+def get_data(path):
+    return os.path.join(_ROOT, 'data', path)
 
 
 CHECKPOINT = os.getenv('CHECKPOINT', 'default_checkpoint_value')
@@ -151,6 +160,7 @@ def call_wikifier_on_chunks(chunks:List[DocumentChunk], lang="en", threshold:flo
             if len(same_title) > 1:
                 merged_annotation = same_title[0]
                 try:
+                    # TODO: Look at how this is affected by spacy model change
                     for a in same_title[1:]:
                         merged_annotation["support"] += a["support"]
                         merged_annotation["supportLen"] += a["supportLen"]
@@ -167,6 +177,7 @@ def call_wikifier_on_chunks(chunks:List[DocumentChunk], lang="en", threshold:flo
             seen_titles.add(annotation["title"])
         return merged_annotations
     def fetch_annotations(chunk):
+        # TODO: replace
         data = urllib.parse.urlencode([
             ("text", chunk),
             ("lang", lang),
@@ -201,6 +212,8 @@ def call_wikifier_on_chunks(chunks:List[DocumentChunk], lang="en", threshold:flo
                 print(f"An error occurred: {e}")
     return chunks
 
+
+# TODO: replace
 def run_entity_extraction_via_wikifier(doc_chunks:List[DocumentChunk], **kwargs) -> Tuple[List[DocumentChunk], List[str]]:
     kwargs['pb'].set_postfix_str(f"Running entity extraction via Wikifier. Processing {len(doc_chunks)} chunks.")
     doc_chunks = call_wikifier_on_chunks(doc_chunks, pb=kwargs['pb'])

@@ -20,8 +20,8 @@ from nltk.corpus import stopwords
 from dataclasses import dataclass, asdict
 from torch.nn.functional import softmax
 from transformers import DistilBertForSequenceClassification, AutoTokenizer
-from deliverables.entity_networks_master.app.entity_extraction import EntityExtractor
 import concurrent.futures
+from entity_extraction import EntityExtractor
 
 #############################################################################
 #
@@ -50,6 +50,8 @@ DOMAIN_COUNTRY_MAPPING = {
     "uk": "United Kingdom",
     "org": "United Kingdom"
 }
+
+x = EntityExtractor()
 
 @dataclass
 class Trend:
@@ -221,6 +223,20 @@ def call_wikifier_on_chunks(chunks:List[DocumentChunk], lang="en", threshold:flo
             response = f.read()
             response = json.loads(response.decode("utf8"))
         return response["annotations"]
+
+    # Takes an input text chunk, calls the spacy model (w/ wikifier)
+    # the function should output entities with the structure:
+    # {<entity-name-1>: <spacy-entity-type-1>,
+    #  <entity-name-2>: <spacy-entity-type-2>}
+    # e.g. {"Boris Johnson": "PERSON"}
+    def fetch_annotations_spacy(chunk):
+        core_annotation_fields = {}
+        annotations = x.get_annotations(chunk)
+        for annotation in annotations:
+            core_annotation_fields[annotation][0] = annotation[1]
+
+        return core_annotation_fields
+
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=12) as executor:
         future_to_chunk = {executor.submit(fetch_annotations, chunk.text): chunk for chunk in chunks}

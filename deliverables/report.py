@@ -21,7 +21,7 @@ from dataclasses import dataclass, asdict
 from torch.nn.functional import softmax
 from transformers import DistilBertForSequenceClassification, AutoTokenizer
 import concurrent.futures
-from deliverables.entity_networks_master.app.entity_extraction import EntityExtractor
+from deliverables.entity_extraction import EntityExtractor
 
 #############################################################################
 #
@@ -228,7 +228,8 @@ def call_spacy_on_chunks(chunks:List[DocumentChunk], **kwargs) -> List[DocumentC
         entities = []
         annotations = x.get_annotations(chunk_text)
         for annotation in annotations:
-            entities.append(Entity(title=annotation[0], supportLen=0, entityType=annotation[1]))
+            support = annotation[2]["support"] if "support" in annotation[2] else 0
+            entities.append(Entity(title=annotation[0], supportLen=support, entityType=annotation[1]))
         return entities
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=12) as executor:

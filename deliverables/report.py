@@ -35,9 +35,7 @@ def get_data(path):
 
 
 CHECKPOINT = os.getenv('CHECKPOINT', 'default_checkpoint_value')
-CHECKPOINT = "checkpoint"
 SEED = os.getenv('SEED', 'default_seed_value')
-SEED = "seed_1"
 TRENDSCANNER_ENTITY_EXTRACTION_KEY = os.getenv('TRENDSCANNER_ENTITY_EXTRACTION_KEY', '')
 
 
@@ -276,7 +274,7 @@ def predict_ti(text, min_confidence=0.5) -> Tuple[str, float]:
     results = [(LABEL_ENCODER.inverse_transform([i])[0], prob.item()) for i, prob in enumerate(probabilities)]
     # Sort results by probability in descending order
     sorted_results = sorted(results, key=lambda x: x[1], reverse=True)
-    return Trend(title=sorted_results[0][0], probability=sorted_results[0][1]) if sorted_results[0][1] > min_confidence else Trend(title='uncertain', probability=0.0)
+    return Trend(title=sorted_results[0][0], probability=sorted_results[0][1]) if sorted_results[0][1] > min_confidence else Trend(title='uncertain', probability=0.0), sorted_results
 
 
 def get_trends_in_document(doc_chunks:List[DocumentChunk], **kwargs) -> List[DocumentChunk]:
@@ -289,12 +287,19 @@ def get_trends_in_document(doc_chunks:List[DocumentChunk], **kwargs) -> List[Doc
     Returns:
         List[DocumentChunk]: A list of DocumentChunk objects with updated trend information.
     """
-
+    examples_to_save = []
     for idx, chunk in enumerate(doc_chunks):
         kwargs['pb'].set_postfix_str(f"Getting trends in document. Processing chunk {idx+1}/{len(doc_chunks)}")
-        chunk.trend = predict_ti(chunk.text)
-    else:
-        return doc_chunks
+        chunk.trend, probabilities = predict_ti(chunk.text)
+        if chunk.trend.title != 'uncertain':
+            for ti, prob in probabilities:
+                if prob > 0.5:
+                    examples_to_save.append({
+                        'text': chunk.text.replace(';', ','),
+                        'label': ti,
+                        'conficence': prob
+                    })
+    return doc_chunks, examples_to_save
 
 
 def process_documents(documents:List[Document]) -> List[Document]:
@@ -307,11 +312,13 @@ def process_documents(documents:List[Document]) -> List[Document]:
     Returns:
         List[Document]: The list of processed Document objects with updated trends and entities.
     """
+    examples_to_save = []
     pb = tqdm(total=len(documents), desc="Processing documents")
     for idx, doc in enumerate(documents):
         try:
             pb.set_description(f"Processing document {idx+1}/{len(documents)}")
-            doc.chunks = get_trends_in_document(doc.chunks, pb=pb)
+            doc.chunks, examples = get_trends_in_document(doc.chunks, pb=pb)
+            examples_to_save.extend(examples)
             #doc.chunks = run_entity_extraction_via_wikifier(doc.chunks, pb=pb)
             doc.chunks = run_entity_extraction_via_spacy(doc.chunks, pb=pb)
             pb.update(1)
@@ -319,6 +326,8 @@ def process_documents(documents:List[Document]) -> List[Document]:
                 json.dump([asdict(doc) for doc in documents], f)
         except Exception as e:
             print(f"An error occurred, while processing document {idx+1} with name {doc.id}: {e}")
+    examples_to_save = pd.DataFrame(examples_to_save)
+    examples_to_save.to_csv('deliverables/output/ti_prediction_samples.csv', index=False, sep=";")
     return documents
 
 

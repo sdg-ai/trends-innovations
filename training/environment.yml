@@ -1,4 +1,4 @@
-name: tandic-training
+name: aiforgood-tandic-training
 channels:
   - conda-forge
 dependencies:

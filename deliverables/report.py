@@ -1,4 +1,4 @@
-
+import csv
 import os
 import re
 import sys
@@ -20,14 +20,22 @@ from nltk.corpus import stopwords
 from dataclasses import dataclass, asdict
 from torch.nn.functional import softmax
 from transformers import DistilBertForSequenceClassification, AutoTokenizer
-from deliverables.entity_networks_master.app.entity_extraction import EntityExtractor
 import concurrent.futures
+from deliverables.entity_extraction import EntityExtractor
+
+#############################################################################
+#
+# 	A necessary utility for accessing the data local to the installation.
+#
+#############################################################################
+
+_ROOT = os.path.abspath(os.path.dirname(__file__))
+def get_data(path):
+    return os.path.join(_ROOT, 'data', path)
 
 
 CHECKPOINT = os.getenv('CHECKPOINT', 'default_checkpoint_value')
-CHECKPOINT = "checkpoint"
 SEED = os.getenv('SEED', 'default_seed_value')
-SEED = "seed_1"
 TRENDSCANNER_ENTITY_EXTRACTION_KEY = os.getenv('TRENDSCANNER_ENTITY_EXTRACTION_KEY', '')
 
 
@@ -41,6 +49,8 @@ DOMAIN_COUNTRY_MAPPING = {
     "org": "United Kingdom"
 }
 
+x = EntityExtractor()
+
 @dataclass
 class Trend:
     title:str
@@ -48,10 +58,17 @@ class Trend:
 
 
 @dataclass
+class Entity:
+    title:str
+    supportLen:int
+    entityType:str
+
+
+@dataclass
 class DocumentChunk:
     text: str
     trend: Trend
-    entities: List = None
+    entities: List[Entity] = None
 
 
 @dataclass
@@ -60,9 +77,25 @@ class Document:
     text: str = ''
     country: str = ''
     chunks: List[DocumentChunk] = None
-    
 
 
+def load_needs_mapping():
+    needs_mapping = {}
+    with open(get_data('Database_1.0_for_AI-Driven_Transformative.csv'), 'rt') as csv_f:
+        csv_f = csv.reader(f)
+        for row in f:
+            innovation = row[4]
+            if row[1]:
+                level_1 = row[1]
+            if row[2]:
+                level_2 = row[2]
+            if 'N/A' in row[3]:
+                level_3 = None
+            else:
+                level_3 = row[3]
+            needs_mapping[innovation] = {'level_1': level_1, 'level_2': level_2, 'level_3': level_3}
+
+    return needs_mapping
 
 
 def load_model_ti_model() -> Tuple[DistilBertForSequenceClassification, AutoTokenizer, Any]:
@@ -83,6 +116,7 @@ def load_model_ti_model() -> Tuple[DistilBertForSequenceClassification, AutoToke
     model.eval()
     return model, tokenizer, label_encoder
 MODEL, TOKENIZER, LABEL_ENCODER = load_model_ti_model()
+
 
 def load_documents(documents_dir: str = "deliverables/data") -> List[Document]:
     """
@@ -125,6 +159,7 @@ def load_documents(documents_dir: str = "deliverables/data") -> List[Document]:
     print(f"Total number of chunks: {sum([len(doc.chunks) for doc in cleaned_documents])}")
     return cleaned_documents
 
+
 def get_sentence_chunks(text: str) -> List[str]:
     """
     Split the input text into chunks of sentences.
@@ -140,35 +175,11 @@ def get_sentence_chunks(text: str) -> List[str]:
     return chunks
 
 
-def call_wikifier_on_chunks(chunks:List[DocumentChunk], lang="en", threshold:float=0.8, **kwargs) -> List[DocumentChunk]:
-    def merge_annotations(annotations):
-        merged_annotations = []
-        seen_titles = set()
-        for annotation in annotations:
-            if annotation["title"] in seen_titles:
-                continue
-            same_title = [a for a in annotations if a["title"] == annotation["title"]]
-            if len(same_title) > 1:
-                merged_annotation = same_title[0]
-                try:
-                    for a in same_title[1:]:
-                        merged_annotation["support"] += a["support"]
-                        merged_annotation["supportLen"] += a["supportLen"]
-                        merged_annotation["pageRank"] += a["pageRank"]
-                        if "wikiDataClasses" in merged_annotation:
-                            merged_annotation["wikiDataClasses"] += a["wikiDataClasses"]
-                            merged_annotation["wikiDataClassIds"] += a["wikiDataClassIds"]
-                        merged_annotation["dbPediaTypes"] += a["dbPediaTypes"]
-                except Exception as e:
-                    print("Error merging annotations:", e)
-                merged_annotations.append(merged_annotation)
-            else:
-                merged_annotations.append(annotation)
-            seen_titles.add(annotation["title"])
-        return merged_annotations
-    def fetch_annotations(chunk):
+def call_wikifier_on_chunks(chunks:List[DocumentChunk], lang="en", **kwargs) -> List[DocumentChunk]:
+    def fetch_annotations(chunk_text):
+        # TODO: replace
         data = urllib.parse.urlencode([
-            ("text", chunk),
+            ("text", chunk_text),
             ("lang", lang),
             ("userKey", TRENDSCANNER_ENTITY_EXTRACTION_KEY),
             ("pageRankSqThreshold", "-1"),
@@ -190,36 +201,58 @@ def call_wikifier_on_chunks(chunks:List[DocumentChunk], lang="en", threshold:flo
             response = f.read()
             response = json.loads(response.decode("utf8"))
         return response["annotations"]
-
     with concurrent.futures.ThreadPoolExecutor(max_workers=12) as executor:
         future_to_chunk = {executor.submit(fetch_annotations, chunk.text): chunk for chunk in chunks}
         for idx, future in enumerate(concurrent.futures.as_completed(future_to_chunk)):
             kwargs['pb'].set_postfix_str(f"Running entity extraction via Wikifier. Processing chunk {idx+1}/{len(chunks)}")
             try:
+                chunks[idx].entities = []
+                retult_entities = future.result()
+                for entity in retult_entities:
+                    chunks[idx].entities.append(Entity(title=entity['title'], supportLen=entity['support'], entityType=entity['dbPediaTypes'][-1]))
+                    
+            except Exception as e:
+                print(f"An error occurred: {e}")
+    return chunks
+
+
+def call_spacy_on_chunks(chunks:List[DocumentChunk], **kwargs) -> List[DocumentChunk]:
+    # Takes an input text chunk, calls the spacy model (w/ wikifier)
+    # the function should output entities with the structure:
+    # {<entity-name-1>: <spacy-entity-type-1>,
+    #  <entity-name-2>: <spacy-entity-type-2>}
+    # e.g. {"Boris Johnson": "PERSON"}
+    def fetch_annotations_spacy(chunk_text):
+        entities = []
+        annotations = x.get_annotations(chunk_text)
+        for annotation in annotations:
+            support = annotation[2]["support"] if "support" in annotation[2] else 0
+            entities.append(Entity(title=annotation[0], supportLen=support, entityType=annotation[1]))
+        return entities
+    
+    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as executor:
+        future_to_chunk = {executor.submit(fetch_annotations_spacy, chunk.text): chunk for chunk in chunks}
+        for idx, future in enumerate(concurrent.futures.as_completed(future_to_chunk)):
+            kwargs['pb'].set_postfix_str(f"Running entity extraction via Spacy. Processing chunk {idx+1}/{len(chunks)}")
+            try:
                 chunks[idx].entities = future.result()
             except Exception as e:
                 print(f"An error occurred: {e}")
     return chunks
+        
 
 def run_entity_extraction_via_wikifier(doc_chunks:List[DocumentChunk], **kwargs) -> Tuple[List[DocumentChunk], List[str]]:
     kwargs['pb'].set_postfix_str(f"Running entity extraction via Wikifier. Processing {len(doc_chunks)} chunks.")
     doc_chunks = call_wikifier_on_chunks(doc_chunks, pb=kwargs['pb'])
     kwargs['pb'].set_postfix_str(f"Extracting countries from entities.")
-    countries = []
-    for idx, doc_chunk in enumerate(doc_chunks):
-        mentioned_countries = []
-        for entity in doc_chunk.entities:
-            if 'Country' in entity['dbPediaTypes']:
-                mentioned_countries.append((entity['title'], entity['supportLen']))
-        if len(mentioned_countries) == 1:
-            country = mentioned_countries[0][0]
-        elif len(mentioned_countries) > 1:
-            country = max(mentioned_countries, key=lambda x: x[1])[0]
-        else:
-            country = ''
-        doc_chunk.entities = doc_chunk.entities
-        countries.append(country)
-    return doc_chunks, countries
+    return doc_chunks
+
+
+def run_entity_extraction_via_spacy(doc_chunks:List[DocumentChunk], **kwargs) -> Tuple[List[DocumentChunk], List[str]]:
+    kwargs['pb'].set_postfix_str(f"Running entity extraction via Spacy. Processing {len(doc_chunks)} chunks.")
+    doc_chunks = call_spacy_on_chunks(doc_chunks, pb=kwargs['pb'])
+    kwargs['pb'].set_postfix_str(f"Extracting countries from entities.")
+    return doc_chunks
 
 
 def predict_ti(text, min_confidence=0.5) -> Tuple[str, float]:
@@ -241,7 +274,7 @@ def predict_ti(text, min_confidence=0.5) -> Tuple[str, float]:
     results = [(LABEL_ENCODER.inverse_transform([i])[0], prob.item()) for i, prob in enumerate(probabilities)]
     # Sort results by probability in descending order
     sorted_results = sorted(results, key=lambda x: x[1], reverse=True)
-    return Trend(title=sorted_results[0][0], probability=sorted_results[0][1]) if sorted_results[0][1] > min_confidence else Trend(title='uncertain', probability=0.0)
+    return Trend(title=sorted_results[0][0], probability=sorted_results[0][1]) if sorted_results[0][1] > min_confidence else Trend(title='uncertain', probability=0.0), sorted_results
 
 
 def get_trends_in_document(doc_chunks:List[DocumentChunk], **kwargs) -> List[DocumentChunk]:
@@ -254,12 +287,19 @@ def get_trends_in_document(doc_chunks:List[DocumentChunk], **kwargs) -> List[Doc
     Returns:
         List[DocumentChunk]: A list of DocumentChunk objects with updated trend information.
     """
-
+    examples_to_save = []
     for idx, chunk in enumerate(doc_chunks):
         kwargs['pb'].set_postfix_str(f"Getting trends in document. Processing chunk {idx+1}/{len(doc_chunks)}")
-        chunk.trend = predict_ti(chunk.text)
-    else:
-        return doc_chunks
+        chunk.trend, probabilities = predict_ti(chunk.text)
+        if chunk.trend.title != 'uncertain':
+            for ti, prob in probabilities:
+                if prob > 0.5:
+                    examples_to_save.append({
+                        'text': chunk.text.replace(';', ','),
+                        'label': ti,
+                        'conficence': prob
+                    })
+    return doc_chunks, examples_to_save
 
 
 def process_documents(documents:List[Document]) -> List[Document]:
@@ -272,19 +312,22 @@ def process_documents(documents:List[Document]) -> List[Document]:
     Returns:
         List[Document]: The list of processed Document objects with updated trends and entities.
     """
+    examples_to_save = []
     pb = tqdm(total=len(documents), desc="Processing documents")
     for idx, doc in enumerate(documents):
         try:
             pb.set_description(f"Processing document {idx+1}/{len(documents)}")
-            doc.chunks = get_trends_in_document(doc.chunks, pb=pb)
-            doc.chunks, countries = run_entity_extraction_via_wikifier(doc.chunks, pb=pb)
-            if doc.country == '':
-                doc.country = max(set(countries), key=countries.count)
+            doc.chunks, examples = get_trends_in_document(doc.chunks, pb=pb)
+            examples_to_save.extend(examples)
+            #doc.chunks = run_entity_extraction_via_wikifier(doc.chunks, pb=pb)
+            doc.chunks = run_entity_extraction_via_spacy(doc.chunks, pb=pb)
             pb.update(1)
-            with open('deliverables/parsed_documents.json', 'w') as f:
+            with open('deliverables/output/parsed_documents.json', 'w') as f:
                 json.dump([asdict(doc) for doc in documents], f)
         except Exception as e:
             print(f"An error occurred, while processing document {idx+1} with name {doc.id}: {e}")
+    examples_to_save = pd.DataFrame(examples_to_save)
+    examples_to_save.to_csv('deliverables/output/ti_prediction_samples.csv', index=False, sep=";")
     return documents
 
 
@@ -305,7 +348,7 @@ def conduct_analysis_a(documents:List[Document]) -> pd.DataFrame:
     data = pd.DataFrame(analysis_output, columns=["country", "ti", "ti_count", 'ti_percentage'])
     # compute accumulative sum of ti_percentage for each country
     data['ti_percentage_accumulative'] = data.groupby('country')['ti_percentage'].cumsum()
-    data.to_csv('deliverables/analysis_a.csv', index=False)
+    data.to_csv('deliverables/output//analysis_a.csv', index=False)
     print("Analysis A completed. Results saved to analysis_a.csv")
     return data
 
@@ -318,20 +361,15 @@ def conduct_analysis_b(documents:List[Document]) -> pd.DataFrame:
         for chunk in [chunk for doc in docs_country for chunk in doc.chunks]:
             if chunk.entities is not None:
                 for entity in chunk.entities:
-                    if len(entity["dbPediaTypes"]) > 0:
-                        entity_type = entity["dbPediaTypes"][-1]
-                    else:
-                        entity_type = ''
-                    analysis_output.append([country, chunk.trend.title, entity_type, entity['title'], entity['supportLen']])
-   
-    data = pd.DataFrame(analysis_output, columns=["country", "ti", "entity_type", "entity", 'support_len'])
+                    analysis_output.append([country, chunk.trend.title, entity.entityType, entity.title, entity.supportLen, chunk.text])
+    data = pd.DataFrame(analysis_output, columns=["country", "ti", "entity_type", "entity", 'support_len', 'support_text'])
     print("Length of data before grouping:", len(data))
-    data = data.groupby(['country', 'ti', 'entity_type', 'entity']).agg({'support_len': 'sum'}).reset_index()
+    data = data.groupby(['country', 'ti', 'entity_type', 'entity', 'support_text']).agg({'support_len': 'sum'}).reset_index()
     print("Length of data after grouping:", len(data))
     # drop rows with ti = uncertain or ti = irrelevant
     data = data[data['ti'] != 'uncertain']
     data = data[data['ti'] != 'irrelevant']
-    data.to_csv('deliverables/analysis_b.csv', index=False)
+    data.to_csv('deliverables/output/analysis_b.csv', index=False)
     print("Analysis B completed. Results saved to analysis_b.csv")
     return data
 
@@ -361,32 +399,44 @@ def conduct_analysis_c(documents:List[Document]) -> pd.DataFrame:
     data = data[data['ti'] != 'uncertain']
     data = data[data['ti'] != 'irrelevant']
     # drop rows where "built in" is in the wti column
-    data.to_csv('deliverables/analysis_c.csv', index=False)
+    data.to_csv('deliverables/output/analysis_c.csv', index=False)
     print("Analysis C completed. Results saved to analysis_c.csv")
     return data
 
 
 if __name__ == "__main__":
     raw_documents = load_documents('deliverables/data')
-    if os.path.exists('deliverables/parsed_documents.json'):
+    if not os.path.exists('deliverables/output'):
+        os.makedirs('deliverables/output')
+    if os.path.exists('deliverables/output/parsed_documents.json'):
         i = input('Documents seem to be already parsed. Do you want to reparse them? (y/n): ')
         if i.lower() == 'y':
             parsed_documents = process_documents(raw_documents)
         else:
-            with open('deliverables/parsed_documents.json', 'r') as f:
+            with open('deliverables/output/parsed_documents.json', 'r') as f:
                 # load parsed documents from file to dataclass objects with nested dataclass objects
                 parsed_documents = [Document(**doc) for doc in json.load(f)]
                 for doc in parsed_documents:
                     doc.chunks = [DocumentChunk(**chunk) for chunk in doc.chunks]
                     for chunk in doc.chunks:
                         if chunk.entities is not None:
-                            chunk.entities = [dict(entity) for entity in chunk.entities]
+                            chunk.entities = [Entity(**entity) for entity in chunk.entities]
                         if chunk.trend is not None and chunk.trend != '':
                             chunk.trend = Trend(**chunk.trend)
 
     else:
         parsed_documents = process_documents(raw_documents)
+    # generate list of ti trends and save to file
+    tis = []
+    for doc in parsed_documents:
+        for chunk in doc.chunks:
+            tis.append(chunk.trend.title)
+    tis = list(set(tis))
+    with open('deliverables/output/classes.txt', 'w') as f:
+        for ti in tis:
+            f.write(f"{ti}\n")
     results_a = conduct_analysis_a(parsed_documents)
     results_b = conduct_analysis_b(parsed_documents)
     results_c = conduct_analysis_c(parsed_documents)
+    pass
     

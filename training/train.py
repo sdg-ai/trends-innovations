@@ -272,8 +272,8 @@ def run_config(config: Dict,
                sweep=False):
     config = init_wandb(config_name, config, wandb_config, sweep=sweep)
     # append seed to checkpoint save dir
-    curr_log_dir = config["checkpoints_dir"] + f"-{config_name}" + f"/seed_{config['seed']}"
-    config["checkpoints_dir"] = curr_log_dir
+    #curr_log_dir = config["checkpoints_dir"] + f"-{config_name}" + f"/seed_{config['seed']}"
+    #config["checkpoints_dir"] = curr_log_dir
     # create the dir
     os.makedirs(curr_log_dir, exist_ok=True)
     # save config dict as json to dir

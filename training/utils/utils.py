@@ -67,7 +67,7 @@ def init_configurations(args, DEFAULT_CONFIG, WANDB_CONFIG) -> Dict[str, Tuple[D
         run_config = DEFAULT_CONFIG.copy()
         run_config.update(config)
         # directory where checkpoints are saved is modified to include the date and model name
-        run_config["checkpoints_dir"] = f"{run_config['checkpoints_dir']}/{args.d}-{config['model_name']}"
+        run_config["checkpoints_dir"] = f"{run_config['checkpoints_dir']}/{args.d}-{config['model_name']}-{config_name}"
         # set seed
         run_config["seed"] = run_config["initial_seed"]
         # set model name

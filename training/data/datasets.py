@@ -267,6 +267,7 @@ def load_data(
         top_categories = get_top_n_categories_by(only_top_n_categories_by[0], only_top_n_categories_by[1])
         df = df[df["label"].isin(top_categories)]
         logger.info(f"Filtered data to {len(df)} samples.")
+        logger.info(f"Final categories: {df.label.unique()}")
     if debug:
         dfs = []
         for label in df.label.unique():

@@ -1,0 +1,3049 @@
+Institute for Manufacturing, University of Cambridge
+March 2022UK INNOVATION REPORT 2022
+Benchmarking the UK’s industrial and 
+innovation performance in a global context
+2What makes this report different?
+While numerous sources of data on the topic of innovation exist, the UK Innovation Report aims to make a contribution by bringing together, in a 
+single place, innovation and value -added indicators in a concise and accessible format. The report seeks to demonstrate the value of combining
+different types of indicator and data sets to facilitate policy discussions on innovation and industrial performance –and the interplay between 
+them . 
+Instead of structuring the report according to input and output indicators, as is typically done in reviews of innovation act ivity, the focus has been 
+on bringing together indicators that provide rich quantitative representations that are relevant to the vitality of the UK’s innovation activity and 
+its industrial performance in an international context . While the report does not make specific policy recommendations, it does highlight areas 
+where additional evidence and policy action may be required. 
+Motivation▪To review the UK’s innovation and industrial performance and compare it with that of other selected countries;
+▪To facilitate discussions on the relation between innovation and sectoral competitiveness; and
+▪To contribute to the evidence base that is available to inform industrial and innovation policy.3Contributors and acknowledgements
+Contributors
+The contributors tothis report are:Jennifer Castaneda -Navarrete, David Leal -Ayala, Carlos López -Gómez, Michele Palladino and Liz Killen .Technical advice was provided byAna Rincon -
+Aznar (National Institute ofEconomic and Social Research) .Research assistance was provided byMaximilian Elsen (Institute forManufacturing) .Cover design byElla Whellams .Copy -editing
+byJason Naselli .
+Acknowledgements
+The authors would like tothank Tim Minshall and Eoin O’Sullivan, who provided comments and suggestions and reviewed earlier versions ofthis report .We would also like tothank allofthe
+organisations from the private and public sectors who provided valuable time and insights during the interviews and workshops carried out toinform the report .
+Disclaimer
+Names ofcountries and territories follow widely accepted conventions and donot imply the expression ofany opinion whatsoever onthe part ofthe authors ortheir affiliated institutions
+concerning the legal status ofany country, territory, city orarea, orofitsauthorities .Any mention offirm names orcommercial products does not constitute anendorsement bythe authors
+ortheir affiliated institutions .
+For further details, please contact: ifm -policy -links@eng.cam.ac.uk
+Please reference as: Policy Links (2022). UK Innovation Report 2022. Benchmarking the UK’s Industrial and Innovation Performance in a Global Context. IfM Engage. 
+Institute for Manufacturing, University of Cambridge.Cambridge Industrial Innovation Policy
+Cambridge Industrial Innovation Policy (CIIP) brings together the Centre forScience, Technology &Innovation Policy atthe Institute forManufacturing, the Policy
+Links Unit from IfM Engage and the Babbage Policy Forum .Our work isbased around what wecall industrial innovation policy, apolicy domain that focuses onthe
+interplay between technology, innovation and industrial competitiveness .CIIP isbased atthe Institute for Manufacturing, adivision ofthe University of
+Cambridge's Department ofEngineering .
+17Charles Babbage Road, Cambridge, CB30FS, United Kingdom
+https ://www .ciip .group .cam .ac.uk/4Executive summary
+UK INNOVATION REPORT 20225Theme (1) Structure and performance of the UK economy
+Key policy 
+questions 
+addressed▪How has the structure of the UK economy changed in the last few years?
+▪Are these changes affecting economic performance?
+▪How does this compare with other countries?
+Key findings▪In the last two decades the share in the UK economy of high -productivity sectors such as manufacturing and mining 
+has reduced, while the participation of sectors such as construction and services has grown. Between 1998 and 2019, the 
+manufacturing sector had one of the highest productivity growth rates in the UK economy, but it was also the sector 
+whose share in the economy decreased the most (from 16.1% to 9.7%) during this period.
+▪Finance was the main driver of productivity growth prior to 2008 but its contribution became negative in the post -
+crisis period. Before the financial crisis, finance was the main driver of productivity growth in the UK, but Bank of 
+England analysis suggests that this was likely driven by “unsustainable increased debt and higher risk tolerance”. The 
+contribution of finance to national productivity growth became negative post -crisis. 
+▪The loss of manufacturing has imposed a penalty on UK productivity growth of half a percentage point, on average, 
+each year for the last two decades.  In contrast, manufacturing was responsible for around 30% of aggregate productivity 
+growth in China and almost half in Taiwan during the 1998 –2017 period. It also contributed to around 30% of aggregate 
+productivity growth in Korea between 2005 and 2017 and 15% in Singapore between 2010 and 2017.Executive summary (1/6)
+Pages 15 –27 6Theme (2) Investment in innovation
+Key policy 
+questions 
+addressed▪Is the UK spending enough on R&D?
+▪How do the public and private sectors contribute to national expenditure on innovation?
+▪How does the UK compare with other countries?
+Key findings▪The UK spends less on R&D than the OECD average; a significant increase in public funding for R&D has been 
+announced but delayed. At 1.74%, the UK’s gross domestic expenditure on R&D remains well below the 2019 OECD 
+average of 2.5%. The UK government has committed to investing £22 billion in R&D by 2026/27 (pushing back the 
+original target date of 2024).
+▪Compared to other countries, the business sector in the UK contributes less to R&D funding; universities perform 
+significantly more of the country’s R&D and the government significantly less. In the UK the business sector funds 
+around 55% of R&D –a lower proportion than in countries such as Germany, Korea and Japan. The UK’s higher education 
+sector stands out from comparator countries, performing 23.1% of the country’s R&D in 2019. The government sector in 
+the UK performs only 6.6% of R&D, well below comparator countries.
+▪Very few firms headquartered in the UK are global leaders in R&D investment and patent applications. In 2020 o nly two 
+companies headquartered in the UK were among the top 100 R&D investing firms and no firms headquartered in the UK 
+were among the top 100 patent applicants at the United States Patent and Trademark Office (USPTO).Executive summary (2/6)
+Pages 28 –43 7Theme (3a) Industrial performance –focus on the pharmaceutical manufacturing sector
+Key policy 
+questions 
+addressed▪Are UK sectors becoming more or less competitive internationally?
+▪How are UK sectors performing in terms of productivity, value added and employment?
+▪What are the drivers behind the observed performance trends?Executive summary (3/6)
+Pages 44–61 
+Key UK pharmaceutical manufacturing trends in the last decade Drivers identified in literature review and sector expert consultations
+▪The value added and productivity of the UK pharmaceutical 
+manufacturing sector have declined significantly in the last decade. 
+Of the top 13 countries by pharmaceutical value added in 2018, the 
+UK was the only one to have experienced a significant productivity 
+decline, at a rate of -7.9% per year between 2008 and 2018. 
+▪The UK trade balance in pharmaceuticals has deteriorated 
+significantly since 2014. The UK has recorded deficits in 
+pharmaceutical product trade in all years between 2014 and 2020, 
+except in 2015, with the trade balance going from a $9.6 billion 
+surplus in 2010 to a deficit of over $1 billion in 2020. 
+▪Pharma business R&D expenditure in the UK has remained stagnant 
+in the last decade and remains significantly lower than comparator 
+countries. The sector spent only 6% more in 2018 than it did in 2008, 
+compared to increases of around 30% in the US and Germany and 
+over 100% in Korea. ➢Company restructuring and site closures, including those by major sector employers;
+➢Increased offshoring of pharmaceutical manufacturing, including a large share of APIs;
+➢The UK’s inability to capture the “second wave” of international manufacturing 
+investments;
+➢Greater incentives (e.g. tax) offered by other countries to attract manufacturing;
+➢New entrants focusing on early -stage drug discovery and non -manufacturing activities;
+➢An inability to commercialise and scale up the manufacture of technologies developed in 
+the UK;
+➢Caps on drug spending having an impact on the perception of the UK by investors;
+➢Increased use of generics pushing prices downwards and driving imports upwards;  
+➢The 2016 EU membership referendum adding uncertainty to investment decisions;
+➢The large share of domestic business R&D expenditure decisions taken abroad;
+➢Competitor countries having greater incentives to attract R&D investment;
+➢Difficulties accessing scale -up funding locally, leading to firm decisions to migrate; and
+➢UK companies reducing in -house R&D investment in favour of acquiring small firms.8Theme (3b) Industrial performance –focus on the automotive manufacturing sector
+Key policy 
+questions 
+addressed▪Are UK sectors becoming more or less competitive internationally?
+▪How are UK sectors performing in terms of productivity, value added and employment?
+▪What are the drivers behind the observed performance trends?Executive summary (4/6)
+Pages 62–79
+Key UK automotive manufacturing trends in the last decade Drivers identified in literature review and sector expert consultations
+▪The value added and productivity of the UK automotive sector 
+grew steadily between 2008 and 2018. The UK belongs to a group 
+of nations where productivity was high and rising over the 2008 –
+18 period, together with Germany, Korea and the US.
+▪Despite being the ninth largest exporter of vehicles in 2020, the 
+UK maintains a significant deficit in automotive product trade. 
+Since 2010 the UK has recorded a persistent trade deficit in 
+automotive products, standing at $21.8 billion in 2020. Industry 
+reports suggest that 50% local content is a plausible target for the 
+UK car industry. 
+▪UK business expenditure on automotive R&D grew rapidly 
+between 2009 and 2016 but has declined in recent years. UK 
+business enterprise expenditure on R&D (BERD) for automotive 
+grew by 11.7% (CAGR) between 2009 and 2018 (but with a 
+slowdown in 2017 and 2018).➢Increased specialisation of the UK’s automotive sector in premium product segments;
+➢Future sector growth dependent on the UK’s ability to produce electric and hydrogen 
+vehicles and components;
+➢High levels of automation influencing the growth in employment in recent years;
+➢Skills’ shortages, particularly in higher technical education reported by industry;
+➢Decisions by foreign original equipment manufacturers (OEM) favouring other locations;
+➢Increased competitive pressures from both established and upcoming nations;
+➢Increased uncertainty around trade and investment as a result of the 2016 EU membership 
+referendum; and
+➢R&D investment decisions mostly driven by foreign OEMs.9Theme (4) Science and engineering workforce
+Key policy 
+questions 
+addressed▪Is the UK producing enough scientists and engineers?
+▪Is the UK government investing enough in technical and vocational education?
+▪How does this compare with other countries?
+Key findings▪Tertiary education attainment in the UK is well above the OECD average –and a comparatively larger share of graduates 
+is found in science, technology, engineering and mathematics (STEM) disciplines. In 2019 graduates in STEM 
+disciplines accounted for 43.4% of the total number of graduates in the UK, above comparator countries such as France 
+(36.8%), Canada (37.8%) and the United States (37.6%)
+▪Women are under -represented in STEM disciplines. Only 27% of the STEM workforce in the UK is female, compared 
+with 52% in the total workforce. For UK engineers a gender pay gap exists but it is smaller than the pay gap for all UK 
+workers.
+▪Higher technical education enrolment is comparatively low in the UK. Enrolment rates in post -secondary education 
+courses, below the standard three -year Bachelor’s degree, are comparatively low in the UK when compared with 
+countries such as the US, Korea and France. The government’s White Paper, Skills for Jobs , recognises a “significant 
+shortage of vital technician -level STEM skills”.Executive summary (5/6)
+Pages 80 –8910Theme (5) Net -zero innovation
+Key policy 
+questions 
+addressed▪How does the UK compare in low -carbon and renewable -energy technology research and development (R&D) 
+investment?
+▪How is R&D expenditure translating into patenting performance?
+▪Is the UK capturing the economic potential of the transition towards net zero?
+Key findings▪The UK is one of the global leaders in both public R&D budget and patenting of net -zero -related technologies . The 
+International Energy Agency (IEA) estimates that in 2020 the UK’s public R&D budget in low -carbon and renewable -
+energy technologies was $1.2 billion (USD $2020), lower than France, Japan and the US but ahead of Germany and Canada. 
+The UK ranks eighth in the registration of climate -change mitigation technology (CCMT) patents, behind Japan, the US, 
+Germany, Korea, China, France and Taiwan.
+▪Most of the low -carbon and renewable -energy sectors in the UK have been declining over the last five years. The ONS 
+defines the low -carbon and renewable -energy economy (LCREE) as 17 low -carbon sectors, including wind, renewables, 
+PV, CCS, nuclear and energy -efficient products. A total of 10 out of 17 LCREE sectors showed a decline in turnover 
+between 2014 and 2019. Overall, there were 27,000 fewer LCREE business and 33,800 fewer jobs in LCREE sectors in 2019 
+than in 2014.
+▪There are some national disparities, with Scotland performing strongly. At £1 million turnover, 4.1 jobs and 2.2 
+businesses per 1,000 inhabitants, Scotland performed above the UK annual average for all categories between 2014 and 
+2019. Wales also performs above the national averages for LCREE businesses and jobs, at 2.46 businesses and 3.35 jobs 
+per 1,000 inhabitants.Executive summary (6/6)
+Pages 90 –100 11Introduction
+UK INNOVATION REPORT 202212Introduction
+The aim of the UK Innovation Report is to facilitate policy discussions on innovation and industrial performance –and the interplay between them. The 2022 edition of the report is 
+published amid a changing policy landscape. In March 2021 the UK government released a new strategy, Build Back Better: our plan for growth , which replaces the 2017 Industrial 
+Strategy and sets out the government’s plan to address the “invented in Britain”/“made elsewhere” disconnect. A new Innovation Strateg y published in July 2021 sets out a “long -
+term plan for delivering innovation -led growth”, announcing a commitment to increase annual public investment on R&D to £22 bill ion. The government has also established a new 
+Office for Science and Technology Strategy and a National Science and Technology Council . In February 2022 the first chief executive of the new Advanced Research and Invention 
+Agency (ARIA) , modelled after the US Advanced Research Projects Agency (ARPA), was appointed.
+The UK Innovation Report 2022 maintains last year’s four core sections ( structure and performance of the UK economy , investment in innovation , industrial performance and 
+science and engineering workforce ) and incorporates a new one ( net-zero innovation ). It not only provides updates using newly available data but also seeks to address policy 
+questions from different angles. The report uses new indicators and longer time series, integrates additional national and in ternational databases, and analyses more granular data at 
+industry and firm level.
+Section 1 provides new decompositions of productivity growth rates and international productivity comparisons at sector level, building ona related project being conducted by the 
+Policy Links Unit in collaboration with the National Institute of Economic and Social Research. Section 2 presents firm -level data on R&D investment and patent applications. 
+Section 3 deep -dives into the pharmaceutical and automotive manufacturing sectors, incorporating insights gathered during consultations wi th industry experts from the public and 
+private sectors from around twenty different organisations. Section 4 places additional emphasis on science, technology, engineering and mathematics (STEM) disciplines and 
+technical education. Finally, Section 5 incorporates data on innovation and the economic performance of low -carbon and renewable -energy sectors.
+New section in this edition: net -zero innovation
+For many, the greatest challenge of the 21st century is climate change. Net zero refers to achieving a balance between the ca rbon emitted into the atmosphere and the carbon 
+removed from it. Markets for new technologies that can help businesses and countries to achieve net zero are expanding, and t herefore they are a key area in which innovative 
+activity has the potential to contribute to national economic growth and competitive advantage. Our 2022 report has chosen ne t-zero innovation as a topic in focus, to highlight how 
+the UK is performing in what has the potential to be a high -growth economic sector. 13List of charts
+UK INNOVATION REPORT 202214Theme 1: Structure and performance of the UK economy
+Chart 1.1. Labour productivity: international comparison
+Chart 1.2. UK economic structure and sectoral productivity
+Chart 1.3. UK economic structure and sectoral productivity
+Chart 1.4. Sectoral sources of UK productivity growth
+Chart 1.5. Sectoral sources of UK productivity growth, pre -crisis 
+Chart 1.6. Sectoral sources of UK productivity growth, post -crisis 
+Chart 1.7. Sectoral sources of UK productivity growth, COVID -19 
+Chart 1.8. Sectoral productivity: international comparison
+Chart 1.9. Structural change: international comparison
+Chart 1.10. Sectoral contribution to aggregate productivity 
+growth: international comparison (1/2)
+Theme 2: Investment in innovation
+Chart 2.1. R&D expenditure: international comparison
+Chart 2.2. Actual UK R&D expenditure against 2.4% target
+Chart 2.3. UK government net expenditure on R&D against the 
+2026/2027 £22 billion target 
+Chart 2.4. R&D expenditure by source of funding 
+Chart 2.5. R&D expenditure by sector of performance
+Chart 2.6. UK government net expenditure on R&D by 
+department 
+Chart 2.7. BEIS R&D funding allocation, 2021 –2022
+Chart 2.8. Top 20 R&D investing companies in the world
+Chart 2.9. Top R&D investing companies worldwide 
+Chart 2.10. Expenditure of top R&D investing companies
+Chart 2.11. Top 10 UK companies investing in R&D
+Chart 2.12. Top 100 patent applicant firms at USPTO
+Chart 2.13. UK top 10 patent applicants at USPTO
+Chart 2.14. Top 10 UK patent applicants at USPTO by industryList of charts
+Theme 4: Science and engineering workforce
+Chart 4.1. Tertiary education attainment 
+Chart 4.2. Graduates by subject areas
+Chart 4.3. STEM PhDs
+Chart 4.4. Women in STEM tertiary education 
+Chart 4.5. Engineering profession salaries
+Chart 4.6. Government researchers
+Chart 4.7. Higher technical education
+Chart 4.8. Green skills for net -zero transition 
+Theme 5: Net -zero innovation
+Chart 5.1. UK carbon emissions by sector
+Chart 5.2. Public R&D spending on low -carbon and renewable -
+energy technologies
+Chart 5.3. Top 10 countries by global share of patents in 
+climate -change mitigation technology (CCMT)
+Chart 5.4. Top 10 UK patent applicants in the field of climate -
+change mitigation technologies (CCMT)
+Chart 5.5. UK low-carbon and renewable -energy economy 
+(LCREE) sector performance
+Chart 5.6. Employment and number of businesses in the low -
+carbon and renewable -energy economy (LCREE)
+Chart 5.7. Low-carbon and renewable -energy economy 
+(LCREE) sectors comparison by countryTheme 3: Industrial performance –focus on the  
+pharmaceutical and automotive manufacturing sectors
+Chart 3.1. Pharmaceutical manufacturing –value added and 
+employment 
+Chart 3.2. Pharmaceutical manufacturing –productivity growth
+Chart 3.3. Pharmaceuticals –trade balance (a) 
+Chart 3.4. Pharmaceuticals –trade balance (b)
+Chart 3.5. Pharmaceuticals –UK top trade partners
+Chart 3.6. Pharmaceuticals –business spending on R&D (a)
+Chart 3.7. Pharmaceuticals –business spending on R&D (b)
+Chart 3.8. Pharmaceuticals –foreign R&D in the UK
+Chart 3.9. Automotive –value added and employment 
+Chart 3.10. Automotive –productivity growth 
+Chart 3.11. Automotive –trade balance (a)
+Chart 3.12. Automotive –trade balance (b)
+Chart 3.13. Automotive –local content
+Chart 3.14. Automotive –business spending on R&D (a)
+Chart 3.15. Automotive –business spending on R&D (b)
+Chart 3.16. Automotive –foreign R&D in the UKSpecial theme 
+in this editionTheme 1: Structure and performance of the UK economy
+UK INNOVATION REPORT 202216▪How has the structure of the UK economy changed in the last few years?
+▪Are these changes affecting economic performance?
+▪How does this compare with other countries?Theme 1: Policy questions and key messages
+In the last two decades high -productivity sectors such as manufacturing and mining have reduced their participation in the UK ec onomy in favour of 
+sectors such as construction and services
+▪The manufacturing productivity growth rate was among the highest in the UK economy between 1998 and 2019, but it was also the sector whose share in the economy 
+decreased the most (from 16.1% to 9.7%) during this period.
+▪Services whose share of the economy increased during this period include (change in value -added shares in brackets, percentage p oints): human health and social 
+activities (2.1); professional, scientific and technical activities (2.0); and administrative service activities (1.4).
+Finance was the main driver of productivity growth prior to 2008 but its contribution became negative in the post -crisis period
+▪In the period 1998 –2007, finance was the main driver of productivity growth in the UK, adding 0.37 percentage points, on average , each year to aggregate productivity 
+growth. After the crisis, finance’s contribution to national productivity became negative. 
+▪Administrative services, construction, information and communication, and professional, scientific and technical activities were among the top contrib utors to 
+aggregate productivity growth in the post -crisis period (2011 –19).
+▪Following  the COVID -19 pandemic the main contributor to productivity growth was human health and social activities. 
+The loss of manufacturing has imposed a penalty on UK productivity growth of half a percentage point each year, on average, f or the last two decades
+▪The reduction in manufacturing share in economies is a common feature across most of the economies examined between 1998 and 2017. But as a result of its high -
+productivity growth rates, manufacturing is one of the sectors that makes the largest contribution to aggregate productivity growth in the best -performing countries.
+▪During 1998 –2017, manufacturing was responsible for around 30% of the aggregate productivity growth in China and almost half of productivity growth recorded in 
+Taiwan during 1998 –2017. Manufacturing also contributed to around 30% of aggregate productivity growth in Korea between 2005 and 2017 and 15% of productivity 
+growth in Singapore between 2005 and 2017.
+▪In contrast, manufacturing had a negative contribution to aggregate productivity growth in the UK during this period, mainly due to a reduction in its participation in 
+the economy (as reflected in a negative allocation effect of -0.5 percentage points). 17Source: Authors’ computation based on data from the APO Productivity Database 2020 Ver.1 (5 August 2020); OECD STAN 
+Industrial Analysis (2020 ed.); Korea Productivity Center; Singapore Department of Statistics; Singapore Ministry of Trade an d 
+Industry; Manpower Research & Statistics Department; Taiwan Statistical Bureau UK Office for National Statistics; US Bureau o f 
+Economic Analysis and US Bureau of Labor Statistics. Chart 1.1. Labour productivity: international comparison
+Output per worker, selected countries, 1998 –2017
+-2%0%2%4%6%8%10%12%
+China
+France
+Germany
+Korea
+Taiwan
+US
+UK
+China
+France
+Germany
+Korea
+Taiwan
+US
+UK
+China
+France
+Germany
+Korea
+Singapore
+Taiwan
+US
+UK
+1998 –2007 2008 –2010 2011 –2017Annual growthPre-crisis Crisis Post -crisis
+▪In the pre-crisis period (1998 –2007) UK labour 
+productivity growth rates were similar to those 
+observed in other developed countries such as 
+Germany and the US. China, Korea andTaiwan 
+recorded the strongest performance during this 
+period .
+▪In the aftermath of the financial crisis (2008 –10), 
+most countries analysed experienced a significant 
+slowdown in productivity growth. However, the UK
+was hit the hardest, recording a negative growth 
+rate of -0.5%. 
+▪In the post -crisis period (2011 –17) the strongest 
+productivity performance was recorded by China , 
+Korea and Germany (7.3%, 3.2% and 2.3%, 
+respectively). Productivity growth in the UK, the US
+and Taiwan was considerably weaker (0.7%, 0.7% 
+and 1.1%, respectively). 18Notes: (1) Chain volume measure (CVM) prices. (2)The productivity of the real -estate sector is distorted by the inclusion of 
+imputed rents from owner -occupied dwellings in the value added of this sector. 
+Source: Own computation based on data from the UK Office for National Statistics (1998,2019).▪Sector -level analysis reveals the key structural factors 
+behind the relatively slow rates of productivity growth 
+in the UK. The contribution of economic sectors to 
+aggregate productivity growth depends on how 
+productive they are ( usually measured by value added 
+per hour), their rate of productivity growth and their 
+relative size in the economy ( usually measured in 
+terms of value added and employment shares ).
+▪In 2019 the most productive market sectors in the UK 
+economy included (overall value added per hour 
+worked in brackets): mining and quarrying (£163.2), 
+electricity and gas (£98.9), water supply (£98.8), 
+financial and insurance activities (£63.9), 
+information and communication (£50.4) and 
+manufacturing (£39.1). 
+▪The case of manufacturing stands out. While 
+manufacturing productivity growth was among the 
+highest between 1998 and 2019 (with an annual 
+growth rate of 2.2%), it was the sector with the largest 
+decline in value -added shares during this period ( -6.5 
+percentage points).
+▪Meanwhile , mining and quarrying almost halved its 
+labour productivity, while reducing its value -added 
+share by 0.5percentage points during this period.Chart 1.2. UK economic structure and sectoral productivity
+Labour productivity and value added, 1998 and 2019
+Economic sector1998 2019 Change 1998 –2019
+Value added 
+per hour 
+(pounds)(1)Value -added 
+sharesValue added 
+per hour 
+(pounds)(1)Value -added 
+sharesValue added 
+per hour 
+(annual 
+average 
+growth rate)Value -
+added 
+shares 
+(percentage 
+points)
+Real-estate activities(2) 411.6 14.7% 292.9 13.3% -1.6% -1.4
+Mining and quarrying 300.3 1.5% 163.2 1.0% -2.6% -0.5
+Electricity, gas, steam and air -
+conditioning supply109.5 1.5% 98.9 1.4% -0.1% -0.1
+Activities of households 50.6 0.2% 98.8 0.3% 4.6% 0.1
+Water supply; sewerage, waste 
+management and remediation73.0 1.4% 69.0 1.2% 0.3% -0.2
+Financial and insurance activities 46.2 5.7% 63.9 6.3% 2.5% 0.6
+Information and communication 24.4 5.6% 50.4 6.9% 3.7% 1.3
+Manufacturing 24.4 16.1% 39.1 9.7% 2.2% -6.5
+Public administration and defence ; 
+compulsory social security35.0 5.1% 39.1 5.0% 0.5% -0.1
+Professional, scientific and technical 
+activities20.4 5.7% 30.3 7.7% 2.1% 2.0
+Education 38.4 4.9% 29.9 5.9% -1.3% 1.0
+Construction 25.1 5.5% 29.0 6.5% 0.6% 1.1
+Wholesale and retail trade; repair of 
+motor vehicles and motorcycles18.8 12.2% 26.7 10.3% 1.6% -1.8
+Transportation and storage 24.7 4.4% 26.2 4.1% 0.4% -0.3
+Other service activities 26.2 1.5% 25.6 1.7% 0.1% 0.3
+Arts, entertainment and recreation 30.2 1.2% 23.7 1.6% -0.7% 0.5
+Human health and social activities 19.7 5.5% 23.6 7.6% 0.9% 2.1
+Administrative and support -service 
+activities14.3 3.9% 23.1 5.3% 2.2% 1.4
+Accommodation and food -service 
+activities16.4 2.5% 17.5 3.0% 0.4% 0.5
+Agriculture, forestry and fishing 10.4 1.1% 15.5 0.7% 2.7% -0.4
+Whole economy 28.2 100% 35.4 100% 1.1% 0Less productive More productive19Source: Own computation based on data from the UK Office for National Statistics (1998, 2019).▪Chart 1.3 shows the productivity in 2019 and the 
+changes in value -added shares between 1998 and 
+2019 for selected sectors.
+▪The participation of manufacturing in the economy 
+declined significantly during this period (by 6.5 
+percentage points). Meanwhile, construction and 
+both high -and low -productivity service activities 
+increased their participation in the economy.
+▪Services that experienced the largest increase in 
+value -added shares during this period include 
+(changes in percentage points in brackets) : human 
+health and social activities (2.1); professional , 
+scientific and technical activities (2.0); and 
+administrative and support -service activities (1.4).Chart 1.3. UK economic structure and sectoral productivity
+Labour productivity and value added, selected sectors, 1998 –2019
+Agriculture, forestry 
+and fishing
+ManufacturingConstruction
+Wholesale and retail 
+trade; repairInformation and 
+communication
+Financial and 
+insurance activitiesProfessional, scientific 
+and technical activities
+Administrative and 
+support service 
+activitiesHuman health and 
+social activities
+-7.0-6.0-5.0-4.0-3.0-2.0-1.00.01.02.03.0
+0 10 20 30 40 50 60 70Change in value -added shares 
+(percentage points, 1998 –2019)
+Labour productivity (value added per hour, £, 2019)
+Higher productivity
+Expanding DecliningTop 5
+Bottom 5Pre-crisis (1998 –2007) Post -crisis (2011 –19) COVID -19 (2019 –20)Chart 1.4. Sectoral sources of UK productivity growth
+Sectors with the largest and lowest contributions to UK aggregate productivity 
+growth, selected time period
+Economic sector Contribution Economic sector Contribution Economic sector Contribution
+Financial and 
+insurance activities0.37 Real-estate activities 0.19Human health and 
+social activities1.97
+Construction 0.29Administrative and 
+support services0.14 Real-estate activities 0.63
+Human health and 
+social activities0.29 Construction 0.11 Education 0.56
+Professional, scientific 
+and technical activities0.29Information and 
+communication0.10Public admin, defence, 
+social security0.53
+Information and 
+communication0.23Professional, scientific 
+and technical activities0.08Financial and 
+insurance activities0.32
+Water supply, 
+sewerage, etc.0.02Wholesale, retail trade 
+and repair-0.06Transportation and 
+storage-0.41
+Mining and quarrying 0.02Public administration, 
+defence, social security-0.06 Manufacturing -0.44
+Activities of 
+households0.00 Manufacturing -0.07 Construction -0.56
+Agriculture, forestry 
+and fishing-0.03 Mining and quarrying -0.08Administrative and 
+support services-0.64
+Manufacturing -0.31Financial and 
+insurance activities-0.17Accommodation and 
+food-service activities-1.18
+Note: Contribution to aggregate productivity is computed as the sum of intra -industry productivity growth (within) effect and 
+allocation (between) effect. Figures correspond to average annual contributions.
+Source: Own computation based on data from the UK Office for National Statistics (1998 -2019).▪Sectors contribute differently to aggregate productivity growth 
+because of disparities in their productivity performance and 
+their participation in employment and output.
+▪In the pre -crisis period (1998 –2007) financial and insurance 
+activities were the main driver of productivity growth in the 
+UK, with an average annual contribution to productivity growth 
+of 0.37 percentage points. In contrast, manufacturing had a 
+negative contribution ( -0.31).
+▪In the post -crisis period (2011 –19), the contributions of the 
+financial and insurance sector to aggregate productivity growth 
+declined to negative levels ( -0.17 percentage points), with real-
+estate activities, administrative and support services and 
+information and communication having among the largest 
+contributions (0.19, 0.14 and 0.10, respectively). 
+▪A likely explanation for the decline of the financial sector is 
+that, in the pre -crisis period, high growth was mainly driven by 
+unsustainable increased debt and higher risk tolerance.[1] 
+▪It is important to note that the contribution of the real-estate 
+sector is distorted by the inclusion of imputed rents from 
+owner -occupied dwellings in the value added of this sector.[2]
+▪The increasing demand for health and social services 
+during theCOVID -19 pandemic meant that this sector was 
+responsible for the largest contribution to aggregate 
+productivity growth in 2020 (1.97 percentage points). 
+Meanwhile, accommodation and food -service activities 
+had a negative contribution ( -1.18 percentage points).
+20[1] Teneyro , S. (2018). The fall in productivity growth: causes and 
+implications.
+[2] Riley et al. (2018). Below aggregate: a sectoral account of the UK 
+productivity puzzle.UK aggregate productivity 
+growth (average): 2.1%UK aggregate productivity 
+growth (average): 0.3%UK aggregate productivity 
+growth: 1.2%21Note: (1)Chain volume measure (CVM) prices.
+Source: Own computation based on data from the UK Office for National Statistics (1998 -2007).▪In the decade before the financial crisis (1998 –2007) 
+the sectors with the largest contributions to aggregate 
+productivity growth were: financial and insurance 
+activities (0.37); construction (0.29); human health 
+and social activities (0.29); professional, scientific 
+and technical activities (0.29); and information and 
+communication (0.23) 
+▪The contributions of financial and insurance 
+activities, information and communication and 
+professional, scientific and technical activities 
+during 1998 –2007 were mainly driven by the growth of 
+productivity in each of these sectors (intra -industry 
+productivity effect).
+▪Meanwhile, the contributions of the construction and
+human health and social activities sectors during this 
+period are largely explained by their expansion 
+(allocation effect).
+▪At 4.2%, the productivity growth rates of the 
+manufacturing sector were among the highest during 
+1998 –2007 (resulting in an intra -industry productivity 
+effect of 0.57). However, its employment share 
+declined by 5.5 percentage points (resulting in a 
+negative allocation effect of -0.89). As a result, the 
+contribution of manufacturing to productivity growth in 
+this period was the lowest in the economy ( -0.31). Chart 1.5. Sectoral sources of UK productivity growth, pre -crisis 
+Sectors with the largest and lowest contributions to UK aggregate productivity 
+growth, 1998 –2007
+Economic sectorChange 1998 –2007Contribution to productivity 
+growth 1998 –2007 
+(annual average)
+Value added 
+per hour(1)
+(annual 
+average 
+growth rate)Value -added 
+shares 
+(percentage 
+points)Employment 
+shares 
+(percentage 
+points)Intra -
+industry 
+productivity 
+effectAllocation 
+effectTotal
+Financial and insurance activities 6.8% 2.6 -0.2 0.38 -0.01 0.37
+Construction 0.1% 1.2 0.6 0.03 0.26 0.29
+Human health and social activities 1.8% 1.5 1.2 0.09 0.20 0.29
+Professional, scientific and 
+technical activities3.5% 1.2 1.1 0.20 0.08 0.29
+Information and communication 6.7% 0.7 0.2 0.40 -0.17 0.23
+Water supply, sewerage, waste 
+management, remediation 
+activities2.0% -0.1 0.0 0.03 -0.01 0.02
+Mining and quarrying -2.2% 0.3 -0.1 -0.02 0.04 0.02
+Activities of households -4.7% 0.0 0.2 0.00 0.00 0.00
+Agriculture, forestry and fishing 4.0% -0.4 -0.4 0.05 -0.07 -0.03
+Manufacturing 4.2% -5.4 -5.5 0.57 -0.89 -0.31Top 5
+Bottom 5Pre-crisis (1998 –2007)22Note: (1)Chain volume measure (CVM) prices.
+Source: Own computation based on data from the UK Office for National Statistics (2011,2019).Economic sectorChange 2011 –19Contribution to productivity 
+growth 2011 –19 
+(annual average)
+Value added 
+per hour(1)
+(annual 
+average 
+growth rate)Value -added 
+shares 
+(percentage 
+points)Employment 
+shares 
+(percentage 
+points)Intra -
+industry 
+productivity 
+effectAllocation 
+effectTotal
+Real-estate activities -0.4% 1.0 0.2 -0.06 0.25 0.19
+Administrative and support 
+service activities2.7% 1.1 0.6 0.12 0.02 0.14
+Construction 0.7% 0.7 0.1 0.04 0.07 0.11
+Information and 
+communication1.3% 0.5 0.3 0.08 0.01 0.10
+Professional, scientific and 
+technical activities1.0% 0.6 1.2 0.07 0.00 0.08
+Wholesale and retail trade; 
+repair of motor vehicles and 
+motorcycles2.1% -0.4 -1.0 0.23 -0.28 -0.06
+Public administration and 
+defence ; social security0.5% -0.5 -0.9 0.03 -0.09 -0.06
+Manufacturing 0.1% -0.9 -0.6 0.01 -0.09 -0.07
+Mining and quarrying -2.2% -0.8 0.0 -0.07 -0.02 -0.08
+Financial and insurance 
+activities-1.0% -1.7 -0.4 -0.08 -0.10 -0.17Chart 1.6. Sectoral sources of UK productivity growth, post -crisis 
+Sectors with the largest and lowest contributions to UK aggregate productivity growth, 
+2011 –2019
+Top 5
+Bottom 5▪In the decade after the financial crisis (2011 –19) the 
+sectors with the largest contributions to UK aggregate 
+productivity growth included: real-estate activities 
+(0.19); administrative and support -service activities 
+(0.14); construction (0.11); information and 
+communication (0.10); and professional, scientific 
+and technical activities (0.08).
+▪Except for real-estate activities , the contributions of 
+these sectors are largely explained by relatively higher 
+productivity growth rates (intra -industry productivity 
+effect).
+▪The sectors with the weakest contributions to 
+aggregate productivity in the reference period include: 
+financial and insurance activities (-0.17); mining 
+and quarrying (-0.08); manufacturing (-0.07); public 
+administration (-0.06); and wholesale and retail 
+trade (-0.06).
+▪Except for mining and quarrying , the negative 
+contributions of these sectors were due to their 
+contraction in size (allocation effect). Among these 
+activities, the wholesale and retail trade sector 
+experienced the largest contraction in employment.Post -crisis (2011 –19)23Note: (1)Chain volume measure (CVM) prices.
+Source: Own computation based on data from the UK Office for National Statistics (2019, 2020).Chart 1.7. Sectoral sources of UK productivity growth, COVID -19 
+Sectors with the largest and lowest contributions to UK aggregate productivity 
+growth, 2019 –2020
+Top 5
+Bottom 5▪During the COVID -19 pandemic (2019 –20) thesectors 
+with the largest contributions to aggregate productivity 
+growth included: human health and social activities 
+(1.97); real-estate activities (0.63); education (0.56); 
+public administration (0.53); and financial and 
+insurance activities (0.62).
+▪Other sectors (not presented in the table) with relatively 
+large positive contributions in the reference period 
+include professional, scientific and technical activit ies 
+(0.28) and information and communication (0.10).
+▪The sectors with the weakest contributions to aggregate 
+productivity in the reference period include: 
+accommodation and food services (-1.18); 
+administrative and support services (-0.64; 
+construction (-0.56); manufacturing (-0.44); and  
+transportation and storage (-0.41).
+▪The negative contributions of accommodation and food 
+services and transportation and storage during this 
+period are explained by both deterioration in productivity 
+growth (negative intra -industry productivity effect) and a 
+reduction in size (negative allocation effect). Meanwhile, 
+the negative contributions of administrative and 
+support -service activities , construction and 
+manufacturing are a result of their reduction in size. Economic sectorChange 2019 –20Contribution to productivity 
+growth, 2019 –20
+Value added 
+per hour(1)
+(annual 
+growth rate)Value -added 
+shares 
+(percentage 
+points)Employment 
+shares 
+(percentage 
+points)Intra-
+industry 
+productivity 
+effectAllocation 
+effectTotal
+Human health and social 
+activities-7.3% 1.9 0.2 -0.56 2.53 1.97
+Real-estate activities -2.1% 0.5 0.2 -0.28 0.90 0.63
+Education -5.9% 0.5 0.1 -0.34 0.91 0.56
+Public administration and 
+defence ; social security-0.8% 0.5 0.2 -0.04 0.57 0.53
+Financial and insurance activities -4.8% 0.2 0.1 -0.30 0.62 0.32
+Transportation and storage -3.6% -0.5 0.0 -0.15 -0.26 -0.41
+Manufacturing 4.5% -0.5 -0.1 0.43 -0.87 -0.44
+Construction 3.9% -0.6 -0.1 0.25 -0.81 -0.56
+Administrative and support -
+service activities-1.8% -0.7 -0.3 -0.10 -0.54 -0.64
+Accommodation and food -service 
+activities-11.9% -1.2 -0.2 -0.36 -0.82 -1.18COVID -19 (2019 –20)24Note: N/A not available. * 2010 –17 annual average is computed for Singapore. 
+Source: APO Productivity Database 2020 Ver.1 (5 August 2020); OECD STAN Industrial Analysis (2020 ed.); Singapore 
+Department of Statistics; Singapore Ministry of Trade and Industry; Manpower Research and Statistics Department; Taiwan 
+Statistical Bureau; UK Office for National Statistics; US Bureau of Economic Analysis and US Bureau of Labor Statistics.▪Between 1998 and 2017 China and Korea
+experienced the strongest productivity growth 
+among the eight economies studied (8.9% and 
+5.1% on average per year, respectively).
+▪The UK showed the lowest productivity growth rate 
+in this period. However, some UK sectors 
+performed relatively better. Service sectors in which 
+the UK may have comparative advantages include 
+(average annual growth rate in brackets): 
+information and communication (4.0%); 
+financial and insurance activities (2.3%); 
+professional, scientific and technical activities 
+(2.3%); and administrative and support services
+(2.3%).
+▪In contrast, UK market sectors that performed 
+relatively worse than those in other countries in the 
+reference period include (average annual growth 
+rate in brackets): mining and quarrying (-2.8%); 
+transportation and storage (0.4%); wholesale 
+and retail trade (1.4%); and manufacturing 
+(2.5%).Chart 1.8. Sectoral productivity: international comparison
+Labour productivity growth in selected countries, 1998 –2017
+Economic sectorOutput per worker (average annual growth rate, 1998 –2017)
+China France Germany Korea Singapore Taiwan US UK
+Agriculture, forestry and fishing 6.8% 3.3% 3.3% 4.5% N/A N/A 2.9% 2.4%
+Mining and quarrying 11.6% 4.8% 4.2% 3.6% N/A 1.1% 2.6% -2.8%
+Manufacturing 8.3% 2.5% 3.0% 7.0% 7.0% 6.0% 3.7% 2.5%
+Electricity, gas, steam and air -
+conditioning supplyN/A 2.4% 3.9% N/A N/A 2.8% N/A 0.1%
+Water supply; sewerage, waste 
+management and remediation N/A 2.0% 2.7% N/A N/A 2.5% N/A 0.2%
+Construction 6.9% 2.7% 2.1% 4.5% 1.7% -0.2% -0.9% 0.5%
+Information and communication N/A 1.4% 1.6% 4.1% 1.1% 5.0% 6.5% 4.0%
+Financial and insurance activities 6.7% 3.0% 2.9% 6.0% 4.5% 2.0% 2.3% 3.4%
+Professional, scientific and technical 
+activitiesN/A 2.2% -0.7% 3.2% -1.0% 1.0% 1.4% 2.3%
+Education N/A 2.3% 1.1% 4.1% N/A 1.2% -0.4% -1.2%
+Wholesale and retail trade; repair of 
+motor vehicles and motorcycles7.1% 1.7% 2.4% 6.0% 4.0% 2.2% 2.1% 1.4%
+Transportation and storage 7.3% 2.4% 1.9% 4.6% 1.0% 2.7% 0.6% 0.4%
+Accommodation and food -service 
+activitiesN/A 2.1% 1.2% 4.7% 1.6% -1.8% 0.0% 0.4%
+Real-estate activities N/A 3.4% 1.2% 2.4% 0.8% 2.3% 1.9% -1.3%
+Administrative and support -service 
+activitiesN/A 1.0% 0.4% 2.4% 7.6% 0.4% N/A 2.3%
+Public administration and defence ; 
+compulsory social securityN/A 2.6% 2.7% 5.0% N/A N/A 0.0% 0.5%
+Human health and social activities N/A 2.7% 1.6% 1.1% N/A -1.2% 0.6% 1.3%
+Arts, entertainment and recreation N/A 2.0% 1.0% N/A N/A 0.6% 0.6% -0.5%
+Activities of households N/A 0.1% 1.5% N/A N/A N/A N/A 5.9%
+Other service activities 6.9% 1.8% 0.8% 3.3% 0.9% 2.4% -1.2% -0.1%
+Whole economy 8.9% 2.2% 1.7% 5.1% 3.1% 2.7% 1.6% 1.2%25Country YearAgriculture, 
+forestry and 
+fishingMining and 
+quarryingManufacturing Utilities ConstructionKnowledge -
+intensive 
+servicesOther 
+services
+China1998 19.5% 4.2% 34.9% 2.0% 6.1% 8.8% 24.5%
+2017 7.9% 2.6% 29.3% 2.0% 6.7% 14.5% 36.9%
+Change -11.6 -1.7 -5.6 0.0 0.6 5.7 12.5
+France1998 2.7% 0.2% 16.2% 2.9% 5.0% 14.9% 58.1%
+2017 1.7% 0.1% 11.2% 2.4% 5.6% 17.0% 61.9%
+Change -1.0 -0.1 -5.0 -0.5 0.6 2.1 3.8
+Germany1998 1.1% 0.3% 22.1% 3.0% 6.4% 15.2% 51.9%
+2017 0.9% 0.1% 22.8% 2.8% 4.7% 15.0% 53.6%
+Change -0.2 -0.2 0.7 -0.2 -1.7 -0.1 1.7
+Korea1998 5.2% 0.3% 25.9% 2.1% 9.2% 15.4% 41.9%
+2017 2.0% 0.1% 29.5% 2.4% 6.0% 16.3% 43.6%
+Change -3.2 -0.2 3.6 0.3 -3.2 0.9 1.8
+Singapore2005 N/A N/A 29.3% N/A 3.1% 19.4% 46.6%
+2017 N/A N/A 20.6% N/A 4.2% 23.7% 50.2%
+Change N/A N/A -8.6 N/A 1.1 4.3 3.6
+Taiwan1998 2.4% 0.3% 26.1% 2.8% 4.1% 13.7% 50.5%
+2017 1.9% 0.1% 33.5% 2.0% 2.4% 12.2% 48.1%
+Change -0.6 -0.2 7.4 -0.8 -1.7 -1.6 -2.4
+US1998 1.1% 0.9% 15.8% 1.8% 4.2% 17.8% 58.4%
+2017 0.9% 1.4% 11.2% 1.6% 4.1% 20.3% 60.5%
+Change -0.2 0.5 -4.6 -0.2 -0.1 2.5 2.1
+UK1998 1.1% 1.5% 16.1% 2.9% 5.5% 17.0% 56.0%
+2017 0.6% 0.9% 10.2% 2.7% 6.5% 21.1% 57.9%
+Change -0.4 -0.6 -5.9 -0.1 1.0 4.1 1.9Chart 1.9. Structural change: international comparison
+Output shares in selected countries, 1998 and 2017
+Source: APO Productivity Database 2020 Ver.1 (5 August 2020); OECD STAN Industrial Analysis (2020 ed.); Korea 
+Productivity Center; Singapore Department of Statistics; Singapore Ministry of Trade and Industry; Manpower Research & 
+Statistics Department; Taiwan Statistical Bureau; UK Office for National Statistics; US Bureau of Economic Analysis and US 
+Bureau of Labor Statistics..▪The shrinking of manufacturing is a major structural 
+change observed in most of the economies examined 
+between 1998 and 2017. 
+▪The biggest declines in manufacturing shares were 
+recorded in (changes in percentage points in brackets): 
+Singapore (-8.6), the UK(-5.9%) and China (-5.6). There 
+have, however, been some exceptions. Manufacturing
+output shares expanded in Germany (0.7), Korea (3.6) and
+Taiwan (7.4). And while Singapore reported the largest 
+decline in manufacturing output shares among the countries 
+examined ( -8.6), this trend has reverted in the years since 
+2017.
+▪Meanwhile, service activities have expanded in most of the 
+countries analysed . This is true for both knowledge -
+intensive services and other services (see note). 
+▪The largest expansions in output shares of knowledge -
+intensive activities were seen in (changes in percentage 
+points in brackets): China (5.7), Singapore (4.3) and the UK 
+(4.1). Other service activities have also expanded; 
+changes range from 1.7 percentage points in Germany to 
+12.5 in China . 
+Note: Knowledge -intensive services group together information and communication, financial and 
+insurance activities, professional, scientific and technical activities, and education, with the 
+exception of China, which only groups together financial and insurance activities. Other services 
+include wholesale and retail, transportation and storage, accommodation and food -service 
+activities, real -estate activities, administrative and support -service activities, public administration 
+and defence , human health and social work activities, arts, entertainment and recreation, and 
+other service activities, with the exception of China, which groups together wholesale and retail, 
+transportation and storage, and community, social and personal services. 26▪As a result of its high productivity growth rates and 
+relatively large output shares, manufacturing is one of the 
+sectors with the largest contributions to aggregate 
+productivity growth in the best -performing countries. 
+▪Manufacturing was responsible for around 30% of the 
+aggregate productivity growth in China and almost half of 
+the productivity growth recorded in Taiwan during 1998 –
+2017. Manufacturing also contributed to around 30% of 
+the aggregate productivity growth in Korea between 2005 
+and 2017 and 15% of the productivity growth in 
+Singapore between 2010 and 2017.
+▪In contrast, manufacturing had a negative contribution to 
+aggregate productivity growth in the UK during this 
+period, mainly due to a reduction in its participation in the 
+economy (as reflected in a negative allocation effect of -
+0.5, on average). 
+▪This means that the loss of manufacturing imposed a 
+penalty on UK productivity growth of half a percentage 
+point per year between 1998 and 2017.
+▪Another distinctive feature of the UK economy is a lower 
+intra-industry productivity growth effect (due to lower 
+productivity growth) than the other countries analysed
+across most sectors. Chart 1.10. Sectoral contribution to aggregate productivity growth: 
+international comparison (1/2)
+Decomposition based on output per worker measures, selected countries, 1998 –2017
+Intra -industry productivity growth effect
+(Annual average 1998 –2017)
+Economic sector China France Germany Korea* Singapore** Taiwan US UK
+Agriculture, forestry and 
+fishing 0.74 0.07 0.03 0.10-0.11N/A 0.03 0.02
+Mining and quarrying 0.51 0.01 0.01 0.00 0.00 0.06 -0.06
+Utilities 0.31 0.06 0.09 0.12 0.06 0.03 0.00
+Manufacturing 2.66 0.35 0.63 1.61 1.50 1.82 0.51 0.33
+Construction 0.42 0.14 0.09 0.22 0.10 0.00 -0.04 0.03
+Knowledge -intensive services 0.69 0.47 0.23 0.50 0.52 0.44 0.55 0.52
+Other services 2.23 1.29 0.82 1.52 1.34 0.76 0.60 0.21
+Whole economy 7.56 2.38 1.90 4.06 3.34 3.03 1.74 1.05
+Allocation effect
+(Annual average 1998 –2017)
+Economic sector China France Germany Korea* Singapore** Taiwan US UK
+Agriculture, forestry and 
+fishing -0.25 -0.07 -0.03 -0.090.13N/A -0.04 -0.04
+Mining and quarrying -0.17 -0.01 -0.01 0.00 -0.01 -0.02 0.03
+Utilities 0.00 -0.02 -0.05 -0.03 -0.04 -0.02 0.03
+Manufacturing -0.12 -0.31 -0.21 -0.24 -1.02 -0.67 -0.55 -0.50
+Construction 0.16 0.02 -0.08 -0.03 -0.15 -0.04 0.12 0.11
+Knowledge -intensive services 0.55 0.10 0.11 0.19 0.29 -0.23 -0.06 0.03
+Other services 1.21 0.08 0.09 0.39 0.54 0.38 0.39 0.43
+Whole economy 1.34 -0.21 -0.18 0.19 -0.22 -0.61 -0.19 0.10
+Total contribution to productivity growth
+(Annual average 1998 –2017)
+Economic sector China France Germany Korea* Singapore** Taiwan US UK
+Agriculture, forestry and 
+fishing 0.49 0.00 0.01 0.000.00N/A 0.00 -0.01
+Mining and quarrying 0.33 0.00 0.00 0.00 -0.01 0.04 -0.03
+Utilities 0.31 0.04 0.04 0.09 0.02 0.01 0.03
+Manufacturing 2.54 0.03 0.42 1.37 0.48 1.15 -0.04 -0.17
+Construction 0.59 0.16 0.01 0.19 -0.06 -0.04 0.07 0.14
+Knowledge -intensive services 1.24 0.57 0.34 0.69 0.81 0.21 0.49 0.55
+Other services 3.44 1.37 0.91 1.91 1.88 1.14 0.99 0.65
+Whole economy 8.90 2.17 1.72 4.26 3.12 2.43 1.55 1.15
+Note: Decomposition based on output per worker. Figures may not add up to total because of rounding. *For Korea, the 2005 –17 annual av erage is 
+computed; ** for Singapore, the 2010 –17 annual average is computed.
+Source: Authors’ computation based on data from APO Productivity Database 2020 Ver.1 (5 August 2020); OECD STAN Industrial Analysis ( 2020 
+ed.); Korea Productivity Center; Singapore Department of Statistics; Singapore Ministry of Trade and Industry; Manpower Resea rch& Statistics 
+Department; Taiwan Statistical Bureau; UK Office for National Statistics; US Bureau of Economic Analysis and US Bureau of Lab or Statistics.27▪Across the countries studied, the contraction of the 
+manufacturing sector has been mirrored by a 
+greater contribution of services to aggregate 
+productivity growth .
+▪Between 1998 and 2017, the contribution of 
+knowledge -intensive services was positive in all of 
+the countries analysed (ranging from 0.2 in Taiwan to 
+0.55 in the UKand 1.2 in China ). The positive 
+contribution of knowledge -intensive services is 
+mainly explained by high productivity growth rates (as 
+reflected in positive intra -industry productivity growth 
+effects).
+▪In comparison, other services contributed less to 
+aggregate productivity growth in the UKthan they did 
+in the other seven countries during this period. The 
+contribution of other services to UKproductivity 
+growth was 0.65, compared to 3.44 in China , 1.91 in 
+Korea and 1.88 in Singapore . Chart 1.10. Sectoral contribution to aggregate productivity growth: 
+international comparison (2/2)
+Decomposition based on output per worker measures, selected countries, 1998 –2017
+Note: Decomposition based on output per worker. Figures may not add up to total because of rounding. *For Korea, the 2005 –17 annual av erage is 
+computed; ** for Singapore, the 2010 –17 annual average is computed.
+Source: Authors’ computation based on data from APO Productivity Database 2020 Ver.1 (5 August 2020); OECD STAN Industrial Analysis ( 2020 
+ed.); Korea Productivity Center; Singapore Department of Statistics; Singapore Ministry of Trade and Industry; Manpower Resea rch& Statistics 
+Department; Taiwan Statistical Bureau; UK Office for National Statistics; US Bureau of Economic Analysis and US Bureau of Lab or Statistics.Note: Knowledge -intensive services group together information and communication, financial 
+and insurance activities, professional, scientific and technical activities, and education, with the 
+exception of China, which only groups together financial and insurance activities. Other services 
+include wholesale and retail, transportation and storage, accommodation and food -service 
+activities, real -estate activities, administrative and support -service activities, public 
+administration and defence , human health and social work activities, arts, entertainment and 
+recreation, and other service activities, with the exception of China, which groups together 
+wholesale and retail, transportation and storage, and community, social and personal services. Intra -industry productivity growth effect
+(Annual average 1998 –2017)
+Economic sector China France Germany Korea* Singapore** Taiwan US UK
+Agriculture, forestry and 
+fishing 0.74 0.07 0.03 0.10-0.11N/A 0.03 0.02
+Mining and quarrying 0.51 0.01 0.01 0.00 0.00 0.06 -0.06
+Utilities 0.31 0.06 0.09 0.12 0.06 0.03 0.00
+Manufacturing 2.66 0.35 0.63 1.61 1.50 1.82 0.51 0.33
+Construction 0.42 0.14 0.09 0.22 0.10 0.00 -0.04 0.03
+Knowledge -intensive services 0.69 0.47 0.23 0.50 0.52 0.44 0.55 0.52
+Other services 2.23 1.29 0.82 1.52 1.34 0.76 0.60 0.21
+Whole economy 7.56 2.38 1.90 4.06 3.34 3.03 1.74 1.05
+Allocation effect
+(Annual average 1998 –2017)
+Economic sector China France Germany Korea* Singapore** Taiwan US UK
+Agriculture, forestry and 
+fishing -0.25 -0.07 -0.03 -0.090.13N/A -0.04 -0.04
+Mining and quarrying -0.17 -0.01 -0.01 0.00 -0.01 -0.02 0.03
+Utilities 0.00 -0.02 -0.05 -0.03 -0.04 -0.02 0.03
+Manufacturing -0.12 -0.31 -0.21 -0.24 -1.02 -0.67 -0.55 -0.50
+Construction 0.16 0.02 -0.08 -0.03 -0.15 -0.04 0.12 0.11
+Knowledge -intensive services 0.55 0.10 0.11 0.19 0.29 -0.23 -0.06 0.03
+Other services 1.21 0.08 0.09 0.39 0.54 0.38 0.39 0.43
+Whole economy 1.34 -0.21 -0.18 0.19 -0.22 -0.61 -0.19 0.10
+Total contribution to productivity growth
+(Annual average 1998 –2017)
+Economic sector China France Germany Korea* Singapore** Taiwan US UK
+Agriculture, forestry and 
+fishing 0.49 0.00 0.01 0.000.00N/A 0.00 -0.01
+Mining and quarrying 0.33 0.00 0.00 0.00 -0.01 0.04 -0.03
+Utilities 0.31 0.04 0.04 0.09 0.02 0.01 0.03
+Manufacturing 2.54 0.03 0.42 1.37 0.48 1.15 -0.04 -0.17
+Construction 0.59 0.16 0.01 0.19 -0.06 -0.04 0.07 0.14
+Knowledge -intensive services 1.24 0.57 0.34 0.69 0.81 0.21 0.49 0.55
+Other services 3.44 1.37 0.91 1.91 1.88 1.14 0.99 0.65
+Whole economy 8.90 2.17 1.72 4.26 3.12 2.43 1.55 1.15Theme 2: Investment in innovation
+UK INNOVATION REPORT 202229▪Is the UK spending enough on R&D?
+▪How do the public and private sectors contribute to national expenditure on innovation?
+▪How does the UK compare with other countries?Theme 2: Policy questions and key messages
+The UK spends less on R&D than the OECD average; a significant increase in public funding for R&D has been announced but 
+delayed 
+▪At 1.74%, the UK’s gross domestic expenditure on R&D (GERD) remains well below the 2019 OECD average of 2.5%.
+▪The UK’s expenditure on R&D has risen steadily over the past decades but, as a proportion of GDP, its growth has been slower than the OECD average.
+▪The UK government has committed to investing £22 billion in R&D by 2026/27 (pushing back the original target date of 2024).
+Compared to other countries, the business sector in the UK contributes less to R&D funding; universities perform 
+significantly more of the country’s R&D and the government significantly less
+▪In the UK the business sector funds around 55% of R&D –less than in Germany (64.5%), Korea (76.9%) and Japan (78.9%). 
+▪The UK’s higher education sector stands out from comparator countries, performing 23.1% of the country’s R&D in 2019, compared to 20.1% in France and 
+17.4% in Germany. 
+▪The government sector in the UK performs only 6.6% of R&D, well below comparator countries.
+Very few firms headquartered in the UK are global leaders in R&D investment and patent applications
+▪Only two companies headquartered in the UK are among the top 100 R&D investing firms in 2020.
+▪Among the top 2,500 R&D investing firms in the world, only 105 were UK -based in 2020 (779 were based in the USA, 597 in China, 2 93 in Japan and 124 in 
+Germany).
+▪There were no firms headquartered in the UK among the top 100 patent applicants at the United States Patent and Trademark Off ice(USPTO) in 2020.30Chart 2.1. R&D expenditure: international comparison
+Gross domestic expenditure on R&D (GERD) as a share of GDP, selected 
+countries, 2019 or latest available 
+▪At 1.74%, the UK’s gross domestic expenditure on 
+R&D (GERD) remains well below the 2019 OECD 
+average of 2.5%.
+▪The UK spends less on R&D as a percentage of 
+GDP than OECD countries, including Israel, Korea , 
+Japan , Germany and the United States . 
+▪The UK also spends less than non -OECD countries 
+such as China and Singapore .
+▪The UK government has set a target to boost 
+investment in R&D to 2.4% of GDP by 2027. This 
+includes a commitment to increasing public funding 
+forR&D to £22 billion per year by 2026/27.0%1%2%3%4%5%Gross domestic expenditure on R&D  as share of GDP
+2019 2007
+UK’s 2.4% target
+1.74%
+Source: OECD (2021). Main Science and Technology Indicators.31Chart 2.2. Actual UK R&D expenditure against 2.4% target
+Gross domestic expenditure on R&D (GERD) as a share of GDP, 2000 –2019
+▪The UK’s gross domestic expenditure on R&D 
+(GERD) as a share of GDP increased from 1.59% in 
+2000 to 1.74% in 2019.
+▪This represents an average annual growth rate of 
+0.5%, while the OECD average grew at an annual 
+rate of 0.9%.
+▪To narrow the gap between the UK’s GERD and the 
+OECD average, the UK’s 2017 Industrial Strategy 
+committed to spending 2.4% of GDP on R&D by 
+2027. 
+Source: Office for National Statistics (2021). Gross domestic expenditure on research and development time series (GERD).0.0%0.5%1.0%1.5%2.0%2.5%3.0%Gross domestic expenditure on R&D as share of GDPGERD as % of GDP 2027 target OECD average Trend32Chart 2.3. UK government net expenditure on R&D 
+against the 2026/2027 £22 billion target 
+▪From 2007 to 2019 the UK government’s net 
+expenditure increased from £9.8 billion to £13.1 
+billion in current prices. This represents an annual 
+growth rate of 2.8%. 
+▪The government net expenditure in 2020, however, 
+was expected to be lower than in 2019.
+▪Reaching the £22 billion target would require an 
+annual increase by more than 10% in the next four 
+years.
+▪In the March 2020 Budget the government 
+announced that public R&D expenditure would rise 
+to £22 billion by 2024/25. 
+▪However, in the 2021 Autumn Budget and Spending 
+Review, the date to reach the £22 billion target was 
+pushed back to 2026/27.
+▪Reaching the 2.4% target (R&D investment as a 
+percentage of GDP) will require a significant 
+increase in private investment, in addition to public 
+investment. 05,00010,00015,00020,00025,000£ million, current pricesUK Government Net Expenditure £22 bn target 2026/27 Trend
+CAGR: 2.8%Budget announced at 
+Spending Review 2021
+Note: * Estimated. ** Budget announced at Spending Review 2021.
+Net R&D expenditure is defined as: "In -house R&D plus purchased or funding provided for R&D less funding received for R&D“ 
+(ONS).
+Source: Office for National Statistics, ONS (2021). Research and development expenditure by the UK government; HM Treasury 
+(2021). Spending Review 2021.33Chart 2.4. R&D expenditure by source of funding 
+Share of gross domestic expenditure on R&D (GERD), 2019 or latest available
+▪In the UK the business sector contributes to around 
+55% of R&D funding. This is less than in comparator 
+countries, such as Germany (64.5%), Korea
+(76.9%) and Japan (78.9%). 
+▪The UK government (including national and regional 
+governments, as well as their agencies) funds 
+roughly 26% of total R&D expenditure, which is 
+higher than Japan , Korea and China .
+▪The UK has a relatively high share of R&D funded 
+by businesses and institutions located abroad 
+(13.7% in 2018). 
+Note: * US$ billion PPP –current prices. 2018 data for the UK.
+Source: OECD (2021). Main Science and Technology Indicators database.$657.5bn $525.7bn $173.3bn $148.2bn $102.5bn $73.3bn $56.9bn TOTAL GERD*
+63.3 76.3 78.9 
+64.5 76.9 
+56.7 54.8 22.1 20.5 14.7 
+27.8 20.7 
+32.5 
+25.9 7.2 3.1 5.8 
+0.4 0.8 
+2.8 
+5.6 7.4 0.1 0.6 
+7.4 1.6 
+8.0 13.7 
+0%10%20%30%40%50%60%70%80%90%100%
+United
+StatesChina Japan Germany Korea France United
+KingdomShare of gross domestic expenditure on R&D 
+Business enterprise Government Higher education and private non-profit Rest of the world34Chart 2.5. R&D expenditure by sector of performance
+Share of gross domestic expenditure on R&D (GERD), 2019 or latest available
+▪In terms of R&D expenditure by sector of 
+performance, the UK’s higher education sector 
+stands out from comparator countries , with a 23.1% 
+share in 2019, above countries like China , Korea , 
+Japan , the United States , Germany andFrance .
+▪Conversely, the government sector in the UK 
+performs only 6.6% of R&D, well below comparator 
+countries.
+▪In line with comparator countries, the business 
+enterprise sector performs the highest share of 
+R&D, at 66.6% in the UK in 2019.
+Note: * US$ billion PPP –current prices.
+Source: OECD (2021). Main Science and Technology Indicators database.$657.5bn $525.7bn $173.3bn $148.2bn $102.5bn $73.3bn $56.9bn TOTAL GERD*
+73.9 76.4 79.2 
+68.9 80.3 
+65.8 66.6 12.0 8.1 11.7 
+17.4 8.3 
+20.1 23.1 9.9 15.5 7.8 13.7 10.0 12.4 6.6 4.3 1.3 1.4 1.8 2.3 
+0%10%20%30%40%50%60%70%80%90%100%
+United
+StatesChina Japan Germany Korea France United
+KingdomShare of gross domestic expenditure on R&D 
+Business enterprise Higher education Government Private non-profit35Chart 2.6. UK government net expenditure on R&D by 
+department 
+2016 –2019 (£ million current prices)
+▪In 2019 most (38.9%) of the UK government net 
+expenditure on R&D was allocated to UK research 
+and innovation (UKRI). This represents an increase 
+by 10 percentage points in comparison to the 
+proportion spent by research councils in 2016.
+▪The proportion of government expenditure on R&D 
+by higher education funding councils also increased, 
+from 19.6% in 2016 to 21.9% in 2019.
+▪Meanwhile, the absolute and relative expenditure on 
+R&D of civil departments decreased from £3,249 
+million (28.9%) in 2016 to £3,190 million (24.4%) in 
+2019.
+Note: HEFCE closed in 2018 and its functions were divided between the Office for Students and Research England.
+Source: Office for National Statistics, ONS (2021). Research and development expenditure by the UK government.Department2016 2017 2018 2019
+£ m % £ m % £ m % £ m %
+Research 
+councilsUKRI includes all seven research 
+councils and Innovate UK4,756 37.6% 5,024 38.4%
+Engineering and Physical Sciences 
+(EPSRC)818 7.3% 830 7.0%
+Medical (MRC) 649 5.8% 716 6.0%
+Science and Technology Facilities 
+(STFC)621 5.5% 645 5.4%
+Natural Environment (NERC) 402 3.6% 476 4.0%
+Biotechnology and Biological 
+Sciences (BBSRC)422 3.7% 473 4.0%
+Economic and Social (ESRC) 176 1.6% 190 1.6%
+Arts and Humanities (AHRC) 101 0.9% 102 0.9%
+Pensions 65 0.6% 70 0.6% 74 0.6% 70 0.5%
+Total 3,254 28.9% 3,502 29.4% 4,830 38.2% 5,094 38.9%
+Higher 
+education 
+funding 
+councils 
+(HEFCs)Research England (part of UKRI)0.0% 0.0% 2,050 16.2% 2389 18.2%
+England (HEFCE) 1,783 15.8% 1,803 15.1% - -
+Scotland (SFC) 285 2.5% 299 2.5% 309 2.4% 311 2.4%
+Wales (HEFCW) 86 0.8% 82 0.7% 88 0.7% 95 0.7%
+Northern Ireland (DELNI) 53 0.5% 53 0.4% 53 0.4% 68 0.5%
+Total 2,207 19.6% 2,236 18.8% 2,499 19.8% 2,863 21.9%
+Civil 
+departmentsNational Health Service (NHS) 1,043 9.3% 1,126 9.5% 1,191 9.4% 1,215 9.3%
+Business, Energy and Industrial 
+Strategy (BEIS)1,330 11.8% 1,579 13.3% 721 5.7% 1,022 7.8%
+International Development (DFID)328 2.9% 394 3.3% 398 3.1% 394 3.0%
+Other civil departments 548 4.9% 482 4.0% 517 4.1% 559 4.3%
+Total 3,249 28.9% 3,581 30.1% 2,827 22.4% 3,190 24.4%
+Ministry of Defence (MoD) 1,623 14.4% 1,634 13.7% 1,647 13.0% 1,017 7.8%
+Indicative UK contributions to EU R&D expenditure921 8.2% 961 8.1% 841 6.7% 935 7.1%
+Grand total 11,255 100.0% 11,914 100.0% 12,644 100.0% 13,098 100.0%36Chart 2.7. BEIS R&D funding allocation, 2021 –2022
+▪Most of the public expenditure on R&D in the UK is 
+delivered through the Department of Business, 
+Energy and Industrial Strategy (BEIS), which 
+allocates funding to different agencies and 
+programmes, including UKRI, the UK Space Agency 
+and the National Academies.
+▪UKRI funding includes the investments of the seven 
+research councils, Research England and Innovate 
+UK.
+▪In the March 2020 Budget the UK government 
+committed to the creation of the Advanced 
+Research and Invention Agency (ARIA), an 
+independent research body to fund high -risk, high -
+reward scientific research. 
+▪The commitment to create ARIA involves an 
+allocation of £800 million over the next four years. 
+From this amount, £50 million is included in the 
+2021 –22 Budget.
+Source: BEIS (2021). BEIS research and development (R&D) budget allocations 2021 to 2022.
+Other BEIS programmes ( Centre for Connected Autonomous 
+Vehicles, Knowledge Assets, GO -Science and MPI UK)UKAEA: UK Atomic Energy Authority
+NDA: Nuclear Decommissioning Authority
+ATI: Aerospace Technologies Institute
+NMS: National Measurement System
+Auto Innov : Automotive Innovation Programmes
+ARIA: Advanced Research & Invention Agency0 5,000 10,000 15,000 20,000 25,000
+ALPHABET (USA)
+HUAWEI INVESTMENT & HOLDING (China)
+MICROSOFT (USA)
+SAMSUNG ELECTRONICS (Korea)
+APPLE (USA)
+FACEBOOK (USA)
+VOLKSWAGEN (Germany)
+ROCHE (Switzerland)
+INTEL (USA)
+JOHNSON & JOHNSON (USA)
+TOYOTA MOTOR (Japan)
+DAIMLER 9Germany)
+BRISTOL-MYERS SQUIBB (USA)
+MERCK US (USA)
+PFIZER (USA)
+BAYER (Germany)
+ALIBABA GROUP HOLDING (China)
+NOVARTIS (Switzerland)
+BMW (Germany)
+HONDA MOTOR (Japan)€ m
+(
+37Chart 2.8. Top 20 R&D investing companies in the world
+R&D expenditure, € million, 2020
+Source: European Commission (2021). The 2021 EU Industrial R&D Investment Scoreboard.▪The chart shows the top 20 R&D investing companies 
+in 2020.[1]
+▪The USA (nine companies) and Germany (four 
+companies) are followed by companies based in 
+Japan, Switzerland, China and Korea .
+▪Industries of specialisation include: pharmaceuticals 
+and biotechnology; automobiles and parts; 
+software and computer services; technology 
+hardware and equipment; andelectronic and 
+electrical equipment.[2]
+[1] R&D investing companies are the 2,500 firms that invested the largest sums in 
+R&D worldwide in 2020, as defined in the EU Industrial R&D Investment 
+Scoreboard. Those companies have headquarters in 39 countries and represent 
+90% of the expenditure in R&D by the business sector in 2020. 
+[2] Sectors are defined according to the Industry Classification Benchmark (ICB) 
+FTSE International .38Chart 2.9. Top R&D investing companies worldwide 
+Number of companies, top 15 countries, 2020
+Note :R&D investing companies arethe2,500firms thatinvested thelargest sums inR&D worldwide in2020 ,asdefined in
+theEUIndustrial R&D Investment Scoreboard .These companies have headquarters in39countries andrepresent 90%ofthe
+expenditure inR&D bythebusiness sector in2020 .
+Source: European Commission (2021). The 2021 EU Industrial R&D Investment Scoreboard.▪The chart shows how the 2,500 companies that 
+invested the largest sum in R&D in 2020 are 
+distributed across countries, focusing on the top 15 
+countries. 
+▪There were 105 companies with headquarters in the 
+UK among the top 2,500 R&D investing companies 
+in 2020. 
+▪Most of the top R&D investing companies have 
+headquarters in the USA (779), China (597) and 
+Japan (293), accounting for 66.8% of the total 2,500 
+R&D investing companies worldwide.
+▪Germany has 124 firms among the top R&D 
+investing companies, accounting for 31% of the top 
+R&D investing firms based in the European Union . 779
+597
+293
+1241058666 60 5734 34 29 27 26 25
+0100200300400500600700800900Number of companies39Chart 2.10. Expenditure of top R&D investing companies
+€ billion, percentage, 2020
+Note: RoW = rest of the world; R&D investing companies are the 2,500 firms that invested the largest sums in R&D worldwide in 
+2020, as defined in the EU Industrial R&D Investment Scoreboard . These companies have headquarters in 39 countries and 
+represent 90% of the expenditure in R&D by the business sector in 2020. 
+Source: European Commission (2021). The 2021 EU Industrial R&D Investment Scoreboard.▪In 2020 the top 2,500 R&D investing companies 
+worldwide invested a total of €908.9 billion in 
+research and development activities, as reported in 
+the EU Industrial R&D Investment Scoreboard .[1]
+▪Companies headquartered in the USA invested 
+€343,6 billion, accounting for 38% of the total 
+expenditure worldwide and more than what 
+companies based in China, Japan and Germany
+invested all together.
+▪R&D investing companies based in the UK invested 
+€28.9 billion, making the UK the eighth in the world 
+country rank.USA
+€ 343.6 
+38%
+China
+€ 141.0 
+15%Japan
+€ 111.1 
+12%Germany
+€ 86.9 
+10%Korea
+€ 33.4 
+4%France
+€ 32.0 
+4%Switzerland
+€ 29.0 
+3%UK
+€ 28.9 
+3%Taiwan
+€ 19.1 
+2%Netherlands
+€ 19.0 
+2%RoW
+€ 64.9 
+7%Total = €908.9 bn
+*[1] The 2,500 R&D investing companies have headquarters in 39 countries 
+and own around 800,000 subsidiaries around the world. TheEU Industrial 
+R&D Investment Scoreboard, however, reports R&D investment data, as 
+reported by the 2,500 companies, regardless of where research and 
+development activities are conducted. 40Chart 2.11. Top 10 UK companies investing in R&D
+R&D expenditure, € million, 2020
+▪The chart shows the top 10 companies 
+headquartered in the UK, which are among the 
+2,500 firms that invested the most in R&D in 2020, 
+as reported by the 2021 EU Industrial R&D 
+Investment Scoreboard.
+▪The first two UK -based firms among the world 
+leaders investing in R&D in 2020 belong to the 
+pharmaceuticals sector, with GSK and AstraZeneca 
+ranking 29 and 31 worldwide, respectively. 
+▪The UK top 10 R&D investing companies invested a 
+total of €17.4 billion. However, those companies 
+may have several subsidiaries around the world, 
+while the 2021 EU Industrial R&D Investment 
+Scoreboard reports data on R&D, regardless of 
+where the research and development activities are 
+conducted, whether in the UK or abroad. World rank Company IndustryR&D 2020 
+(€ m)
+29 GLAXOSMITHKLINE Pharmaceuticals and biotechnology 5,034
+31 ASTRAZENECA Pharmaceuticals and biotechnology 4,896
+101 HSBC Banks 1,576
+145 LLOYDS BANKING Banks 1,084
+163 ROLLS -ROYCE Aerospace and defence 983
+193 APTIV Automobiles and parts 834
+207 UNILEVER Food producers 800
+214 ATLASSIAN CORPORATION Software and computer services 785
+227 ROYAL DUTCH SHELL Oil and gas producers 739
+238 BARCLAYS Banks 706
+Note: The 2021 edition of the Scoreboard covers 2,500 firms that invested the largest sums in R&D worldwide in 2020. These 
+companies have headquarters in 39 countries and represent 90% of the expenditure in R&D by the business sector in 2020
+Source: European Commission (2021). The 2021 EU Industrial R&D Investment Scoreboard.41Chart 2.12. Top 100 patent applicant firms at USPTO
+Number of firms, country of headquarters, United States Patent and Trademark Office, 2020
+▪The chart shows the top 100 patent applicant firms 
+per country for patents published with the USPTO in 
+2020.[1]
+▪More than 70% of all top 100 patent applicants are 
+represented by companies based in the USA (44) 
+and Japan (29). 
+▪Companies from Korea (9),Germany (6) and 
+China (5) are also represented among the top 100 
+patent applicants in the USPTO in 2020.
+▪The top 10 patent applicants at the USPTO include 
+the following firms: IBM, Intel, Apple, Microsoft, 
+Qualcomm (USA); Samsung Electronics, LG 
+Electronics (Korea); Canon (Japan), Huawei 
+(China); and Taiwan Semiconductor (Taiwan).44
+29
+9
+6
+5
+1
+1
+1
+1
+1
+1
+1
+0 10 20 30 40 50United States
+Japan
+South Korea
+Germany
+China
+Taiwan
+Sweden
+Netherlands
+Ireland
+Saudi Arabia
+Finland
+FranceNumber of firms
+[1] The United States Patent and Trademark Office (USPTO) is the second 
+largest patent office globally, second only to the National Intellectual Property 
+Administration of the People’s Republic of China. USPTO data is widely used 
+in academia and policy -making and makes analyses comparable. The USA is 
+the country that best represents global technological developments, and 
+therefore they would most naturally be considered when applicants want to 
+protect their invention. USPTO data is also known to be of high quality and 
+well accessible. For a comparison of patent data sources, see Kim J. and 
+Lee S. (2015). Patent databases for innovation studies: A comparative 
+analysis of USPTO, EPO, JPO and KIPO. Technological Forecasting and 
+Social Change, Volume 92, pp. 332 –345.Note: The analysis includes patents published with the USPTO in 2020.
+Source: Patent data was retrieved from Lens.org (2021)42▪The chart shows the UK top 10 patent applicant 
+firms for patents published in 2020 with the USPTO.
+▪There is no company with headquarters in the UK 
+among the top 100 patent applicants at USPTO for 
+2020.[1]
+▪ARM is the top UK patent applicant, ranking 103 
+globally among the top USPTO patent applicants in 
+2020. 
+▪The second -best UK applicant is Rolls -Royce (635 
+patents), which ranks the company 135th among the 
+top USPTO patent applicants.
+▪The presence of few companies with headquarters 
+in the UK among the top patenting firms worldwide 
+is consistent with analyses conducted by the 
+European Commission and the OECD, covering the 
+world’s five largest patent IP offices.[2]
+[1] A similar analysis was conducted for 2019 and 2018, and 
+companies with headquarters in the UK were not among the top 100 
+applicants firms for patents published at the USPTO.
+[2] Amoroso et al. (2021). World Corporate Top R&D investors: Paving 
+the way for climate neutrality. A joint JRC and OECD report.Chart 2.13. UK top 10 patent applicants at USPTO
+Firms with headquarters in the UK, number of patents, United States Patent and 
+Trademark Office, 2020
+Note: The number in brackets indicates the world ranking; the analysis includes patents published with the USPTO in 2020.
+Source: Patent data was retrieved from Lens.org (2021)757
+635
+507
+311
+275
+176
+153
+142
+142
+130
+0 100 200 300 400 500 600 700 800ARM (103)
+Rolls-Royce (135)
+Cirrus Logic International UK (274)
+Jaguar Land Rover (300)
+Imagination Technologies (353)
+British Telecomm (548)
+Airbus Operations (625)
+BAE Systems (661)
+Johnson Matthey (664)
+University of Oxford Innovation (746)Number of patentsThe number in brackets 
+indicates the world ranking43▪The chart shows the top 10 UK patent applicants for 
+patents published in 2020 with the USPTO by 
+industry.[1]
+▪The majority of top 10 UK patent applicants in the 
+USPTO in 2020 were companies in the field of 
+semiconductors and aerospace and defence .
+▪Semiconductor companies account for almost half of 
+all USPTO published patents for the top 10 UK -
+based applicants, with 1,539 out of 3,228 patents.
+▪Companies in the field of automotive (Jaguar Land 
+Rover), telecommunications (British Telecomm), 
+chemicals (Johnson Matthey) and commercial 
+support services (University of Oxford Innovation) 
+are also represented among the top 10 UK -based 
+USPTO patent applicants.
+[1] The industry classification adopts the Bloomberg Industry 
+Classification Standard (BICS). The displayed industries match the 
+respective “sub -industry” level, as provided by Bloomberg.1539
+930
+311
+176
+142
+130
+0 500 1000 1500 2000Semiconductors
+Aerospace & Defense
+Automotive
+Telecommunications
+Chemicals
+Commercial Support ServicesNumber of patentsChart 2.14. Top 10 UK patent applicants at USPTO by industry
+UK firms, number of patents, United States Patent and Trademark Office, 2020
+Note: The analysis includes patents published with the USPTO in 2020.
+Source: Patent data was retrieved from Lens.org (2021)Theme 3: Industrial performance –
+focus on the pharmaceutical and automotive manufacturing sectors
+UK INNOVATION REPORT 202245The pharmaceutical manufacturing sector
+UK INNOVATION REPORT 202246▪Are UK sectors becoming more or less competitive internationally?
+▪How are UK sectors performing in terms of productivity, value added and employment?
+▪Are UK sectors investing enough in R&D compared to their international competitors?Theme 3: Policy questions and key messages
+Key UK pharmaceutical manufacturing trends in the last decade Drivers identified in literature review and sector expert consultations
+The value added and productivity of the UK pharmaceutical manufacturing sector have declined 
+significantly in the last decade
+▪ Of the top 13 countries by pharmaceutical value added in 2018, the UK is the only one to have 
+experienced a significant productivity decline, at a rate of -7.9% per year between 2008 and 
+2018. 
+The UK trade balance in pharmaceuticals has deteriorated significantly since 2014
+▪ The UK recorded deficits in pharmaceutical product trade in all years between 2014 and 2020, 
+except in 2015.
+▪ The UK’s pharma trade balance went from a $9.6 billion surplus in 2010 to a deficit of over $1 
+billion in 2020. 
+Pharma business R&D expenditure in the UK has remained stagnant in the last decade and 
+remains significantly lower than comparator countries 
+▪ The business expenditure on R&D has only grown marginally in the last decade, both in 
+manufacturing and non -manufacturing activities. Adjusting for inflation, R&D in the 
+Pharmaceutical Product Group in 2020 was still only 83% of its peak in 2011. The sector spent 
+only 6% more in 2018 than it did in 2008, compared to increases of around 30% in the US and 
+Germany, and over 100% in Korea. 
+▪ On average, between 2014 and 2020, 50% of the pharmaceutical R&D performed in the UK was 
+conducted by foreign -owned businesses. ➢ Company restructuring and site closures, including those by major sector employers;
+➢ Increased offshoring of pharmaceutical manufacturing, including a large share of 
+APIs;
+➢ The UK’s inability to capture the “second wave” of international manufacturing 
+investments;
+➢ Greater incentives (e.g. tax) offered by other countries to attract manufacturing;
+➢ New entrants focusing on early -stage drug discovery and non -manufacturing 
+activities;
+➢ An inability to commercialise and scale up the manufacture of technologies 
+developed in the UK;
+➢ Caps on drug spending having an impact on the perception of the UK by investors;
+➢ Increased use of generics pushing prices downwards and driving imports upwards;  
+➢ The 2016 EU membership referendum adding uncertainty to investment decisions;
+➢ The large share of domestic business R&D expenditure decisions taken abroad;
+➢ Competitor countries having greater incentives to attract R&D investment;
+➢ Difficulties accessing scale -up funding locally, leading to firm decisions to migrate; 
+and
+➢ UK companies reducing in -house R&D investment in favour of acquiring small firms.THE PHARMACEUTICAL MANUFACTURING SECTOR47Note: Last available value -added (VA) data for Ireland from 2014, used and indicated in table above. Because of data unavailability, 2017 values for VA 
+and employment are used instead of 2018 values for India and Korea; 2017 values for employment are used instead of 2018 value s for France; 2009 
+values for VA and employment are used instead of 2008 values for Belgium and Switzerland; and 2011 value for VA and 2007 valu e for employees are 
+used instead of 2008 value for Korea. CAGR (compound annual growth rate) calculations adjusted accordingly. Sector definition : “Manufacture of basic 
+pharmaceutical products and pharmaceutical preparations”. As per the International Standard Industrial Classification (SIC) o f All Economic Activities, 
+Revision 4, SIC 21.  
+Source: UNIDO (2021). INDSTAT 4, ISIC Revision 4. ▪The UKwas ranked twelfth in the world in the 
+production of pharmaceuticals in 2018 by value added 
+in current US$. The value added per employee metric 
+showed that UKproductivity within the pharmaceutical 
+sector declined between 2008 and 2018 at a rate of 
+7.9% per year (CAGR), as a result of both decreases in 
+value added and increases in employment over this 
+period.
+▪Unlike top -performing countries, the UK has recorded 
+negative growth rates in value added and value added 
+per employee over the past decade.
+▪At ~$157 in 2018, UK value added per employee was 
+at a similar level to Germany, Italy and France but 
+lower than the productivity levels of most comparators, 
+except India and Brazil . 
+▪Singapore has the highest value added per employee 
+of comparator countries. Belgium, Denmark and 
+Switzerland are countries with high growth in value 
+added per employee over the decade. Chart 3.1. Pharmaceutical manufacturing –value added 
+and employment 
+Value added in current US$, employment and labour productivity in 
+pharmaceuticals and medicinal chemicals, top countries by value add in 2018
+Rank CountryValue added EmploymentProductivity
+Value added per employee
+US$bn , 
+2018CAGR 
+(2008 –18)Persons, 
+‘000, 2018CAGR
+(2008 –18)US$’000, 
+2018CAGR
+(2008 –18)
+1 United States 160.9 1.3% 241 -0.3% 666.3 1.6%
+2 Switzerland 27.7 7.1% 47 3.1% 590.3 3.9%
+3 Germany 24.1 0.0% 157 2.3% 153.3 -2.2%
+4 Ireland (2014) 16.8 -0.4% 16 0.0% 1042.9 0.4%
+5 India 15.7 7.7% 740 7.7% 21.2 0.0%
+6 France 14.4 0.3% 97 1.6% 148.3 -1.2%
+7 Belgium 12.4 10.4% 28 4.8% 439.3 5.4%
+8 Italy 10.9 0.4% 66 -0.2% 165.6 0.6%
+9 Korea 10.1 5.9% 41 4.6% 245.5 -0.1%
+10 Singapore 9.7 5.8% 8 6.9% 1206.6 -1.0%
+11 Denmark 9.2 8.4% 25 4.0% 362.5 4.2%
+12 United Kingdom 7.9 -6.7% 50 1.2% 157.2 -7.9%
+13 Brazil 6.9 1.3% 108 1.2% 64.5 0.1%United StatesSwitzerland
+GermanyIrelandIndia
+FranceBelgium
+Italy
+Korea
+SingaporeDenmark
+United KingdomBrazil
+-10%-8%-6%-4%-2%0%2%4%6%8%
+0 200 400 600 800 1000 1200 1400Growth in value added per employee 
+CAGR (2008 –18)
+Value added per employee, US$'000, 2018
+48Note: See previous slide. Sector definition : “Manufacture of basic pharmaceutical products and pharmaceutical preparations”. 
+As per the International Standard Industrial Classification (SIC) of All Economic Activities, Revision 4, SIC Code 21. 
+Source: UNIDO (2021). INDSTAT 4, ISIC Revision 4. ▪Of the top 13 countries by value add in 2018, in 
+billions of US dollars, the UK is the only one to have 
+experienced a significant productivity decline 
+between 2008 and 2018. 
+▪Other countries, including Belgium, Denmark, 
+Switzerland and the United States , saw 
+productivity growth between 2008 and 2018, 
+measured as growth per year in value added per 
+employee.
+▪France and Germany , which have similar 
+productivity to the United Kingdom , also 
+experienced smaller declines in productivity during 
+this time period; however, the decline in productivity 
+in the UKwas 4 –8 times larger than these 
+comparable nations. Chart 3.2. Pharmaceutical manufacturing –productivity 
+growth
+Productivity measured by value added per employee and productivity growth, 
+top-performing economies in 2018
+Growth in productivity Decline in productivityVery high and 
+stable productivityHigh and growing 
+productivity
+Moderate and 
+declining productivityModerate and 
+stable productivityLow and stable 
+productivity49Chart 3. 3. Pharmaceuticals –trade balance (a)
+Global ranking by trade balance in pharmaceutical products
+▪The UKhas suffered from a rapid loss in trade 
+competitiveness in pharmaceutical products from 
+the perspective of trade balance over the past 
+decade.
+▪TheUK was the fourth largest net exporter of 
+pharmaceutical products in 2010, with a surplus of 
+~$10 billion. 
+▪Since 2014 the UKhas recorded deficits in 
+pharmaceutical product trade in all years except 
+2015. Its trade deficit widened to ~$1 billion in 2020, 
+placing it among the third quartile of countries 
+according to trade balance. 
+Note: Trade balance is based on gross exports and gross imports of goods at HS 2 -Digit level for HS 30 –Pharmaceutical Products . 
+*Global ranking excludes countries for whom data for the year in question is not available.
+Source: UN Comtrade (accessed January 2022). HS 30 –Pharmaceutical Products2010 2020
+Rank Country US$bn Rank Country US$bn
+1 Switzerland 27.9 1 Ireland 56.4
+2 Ireland 26.9 2 Switzerland 49.4
+3 Germany 18.6 3 Germany 32.1
+4 United Kingdom 9.7 4 India 15.9
+5 France 8.5 5 Denmark 13.8
+6 Denmark 5.1 6 Netherlands 12.7
+7 Israel 5.0 7 France 9.1
+8 India 4.9 8 Belgium 8.9
+9 Belgium 4.8 9 Italy 7.5
+10 Sweden 4.5 10 Sweden 6.3
+11 Singapore 3.4 11 Singapore 5.3
+98 United Kingdom -1.2
+162 of 162* USA -21.2 133 of 133* USA -85.650Chart 3.4. Pharmaceuticals –trade balance (b)
+▪This loss in trade competitiveness for the UKover 
+the past decade, leading to a ~$1 billion trade deficit 
+in 2020, is the result of an annual 1% increase in 
+imports (CAGR) and an annual 2.8% CAGR decline 
+in exports (CAGR) between 2010 and 2020.  
+▪Of the comparator countries, the UKis the only 
+country where exports were smaller in 2020 than 
+they were in 2010. 
+Note: Trade balance is based on gross exports and gross imports of goods at HS 
+2-Digit level for HS 30 –Pharmaceutical Products . 
+*Global ranking excludes countries for whom data for the year in question is not 
+available.020406080100120140US$bn2010
+2020
+-140-120-100-80-60-40-200US$bn2010
+2020ImportsExports
+Trade 
+balance 
+2020 (US$ bn)56 49 32 16 14 13 9 9 8 6 5 -1 -86
++1%
+(CAGR)
+Annual 
+imports 
+growth 
+for the 
+UK-2.8%
+(CAGR)
+Annual 
+exports 
+growth 
+for the 
+UK
+Source: UN Comtrade (accessed January 2022). HS 30 –Pharmaceutical Products51Chart 3.5. Pharmaceuticals –UK top trade partners
+UK trade of medicinal and pharmaceutical products, constant price in £ million, 
+November –December 2021 ▪There have been some successes in the UK
+pharmaceutical trade over the past decade. The
+UKhas exported more medicinal and
+pharmaceutical products to China and Belgium , 
+with a 13% CAGR between 2010 and 2020, bringing 
+in £1 billion more in exports in 2020 than 2010 from 
+each country. 
+▪Imports from Italy rose, while exports to this nation 
+declined (5.8% rise in imports, -9.7% decline in 
+exports), with a similar but smaller picture occurring 
+with France (2.7% rise in imports, -6.3% decline in 
+exports). This resulted in a net reduction of just over 
+£1 billion in trade for the UK in 2020 than 2010 from 
+Italy and France. 
+▪The rise in imports outstripped the growth in exports 
+from countries, including the Netherlands (14.4% 
+vs 1.5%), to the tune of a £3.2 billion lower trade 
+balance in 2020 compared to 2010, and to a lesser 
+extent in Germany (4.4% vs 0.9%, with a £700 
+million difference between 2020 and 2010). 
+▪This analysis identifies that, although some 
+traditional markets for UK pharmaceuticals in the EU
+may be declining, new export markets with growth 
+potential are also opening up (e.g. China). Source: ONS ( January 2022 and historical data). Trade in 
+goods: country -by-commodity exports -Code 54: Medicinal and 
+pharmaceutical products.; ONS (January 2022 and historical 
+data), trade in goods: country -by-commodity imports -Code 54: 
+Medicinal and pharmaceutical products. Import Export
+2010 2020 2010 2020
+Spain Netherlands 1 United States United States
+United States Germany 2 Germany Germany
+Switzerland Belgium 3 France China
+Germany United States 4 Spain Belgium
+Belgium Spain 5 Netherlands Ireland
+Ireland Ireland 6 Italy Netherlands
+Netherlands Switzerland 7 Ireland France
+France Italy 8 Japan Spain
+Italy France 9 Australia Australia
+Israel India 10 Switzerland Canada52▪Developed by the ONS, the term "product group" 
+refers to business R&D expenditure allocated to the 
+product group that best describes the subject type of 
+R&D activities carried out by firms.
+▪This is in contrast to the “ industry classification” , 
+where SIC codes are allocated based on the main 
+activity of the business –in this instance, companies 
+whose main activity is pharmaceutical
+manufacturing . These are more often used for 
+international comparisons.
+▪The difference between these two measures 
+indicates that only a fraction of all R&D in the 
+pharmaceutical industry is conducted by 
+businesses whose main activity is pharmaceutical 
+manufacture . Companies that may account for the 
+difference include contract R&D organisations and 
+pre-commercial SMEs. 
+▪Adjusting for inflation, R&D in the Pharmaceutical 
+Product Group in 2020 was still only 83% of its 
+peak in 2011.
+▪While R&D in pharmaceutical manufacturing 
+(SIC Code 21) dipped to just 39% of its 2011 value 
+in 2020, it had been relatively stable throughout the 
+decade.Chart 3.6. Pharmaceuticals –business spending on R&D (a)
+Business enterprise R&D expenditure (BERD), various classifications, 
+constant prices, £ billion (2020)
+Note: Current prices adjusted using GDP deflator to 2020 prices. 
+Source: ONS (2021). BERD Statistics. 01234567
+2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020R&D expenditure, £ bn, 
+constant prices (2020 adjusted)
+Pharmaceutical product group R&D (ONS classification)
+Pharmaceutical manufacturing business R&D (SIC code 21)53▪Comparing pharmaceutical manufacturing , the 
+decline experienced by the sector in terms of GVA 
+and productivity may have affected business R&D 
+expenditure. 
+▪The sector spent only 6% more in 2018 than it did in 
+2008, compared to increases of around 30% in the 
+USand Germany and over 100% in Korea . 
+▪In absolute terms, however, business enterprise 
+R&D expenditure in the UKremains comparatively 
+lower than that of Korea, Germany andthe US .Chart 3.7 .Pharmaceuticals –business spending on R&D (b)
+Business enterprise expenditure on R&D (BERD) in basic pharmaceutical 
+products and pharmaceutical preparations , selected countries
+Note: Compound annual growth rates for countries are based on data for the first and last available years within the 
+2008 –16 range. Data from Industry: Manufacture of basic pharmaceutical products and pharmaceutical preparations (SIC 
+Code 21).
+Source: OECD ( 2021). Research and Development Statistics2.8% 7.5% 0.6% 2.9% CAGR
+01020304050607080
+Germany Korea UK USUS$bn , 2015 PPP
+2008 2010 2012 2014 2016 2018Business enterprise expenditure on 
+R&D (BERD) ( US$bn , 2015 PPP)Business enterprise expenditure on 
+R&D (BERD) growth (2008 = 100)
+050100150200250
+2008 2010 2012 2014 2016 2018
+Germany Korea UK US54▪Most pharmaceutical R&D conducted by 
+businesses in the UKis funded by the companies 
+themselves (~70%).
+▪Around 25% of pharmaceutical R&D performed by 
+businesses in the UKis funded by overseas 
+organisations . While overseas investment in R&D 
+makes up a substantial portion of the total R&D, this 
+has not been increasing. 
+▪Only a small fraction of R&D performed by business 
+is funded by the government (~£12 million in 2020). 
+▪The graph on the right shows that, on average, 50% 
+of the pharmaceutical R&D performed in the UK 
+was conducted by businesses owned overseas. Chart 3.8. Pharmaceuticals –foreign R&D in the UK
+Source of funds for R&D, and ownership of business, for businesses performing 
+R&D in pharmaceuticals within the UK
+01,0002,0003,0004,0005,0006,000
+2014 2016 2018 2020Expenditure, £m, 2020 constant pricesSource of funds 
+for pharma R&D performed in UK businesses
+ Own Funds  Overseas UK Government Other0100020003000400050006000
+2014 2016 2018 2020Expenditure, £m, 2020 constant pricesBusiness ownership
+for pharma R&D performed in UK businesses
+ United Kingdom  Overseas
+Note: Current prices adjusted using GDP deflator to 2020 prices. ONS defined product grouping. 
+Source: ONS (2021). BERD Statistics55Drivers behind the trends in the pharmaceutical manufacturing sector
+Insights from literature review and consultations with sector experts56What is driving value added, productivity and trade trends in pharmaceutical manufacturing? (1)
+Key trend identified▪The value added and productivity of the UK pharmaceutical manufacturing sector have declined significantly in the last decade
+▪The UK trade balance in pharmaceuticals has deteriorated significantly since 2014
+Potential drivers 
+identified from 
+literature review 
+and consultations 
+with sector experts 
+(see Appendix 3.1 
+for details)Company restructuring and site closures, including those by major sector employers
+▪Some top companies (e.g. Pfizer, GSK), who are major employers in the industry, completed reorganisations over the last decad e, 
+resulting in site closures [Bioscience and Health Technology Sector Statistics, 2019]. 
+Increased offshoring of pharmaceutical manufacturing
+▪The consulted stakeholders highlighted that the last decade saw a move by UK pharmaceutical manufacturers towards the 
+outsourcing of some manufacturing activities.
+▪There seems to be a greater degree of firm mobility in the pharmaceutical sector than in other industries as a result of shor terfactory 
+life cycles, lower -scale operations and lower capital embedded in facilities and the supply chain. 
+▪Together with superior incentives from overseas markets, these traits may help to explain the closure and/or migration of som e key 
+operations outside the UK.
+▪Both the literature and interviewees suggest that a large share of advanced pharmaceutical ingredient (API) chemicals and mat erials 
+production has moved offshore over the last 10 –15 years, mostly driven by cost considerations [Medicines Manufacturing Industry 
+Partnership, 2017]. 
+▪The stakeholders consulted also highlighted that contract development and manufacturing companies (CDMOs) owned and located 
+abroad, taking on tasks such as drug development and manufacturing, have become more common.
+The UK’s inability to capture the “second wave” of manufacturing investments
+▪The second wave of manufacturing investments on new plant and equipment for the manufacture of biologics and other novel 
+medicines has largely gone to Ireland, Singapore, Germany and the US, which together have attracted the bulk of US$ 125 billi on 
+investment between 2011 and 2017 [LSIS, 2017].
+▪The 2017 Life Sciences Industrial Strategy therefore suggested that the UK should not miss the next wave of manufacturing 
+opportunities in the sector in order to close the export gap and boost productivity [LSIS, 2017].
+▪The 2021 Life Sciences Vision identifies areas in which the UK has, or could develop, a meaningful competitive advantage, inc luding: 
+cell and gene therapies, oligonucleotides, viral vectors, advanced diagnostics or wound care [HMG, 2021]. 57What is driving value added, productivity and trade trends in pharmaceutical manufacturing? (2)
+Key trend identified▪The value added and productivity of the UK pharmaceutical manufacturing sector have declined significantly in the last decade
+▪The UK trade balance in pharmaceuticals has deteriorated significantly since 2014
+Potential drivers 
+identified from 
+literature review 
+and consultations 
+with sector experts 
+(see Appendix 3.1 
+for details)Other countries provide greater incentives –particularly tax –to attract manufacturing investment
+▪The 2021 Life Sciences Vision recognises that it is essential to provide incentives to support company growth, innovation and
+investment and to help new companies develop products and sales based in the UK [HMG, 2021]. 
+▪Key competitors such as Germany, the US, Switzerland, Ireland and Singapore have all prioritised life sciences manufacturing, with 
+Ireland landing manufacturing investments from 9 out of 10 top pharmaceutical companies and Singapore having 30 of the world’ s 
+leading biopharmaceutical companies’ HQs [LSIS, 2017].
+▪The consulted stakeholders highlighted that lower business tax rates, including incentives for companies to locate headquarte rs and 
+R&D facilities within countries, may out -compete the UK offering regarding international investment. This is seen particularly i n the 
+cases of Ireland and Singapore, which have highly attractive business tax structures, better rates of return of investment, a ccess to 
+capital and other financial incentives.
+▪There was a perception among the consulted experts that, although the UK has started to offer R&D grants and other innovation
+incentives, the total UK budget for R&D grants remains lower than that of competitor countries. 
+▪There is also a concern that, although the UK has traditionally offered some advantages for R&D -intensive pharmaceutical 
+companies to operate in the country, such as good access to skills and the presence of a vibrant innovation ecosystem, these mig ht 
+have eroded over time. 
+▪Both the literature and interviewees identified difficulties in recruiting highly qualified workers in categories such as the core 
+scientific disciplines of biological and chemical sciences; a wide range of computational disciplines; and clinical pharmacol ogy
+[ABPI, 2019]. The consultees also mentioned that the UK has lower proportions of skilled technicians with specific knowledge of the 
+sector than other competitor countries.58What is driving value added, productivity and trade trends in pharmaceutical manufacturing? (3)
+Key trend identified▪The value added and productivity of the UK pharmaceutical manufacturing sector have declined significantly in the last decade
+▪The UK trade balance in pharmaceuticals has deteriorated significantly since 2014
+Potential drivers 
+identified from 
+literature review 
+and consultations 
+with sector experts 
+(see Appendix 3.1 
+for details)New UK sector entrants focused on early -stage drug discovery and other activities outside manufacturing
+▪While the sector has historically been dominated by a small number of large players (e.g. AstraZeneca and GSK), ONS data sugg ests 
+that 65% of 610 companies registered as pharmaceutical manufacturing enterprises at the start of 2018 were micro -firms with fewe r 
+than 5 employees [Make UK, 2018].
+▪The interviewees suggested that the UK has developed a strong presence of start -ups in the last decade, many of which focus on n ew 
+discoveries and operate on loss -making models while these developments get to market. 
+▪From the perspective of some interviewees, trade deficits could be a symptom of the UK focus on basic R&D but not 
+commercialisation in recent years, which could be leading to UK innovation being exploited abroad and therefore lower exports .
+Inability to commercialise and scale up the manufacture of technologies and products developed in the UK 
+▪Technologies and products that were originally developed in the UK have not been commercialised or manufactured in the UK, an d 
+globally mobile inward investments have tended to go to competitor countries [HMG, 2021]. 
+▪For example, there is concern that, despite the discovery of monoclonal antibodies in the UK, the country has failed to capit alise on 
+this by securing commercial manufacturing of these products [LSIS, 2017].
+▪The UK government’s recognition that the high costs of developing a drug and getting it to market are prohibitive factors for many 
+manufacturers has resulted in attempts to develop a streamlined pathway to bring products to market through programmes such a s 
+the Accelerated Access Collaborative [Make UK, 2018].59What is driving value added, productivity and trade trends in pharmaceutical manufacturing? (4)
+Key trend identified▪The value added and productivity of the UK pharmaceutical manufacturing sector have declined significantly in the last decade
+▪The UK trade balance in pharmaceuticals has deteriorated significantly since 2014
+Potential drivers 
+identified from 
+literature review 
+and consultations 
+with sector experts 
+(see Appendix 3.1 
+for details)Caps on drug spending may have an impact on the perception of the UK by investors
+▪An opinion found in the literature and expressed by various interviewees is that, although drug spending decisions do not dir ectly 
+influence investments because companies operate in a global market, they might affect the perception that global companies ha ve of 
+the UK’s commitment to the sector [Make UK, 2018]. 
+▪In this regard, the Association of the British Pharmaceutical Industry [ABPI, 2020] suggests that the drive by the NHS to pur chase 
+the lowest -price product and single -supplier contracts has resulted in manufacturing being driven to low -cost labour markets, 
+thereby weakening the resilience of UK supply.
+Increased use of generics could be pushing prices downwards and driving imports upwards  
+▪The UK pharmaceutical industry has seen increased price pressures, both nationally and globally, from generics [Enterprise Ir eland, 
+2020]. 
+▪The consulted stakeholders highlighted that, in terms of generics manufacturing, other countries such as India and China are the
+preferred options to manufacture basic chemistry at a lower price. Increased generic use by the NHS may be driving imports 
+upwards.
+The 2016 EU membership referendum added uncertainty to investment decisions in the sector
+▪There was a common perception among the stakeholders consulted that the 2016 EU membership referendum resulted in 
+pharmaceutical companies becoming more cautious in their spending and putting larger capex on hold.
+▪In the view of some interviewees, the referendum decision created a perception that the UK could become a smaller domestic ma rket, 
+which reduced some of its attractiveness. IP protection considerations added to these concerns, as it became unclear whether the UK 
+would remain part of the EU Unitary Patent Initiative and the European Patent with Unitary Effect (EPUE) scheme.
+▪There is also a perception that the UK’s new trade relationship with the EU has reduced the attractiveness of producing final products 
+in the country, as these would need to be re -released and approved in other markets.
+▪Both interviewees and literature sources suggest that longer lead times and increased paperwork caused by border and custom 
+checks affect profit margins, particularly for products with a short shelf life, leading to companies transferring specific p roduction 
+lines outside the UK [Make UK, 2018].60What is driving business R&D expenditure trends in pharmaceutical manufacturing? (1)
+Key trend identified▪Pharma R&D expenditure in the UK has remained stagnant in the last decade and remains significantly lower than comparator 
+countries 
+Potential drivers 
+identified from 
+literature review 
+and consultations 
+with sector experts 
+(see Appendix 3.1 
+for details)A large share of domestic business R&D expenditure relies on decisions taken abroad
+▪Around half of the UK’s pharmaceutical R&D expenditure was performed in businesses owned by overseas companies in 2020. As a 
+result, the investment decisions of multinational companies located in the UK may be made by headquarters located elsewhere. 
+▪In the view of some interviewees, this may have impacted R&D expenditure decisions and has potentially lessened the UK’s spee d of 
+innovation, particularly for technologies where the development process is highly iterative and requires proximity to the 
+manufacturing base [HMG, 2021]. 
+Competitor countries offer greater incentives to attract R&D investment
+▪There was a perception among the consulted stakeholders that firms receive more favourable grants and tax credits in other 
+countries. 
+▪Capital allowance regimes in the UK may be particularly disadvantageous for the pharmaceutical sector because of its high R&D
+intensity, making it relatively less attractive to invest in pilot and full -scale manufacturing facilities in comparison to othe r 
+countries [LSIS, 2017].
+▪For example, France and Canada offer capital allowance rates of 28% and 50%, respectively, in comparison with an annual rate of 
+18% on a reducing balance basis in the UK [LSIS, 2017].
+▪Although the UK’s current corporation tax is the lowest in the G20, the UK government recently announced significant rises fr om 
+19% to 25%, with effect from 1 April 2023.61What is driving business R&D expenditure trends in pharmaceutical manufacturing? (2)
+Key trend identified▪Pharma R&D expenditure in the UK has remained stagnant in the last decade and remains significantly lower than comparator 
+countries 
+Potential drivers 
+identified from 
+literature review 
+and consultations 
+with sector experts 
+(see Appendix 3.1 
+for details)UK companies may struggle to access scale -up funding locally and decide to migrate, impacting R&D expenditure
+▪The access to scale -up funding in the UK has been identified as a constraint despite a strong performance in research and innova tion, 
+across a number of fields. The ease of accessing funding in the US is seen as greater than in the UK.
+Decision of UK companies to reduce high -risk in -house R&D investment in favour of acquiring small companies
+▪According to the consulted experts, large pharmaceutical companies are preferentially providing seed funding for small compan ies
+conducting R&D and then acquiring these companies if successful. This may be reducing the overall business R&D expenditure in the 
+UK. 
+▪The long lag times and costs between the research beginning and a drug being patented can be prohibitive for firms, leading t o 
+mergers and acquisitions across the industry in order to gain the economies of scale and financial capability to manufacture 
+pharmaceuticals [Make UK, 2018].
+Smaller innovative companies tend to outsource R&D
+▪As suggested by the UK Bioindustry Association, smaller innovative companies often operate on an outsourcing model, whereby t hey
+rely on universities and other companies to conduct R&D on their behalf [BIA, 2022]. 
+▪In the view of some interviewees, this sectoral trait may be reducing the R&D identified as being done by manufacturing firms , while 
+not necessarily reducing total R&D. 
+▪Similarly, there was a view among the consulted stakeholders that foreign contract research organisations (CROs) servicing th e 
+pharmaceutical and biotechnology industries may be affecting domestic R&D expenditure statistics.62The automotive sector
+UK INNOVATION REPORT 202263▪Are UK sectors becoming more or less competitive internationally?
+▪How are UK sectors performing in terms of productivity, value added and employment?
+▪Are UK sectors investing enough in R&D compared to their international competitors?Theme 3: Policy questions and key messages
+Key UK automotive manufacturing trends in the last decade Drivers identified in literature review and sector expert consultations
+The value added and productivity of the UK automotive sector grew steadily between 2008 and 2018
+▪ In 2018 the UK automotive industry was the eighth largest in the world in value -added terms, growing at around 
+2.3% annually from 2008 to 2018.
+▪ The UK belongs to a group of nations where productivity was high and rising over the 2008 –18 period, together 
+with Germany, Korea and the US.
+Despite being the ninth largest exporter of vehicles in 2020, the UK maintains a significant deficit in automotive 
+product trade 
+▪ Since 2010 the UK has recorded a persistent trade deficit in automotive products, standing at $21.8 billion in 
+2020. 
+▪ Industry reports suggest that, given the ownership structure of the tier -1 supply base in 2017, 50% local content 
+by value was regarded as a plausible target for the overall UK car industry. However, as the sector transitions to 
+electrification, new opportunities and challenges will arise for UK auto -makers. 
+UK business expenditure on automotive R&D grew rapidly between 2009 and 2018 but has declined in recent years. 
+▪ UK business enterprise expenditure on R&D (BERD) for automotive grew by 11.7% (CAGR) between 2009 and 
+2018, with a slight decline in 2019 and 2020.
+▪ Overall, total UK business enterprise expenditure on R&D in automotive remains an order of magnitude lower 
+than in competitor countries.➢ Increased specialisation of the UK’s automotive sector in premium 
+product segments;
+➢ Future sector growth dependent on the UK’s ability to produce 
+electric and hydrogen vehicles and components;
+➢ High levels of automation influencing growth in employment in 
+recent years;
+➢ Skills’ shortages, particularly in higher technical education 
+reported by industry;
+➢ Decisions by foreign original equipment manufacturers (OEM) 
+favouring other locations;
+➢ Increased competitive pressures from both established and 
+upcoming nations;
+➢ Increased uncertainty around trade and investment due to the 2016 
+EU membership referendum; and
+➢ R&D investment decisions mostly driven by foreign OEMsTHE AUTOMOTIVE MANUFACTURING SECTOR64Note: Data refers to ISIC 34 Motor vehicles, trailers, semi -trailers. CAGR = compound annual growth rate. 
+Source: UNIDO (2021). INDSTAT 2 2021, ISIC Revision 3. ISIC 34. ▪In 2018 the UK automotive industry was ranked eighth 
+in the world in value -added terms.
+▪This was supported by value added growing at around 
+2.3% annually from 2008 to 2018.
+▪Employment levels reduced at an annual rate of 0.6% 
+between 2008 and 2018.
+▪From 2008 to 2018 UK automotive productivity grew at 
+comparable rates to other world leaders (2.9% 
+annually). 
+▪With value added per employee of $135 in 2018, the 
+UKhad higher productivity than France but lower 
+productivity than comparable high -income nations, 
+including the USA, Japan, Korea andGermany .Chart 3.9. Automotive –value added and employment 
+Value added in current US$, employment and labour productivity in the 
+automotive industry, top countries by value add in 2018
+Rank CountryValue added EmploymentProductivity
+Value added per employee
+US$bn , 
+2018CAGR 
+(2008 –18)Persons, 
+‘000, 2018CAGR
+(2008 –18)US$’000, 
+2018CAGR
+(2008 –18)
+1 United States 186.9 5.0% 963 3.2% 194 1.7%
+2 China 172.0 8.5% 4588 4.8% 37 3.5%
+3 Japan 170.7 2.6% 1102 2.6% 155 -0.1%
+4 Germany 128.3 3.5% 917 0.9% 140 2.6%
+5 Korea 50.3 3.9% 326 2.2% 154 1.7%
+6 Mexico 44.0 12.8% 975 18.1% 45 -4.5%
+7 France 24.0 1.5% 238 0.2% 100 1.3%
+8 United Kingdom 22.4 2.3% 165 -0.6% 135 2.9%
+9 Indonesia 18.3 14.1% 244 10.9% 75 2.9%United StatesChina
+JapanGermany
+Korea
+MexicoFranceUnited KingdomIndonesia
+-5%-4%-3%-2%-1%0%1%2%3%4%
+0 50 100 150 200 250Value added per employee growth 
+(CAGR, 2008 –18)
+Value added per employee, US$'000, 2018High and stable 
+productivity
+65Note: Data refers to ISIC 34 Motor vehicles, trailers, semitrailers. CAGR: compound annual growth rate.
+Source: UNIDO (2021). INDSTAT 2 2021, ISIC Revision 3. ISIC 34. ▪The UKbelongs to a group of nations where 
+productivity was high and rising over the 2008 –18 
+period. Other nations with top -performing automotive 
+sectors in this group include Germany, Korea andthe 
+US.
+▪Some countries are experiencing similar levels of 
+productivity growth in the automotive sector , but from 
+lower initial levels of productivity, including China and 
+Indonesia .
+▪Japan’s productivity was high and stable, while 
+Mexico’s was low and declining over the 2008 –18 
+period.Chart 3.10. Automotive –productivity growth 
+Productivity measured by value added per employee and productivity growth, 
+top-performing economies in 2018
+Low and rising 
+productivity
+Low and declining 
+productivityHigh and rising 
+productivity
+Growth in productivity Decline in productivityChart 3.11. Automotive –trade balance (a)
+Global ranking by trade balance in automotive products
+[1] World’s Top Exports https://www.worldstopexports.com/cars -
+imports -by-country/ .▪The UKwas the ninth largest exporter of vehicles
+by value in 2020, with around 81% of cars made in 
+the UKbeing exported.[1] 
+▪It was also the fifth largest importer of vehicles by 
+value in 2020.[1]
+▪However, when considering broader trade in 
+automotive components , the country has 
+consistently recorded trade deficits in recent years. 
+▪There was very little change in the automotive 
+trade balance between 2010 and 2020. Its deficit in 
+automotive products trade reduced from ~$22.2 
+billion in 2010 to ~$21.8 billion in 2020. 
+662010 2020
+Rank Country US$bn Rank Country US$bn
+1 Japan 132.2 1 Japan 102.8
+2 Germany 124.5 2 Germany 87.0
+3 Mexico 45.6 3 Rep. of Korea 68.6
+4 Rep. of Korea 27.0 4 Mexico 35.9
+5 Czechia 13.1 5 Czechia 20.4
+6 Slovakia 12.6 6 Spain 15.5
+7 Thailand 10.8 7 Thailand 14.8
+8 Spain 6.3 8 Poland 13.9
+9 India 5.9 9 Slovakia 8.7
+10 Hungary 5.3 10 India 8.6
+… …
+162 of 164* United Kingdom -22.2 134 of 136* United Kingdom -21.8
+164 of 164* USA -86.8 136 of 136* USA -149.3
+Note: Trade balance is based on gross exports and gross imports of goods at HS 1992 2 -Digit level, for HS 87: Vehicles, other 
+than railway or tram rolling stock, and parts and accessories thereof. 
+*Global ranking excludes countries for whom data for the year in question is not available.
+Source: UN Comtrade (2010,2020). HS 1992 2 -Digit level, for HS 87Chart 3.12. Automotive –trade balance (b)
+▪Between 2010 and 2020 UKimports of automotive 
+products shrank by 0.4%, while exports shrank by 
+0.3% per year on average (CAGR). 
+▪Of the comparator countries, the UKis the only 
+country where imports were smaller in 2020 than 
+they were in 2010. 
+▪Although the UShad an even bigger trade deficit in 
+automotive products in 2020 (~$149 billion), all other 
+comparator countries in the top 10 global ranking by 
+trade balance in automotive products presented 
+positive trade balances in 2020.  
+67050100150200250300US$bn2010
+2020
+-300-250-200-150-100-500US$bn 2010
+2020ImportsExports
+Trade 
+balance 
+2020 ( US$bn )103 87 69 36 20 15 15 14 9 9 -22 -149-0.3%
+(CAGR)
+Annual 
+exports 
+growth 
+for the 
+UK
+-0.4%
+(CAGR)
+Annual 
+imports 
+growth 
+for the 
+UK
+Note: Trade balance is based on gross exports and gross imports of goods at HS 
+1992 2 -Digit level, for HS 87: Vehicles, other than railway or tram rolling stock, 
+and parts and accessories thereof. 
+Source: UN Comtrade (2010,2020). HS 1992 2 -Digit level, for HS 87Chart 3.13. Automotive –local content
+Locally produced content within the automotive supply chain
+68Source: Automotive Council UK (2015, 2017). Growing the 
+Automotive Supply Chain –Local Vehicle Content Analysis.▪As explained by the UK Automotive Council , the 
+amount of locally sourced parts is a key measure of 
+success for the UKautomotive industry, as the 
+majority of the sector's value added is created in the 
+upstream supply chain.[1]
+▪In value terms, the parts sourced by UKcar 
+manufacturers from UKfirst-tier suppliers increased 
+from 36% in 2011 to 44% in 2017.[1]
+▪There are no reliable sources available to establish 
+valid benchmarks, as the actual sourcing patterns of 
+local manufacturing firms can only be established 
+through surveys.[1]
+▪The UK Automotive Council suggests that, given 
+the ownership structure of the tier -1 supply base in 
+2017, 50% local content by value was regarded as a 
+plausible target for the overall UKcar industry.
+▪However, as the sector transitions to electrification, 
+new opportunities and challenges will arise for UK
+auto-makers. Deeper analysis is needed to 
+understand which UKsupply chain segments might 
+be at risk during this transition, and what 
+opportunities exist for capturing value in new areas.50%–target suggested by 
+UK Automotive Council (2017)
+[1] Automotive Council UK (2017). Growing the Automotive Supply 
+Chain –Local Vehicle Content Analysis.36%41%44%
+0%10%20%30%40%50%60%
+2011 2015 2017Local content in UK supply chain by value (£), % ▪Developed by the ONS, the term "product group" 
+refers to business R&D expenditure allocated to the 
+product group that best describes the subject type of 
+R&D activities carried out by firms.
+▪This is in contrast to the “ industry classification” , 
+where SIC codes are allocated based on the main 
+activity of the business –in this instance, companies 
+whose main activity is automotive manufacturing. 
+These are more often used for international 
+comparisons.
+▪The small difference between these two measures 
+indicates that most R&D in the automotive 
+industry is conducted by businesses whose main 
+activity is manufacturing. Companies that may 
+account for the difference include contract R&D 
+organisations and pre -commercial SMEs. 
+▪The peak in BERD spending in the UKappears to 
+have occurred between 2016 and 2018. 
+▪In 2020 BERD in motor vehicles and parts was at 
+just 70% of its 2018 peak value. Chart 3.14. Automotive –business spending on R&D (a)
+Business enterprise R&D expenditure (BERD), various classifications, constant 
+prices, £ billion (2020)
+Note: Current prices adjusted using GDP deflator to 2020 prices. 
+Source: ONS (2021). BERD Statistics. 69012345
+2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020R&D expenditure, £bn
+constant prices, 2020 adjusted
+Motor vehicle product group R&D (ONS classification)
+Motor vehicle manufacturing business R&D (SIC Code 29)051015202530352015 US$bn PPPBusiness enterprise expenditure on 
+R&D (BERD) ( US$bn , 2015 PPP)
+2008 2010 2012 2014 2016 2018▪In 2018 the automotive industry accounted for 
+almost 15% of overall business R&D expenditure in 
+the UK, second only to the pharmaceutical 
+industry.[1]
+▪In 2018 the UKautomotive sector had an R&D 
+intensity (as measured by the sector expenditure on 
+R&D as a percentage of sales) of 6.6%, behind 
+sectors such as pharmaceuticals, electronics and 
+communication equipment, and computers.[2]
+▪UKbusiness enterprise expenditure on R&D 
+(BERD) for automotive grew by 11.7% (CAGR) 
+between 2009 and 2018. 
+▪Although UK BERD showed a high growth rate 
+between 2009 and 2016, growth became stagnant 
+after 2016.
+▪Despite its high growth, total UKbusiness enterprise 
+expenditure on R&D in automotive remains an 
+order of magnitude lower than in competitor 
+countries.Chart 3.15. Automotive –business spending on R&D (b)
+Business enterprise R&D (BERD) expenditure in motor vehicles, trailers and semi -
+trailers , selected countries
+Note: Compound annual growth rates for countries are based on data for the first and last available years within the 2008 –
+18 range. UK CAGR is based on the period 2009 –18. For BERD expenditure growth, the base year for the US is 2008.
+Source: OECD (2020). Research and Development Statistics. 2.9% 7.4% 11.7% 5.2% 4.3% 12.6% CAGR
+(2)ONS (2020). Research and Development in UK Businesses, 2018 
+Datasets.80100120140160180200220240260280Business enterprise expenditure on 
+R&D (BERD) growth (2009 = 100)
+Germany Japan Korea
+UK US
+(1) OECD (2020). Business enterprise R&D expenditure by 
+industry database.
+70▪Most automotive R&D conducted by businesses in 
+the UKis funded by the companies themselves 
+(~76% in 2020). 
+▪Around 20% of automotive R&D performed by 
+businesses in the UKin 2020 was funded by 
+overseas organisations and was relatively constant 
+between 2014 and 2020.
+▪Only a small fraction of the R&D performed by 
+business is funded by the government (~£64 million 
+in 2020, or 2%). 
+▪The graph on the right shows that 78% of the 
+automotive R&D performed in the UKin 2020 was 
+conducted in businesses owned overseas. Chart 3.16. Automotive –foreign R&D in the UK
+Source of funds for R&D, and ownership of business, for businesses 
+performing R&D in the automotive sector within the UK
+Note: Current prices adjusted using GDP deflator to 2020 prices. The 2014 and 2016 values for “UK government” and ”other” 
+extrapolated from 2016 and 2020 values.  
+Source: ONS BERD Statistics, 2021. - 500 1,000 1,500 2,000 2,500 3,000 3,500 4,000 4,500
+2014 2016 2018 2020Expenditure, £m, 2020 constant pricesSource of funds 
+for automotive R&D performed in UK 
+businesses
+ Own Funds  Overseas UK Government Other - 500 1,000 1,500 2,000 2,500 3,000 3,500 4,000 4,500
+2014 2016 2018 2020Expenditure, £m, 2020 constant pricesBusiness ownership
+for automotive R&D performed in UK 
+businesses
+ United Kingdom  Overseas
+7172Drivers behind the trends in the automotive sector
+Insights from literature review and consultations with sector experts73Key trend identified▪The value added and productivity of the UK automotive sector grew steadily between 2008 and 2018
+▪Automotive employment levels reduced at an annual rate of -0.6% between 2008 and 2018
+▪Despite being the ninth largest exporter of vehicles in 2020, the UK maintains a significant deficit in automotive products’ trade 
+Potential drivers 
+identified from 
+literature review 
+and consultations 
+with sector experts 
+(see Appendix 3.1 
+for details)The UK’s automotive sector has increased its specialisation in premium product segments
+▪There is broad agreement among the stakeholders consulted that over the last decade UK automotive manufacturers moved into 
+higher value -added products. Data for 2018 shows that 45.8% of all cars produced were premium products, while 1.7% were luxury 
+and sports cars [SMMT, 2019].
+▪Data from SMMT suggests that in 2019 there were six mainstream volume car manufacturers in the UK, eight major premium and 
+sports car manufacturers, four commercial vehicle manufacturers and eight bus and coach manufacturers, with more than 2,500 
+suppliers to the sector [SMMT, 2019].
+Future sector growth is likely to depend on the UK’s ability to produce electric and hydrogen vehicles and components
+▪The UK has set a target for phasing out internal combustion engine (ICE) vehicles by 2030. The interviewees consulted highlig hted 
+that the transition to electric and hydrogen vehicles represents both an opportunity and a challenge for UK automotive. Elect rical 
+motors are expected to dominate light commercial vehicle sales, and hydrogen fuel cells are anticipated to be the preferred 
+technology for heavy -duty vehicles. This transition means that some of the UK's strengths in traditional powertrain design and 
+engine manufacturing could become less important [SMMT, 2021].
+▪There was a perception among the consulted stakeholders that developing battery manufacturing operations in the UK is essenti al to 
+ensuring that existing and new OEMs can be anchored to the country. Increased use of digital technologies within cars will al so play a 
+key role, with estimates that embedded software could make up to 30% of total vehicle value by 2030 [SMMT, 2021].
+▪A key argument expressed by interviewees is that the heavy weight of electric batteries means that it is not economically fea sible to 
+transport them around the world as a result of the logistics costs. Therefore, it might be advantageous to have the final veh icle 
+assembly located near battery production facilities.
+▪Although the UK has made significant recent announcements in this space (e.g. Britishvolt “gigafactory ”), there is a perception that 
+more could be done to back this ambition with a matching level of investment in battery production incentives [SMMT, 2021]. 
+▪The SMMT predicts that by 2025 the UK might lag behind its key competitors in terms of lithium -ion battery production capacity, 
+with just 12 GWh compared to 164 GWh in Germany, 91 GWh in the US or 32 GWh in France [SMMT, 2021].What is driving value added, productivity and trade trends in automotive manufacturing? (1)74Key trend identified▪The value added and productivity of the UK automotive sector grew steadily between 2008 and 2018
+▪Automotive employment levels reduced at an annual rate of -0.6% between 2008 and 2018
+▪Despite being the ninth largest exporter of vehicles in 2020, the UK maintains a significant deficit in automotive products’ trade 
+Potential drivers 
+identified from 
+literature review 
+and consultations 
+with sector experts 
+(see Appendix 3.1 
+for details)High levels of automation might be partly behind the moderate growth in employment in recent years
+▪When discussing employment levels in the sector, the consulted stakeholders highlighted the push for automation as a potentia l 
+reason for the observed trend, with a move towards high -value, low -labour and heavily automated operations in recent years. 
+▪At 101 robots per 10,000 workers, the UK ranked 24th in the world in terms of industrial robot density in 2020 for all indust rial 
+sectors, a growth of 77% from 2015  [International Federation of Robotics, 2021].
+▪It is yet to be seen how this trend will pan out during the transition to low -carbon vehicles. However, some interviewees sugges t that 
+the labour content of electric vehicles might be lower at vehicle assembly plant level.
+Despite increased automation, the industry is reportedly facing skills’ shortages, particularly in higher technical education
+▪Data from the OECD presented in Theme 4 of this report shows that the UK supply of both STEM graduates and higher technical 
+education lags behind other competitor countries [OECD, 2021]. 
+▪The consulted stakeholders expressed concerns about the lack of apprenticeships and technical education programmes to supply 
+future workers and upskill existing ones in preparation for the transition to low -carbon vehicles. 
+▪SMMT analysis suggests that the industry is likely to require new skills in industrial chemistry, electrical engineering, vir tual 
+modelling, software design, cyber -security and digital science, engineering and architecture, with many of these skills likely t o be  
+delivered by retraining rather than new employees [SMMT, 2021].
+Future productivity gains may depend on the ability of firms to further adopt digital manufacturing practices
+▪Some interviewees believe that the digitalisation of manufacturing operations in the sector could unlock significant producti vity 
+gains in the future at firm level.
+▪There was a perception among the consulted stakeholders that the digitalisation of production processes is not yet a general trend in 
+the sector. However, this might change as firms are forced to do more with less as a result of cost pressures related to ener gy,input 
+materials and labour, which could be partly addressed through digitalisation.  What is driving value added, productivity and trade trends in automotive manufacturing? (2)75Key trend identified▪The value added and productivity of the UK automotive sector grew steadily between 2008 and 2018
+▪Automotive employment levels reduced at an annual rate of -0.6% between 2008 and 2018
+▪Despite being the ninth largest exporter of vehicles in 2020, the UK maintains a significant deficit in automotive products’ trade 
+Potential drivers 
+identified from 
+literature review 
+and consultations 
+with sector experts 
+(see Appendix 3.1 
+for details)Decisions taken by foreign original equipment manufacturers (OEM) may be favouring other countries as manufacturing locations
+▪The consulted stakeholders share the view that decisions taken by foreign original equipment manufacturers (OEM) have favoure d 
+other countries for new manufacturing investments and supply chain sourcing decisions. 
+▪As stated by Make UK, over 6% of automotive firms (both OEMs and suppliers) were foreign -owned in 2018, over double the average 
+for the manufacturing sector as a whole. The biggest non -domestic investors in 2018 were the US (31% of foreign -owned companies) , 
+Japan (15%) and Germany (14%) [Make UK, 2019]. As suggested by the interviewees, this could have investment location implicat ions. 
+Increased competitive pressures from both established and upcoming manufacturing nations
+▪Competitive pressures affecting the UK automotive industry come from both countries with well -known OEMs (e.g. Japan, Germany, 
+Korea) and lower -cost locations (e.g. Mexico, Thailand, Poland, India). 
+▪Both interviewees and industry reports agree that while the UK retains a strong research and engineering base, it is increasi ngly falling 
+behind in other elements of competitiveness, with some of the highest energy and tax costs. The UK government recently announ ced
+significant rises to corporation tax while the super allowance for capital investment is currently set to expire in 2023 and tax incentives 
+for R&D lag behind global leaders [SMMT, 2021].
+However, the transition to electric and hydrogen vehicles offers opportunities to increase local automotive content
+▪The development of electric and hydrogen vehicles may open the door for new players in the market, including high -technology sta rt-
+ups from outside the automotive sector. 
+▪Interviewees suggested that new entrants with strong ICT technical know -how (not necessarily from the automotive industry), as w ell 
+as companies from the chemical industry, could become important players in future electric and hydrogen vehicle supply chains .
+▪Although not all existing auto firms are expected to survive the transition to low -carbon vehicles, this is still perceived as a n 
+opportunity to leverage UK advantages to support new and existing businesses diversifying into the sector. These advantages i nclude a 
+vibrant entrepreneurial ecosystem and strong research, innovation and commercialisation know -how.  What is driving value added, productivity and trade trends in automotive manufacturing? (3)76Key trend identified▪The value added and productivity of the UK automotive sector grew steadily between 2008 and 2018
+▪Automotive employment levels reduced at an annual rate of -0.6% between 2008 and 2018
+▪Despite being the ninth largest exporter of vehicles in 2020, the UK maintains a significant deficit in automotive products’ trade 
+Potential drivers 
+identified from 
+literature review 
+and consultations 
+with sector experts 
+(see Appendix 3.1 
+for details)Rules of origin may increase the urgency to develop local suppliers to ensure tariff -and quota -free exports in the future
+▪Rules of origin, which describe which goods can be counted as being made in the UK, may become a source of uncertainty for th e UK 
+automotive sector in the future, according to the consulted stakeholders.
+▪Interviewees agree that the rules of origin included in the UK –EU trade agreement can potentially be replicated for other market s in 
+the future, including Japan, China, North America and Australia, among others. 
+▪Rules of origin in these markets would require UK auto OEMs to uplift UK content in vehicles to meet rule -of-origin targets.
+The 2016 EU membership referendum added uncertainty to future trade and investment  
+▪As suggested by the SMMT, sector output fell after 2016 following weaker domestic demand surrounding political and economic 
+uncertainty, the slowdown in demand in key export markets such as the EU and China, combined with weaker demand for diesel ca rs.
+Overall, output in 2018 was 9.1% lower than 2017 levels, at 1.60 million units [SMMT, 2019].
+▪The consulted stakeholders agreed that the EU membership referendum had created uncertainty for investment decisions in the 
+automotive sector. In particular, it was mentioned that a number of tier -1 and 2 supply investment decisions were put on hold af ter 
+2016, only to be later consolidated to Europe based on the fear of the UK becoming an  isolated market.
+▪The exit from the EU meant that some tier -1 and 2 investments could no longer justify large -scale operations in the UK and may h ave 
+had an impact on the expansion of the sector and trade. What is driving value added, productivity and trade trends in automotive manufacturing? (4)77Key trend identified ▪UK business expenditure on automotive R&D grew rapidly between 2009 and 2016 but has declined in recent years
+Potential drivers 
+identified from 
+literature review 
+and consultations 
+with sector experts 
+(see Appendix 3.1 
+for details)Although the UK has strong R&D and innovation capabilities, investment decisions are mostly driven by foreign OEMs
+▪When asked about the potential reasons for the low level of business enterprise expenditure on R&D in the automotive sector 
+compared to other leading nations, the consulted stakeholders highlighted two potential factors: the size of the sector as a who le; 
+and the ownership structure of UK -based OEMs.
+▪It is believed that R&D investment decisions by foreign -owned OEMs are often made from European or global headquarters against a
+wide range of criteria that may not favour the UK (e.g. tax incentives for R&D lag behind global leaders), with new developme nts
+taking years before being deployed across their international operations (e.g. Nissan, Ford). 
+However, strong R&D capabilities remain a key instrument to attract high value -added manufacturing into the UK 
+▪Despite OEMs driving R&D investment, there was a view among the consulted stakeholders that the UK has a strong record in des ign
+engineering and university collaboration, supported by its premium product manufacturers and its motorsports industry.
+▪This, in addition to innovation capabilities in industries that can diversify into new electric and hydrogen automotive suppl y chains, 
+could offer powerful instruments to support the UK’s attempt to capture high value -added segments of the automotive supply chain . 
+▪In 2017 the UK government launched a new Industrial Strategy aiming to boost productivity and earning power throughout the UK , 
+including an automotive sector deal at the start of 2018, to improve supply chain competitiveness, reduce the sector’s enviro nme ntal 
+impact and boost investment in emerging technology to ensure that the sector remains competitive during the transition to low -
+carbon vehicles [Make UK, 2019].
+▪The Industrial Strategy Challenge Fund (ISCF) was developed to support this aim, with three waves launched between 2017 and 2 019, 
+committing funding to the “Faraday Challenge” to develop world -leading batteries, designed and manufactured in the UK, leading 
+to the establishment of the Faraday Institution and the UK Battery Industrialisation Centre [UKRI, 2021].What is driving business R&D expenditure trends in automotive manufacturing?78References
+Sectoral analyses
+Pharmaceutical manufacturing sector analysis
+▪ABPI (2019). Bridging the Skills Gap in the Biopharmaceutical 
+Industry: Maintaining the UK’s Leading Position in Life Sciences. 
+Association of the British Pharmaceutical Industry.
+▪ABPI (2020). Life Sciences Recovery Roadmap. Association of the 
+British Pharmaceutical Industry.
+▪BIA (2022). BIA submission: RDI Landscape Review. UK 
+BioIndustry Association.
+▪Enterprise Ireland (2020). The UK Pharmaceutical Sector: An 
+Overview. 
+▪HMG (2021). Life Sciences Vision. Building Back Better: our plan 
+for growth.  HM Government.
+▪Make UK (2018). Sector Bulletin: Pharmaceuticals. 
+▪Medicines Manufacturing Industry Partnership (2017). 
+Manufacturing Vision for UK Pharma: Future Proofing the UK 
+Through An Aligned Technology and Innovation Road Map. LSIS, 
+2017].
+▪OLS (2020). Bioscience and Health Technology Sector Statistics 
+2019. Office for Life Sciences. Automotive sector analysis
+▪International Federation of Robotics (2021). Robot Density nearly 
+Doubled globally. Available at [https://ifr.org/ifr -press -
+releases/news/robot -density -nearly -doubled -globally].
+▪OECD (2021). Education at a Glance database.
+▪Make UK (2019). Automotive Sector Bulletin: 2018 Update. 
+▪SMMT (2019). 2019 UK Automotive Trade Report. Society of Motor 
+Manufacturers and Traders.
+▪SMMT (2021). Full Throttle: Driving UK Automotive 
+Competitiveness. Society of Motor Manufacturers and Traders.
+▪UK Research and Innovation (2021). What Is the Industrial Strategy 
+Challenge Fund.79Appendix 3.1
+Stakeholder consultation –the pharmaceutical and automotive manufacturing sectors
+Pharmaceutical manufacturing sector analysis
+▪Office for Life Sciences (OLS)
+▪Innovate UK
+▪Confederation of British Industry (CBI)
+▪UK Bioindustry Association (BIA)
+▪CPI (High Value Manufacturing Catapult)
+▪National Physical Laboratory (NPL)
+▪Medicines Manufacturing Innovation Centre (MMIC)
+▪Medicines Manufacturing Research Centre (University of 
+Strathclyde)
+▪Alnylam Pharmaceuticals
+▪Siemens
+▪AstraZenecaIn an attempt to understand the reality behind the data, Theme 3 was informed by a reduced number of interviews with key UK s takeholders 
+from industry and government –including R&I funding programme management agencies, innovation centres, industry associations an d 
+key private -sector organisations. The consultation included representatives from the following organisations:
+Automotive sector analysis
+▪BEIS automotive team
+▪BEIS advanced manufacturing team
+▪North East Automotive Alliance
+▪Advanced Propulsion Centre (APC) 
+▪Innovate UK (Faraday Battery Challenge)
+▪Society of Motor Manufacturers and Traders (SMMT)
+▪Ford
+▪AutocraftTheme 4: Science and engineering workforce
+UK INNOVATION REPORT 202281▪Is the UK producing enough scientists and engineers?
+▪Is the UK government investing enough in technical and vocational education?
+▪How does this compare with other countries?Theme 4: Policy questions and key messages
+Tertiary education attainment in the UK is well above the OECD average –and a comparatively larger share of graduates is 
+found in science, technology, engineering and mathematics (STEM) disciplines
+▪In 2020 the level of tertiary education attainment in the UK (49.4%) was above the OECD average (39%) and countries such as I taly (20.1%), Germany 
+(31.3%) and France (39.7%).
+▪In 2019 graduates in STEM disciplines accounted for 43.4% of the total number of graduates in the UK, above comparator countr iessuch as France (36.8%), 
+Canada (37.8%) and the United States (37.6%).
+▪Within STEM disciplines the share of graduates in “engineering, manufacturing and construction” remains relatively low in the UK, at 8.4%, especially 
+compared to countries such as Germany (27.8%) and Korea (20.7%).
+Women are under -represented in STEM disciplines 
+▪In 2019 women represented 25% of new entrants in “engineering, manufacturing and construction” degrees in the UK and 21% of n ew entrants in “ICT” 
+degrees -these levels are similar to the OECD average.
+▪Only 27% of the STEM workforce in the UK is female, compared with 52% in the total workforce.
+▪For UK engineers a gender pay gap exists but it is smaller than the pay gap for all UK workers.
+Higher technical education enrolment is comparatively low in the UK
+▪Enrolment rates in post -secondary education courses, below the standard three -year Bachelor’s degree, are comparatively low in t he UK compared with 
+countries such as the US, Korea and France. 
+▪Following publication of the government’s White Paper, Skills for Jobs, new government programmes have been announced with the intention of addressing 
+the “significant shortage of vital technician -level STEM skills”.82Chart 4.1. Tertiary education attainment 
+Share of population, 25 –64 years old, by sex, selected countries, 2020
+Source: OECD (2022). Adult education level (indicator).▪In 2020 the UK presented a level of tertiary 
+education attainment (49.4%) that was well above 
+the OECD average (39%) and countries such as 
+Italy (20.1%), Germany (31.3%) and France
+(39.7%).
+▪Similarly to the OECD average , in the UK women’s 
+tertiary education attainment level (51.8%) was 
+higher than men’s attainment level (46.9%).
+▪Significant differences in tertiary education 
+attainment levels exist across UK regions, ranging 
+from 38% in North East England to 68% in Greater 
+London , this being one of the highest regional 
+variations across OECD countries.[1]
+▪In 2019 the share of foreign students enrolled in 
+tertiary education courses in the UK wasamong the 
+highest in the world (18.7%), only after Luxemburg
+(48.6%), Australia (28.4%) and New Zealand 
+(20.8%).[2]
+▪The share of foreign students enrolled in tertiary 
+education courses in 2019 was: 10.1% in Germany ; 
+9.2% in France ; and 5.2% in the USA . [2]
+[1] OECD (2021) Education at Glance 2021 –United Kingdom Country Note.
+[2] OECD (2022) International student mobility (indicator).83Chart 4.2. Graduates by subject areas
+Bachelor degrees or equivalent, selected countries, 2019
+Note: Non-STEM subject areas include: arts and humanities; social sciences, journalism and information; business, 
+administration and law; education; generic programmes and qualification; field unknown.
+Source: OECD (2021). Education at a Glance database.▪Although innovation encompasses several 
+disciplines, graduates in STEM disciplines (science, 
+technology, engineering and mathematics) are of 
+particular importance to innovation activities. 
+▪The importance of boosting STEM skills has also 
+been recognised in the UK Innovation Strategy .[1]
+▪In 2019, 431,820 students obtained a Bachelor 
+degree from the UK’s higher education institutions.
+▪Graduates in STEM disciplines accounted for 43.4% 
+of the total graduates in the UK in 2019. This value 
+was above that for comparator countries such as 
+France (36.8%), Canada (37.8%) and the United 
+States (37.6%).
+▪The share of graduates in engineering, 
+manufacturing and construction remains relatively 
+low in the UK, at 8.4%, especially compared to 
+countries such as Germany (27.8%) and Korea
+(20.7%).12.2% 9.9%4.9% 5.8%16.7%10.0%3.8%3.8%
+4.6% 4.9%4.3%
+4.7%9.0%7.5%27.8%20.7%8.4%
+7.6%12.2%15.1%5.0%13.4%13.1%
+14.2%62.2% 63.2%55.9% 53.7%56.6%62.4%
+0%10%20%30%40%50%60%70%80%90%100%
+Canada France Germany Korea United
+KingdomUnited StatesShare of graduates
+Natural sciences, mathematics and statistics ICTs
+Engineering, manufacturing and construction  Agriculture and related subjects
+Health Non-STEM subject areas
+[1] BEIS (2021). UK Innovation Strategy –Leading the future by creating it.84Chart 4.3. STEM PhDs
+Number of doctoral degrees awarded, selected countries, 2000 –2018
+Notes : STEM PhDs include doctoral degrees awarded in the following fields: natural sciences, mathematics and statistics; ICTs; 
+engineering, manufacturing and construction; agriculture and related subjects; health.
+Source: NSF (2022). The State of US Science and Engineering 2022.▪In 2018 the UK’s higher education institutions 
+awarded 17,366 PhDs in STEM disciplines.   
+▪The UK is among the countries with the highest 
+number of STEM PhDs awarded per year, even 
+compared to countries with larger populations.
+▪The United States has historically been the country 
+with the highest number of STEM PhDs awarded 
+per year (41,071 in 2018).
+▪China is rapidly catching up with the USA in 
+awarding STEM PhDs, from 7,766 doctoral degrees 
+awarded in 2000, to 39,768 in 2018, representing an 
+increase of 412% in 18 years. 05,00010,00015,00020,00025,00030,00035,00040,00045,000
+2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018Number of doctoral degrees awarded
+China France Germany
+India Japan Korea
+Spain United Kingdom United States85Chart 4.4. Women in STEM tertiary education 
+Female new entrants, share of total entrants, selected countries, 2019
+Source: OECD (2021). Education at a Glance.▪Similarly to the OECD average , in the UK women 
+are under -represented in some STEM fields of study. 
+▪In the UK women represented 25% of new entrants 
+in engineering, manufacturing and construction 
+degrees (against the 26% OECD average ) and 21% 
+of new entrants in ICT degrees (against the 20% 
+OECD average). 
+▪Gender disparities in accessing STEM degrees are 
+reflected in the labour market composition. Against 
+52% of the total workforce:[1]
+o27% of the STEM workforce is female;
+o40% of the science and maths workforce is 
+female;
+o21% of the technology workforce is female; 
+and
+o9% of the engineering workforce is female.57%
+52%
+21%20%25%26%
+0%10%20%30%40%50%60%70%Female new entrants as share of  total entrants
+Natural sciences, mathematics and statistics ICTs Engineering, manufacturing and construction
+[1] British Science Association (2020). The State of the Sector: Diversity and 
+representation in STEM industries in the UK.All workers £30,378
+86Chart 4.5. Engineering profession salaries
+Gross annual salary, median salary, full -time employees, 2019
+Notes: Standard Occupational Classification (SOC) codes for the engineering professions based on Engineering UK (2018). The 
+State of Engineering 2018.
+Source: ONS (2020). Earnings and hours worked, occupation by four -digit SOC: ASHE Table 14.▪In the UK the median salaries for engineering 
+occupations are higher than the average in the job 
+market. 
+▪In 2019 the median gross annual salary for an 
+engineering professional was £42,634, against the 
+£30,378 median gross annual salary of all UK 
+workers.[1]
+▪For UK engineers, the gender pay gap is smaller 
+than the pay gap for all UK workers and is mainly 
+due to the under -representation of women in senior 
+and higher -paid roles.[2]
+£35,016 £36,920 £40,812 £40,829 £41,224 £42,405 £43,188 £43,500 £44,322 £47,637 £48,174 £49,373 
+ £-  £10,000  £20,000  £30,000  £40,000  £50,000  £60,000Environment professionalsQuality control and planning engineersProduction and process engineersCivil engineersMechanical engineersDesign and development engineersProgrammers and software development professionalsQuality assurance and regulatory professionalsElectronics engineersResearch and development managersIT business analysts, architects and systems designersElectrical engineers
+[1] Although more recent data is available, the comparison of salaries by 
+occupation in 2020 and 2021 may be impacted by job market support 
+programmes implemented during the COVID -19 pandemic. 
+[2] The gender pay gap is defined as “the difference in average hourly earnings 
+for all men and all women across an organisation, a sector, or the economy as a 
+whole”. See Royal Academy of Engineering (2020). Closing the engineering 
+gender pay gap.87Chart 4.6. Government researchers
+Share of total researchers, 2019 or latest available 
+Note: OECD average data refers to 2018.
+Source : OECD (2022). Government researchers (indicator).▪The UK is among the OECD countries with the 
+lowest proportion of researchers working for the 
+government.[1]
+▪In 2019 the share of UK government researchers 
+out of total researchers was 2.2%, against 6.5% of 
+the OECD average. 
+▪There have been calls for more people with STEM 
+qualifications to be employed within the UK civil 
+service for reasons connected to, for example, their 
+ability to better understand specific policy issues 
+related to science and technology. 
+▪Analysis finds that the UK may be expected to have 
+a relatively lower proportion of STEM -trained 
+individuals within the civil service, potentially 
+because of the lower starting salaries and the lower 
+likelihood of undertaking skilled work in their area of 
+training.[2]
+[1] The OECD defines government researchers as “ professionals working for 
+government institutions engaged in the conception or creation of new 
+knowledge, products, processes, methods and systems and also in the 
+management of the projects concerned ”
+[2] Policy Links (2021). STEM professionals in the UK civil service: an 
+international comparative study. IfM Engage, Institute for Manufacturing, 
+University of Cambridge, Cambridge.20.9%
+18.5%
+15.4%
+14.5%
+13.1%12.6%
+9.3%
+8.2%
+7.2%6.7% 6.5%6.2%
+5.0%4.5%
+3.5%3.2%
+2.5%2.2%1.8%
+0%5%10%15%20%25%Share of total researchers88Chart 4.7. Higher technical education
+Enrolment in short -cycle tertiary education, percentage of total tertiary education, 2019
+Notes: Tertiary education includes: short -cycle tertiary education; Bachelor degrees; Master’s degrees; PhD degrees.
+Source: OECD (2021). Education at a Glance database.▪The UK has a shortage of people qualified in higher 
+technical education (HTE), that is, in those 
+qualifications awarded between A level and 
+undergraduate degrees.[1]
+▪In 2019 students who were enrolled in short -cycle 
+tertiary education in the UK made up 12.6% of the 
+total tertiary education, compared to 36.4% for the 
+USA , 23.3% for Canada and 21.7% for Korea .
+▪Further to the 2019 Independent Review of Post -18 
+Education and Funding, in January 2021 the UK 
+government published the further education White 
+Paper, Skills for Jobs: Lifelong Learning for 
+Opportunity and Growth. 
+▪To tackle the “ significant shortage of vital 
+technician -level STEM skills ”, the White Paper 
+made proposals such as expanding the Institutes of 
+Technology programme, continuing with the T level 
+programmes and, more generally, reforming the 
+post-A-level education system.[2]
+▪In June 2021 the government also announced a £30 
+million investment to support higher technical 
+education in 2022. The funding has been allocated, 
+among others, to the Institutes of Technology –
+consortia of further education colleges, universities 
+and employers with a focus on STEM HTE –that 
+will also work with the High Value Manufacturing 
+Catapult.[3]36.4%
+23.3%
+21.7%20.6%20.1%19.4%
+17.4%
+12.6%11.4%
+9.2%
+6.9%
+3.1%
+0%5%10%15%20%25%30%35%40%Enrolment in short -cycle courses as share of total tertiary 
+education
+[1] In the Frameworks for Higher Education Qualifications of UK Degree -Awarding Bodies, HTE 
+corresponds to Level 4 and Level 5, both corresponding to UNESCO ISCED Level 5. See 
+Foster D. (2019). Level 4 and 5 education. House of Commons Library Briefing paper 8732.
+[2] Hubble S. et at (2021). FE White Paper: Skills for Jobs: Lifelong Learning for Opportunity and 
+Growth. House of Commons Library Briefing paper 9120.
+[3] Donnelly A. (2021). Higher technical education gets a boost. Gatsby Charitable Foundation. 0% 20% 40% 60% 80% 100%
+Construction
+Manufacturing
+Transport and storage
+Information and communication
+Finance
+Retail
+Healthcare
+Jobs requiring upskilling Jobs in demand Jobs not significantly affected by transition
+89Chart 4.8. Green skills for net -zero transition 
+Percentage, selected sectors, based on 2019 job market data
+Source: Robins, N., Gouldson , A., Irwin, W. and Sudmant , A. (2019). Investing in a just transition in the UK –How investors can 
+integrate social impact and place -based financing into climate strategies. London.▪The transition to a net -zero economy may impact 
+6.3 million jobs in the UK, with around 3 million 
+workers requiring upskilling and 3 million in high 
+demand.a
+▪Construction, manufacturing and transport have 
+been identified as the sectors that will be more 
+impacted in terms of job upskilling: it is projected 
+that between 17% and 30% of the jobs in these 
+sectors will require upskilling.[1]
+▪As highlighted by the independent report of the 
+Green Jobs Taskforce announced by the UK 
+government, “ to set the direction for the job market 
+as we transition to a high -skill, low -carbon 
+economy ”, STEM skills will underpin jobs that are 
+critical for the net -zero transition.
+▪The Green Jobs Taskforce has also identified 
+“cross -cutting” skills as important to transitioning to 
+net zero, including: digital and data skills; project 
+management; education communication and change 
+management; and leadership, management and 
+communication skills. 
+▪TheGreen Jobs Taskforce hasalso highlighted the 
+expected increase in demand for engineering 
+technicians in sectors such as offshore wind and in 
+electric vehicles’ manufacturing . Jobs requiring upskilling :Jobs that
+require significant changes inskills and
+knowledge .These include specialised jobs
+inthemanufacturing andextractive sectors,
+such aspetroleum engineers and heavy -
+equipment operators, whose skills need to
+beadapted toanet-zero economy .Jobs indemand :Existing jobs that are
+expected tobeinhigh demand asaresult
+oftheir important role inthe net-zero
+economy .These include specialised
+positions inthegreen economy, such as
+wind turbine installers, butalso theskills
+and expertise ofwelders, builders and
+engineers already working tobuild the
+infrastructure ofagreen economy .
+[1]  PCAN (2021). Tracking Local Employment In the Green Economy: The PCAN 
+Just Transition Jobs Tracker. Place -based Climate Action Network.Theme 5: Net -zero innovation
+UK INNOVATION REPORT 2022Special theme
+For many, the greatest challenge of the 21st century is climate change. Net zero refers to achieving a balance between the ca rbon emitted into the 
+atmosphere and the carbon removed from it. Markets for new technologies that can help businesses and countries to achieve net zero are 
+expanding, and therefore they are a key area in which innovative activity has the potential to contribute to national economi c growth and 
+competitive advantage. 
+Our UK Innovation Report 2022 has chosen net -zero innovation as a topic in focus, to highlight how the UK is performing in what has the potential to 
+be a high -growth economic sector. While climate -change mitigation technologies are not clearly classified within typical economi c indicators, this 
+section brings together the available data from global patent data and the so -called low -carbon and renewable -energy economy (LC REE) sectors 
+within the UK. These allow us to provide a snapshot of whether net -zero innovation is translating into economic growth in the UK . 91▪How does the UK compare in low -carbon and renewable -energy technology research and development (R&D) investment?
+▪How is R&D expenditure translating into patenting performance?
+▪Is the UK capturing the economic potential of the transition towards net zero?Theme 5: Policy questions and key messages
+Although the UK’s public R&D budget in low -carbon and renewable -energy technologies is comparable to other leading nations, the country 
+underperforms slightly in terms of patenting 
+▪The International Energy Agency (IEA) estimates that in 2020 the UK’s public R&D budget in low -carbon and renewable -energy techn ologies was $1.2 billion (USD 
+$2020), lower than the US ($8.1 billion), Japan ($2.9 billion) and France ($2.1 billion), but ahead of Germany ($1.1 billion) and Canada ($0.8 billion).
+▪In the period of 2013 –17, the UK ranked eighth in the development of climate -change mitigation technology (CCMT) patents, behind Japan, the US, Germany, 
+Korea, China, France and Taiwan but ahead of Italy and Canada. Key technology fields covered in this ranking include buildings, carbon capture and storage (CCS), 
+energy, information and communication technology (ICT), manufacturing, transportation and waste management.
+Most of the low -carbon and renewable -energy sectors in the UK have been declining over the last five years
+▪The ONS defines the low -carbon and renewable -energy economy (LCREE) as 17 low -carbon sectors, including wind, renewables, PV, CC S, nuclear and energy -
+efficient products. Most of the low -carbon and renewable -energy sectors in the UK have been declining over the last five years, except for a small number of 
+activities such as offshore wind. A total of 10 out of 17 sectors showed a decline in turnover between 2014 and 2019. 
+▪Overall, there were 27,000 fewer LCREE business and 33,800 fewer jobs in LCREE sectors in 2019 than in 2014.
+There are some national disparities, with Scotland performing strongly
+▪At £1.073 million turnover, 4.1 jobs and 2.2 businesses per 1,000 inhabitants, Scotland performed above the UK annual average for all categories between 2014 and 
+2019. 
+▪Similarly, Wales performs above the national average for LCREE businesses and jobs, at 2.46 businesses and 3.35 jobs per 1,00 0 inhabitants. 
+▪In contrast, Northern Ireland is under -performing relative to its size on turnover and employment in LCREE sectors, whereas Engl and has a lower turnover 
+(£605,000 per 1,000 inhabitants) than the national average (£643,000 per 1,000 inhabitants).0%2%4%6%8%10%12%14%16%18%
+Electricity, gas,
+steam and air
+conditioning
+supplyTransport and
+storageManufacturing Consumer
+expenditure
+(not travel)Consumer
+expenditure
+(travel)Agriculture,
+forestry and
+fishingWater supply;
+sewerage,
+waste
+management
+and
+remediation
+activitiesMining and
+quarryingWholesale and
+retail trade;
+repair of motor
+vehicles and
+motorcyclesConstructionShare of total UK emissions in 2018
+92Chart 5.1. UK carbon emissions by sector
+UK emissions of greenhouse gases by industry, share of total emissions in 2018
+Source: ONS (2021). Atmospheric emissions: greenhouse gases by industry. Industry definitions provided in Appendix 5.1. ▪Climate change is a current and pressing global 
+challenge. The Intergovernmental Panel on 
+Climate Change’s (IPCC) most recent report 
+identified that, unless there are immediate, rapid 
+and large -scale reductions in greenhouse -gas 
+emissions, limiting warming to 1.5°Cor even 2°C 
+will be beyond reach.[1]
+▪The UKis one of the top 20 emitters globally and 
+has above -average emissions per capita, even 
+before accounting for emissions embedded in 
+imported goods. The UK’s emissions are the 17th 
+largest in the world,[2] with 1% of global emissions 
+produced by 0.9% of the global population. 
+▪The UK’s high emissions represent a significant 
+challenge but also a significant opportunity for 
+innovation under regulatory constraints. The UK emissions are the 
+17thlargest
+In the world 
+Total UK emissions in 2018
+570,000 ktCO2e
+[1]IPCC (2021). Climate Change widespread, rapid, and intensifying.
+[2] World Bank (2021). Total greenhouse gas emissions (kt of CO2 
+equivalent), 2018 figures. Note: UK resident basis, greenhouse gases under the Kyoto Protocol. $- $1,000 $2,000 $3,000 $4,000 $5,000 $6,000 $7,000 $8,000 $9,000
+United States Japan France United
+KingdomGermany CanadaPublic R&D spending in millions ( US$m , 2020 PPP)
+Energy efficiency Nuclear
+Other cross-cutting technologies/research Renewables
+Other power and storage technologies Hydrogen and fuel cells
+93Chart 5.2. Public R&D spending on low -carbon and 
+renewable -energy technologies
+USD$ million, 2020 PPP
+Source: IEA (2021). IEA Energy Technology RD&D Budgets -October 2021  -Selected data . ▪Climate -change mitigation is an international priority. 
+At COP26, countries worldwide reaffirmed their 
+mitigation targets, including the UK’s targets for a 
+reduction in emissions of 78% by 2035 compared to 
+1990 levels and net -zero emissions by 2050.[1]
+▪This is reinforced by significant spending on 
+innovation, including the £1 billion Net Zero 
+Innovation Portfolio announced in March 2021.[2] 
+▪The International Energy Agency (IEA) estimates 
+that in 2020 the UK’s public R&D budget in low -
+carbon and renewable -energy technologies was 
+$1.2 billion (USD $2020), lower than France ($2.1 
+billion), Japan ($2.9 billion) and the US ($8.1 billion) 
+but ahead of Germany ($1.1 billion) and Canada 
+($0.8 billion).[3] 
+▪Categories included in the IEA’s analysis include: 
+energy efficiency ; renewables ; nuclear ; 
+hydrogen and fuel cells ; other power and storage 
+technologies ; and other cross -cutting 
+technologies .
+[1] UK Government (2021). UK enshrines new target in law to slash emissions by 
+78% by 2035.
+[2]UK Government (2021). Net Zero Innovation Portfolio.
+[3] IEA (2021). IEA Energy Technology RD&D Budgets -October 2021  -Selected 
+data.94Chart 5.3. Top 10 countries by global share of patents in 
+climate -change mitigation technology (CCMT)
+Worldwide inventions, 2013 -2017
+▪The UKranks eighth in the registration of climate -
+change mitigation technology (CCMT) patents, 
+behind Japan, the US, Germany, Korea, China, 
+France and Taiwan but ahead of Italy and 
+Canada .[1][2] 
+▪Technologies covered under the CCMT group 
+include: buildings , carbon capture and storage , 
+energy , information and communication 
+technology , manufacturing , transportation, and
+waste management .
+▪It is unclear, however, whether this strength in 
+patents is translating into economic performance for 
+the UKor if the economic benefits are being 
+exploited elsewhere. 
+Source: Probst et al. (2021). Global trends in the invention and diffusion of climate change mitigation technologies.[2]Probst et al. (2021). Global trends in the invention and diffusion of climate 
+change mitigation technologies. Compiled with global data from the Worldwide 
+Patent Statistical Database (PATSTAT) maintained by the European Patent 
+Office (EPO). It contains bibliographical data relating to more than 100 million 
+patent documents from leading industrialised and developing countries[1]Climate -change mitigation technologies (CCMT) are defined as patents 
+classified as “Y02” patents within the CPC classification scheme. The Y02 
+classification covers technologies for mitigation or adaptation against climate 
+change and is a cross -sectional tagging scheme for new technological 
+developments, particularly with the goal of highlighting patents in the field of 
+climate -change mitigation. The classification was jointly developed by the 
+USPTO and European Patent Office (EPO). See Appendix 5.2 for more detail.26%
+21%
+11%
+10%
+5%5%
+3% 3%
+2% 2%14%
+0%5%10%15%20%25%30%Global share of CCMT patents95Chart 5.4. Top 10 UK patent applicants in the field of 
+climate -change mitigation technologies (CCMT) 
+UK firms, number of patents, United States Patent and Trademark Office, 2020
+▪The chart shows the top 10 UK-based patent 
+applicants for climate -change mitigation technology 
+patents published in 2020 with the USPTO .[1]
+▪The top patent applicant in the field of climate -
+change mitigation technologies is Rolls -Royce , 
+with 385 patents.
+▪Johnson Matthey (75 patents), Airbus 
+Operations (68 patents) and ARM (44 patents) 
+follow in the ranking of climate -change mitigation 
+technology patents.
+▪The top 10 UK-based companies patented a total 
+of 703 patents.
+▪UK-based companies patented a total of 1,578 
+climate -change mitigation technology patents in 
+2020 with the USPTO .
+[1]Climate -change mitigation technologies (CCMT) are defined as patents 
+classified as “Y02” patents within the CPC classification scheme. The Y02 
+classification covers technologies for mitigation or adaptation against climate 
+change and is a cross -sectional tagging scheme for new technological 
+developments, particularly with the goal of highlighting patents in the field of 
+climate -change mitigation. The classification was jointly developed by the 
+USPTO and European Patent Office (EPO). See Appendix 5.2 for more detail.Note: The analysis includes patents published with the USPTO in 2020.
+Source: Patent data was retrieved from Lens.org.385
+75
+68
+44
+32
+23
+21
+19
+18
+18
+0 50 100 150 200 250 300 350 400 450Rolls Royce
+Johnson Matthey
+Airbus Operations
+ARM
+Jaguar Land Rover
+Dyson Technology
+Intelligent Energy
+Dialog Semiconductor
+Snipr
+Tokamak EnergyNumber of patents
+-£0.01£0.07£0.25£0.31£0.46£0.73£0.75£0.80£1.82£1.99£2.95£3.08£3.09£3.88£4.14£4.25£14.37
+ £-  £2  £4  £6  £8  £10  £12  £14  £16Carbon capture and storageOther renewable electricityFuel cells and energy storageAlternative fuelsHydropowerRenewable heatRenewable combined heat and powerLow carbon financial and advisory servicesEnergy monitoring, saving or control systemsSolar photovoltaicEnergy efficient lightingOnshore windOffshore windNuclearBioenergyLow emission vehicles and infrastructureOther energy efficient products
+Average annual turnover by LCREE sector, 2014 –19, £ billion-
+-
+-
+-
+96Chart 5.5. UK low -carbon and renewable -energy 
+economy (LCREE) sector performance
+Average turnover (£ billion) and CAGR, 2014 –2019
+▪The overall turnover of the LCREE sectors showed a slight 
+decline from £44 billion in 2014 to £43 billion in 2019 (for 
+context, the overall automotive industry turnover is 
+estimated at approximately £80 billion).[1]
+▪Activity captured within the largest sector –other energy -
+efficient products –is extremely broad. Examples include 
+the design, manufacture or installation of energy -efficient 
+doors, windows and insulation.
+▪Ten sectors showed a decline in turnover between 2014 and 
+2019. The largest growth industry between 2014 and 2019 
+was the low-emission vehicles and infrastructure sector , 
+with a growth in turnover of just under £2.6 billion, or 12% 
+p.a., between 2014 and 2019. Other growth sectors included 
+offshore wind, renewable heat and hydropower . 
+▪Despite the similar sizes of the onshore and offshore wind 
+sectors , between 2014 and 2019 offshore wind was 
+growing, while onshore wind was declining, in 
+approximately equal proportions. There was a net decrease 
+in turnover in wind between 2014 and 2019 (~ -£65 million 
+turnover difference). CAGR
+-3.0%
+11.9%
+-1.0%
+-1.3%
+2.8%
+-3.5%
+-0.6%
+-5.5%
+-1.1%
+-13.0%
+2.4%
+4.7%
+1.7%
+12.9%
+9.8%
+-13.1%
+-14.0%
+Source: ONS (2021). Low Carbon and Renewable Energy 
+Economy (LCREE) survey estimates, UK, 2014 to 2019.2019 total turnover:
+£43 billion
+Note: This analysis uses results from the low -carbon and renewable -energy economy (LCREE) survey, run by the ONS (2021), which 
+identifies 17 low -carbon sectors within the UK economy (see Appendix 5.2 for full detail). Note: This analysis uses results from the low -carbon and 
+renewable -energy economy (LCREE) survey, run by the ONS 
+(2021), which identifies 17 low -carbon sectors within the UK 
+economy (see Appendix 5.2 for full detail). 
+[1]SMMT (2021). Economy –Automotive’s Economic Contribution –
+Key Industry Indicators.97Chart 5.6. Employment and number of businesses in the 
+low -carbon and renewable -energy economy (LCREE)
+Number of employees and businesses between 2014 and 2019
+Source: ONS (2021). Low Carbon and Renewable Energy Economy (LCREE) survey estimates, UK, 2014 to 2019.▪Despite the potential for LCREE to represent a 
+growth sector within the UKeconomy during a 
+period of increasing policy importance, the number 
+of businesses and employees within these sectors 
+in the UKdeclined from 2014 to 2019. 
+▪There were 27,000 fewer businesses in 2019 than in 
+2014, a net loss of ~5,400 businesses per year.
+▪Similarly, there were 33,800 fewer jobs in the 
+LCREE sectors in 2019 than in 2014, a net loss of 
+~6,700 jobs per year.
+▪SMEs employed the vast majority (69% FTE) of 
+individuals working in the LCREE sectors between 
+2014 and 2019. 
+▪Total employment has been falling within SMEs in 
+the LCREE sector, at an average rate of 9,860 fewer 
+jobs in SMEs per year between 2014 and 2019. 
+While employment has been increasing in larger 
+companies, at an average rate of 3,100 jobs per 
+year, this still results in a net decline.
+50,00060,00070,00080,00090,000100,000110,000120,000130,000140,000
+2014 2015 2016 2017 2018 2019Number of LCREE businesses-5,400 businesses
+per year, 2014 -19
+150,000170,000190,000210,000230,000250,000270,000290,000
+2014 2015 2016 2017 2018 2019LCREE employment (FTE)-6,700 employees
+per year, 2014 –1998Chart 5.7. Low -carbon and renewable -energy economy 
+(LCREE) sectors comparison by country
+Proportion of total UK LCREE turnover, both total and compared to UK 
+performance on a per capita (‘000) basis , annual average for 2014 –2019▪Analysing LCREE data by country indicates that 
+Scotland punches above its weight, while Northern
+Ireland is under -performing relative to its size on 
+turnover and employment in the LCREE sectors. 
+▪While England has the highest total turnover in 
+LCREE businesses, Scotland has a higher 
+performance on a per -capita basis. 
+▪Relative to the other countries, Scotland has the 
+highest proportion of its average turnover generated 
+by onshore wind. It also has above -average input 
+from nuclear and hydropower and below -average 
+input from low -emission vehicles and infrastructure. 
+▪Perhaps surprisingly, offshore wind makes up only 
+5% of Scotland’s average turnover –less than 
+England (8%) or Wales (6%) but above Northern 
+Ireland (0.5%).  
+▪Northern Ireland performs poorly on turnover on a 
+per capita basis. Northern Ireland has the highest 
+per capita share of employment within the low -
+emission vehicles and infrastructure sector, at 25% 
+of all LCREE employment in Northern Ireland , 
+compared to no more than 5% in other countries. 
+Overall, Northern Ireland has fewer employees in 
+the LCREE sectors despite having more businesses 
+on a per capita basis. Source: ONS (2021). Low Carbon and Renewable Energy 
+Economy (LCREE) survey estimates, UK, 2014 to 2019.England Totalper 1,000 
+inhabitants vs UK
+Businesses 74,000 1.3 -
+Jobs (FTE) 174,000 3.1 -
+Turnover £34.1 bn £605 k ↓Scotland Totalper 1,000 
+inhabitants vs UK
+Businesses 12,000 2.2 ↑
+Jobs (FTE) 22,600 4.1 ↑
+Turnover £5.9 bn £1.073 m ↑
+Northern 
+Ireland Totalper 1,000 
+inhabitants vs UK
+Businesses 3,500 1.9 ↑
+Jobs (FTE) 5,600 2.9 ↓
+Turnover £1.0 bn £524 k ↓
+Wales Totalper 1,000 
+inhabitants vs UK
+Businesses 7,800 2.46 ↑
+Jobs (FTE) 10,600 3.35 ↑
+Turnover £2.0 bn £642 k -The UK Totalper 1,000 
+inhabitants
+Businesses 87,000 1.3
+Jobs (FTE) 214,000 3.2
+Turnover £43 bn £643 k
+Note: National figures do not add up due to data -set characteristics.99Appendix 5.1
+Sectoral breakdown for ONS (2021) atmospheric emissions: greenhouse gases by industry and gas(1)
+Electricity, gas, steam 
+and air -conditioning 
+supplyElectricity production –coal
+ManufacturingAluminium production Motor vehicles, trailers and semi -trailers
+Electricity production –gas Basic pharmaceutical products and pharmaceutical preparations Other manufactured goods
+Electricity production –nuclear Building of ships and boats Other nitrogen compounds
+Electricity production –oil Computer, electronic, communication and optical products Paper and paper products
+Electricity production –other Electrical equipment Plastics products
+Manufacture of gas; distribution of gaseous fuels through mains and steam and air -conditioning 
+supplyFabricated metal products, except machinery and equipment, excluding 
+weapons and ammunition Printing and recording services
+Transport and storageAir transport services FertilisersProcessing and preserving of fish, crustaceans, molluscs , fruit and 
+vegetables
+Buses, coaches, trams and similar public urban transport n.e.c Furniture Processing and preserving of meat and production of meat products
+Freight transport by road and removal services Leather and related products Processing of nuclear fuel
+Postal and courier services Machinery and equipment n.e.c. Repair and maintenance of aircraft and spacecraft
+Rail transport Manufacture of air and spacecraft and related machinery Repair and maintenance of ships
+Taxis and other renting of private cars with driverManufacture of alcoholic beverages, including spirits, wine, cider, beer 
+and malt Rest of repair; Installation
+Transport via pipeline Manufacture of articles of concrete, cement and plaster Rubber products
+Underground, metro other non interurban rail services Manufacture of bakery and farinaceous products Textiles
+Warehousing and support services for transportation Manufacture of basic Iron and steel Tobacco products
+Water transport services Manufacture of cement Wearing apparel
+Consumer expenditure Consumer expenditure –not travel Manufacture of cleaning and toilet preparationsWood and of products of wood and cork, except furniture; articles of straw 
+and plaiting materials
+Consumer expenditure –travel Manufacture of coke oven products
+Agriculture, forestry and 
+fishingFish and other fishing products; aquaculture products; support services to fishing Manufacture of dairy products
+Products of agriculture, hunting and related services Manufacture of dyestuffs, agro-chemicals
+Products of forestry, logging and related servicesManufacture of glass, refractory, clay, other porcelain and ceramic 
+products, stone and abrasive products
+Water supply; 
+sewerage, waste 
+management and 
+remediation activitiesNatural water; water treatment and supply services Manufacture of grain mill products, starches and starch products
+Remediation services and other waste management servicesManufacture of industrial gases and non -nitrogen -based inorganic 
+chemicals
+Sewerage services; sewage sludge Manufacture of lime
+Waste collection, treatment and disposal services; materials recovery servicesManufacture of other basic metals and casting (excl. nuclear fuel and 
+aluminium )
+Mining and quarryingCrude petroleum and natural gas Manufacture of other chemical products and man -made fibres
+Mining of coal and lignite Manufacture of other food products
+Mining of metal oresManufacture of other transport equipment, excluding ships, boats, air and 
+spacecraft
+Mining support services Manufacture of paints, varnishes and ink
+Other mining and quarrying products Manufacture of petrochemicals
+Wholesale and retail 
+trade; repair of motor 
+vehicles and 
+motorcyclesRetail trade services, except of motor vehicles and motorcycles Manufacture of plaster
+Wholesale and retail trade and repair services of motor vehicles and motorcycles Manufacture of prepared animal feeds
+Wholesale trade services, except of motor vehicles and motorcycles Manufacture of refined petroleum products
+ConstructionBuildings and building construction worksManufacture of soft drinks: production of mineral waters and other bottled 
+waters
+Constructions and construction works for civil engineering Manufacture of vegetable and animal oils and fats
+Specialised construction works Manufacture of weapons and ammunition
+(1)ONS (2021). Atmospheric emissions: greenhouse gases by industry and gas .100Appendix 5.2
+Key definitions
+Defining low -carbon and renewable -energy economy (LCREE) sectors within the UK
+The low -carbon and renewable -energy economy (LCREE) survey, run by the ONS (2021), identifies 17 
+low-carbon sectors, as follows:
+•offshore wind
+•onshore wind
+•solar photovoltaic
+•hydropower
+•other renewable electricity
+•bioenergy
+•alternative fuels
+•renewable heat
+•renewable combined heat and power
+•energy -efficient lighting
+•other energy -efficient products
+•energy monitoring, saving or control systems
+•low-carbon financial and advisory services
+•low-emission vehicles and infrastructure
+•carbon capture and storage
+•nuclear
+•fuel cells and energy storage
+Activity captured within the largest sector –otherenergy -efficient products –is extremely broad. 
+Examples include the design, manufacture or installation of energy -efficient doors, windows and 
+insulation.
+Within this report, these sectors are used as the best available proxy to understand the dynamics of 
+the UK’s climate -change mitigation technology economy.Defining climate -change mitigation technologies (CCMT) within 
+patent analysis globally
+▪High-value climate -change mitigation technologies (CCMT), 
+compared to other similar countries. 
+▪This analysis is based on the Y02 classification scheme, which 
+provides the most comprehensive and standardised low-carbon 
+patent classification. It covers most technology fields, buildings, 
+carbon capture and storage (CCS), energy, information and 
+communication technology (ICT), manufacturing, transportation 
+and waste management.
+▪This analysis uses international patent families for high -value 
+inventions (which comprise the top ~25% of all patented CCMT 
+inventions). 
+▪Analysis compiled with global data from the Worldwide Patent 
+Statistical Database (PATSTAT) maintained by the European 
+Patent Office (EPO). It contains bibliographical data relating to 
+more than 100 million patent documents from leading 
+industrialised and developing countries.
+More information at:
+•https://www.uspto.gov/web/patents/classification/cpc/html/cpc -Y.html#Y02
+•https://www.epo.org/searching -for-patents/business/patstat.html

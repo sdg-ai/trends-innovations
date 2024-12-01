@@ -1,0 +1,745 @@
+UK Innovation Survey 2021: Report covering the survey period 
+2018 to 2020
+12th May 2022 Official Statistics
+This release reports on innovation activity in UK businesses in 2018-2020 and compares 
+innovation activity to previous surveys.
+In 2018-2020, 45% of UK businesses were innovation active.  This is an increase 
+compared to 38% in 2016-2018.
+Large businesses were more likely to have innovated than small and medium 
+enterprises (SMEs). In 2018-2020, 58% of large businesses were innovation active, 
+compared to 44% of SMEs.
+The percentage of innovation active businesses was highest in England (46%) in 
+2018-2020.  In Wales 44% of businesses in 2018-2020 were innovation active, compared to 
+39% in Scotland and 38% in Northern Ireland. The East of England and the West Midlands 
+were the English regions with the highest percentages of innovation active businesses 
+(51% and 49% respectively).
+Figure 1: Percentage of businesses which were innovation active, 2008-2010 to 2018-
+2020
+What you need to know about these statistics: 
+The UK Innovation Survey (UKIS) is the main data source for business innovation in the 
+UK. It is used widely across Government to help improve policy and by the research 
+community for understanding the innovation landscape. 
+UKIS 2021 sampled 31,928 UK businesses (for the period 2018-2020) with ten or more 
+employees. It received a response from 13,598 businesses, giving a response rate of 
+42.6%.
+Responsible statistician: James Achur Email: business.statistics@beis.gov.uk 
+Media enquiries: 020 7215 1000 Public enquiries: 07391 864586 
+Next publication: UK Innovation Survey Report - Spring 2024UK Innovation Survey Report 2021
+___ __________________________________________________________
+___ __________________________________________________
+___ ___________________________________________________
+___ ___________________________________________________
+___ ___________________________________________
+___ ____________________________________________
+___ ________________________________________________________
+___ _______________________________________
+___ __________________
+___ ______________________________________
+___ _______________________________________________________
+___ ______________________________________________
+___ ____________________________________
+___ __________________________________________________
+___ ___________________________________________
+___ _______________________________________________________
+___ ______________________________
+___ _______________________________________________
+___ _______________________________________________________
+___ _____________________________
+___ ______________________________________________
+___ _______________________________________________________
+___ ____________________________________
+___ __________________________________________________
+___ _______________________________________________________
+___ _______________________________________
+___ ___________________________________________________
+___ _______________________________________________________
+___ ________________________________
+___ ____________________________________________________
+___ ____________________________________________________
+___ ____________________________________________________________
+___ ______________________________________________________Contents
+1. Introduction 4
+1.1 Defining innovation 4
+1.2 About this release 4
+1.3 About this survey 5
+1.4 Policy context for innovation 6
+2. Levels and types of innovation 7
+2.1 Introduction 7
+2.2 Changes in innovation over time 7
+2.3 Change in innovation investment and expenditure over time 9
+3. Innovation support and collaboration 11
+3.1 Introduction 11
+3.2 Trends in collaboration 11
+3.3 Trends in information sources used 13
+3.4 Financial support 14
+4. Innovation by industrial sector 15
+4.1 Introduction 15
+4.2 Patterns of innovation behaviour in sectors 15
+5. Geography of innovation 17
+5.1 Introduction 17
+5.2 Spatial distribution of innovative businesses 17
+6. Factors driving innovation 22
+6.1 Introduction 22
+6.2 Trends in factors driving innovation 22
+7. Barriers to innovation 24
+7.1 Introduction 24
+7.2 Trends in barriers to innovation 24
+8. Skills for innovation 26
+8.1 Introduction 26
+8.2 Trends in skills and innovation over time 26
+Accompanying tables 28
+Technical information 28
+Definitions 29
+Further information 31
+2UK Innovation Survey Report 2021
+___ _________________________________________
+___ _____________________________________________________
+___ ______________________________________________________
+___ _________________________________________________
+___ _____________________________________________________
+___ __________________________________________
+________________________________________________________________Future updates to these statistics 31
+Related statistics 31
+Revisions policy 32
+Uses of these statistics 32
+User engagement 32
+Pre-release access to statistics 32
+Contact 32
+3UK Innovation Survey Report 2021
+1. Introduction 
+1.1 Defining innovation
+The UK definition of innovation is based on an Organisation for Economic Co-operation and 
+Development (OECD) definition, outlined in the Oslo Manual 20181. This definition includes 
+any of the following activities, if they occurred during the survey period: 
+1. The introduction of a new or significantly improved product (good or service) or 
+process; 
+2. Engagement in innovation projects not yet complete, scaled back, or abandoned; 
+3. New and significantly improved forms of organisation, business structures or 
+practices, and marketing concepts or strategies; 
+4. Investment activities in areas such as internal research and development, training, 
+acquisition of external knowledge or machinery and equipment linked to innovation 
+activities. 
+A business that had engaged in any of the activities described in points 1 to 3 is defined 
+as being ‘innovation active’ . A business that had engaged in any of the activities described 
+in points 1 to 4 is defined as a ‘broader innovator’. Finally, any businesses that had engaged in 
+the activity described in point 3 were classed as a ‘wider innovator’.
+1.2 About this release
+The UK Innovation Survey (UKIS) is the main data source for business innovation in the UK. It is used widely across Government help improve and by the research community for 
+understanding the innovation landscape.
+UKIS 2021 information is presented in this one report, rather than in separate Headline and 
+Main Reports (which have been previously published for UKIS). The structure of this report is consistent with previous Main Reports and by not publishing a headline report we have 
+published this detailed information more rapidly. We are able to do this due to a change in our 
+international reporting commitments, following the UK departure from the European Union.
+These statistics are produced in line with the UK Statistics Authority’s Code of Practice for 
+Statistics and in accordance with internationally agreed statistical guidance and standards. The 
+UK information can be compared internationally with OECD published information . Table 1b in 
+the UKIS 2021 Statistical Annex compares UKIS 2016-2018 and 2018-2020 information with a 
+subset of industries (industrial divisions) used for reporting by OECD.
+UKIS 2021 asked businesses for information on their innovation activities over the three-year 
+period from 2018 to 2020. If information was not available for calendar years, they were asked that their return covered the nearest financial years. The coronavirus (COVID-19) pandemic 
+began in Q1 2020 and is likely to have had an impact on business innovation towards the later 
+part of the three-year period they were reporting on.
+1https://www.oecd.org/science/oslo-manual-2018-9789264304604-en.htm
+4UK Innovation Survey Report 2021
+Comparisons are made with previous UK innovation surveys, covering periods back to 2008-
+2010, where appropriate. The period covering 2008-10 was the first survey data collected using a sample based on the Standard Industrial Classification 2007 (SIC 2007).  This created 
+a break in the time series, so comparisons to surveys prior to this are not included in this 
+publication. Previous UK innovation survey reports can be viewed on BEIS Community 
+Innovation Survey webpage  and historic information prior to 2009 is available from the National 
+Archives website.
+This report uses weighted data, in order to be representative of the business population. The 
+responses were weighted to the total business population, using the Inter-Departmental 
+Business Register (IDBR). They were not weighted by factors which would give more weight to 
+larger businesses, such as employment or turnover.
+Geographic location of businesses are based on businesses’ head office location. For 
+example, a business operating in a particular region / country with a head office located 
+elsewhere, will only be counted as in the head office geographic location.
+Accompanying this report is a Statistical Annex of tables that can be viewed here. 
+The Accompanying tables section on page 28 outlines changes and improvements made to 
+tables since UKIS 2019 main report.
+All percentage point changes in this report are calculated from unrounded figures.
+1.3 About this survey
+The survey is the twelfth UKIS. UKIS has been conducted every two years since 2005. The 
+survey is funded and developed by the Department for Business, Energy and Industrial 
+Strategy (BEIS) and administered by the Office for National Statistics (ONS). 
+The survey focusses on business adoption of innovation through new and improved products 
+and services, investments in different types of innovation, and changes in business structures, 
+management, design, and marketing innovations. The survey also asks businesses about the 
+drivers which motivate and barriers to innovation. Although innovation is a strong predictor of 
+higher productivity, wider research shows that it can be difficult to measure accurately, partly 
+due to the changing nature of economic activity. Innovation value is fluid and travels easily across organisational boundaries so may be hard to recoup at the point of origin.
+The sample selection was conducted by the ONS and followed very similar sampling 
+methodology to the previous surveys.
+UKIS 2021 (covering the three-year period from 2018 to 2020) sampled 31,928 UK businesses 
+with ten or more employees. The survey was voluntary and was conducted primarily through 
+an electronic questionnaire. Businesses that did not complete an electronic response were 
+contacted for a telephone interview. We received a response from 13,598 businesses, giving a 
+response rate of 42.6%. This compares to 14,040 responses for UKIS 2019 (covering the three-year period from 2017 to 2019), which was a response rate of 45.4%.
+The UKIS 2021 questionnaire can be viewed here.
+5UK Innovation Survey Report 2021
+Businesses are self-reporting their innovation activities when responding to this survey. 
+Businesses that have reported certain activities, and therefore are classed as innovators by our definitions, sometimes do not think of themselves as innovators.
+1.4 Policy context for innovation
+On 22nd July 2021 the Department for Business, Energy and Industrial Strategy published the 
+‘UK Innovation Strategy: leading the future by creating it’2. The strategy sets out the 
+Government vision to make the UK a global hub for innovation by 2035. Key actions / pillars 
+are:
+1: Unleashing Business – We will fuel businesses who want to innovate. 
+2: People – We will make the UK the most exciting place for innovation talent. 
+3: Institutions & Places – We will ensure our research, development and innovation institutions 
+serve the needs of businesses and places across the UK. 
+4: Missions & Technologies – We will stimulate innovation to tackle major challenges faced by 
+the UK and the world and drive capability in key technologies.
+On 2nd February 2022 the Department for Levelling Up, Housing and Communities published 
+the White Paper ‘Levelling Up the United Kingdom’3. The percentage of businesses that are 
+innovation active is one of the metrics for Mission 2 of the White Paper ‘By 2030, domestic 
+public investment in R&D outside the Greater South East will increase by at least 40%, and 
+over the Spending Review period by at least one third. This additional government funding will 
+seek to leverage at least twice as much private sector investment over the long term to 
+stimulate innovation and productivity growth.’ The percentage of businesses that are 
+innovation active (including by region) is also a performance metric for priority outcome 3: 
+Unleash innovation of the ‘BEIS Outcome Delivery Plan’4.
+The Government has a target to raise public and private sector investment in Research and Development (R&D) to 2.4% by 2027. This is intended to support businesses to reap the 
+benefits of commercial opportunities available, through science and technological 
+development. Measuring R&D takes a tightly focussed perspective on the kinds of activities 
+that may help businesses improve their competitive performance. Innovation is a wider concept 
+and recognises a bigger set of activities, including R&D, which contribute to improved organisational performance in businesses across the economy. Latest published figures at the 
+time of this report show that total R&D expenditure represented 1.74% of gross domestic 
+product (GDP) in 20195.
+2https://www.gov.uk/government/publications/uk-innovation-strategy-leading-the-future-by-creating-it 
+3https://www.gov.uk/government/publications/levelling-up-the-united-kingdom 
+4https://www.gov.uk/government/publications/department-for-business-energy-and-industrial-strategy-outcome-
+delivery-plan/beis-outcome-delivery-plan-2021-to-2022 
+5https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/researchanddevelopmentexpenditure/bulletin
+s/ukgrossdomesticexpenditureonresearchanddevelopment/2019
+6UK Innovation Survey Report 2021
+2. Levels and types of innovation 
+2.1 Introduction
+Innovation types and levels vary widely by organisation size and location, while business 
+investment and its purpose can vary according to individual business choices in the context of 
+sector and type of innovation.
+2.2 Changes in innovation over time
+Innovation and type of activity 
+Figure 2.1: Percentage of businesses engaging in innovation by activity, 2008-2010 to 2018-2020
+Unweighted base = 14,342 in 2008-2010, 14,487 in 2010-2012, 15,091 in 2012-2014, 13,194 in 2014-2016, 
+14,040 in 2016-2018 and 13,598 in 2018-2020.
+In 2018-2020, 45% of UK businesses were innovation active. This is an increase compared to 
+38% in 2016-2018, but lower than 49% in 2014-2016 and 53% in 2012-2014.
+Table 1a in the Statistical Annex of tables that accompanies this report can be viewed here. It 
+provides a time series table from 2008-2010 to 2018-2020, with breakdowns of innovation 
+active businesses by size of business, country / region, and industrial sector.
+In 2018-2020, 46% of businesses were broader innovators and 34% were wider innovators. 
+Businesses were more likely to introduce new products than new processes. In 2018-20, 20% 
+of businesses were product innovators and 16% were process innovators.
+7UK Innovation Survey Report 2021
+Innovation activity varies by size of business 
+Large businesses were more likely to have innovated than SMEs.  In 2018-2020, 58% of large 
+businesses were innovation active, compared to 44% of SMEs. This trend was true for each type of innovation activity.
+Table 2.1: Percentage of businesses engaging in innovation by activity and size, 2008-
+2010 to 2018-2020
+Notes: 
+* Scaled back was a new option introduced in UKIS 2017 (2014-2016 reporting period). 
+Unweighted base: 14,342 in 2008-10, 14,487 in 2010-2012, 15,091 in 2012-2014, 13,194 in 2014-2016, 14,040 in 
+2016-2018 and 13,598 in 2018-2020.
+This pattern of innovation activity being higher in 2018-2020 than 2016-18, but lower in 2018-
+2020 than in 2014-2016, for all businesses and both SMEs and large businesses, was 
+replicated within the panel data. The panel data covers a longitudinal sub-sample of 3,532 
+businesses that responded to the questionnaire in each of the last three UKIS surveys (2017, 2019 and 2021). See Statistical Annex – Table P1 of Table 15.Type of activity 2008-2010 2010-2012 2012-2014 2014-2016 2016-2018 2018-2020
+SMEs (10-249 employees)
+Innovation active 37 44 53 49 37 44
+Broader Innovator 38 45 54 50 38 46
+Wider Innovator 31 37 42 36 26 34
+Innovation investment activities 33 39 43 44 33 42
+Product Innovator 19 18 19 24 18 20
+Process Innovator 10 10 13 16 13 16
+Abandoned 4 4 4 4 2 3
+Ongoing 6 14 17 16 10 9
+Scaled back * * * 5 2 5
+Large businesses (250 plus employees)
+Innovation active 43 50 61 63 50 58
+Broader Innovator 44 51 62 65 52 60
+Wider Innovator 35 39 45 44 32 43
+Innovation investment activities 39 43 50 58 45 54
+Product Innovator 24 24 27 29 22 27
+Process Innovator 18 15 20 23 18 26
+Abandoned 7 5 7 7 2 5
+Ongoing 9 19 24 28 19 18
+Scaled back * * * 7 3 8
+8UK Innovation Survey Report 2021
+2.3 Change in innovation investment and expenditure over time
+Figure 2.2: Percentage of businesses investing in the following innovation activities in 
+2014-2016 to 2018-2020
+Unweighted base = 13,194 for 2014-2016, 14,040 for 2016-2018, 13,598 for 2018-2020.
+There were large increases in the percentage of businesses investing in computer hardware 
+and software since the previous survey. Computer software investment increased from 14% to 24% of businesses, and computer hardware investment increased from 8% to 23% of 
+businesses. The percentage of businesses investing in Internal R&D has increased by two
+percentage points to 16%, since the previous survey. There was also an eight percentage 
+point increase, compared to the previous survey, in the percentage of businesses investing in 
+machinery and equipment and a four percentage point increase in investing in any form of design activity.
+The percentage of businesses investing in machinery and equipment was highest in the West 
+Midlands (20%) and lowest in London (9%). The relatively low percentage in London is likely to 
+reflect the fact that a greater proportion of London businesses are in the service sector
+6. The 
+percentage of businesses investing in computer software was highest in Yorkshire and the 
+Humber and in computer hardware was the East of England. The percentage of businesses 
+investing in computer software was lowest in the North East and in computer hardware was 
+lowest in Northern Ireland (see Statistical Annex – Table 2).
+96https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/bulletins/ukbusinessactivitysiz
+eandlocation/2021UK Innovation Survey Report 2021
+Figure 2.3: Innovation expenditure by area, as a percentage of total innovation 
+expenditure for all businesses 2016, 2018 and 2020
+Unweighted base = 13,194 for 2016, 14,040 for 2018, 13,598 for 2020.
+Expenditure information is only collected for one year of the survey period (for example the 
+UKIS 2021 survey collects expenditure data for 2020).
+In 2020, the percentage of innovation expenditure used for internal R&D was 50%, no 
+percentage point change since the previous survey. In 2020, the percentage of innovation 
+expenditure used for acquisition of R&D was 6%, a one percentage point decrease compared 
+to 2018. In 2020, the percentage of innovation expenditure used for acquisition of machinery, 
+equipment and software was 30%, an eight percentage point increase compared to 21% in 2018.
+10UK Innovation Survey Report 2021
+3. Innovation support and collaboration
+3.1 Introduction
+Developing innovations of any kind can be a complex process and businesses may decide to 
+work jointly with other businesses or organisations and seek access to sources of advice and 
+information to help the creative process.  This section explores the types of collaborators that 
+businesses work with and where they turn for support.
+3.2 Trends in collaboration
+Percentage of innovation active businesses that have co-operation 
+arrangements
+In 2018-2020, 58% of broader innovator businesses reported having co-operation 
+arrangements, compared to 49% of businesses in the 2016-2018. There was a higher level of 
+co-operation across all partnering arrangements compared to the previous survey.
+Co-operation arrangements
+Co-operation occurs when two or more participants agree to take responsibility for a task or series of tasks and information is shared between the parties to facilitate the agreement. An innovation-active business co-operates with another business if it procures ideas or inputs from 
+the other business, by providing it with a detailed specification of its needs.
+Figure 3.1: Percentage of businesses with each type of cooperation arrangement (of 
+broader innovators with any cooperation requirements only), 2014-2016 to 2018-2020
+Unweighted base = 4,367 for 2014-2016, 3,479 for 2016-2018, 4,428 for 2018-2020.
+11UK Innovation Survey Report 2021
+In 2018-2020, 77% of broader innovators with any cooperation arrangements reported 
+partnering with their suppliers, 69% worked with clients and customers in the private sector, and 52% worked with other businesses in their enterprise group. Overall businesses were 
+much more likely to work with private sector organisations than they were with public sector 
+and government organisations. 22% reported working with government or public research 
+institutes, and 23% with universities or other higher education institutions.
+Further analysis at regional level within the UK is available in the Statistical Annex - Table 8c. 
+Collaboration with suppliers was most common in the East Midlands and Wales. Collaboration 
+with private sector customers was more common in Wales and the North East. Collaboration 
+with universities or other higher education institutions was most common in Scotland and 
+collaboration with Government or public sector institutes was most common in the North East.
+Collaboration arrangements were also reported in the panel survey sub-sample of 3,532 
+businesses from the 2017, 2019 and 2021 surveys (see Statistical Annex – Table P3 of Table 
+15). Within the panel, in 2021 collaboration by broader innovators, with government or public 
+research had increased since the 2019 survey (by three percentage points) from 15% of 
+businesses to 18% of businesses. Collaboration with government or public research institutes 
+in 2019 was however still lower than 2017 survey levels (32% of businesses) for the panel.
+12UK Innovation Survey Report 2021
+3.3 Trends in information sources used
+Figure 3.2: Percentage of broader innovator businesses rating listed information 
+sources as “highly important” to innovation activities, 2014-2016 to 2018-2020
+Note: * Social web-based networks or crowd sourcing was a new option introduced in UKIS 2021. 
+Unweighted base = 7,438 for 2014-2016, 6,389 for 2016-2018, 7,131 for 2018-2020.
+Figure 3.2 shows that broader innovator businesses most highly rated information sourced 
+from within their own business or enterprise group, to their businesses’ innovation activities. In 
+UKIS 2021 social web-based networks or crowd sourcing was an added option as a highly 
+important source of information to innovation activities for 6% of broader innovators.
+At country and regional levels within the UK, businesses in Northern Ireland, Scotland and 
+London were more likely to source information relating to innovation activities from within their 
+own business group, than businesses in other English regions or Wales. Businesses in the 
+East Midlands and London sourced information relating to innovation activities from 
+consultants, or private R&D firms more than businesses in other English regions or Scotland, 
+Wales and Northern Ireland (see Statistical Annex – Table 9).
+13UK Innovation Survey Report 2021
+3.4 Financial support
+Around 6% of businesses in the 2021 survey reported receiving financial support from UK 
+central government for innovation activities, compared to 3% receiving support in the 2019 
+survey. Around 1% of businesses received direct financial support (such as smart or 
+collaborative R&D grants, work with Catapult centres, Innovation vouchers etc) and 4% 
+received indirect financial support (such as R&D tax credits).
+Separately, 6% of businesses received financial support for innovation activities from UK local 
+or regional authorities and 1% received financial support from the European Union.
+A theme from the comments given by businesses on the UKIS 2021 survey was that 
+government R&D tax credits and government grants were both key factors, for businesses who 
+innovated, in their decisions to invest in innovation.
+Businesses making use of public support, in the form of financial support via tax credits or 
+deductions, grants, subsidised loans and loan guarantees, may benefit from greater capacity to 
+innovate. In turn this could lead to superior performance outcomes, including increased 
+turnover and increased numbers of employees. Regression analysis which accompanied UK 
+innovation survey 2017 - main report, showed that businesses that received financial support 
+were more likely to experience increases in turnover and employment (see Appendix 1 in UK 
+innovation survey 2017 - main report ).
+14UK Innovation Survey Report 2021
+4. Innovation by industrial sector 
+4.1 Introduction
+Innovation engagement varies across different types of industrial sector and the type of 
+innovation can vary according to sector, in particular whether businesses are supplying 
+products or services7. 
+4.2 Patterns of innovation behaviour in sectors 
+Figure 4.1: Percentage of innovation active businesses by industrial sector, 2014-2016 
+to 2018-2020
+Note: The figures quoted in this chart are based on full weights for 25 sectors but only 15 broad groups are shown 
+for presentation purposes. Unweighted base = 13,194 for 2014-2016, 14,040 for 2016-2018, 13,598 for 2018-2020.
+157 Coad, Alex., Cowling, M., Nightingale, P., Pellegrino, G., Savona, M. and Siepel, J. (2014) Innovative Firms and 
+Growth . BIS Research Report, Department for Business, Innovation and Skills.UK Innovation Survey Report 2021
+Figure 4.1 shows how innovation activity varies across industrial sectors. The percentage of 
+innovation active businesses has increased in all except one industrial sector between 2016-2018 to 2018-2020. The exception was in motion picture and video production, where 
+innovation activity fell by eight percentage points. The two industrial sectors with the largest 
+percentage point increases in innovation activities, of thirteen and twelve percentage points 
+respectively, were firstly in the group that includes fuels, chemicals, plastics, metals or 
+minerals, and secondly in construction .
+Businesses in production and construction industries generally remained more innovative than 
+businesses in distribution and service industries. In 2018-2020, manufacture of electrical and 
+optical equipment and the manufacture of transport equipment remained the most innovative 
+industries (70% and 64% of businesses respectively). Accommodation and food services had 
+the lowest percentage of innovation active businesses (32%). The relative order of industries in terms of their innovation activities was similar to the previous survey (see Statistical Annex – 
+Table 1a).
+This pattern of increases in innovation activity across all industries is repeated in the panel 
+survey, with increases in almost all sectors between panel members who responded in both 
+2019 and 2021, apart from a decrease in percentage of innovation active businesses in the mining or quarrying and other manufacturing industries (see Statistical Annex – Table P5 of 
+Table 15).
+16UK Innovation Survey Report 2021
+5. Geography of innovation
+5.1 Introduction
+This section investigates variations in engagement in innovation at a spatial level over the past 
+three waves of the survey.
+Geographic location of businesses are based on businesses’ head office location. For 
+example, a business operating in a particular region / country with a head office located 
+elsewhere, will only be counted as in the head office geographic location.
+5.2 Spatial distribution of innovative businesses 
+Country level differences 
+Figure 5.1: Percentage of innovation active businesses by country, 2014-2016 to 2018-
+2020
+Unweighted base = 13,194 for 2014-2016, 14,040 for 2016-2018, 13,598 for 2018-2020.
+The percentage of innovation active businesses was highest in England at 46% in 2018-2020. 
+In Wales 44% of businesses in 2018-2020 were innovation active, compared to 39% in 
+Scotland and 38% in Northern Ireland.
+The percentages of innovation active businesses in all four countries were higher in 2018-2020 
+than 2016-2018, but lower than in 2014-16. The largest percentage point increase was in Wales, where the percentage of innovation active businesses increased from 34% in 2016-
+2018 to 44% in 2018-2020.
+Similar trends were found in the longitudinal panel survey, with increases in the percentages of 
+businesses who were innovation active in all UK countries, when comparing UKIS 2021 to 
+2019 for panel respondents (see Statistical Annex - Table P6 of Table 15).
+17UK Innovation Survey Report 2021
+Regional level differences (English Regions only) 
+Figure 5.2: Percentage of innovation active businesses by English region, 2014-2016 to 
+2018-2020
+Unweighted base = 10,331 for 2014-2016, 11,215 for 2016-2018, 10,268 for 2018-2020.
+The East of England and the West Midlands were the English regions with the highest 
+percentage of innovation active businesses in 2018-2020 (51% and 49% respectively). The 
+North East was the English region with the lowest percentage of innovation active businesses in 2018-2020 (40%).
+There has been a reported increase in innovation activity in all English regions among 
+businesses between 2016-2018 and 2018-2020 (see Table 1a in the Statistical Annex). The 
+largest percentage point increase of twelve percentage points was in the East of England. 
+Similar trends were found in the longitudinal panel survey, with increases in percentages of businesses who were innovation active in almost all English regions, when comparing UKIS 
+2021 to 2019 for panel respondents (see Statistical Annex - Table P6 of Table 15).
+18UK Innovation Survey Report 2021
+International Territorial Level 2 geographic boundary differences 
+Figure 5.3: Percentage of innovation active businesses by International Territorial Level 
+2 geographic boundaries, 2018-2020. Experimental Statistics
+Note: Digital boundary products and reference maps are supplied under the Open Government Licence. Source: 
+Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown 
+copyright and database right [2022].
+19UK Innovation Survey Report 2021
+Analysis by International Territorial Level 2 (ITL 2) geographic boundary (above) and by Local 
+Enterprise Partnership (LEP) below are experimental statistics. The sample was not selected to be representative at this geographic level. ITL2 and LEP information has been calculated by 
+using a separate weighting to the rest of the publication. The weighting is based on ITL / LEP 
+boundaries, three broad sectors and business size band. The three broad sectors are: 
+Production – which covers manufacturing, including electricity and construction, Other services 
+– retailing, accommodation etc, and Business Services - R&D, Real Estate and other non-financial services etc.
+Figure 5.3 (above) and Statistical Annex - Table 6 show the percentage of innovation active 
+businesses by ITL 2 boundary. Inner London – East and South Yorkshire had the highest 
+percentage of innovation active businesses in 2018-2020 (59% and 58% respectively). 
+Lincolnshire was the ITL 2 area with the lowest percentage of innovation active businesses in 2018-2020 (29%). More detailed information by further types of innovation activities, by ITL 2 
+area is available in Statistical Annex - Table 6.
+Local Enterprise Partnership (LEP) differences (England only)
+Figure 5.4 (below) and Statistical Annex - Table 6a show the percentage of innovation active businesses by LEP (England only). Oxfordshire and Solent LEPs had the highest percentage 
+of innovation active businesses in 2018-2020 (64% and 58% respectively). Hull and East Yorkshire was the LEP with the lowest percentage of innovation active businesses in 2018-
+2020 (23%). More detailed information by further types of innovation activities, by LEP 
+(England only) is available in Statistical Annex - Table 6a.
+20UK Innovation Survey Report 2021
+Figure 5.4: Percentage of innovation active businesses by LEP (England only), 2018-
+2020. Experimental Statistics
+Notes: 
+1. LEP boundaries are based on the ONS Open Geography portal. The Greater Birmingham and Solihull LEP 
+region overlaps with the Stoke-on-Trent and Staffordshire LEP region, and the Worcestershire LEP region. In 
+these instances the overlaps are shown separately on this map and allocated the Greater Birmingham and 
+Solihull LEP value.
+2. Digital boundary products and reference maps are supplied under the Open Government Licence. Source: 
+Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown 
+copyright and database right [2022].
+21UK Innovation Survey Report 2021
+6. Factors driving innovation
+6.1 Introduction
+Research has shown that innovation significantly boosts productivity growth8. There are 
+varying motivations for businesses to engage in broad forms of innovation, which may relate to 
+firms’ business strategies of improving quality, reducing costs, or diversifying their range of 
+products and services. Changes in these motivations can vary over time, reflecting evolution in 
+the external environment and market conditions.
+6.2 Trends in factors driving innovation
+Figure 6.1 shows trends in motivations for businesses to engage in broad forms of innovation 
+Figure 6.1: Innovation factors (percentage of all broader innovators rating factor as of 
+“high” importance to their decision to innovate) 2014-2016 to 2018-2020
+Note: * Issues related to COVID-19 pandemic was a new factor introduced in UKIS 2021.  
+Unweighted base = 7,438 for 2014-1016, 6,389 for 2016-2018, 7,131 for 2018-2020.
+8https://www.gov.uk/government/publications/drivers-of-innovation-and-productivity-in-the-uk From Ideas to 
+Growth: Understanding the drivers of innovations and productivity across firms, regions and industries in the UK: 
+2021. BEIS Research Paper Number: 2021/041.
+22UK Innovation Survey Report 2021
+Businesses cited a number of different factors influencing their decision to innovate. Improving 
+quality of goods or services remained the top-rated factor, being of high importance to 39% of broader innovator businesses in 2018-2020. The second highest rated reason for innovating 
+was issues related to the coronavirus (COVID-19) pandemic, with 35% of businesses rating 
+this factor as being of high importance. 
+A theme from the comments given by businesses on the UKIS 2021 survey was that many 
+businesses innovated or diversified as a direct result of the coronavirus (COVID-19) pandemic. The majority of innovation for these businesses was in the online / digital area. 
+The State of Small Business Britain 2021
+9 report gives evidence, based on Wave 38 of the 
+Business Insights and Conditions Survey10, that there has been more innovation since the 
+start of the coronavirus (COVID-19) pandemic in 20.3% of all businesses (excluding 
+businesses with 0-9 employees). This compares to 3.1% of businesses (excluding businesses with 0-9 employees) where there had been less innovation since the start of the coronavirus 
+(COVID-19) pandemic. In the education sector 57.5% of businesses had seen more 
+innovation, as had 26.5% of businesses in the human health and social work activities sector. 
+Furthermore, since the start of the coronavirus (COVID-19) pandemic 33.1% of all businesses 
+(excluding businesses with 0-9 employees) had adopted digital technologies and 29.5% had changed management practices. Also, 28.8% of all businesses (excluding businesses with 0-9 
+employees) expected that these innovations would increase their business’s productivity over 
+the next 12 months.
+In 2018-2020, meeting regulatory requirements was of ‘high’ importance to their decision to 
+innovate for 34% of broader innovators, as was replacing outdated products or processes. Reducing environmental impact was of ‘high’ importance to 22% of broader innovators. 
+Meeting regulatory requirements and reducing environmental impact both had two percentage 
+point increases compared to 2016-18. Further information on the drivers of innovation and 
+regional / industrial sector variations among these common drivers, are shown in Statistical 
+Annex – Table 10.
+Improving quality of goods or services and issues related to the coronavirus (COVID-19) 
+pandemic, along with meeting regulatory requirements were the most common factors in 
+driving innovation in the 2021 wave of the panel respondents – see Statistical Annex Table P7 
+of Table 15.
+9https://www.enterpriseresearch.ac.uk/publications/the-state-of-small-business-britain-2021/ 
+10https://www.ons.gov.uk/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactont
+heukeconomy  - Wave 38 - Office for National Statistics Business Insights and Conditions Survey
+23UK Innovation Survey Report 2021
+7. Barriers to innovation 
+7.1 Introduction
+Research has shown perceived barriers to innovation appear to have little relation to business 
+performance, when focussing on highly innovative businesses11. It is important to compare and 
+track perceptions of barriers to innovation among innovative businesses and non-innovators 
+over time.
+7.2 Trends in barriers to innovation 
+There are varying barriers to businesses engaging in broad forms of innovation shown in 
+Figure 7.1. 
+Figure 7.1: Broader innovators’ perception of potential barriers to innovation 
+(businesses gave listed factors a rating of ‘high’ importance to constraining innovation activities), 2014-2016 to 2018-2020
+Notes: * Issues related to COVID-19 pandemic was a new option introduced in UKIS 2021.  
+Unweighted base = 7,274 for 2014-2016, 6,203 for 2016-2018, 7,131 for 2018-2020.
+Issues related to the coronavirus (COVID-19) pandemic was the highest rated barrier to 
+innovation. It was rated as of ‘high’ importance by 37% of broader innovator businesses in 
+2018-2020. Excessive perceived economic risks were rated as the next biggest barrier, of ‘high’ importance to 19% of broad innovator businesses in 2018-2020. Cost factors (including
+2411 Coad, Alex., Cowling, M., Nightingale, P., Pellegrino, G., Savona, M. and Siepel, J. (2014) Innovative Firms and 
+Growth . BIS Research Report, Department for Business, Innovation and SkillsUK Innovation Survey Report 2021
+finance availability, direct innovation costs too high and finance costs) had been the biggest 
+barrier in previous UKIS surveys.
+The withdrawal of the United Kingdom from the European Union was of ‘high’ importance, as a 
+barrier, to 13% of broader innovators in 2018-2020, compared to 15% in 2016-2018. UK 
+Government regulations was of ‘high’ importance, as a barrier, to 13% of broader innovators in 
+2018-2020 and EU regulations to 9% of broader innovators. Further information on the barriers 
+to innovation for broader innovators and regional / industrial variations towards these barriers are shown in Statistical Annex – Table 10.
+The key barrier to innovation for non broader innovators was issues related to the coronavirus 
+(COVID-19) pandemic. In total, 20% of these non broader innovator businesses rated this 
+barrier as of ‘high’ importance, see Statistical Annex - Table 10b. Additionally, non broader 
+innovators were asked to give further information on the reasons ‘why it has not been necessary or possible to innovate?’, which are shown in table 11. No need to innovate due to 
+market conditions (27% of businesses) and other (41% of businesses) were the key reasons 
+given for not innovating for these types of businesses and both are likely to be related to the 
+coronavirus (COVID-19) pandemic.
+Key themes from businesses who gave comments on the UKIS 2021 survey, were that issues 
+related to the coronavirus (COVID-19) pandemic and withdrawal of the UK from the European 
+Union were the major barriers to investing in innovation. A number of businesses commented 
+that planned innovations were no longer undertaken, due to the coronavirus (COVID-19) 
+pandemic.
+25UK Innovation Survey Report 2021
+8. Skills for innovation
+8.1 Introduction
+Workforce skills to create and implement new products, services, practice and processes are 
+essential components to introducing innovations. Previous research has shown that science, 
+technology, engineering, and maths (STEM) graduates make up a greater share of the 
+workforce in highly innovative businesses, than in less innovative organisations12. STEM 
+graduate employment is also associated with greater use of external information, co-operation, 
+and introduction of new products. It is argued that employing STEM graduates increases 
+demand for innovation, through greater use of external collaboration and networking, leading in 
+turn to further demand for these graduates. 
+8.2 Trends in skills and innovation over time
+Figure 8.1: Average percentage of employees who held a degree or higher qualification, in 2016 to 2020
+Unweighted base = 13,194 for 2016, 14,040 for 2018, 13,598 for 2020.
+Figure 8.1 compares the average proportion of the workforce holding at least a degree level 
+qualification in non-innovators and broader innovator businesses. The average percentage of 
+employees with a degree or higher qualification was higher for broader innovators than for non-innovators 
+Amongst broader innovator businesses in 2020, 12% of employees had a science or 
+engineering qualification, and 18% had a qualification in a non-science subject. In 2020, 5% of
+2612 Ibidem.UK Innovation Survey Report 2021
+staff employed by non-innovators had a science or engineering qualification, and 13% had a 
+qualification in a non-science subject.
+Overall, in 2020, 9% of employees held a degree in a science or engineering subject, and 16% 
+in all other subjects (see Statistical Annex - Table 13). 
+Proportions of science or engineering graduates in the workforce of broader innovators were 
+higher in London (21%), Scotland (14%) and the South East (13%) and lower in the North East 
+and West Midlands (both 7%) - see Statistical Annex – Table 13. Proportions of non-science or engineering graduates in the workforce of broader innovators were substantially higher in 
+London (36%) and lowest in the West Midlands (12%).
+Regression analysis which accompanied UK innovation survey 2017 - main report showed that 
+businesses which employed an increasing share of either STEM or non-STEM graduates, 
+were more likely to experience improvements in turnover and employment (see Appendix 1 in UK innovation survey 2017 - main report ).
+Figure 8.2: Skills - percentage of businesses employing individuals in-house or obtaining listed skills from external sources, in 2014-2016 to 2018-2020
+Notes: * Data scientists was a new skill introduced in UKIS 2021. 
+Unweighted base = 13,194 for 2014-2016, 14,040 for 2016-2018, 13,588 for 2018-2020
+Figure 8.2 shows that in 2018-2020, 17% of businesses employed individuals in-house with 
+multimedia or web design skills or obtained these skills from external sources. This compares 
+to 16% of businesses who employed individuals in-house with graphic arts, layout or 
+advertising skills or obtained these skills from external sources See Statistical Annex – Table 
+14 for further details.
+27UK Innovation Survey Report 2021
+Accompanying tables
+Accompanying this report is a Statistical Annex of tables that can be viewed here. 
+ Tables 1-14 are consistent breakdowns for UKIS 2021 covering the period 2018-2020 or 
+just for 2020 in certain instances 
+ Table 1a provides further information than previously presented. It is a time series table 
+from 2008-2010 to 2018-2020 with breakdowns of innovation active businesses by size 
+of business, region and sector. 
+ Table 1b in the UKIS 2021 Statistical Annex compares UKIS 2016-2018 and 2018-2020 
+information with a subset of industries (industrial divisions) used for reporting by OECD. OECD publish internationally comparable UK figures in Business innovation statistics 
+and indicators
+ Tables 6 and 6a are new to the 2021 statistical annex. They present experimental 
+statistics on innovation activities by UK businesses, by International Territorial Level 2 
+(ITL2) geographic boundaries and English Local Enterprise Partnership (LEP) area, 
+2018 to 2020. 
+ Tables 6, 6a and 6b from previous statistical annexes on market distribution are not 
+included in the 2021 report, as the relevant question they are based on was no longer 
+asked in the UKIS 2021 survey. 
+ Table 15 is consistent with previously presented panel analysis, with the addition of 
+UKIS 2021 information covering the period 2018-2020. The UKIS 2021 Statistical Annex 
+includes 9 sub tables to table 15 (P1 to P9), for businesses that responded to the 
+questionnaire in each of the last three UKIS surveys (2017, 2019 and 2021).
+Technical information
+This report presents the findings from the UK Innovation Survey 2021 (UKIS 2021), covering the three-year period from 2018 to 2020. This is the twelfth UKIS and comparisons are made 
+with the previous surveys.
+UKIS 2021 sampled 31,928 UK businesses with ten or more employees. The survey was 
+voluntary and was conducted primarily through an electronic questionnaire. Businesses that 
+did not complete an electronic response were contacted for a telephone interview. We received 
+a response from 13,598 businesses, giving a response rate of 42.6%.
+Further details on UKIS methodology are published in the Statistical Annex to this report for 
+UKIS 2021 here. 
+A copy of the UKIS 2021 questionnaire can be viewed here.
+28UK Innovation Survey Report 2021
+Definitions
+Defining Innovation
+The UK definition of innovation is based on an Organisation for Economic Co-operation and 
+Development (OECD) definition outlined in the Oslo Manual 201813. This definition includes 
+any of the following activities, if they occurred during the survey period: 
+1. The introduction of a new or significantly improved product (good or service) or 
+process; 
+2. Engagement in innovation projects not yet complete, scaled back, or abandoned; 
+3. New and significantly improved forms of organisation, business structures or 
+practices, and marketing concepts or strategies; 
+4. Investment activities in areas such as internal research and development, training, 
+acquisition of external knowledge or machinery and equipment linked to innovation 
+activities.
+A business that had engaged in any of the activities described in points 1 to 3 is defined as being ‘innovation active’.  A business that had engaged in any of the activities described 
+in points 1 to 4 is defined as a ‘broader innovator’. Finally, any businesses that had engaged in 
+the activity described in point 3 were classed as a ‘wider innovator’.
+13https://www.oecd.org/science/oslo-manual-2018-9789264304604-en.htm
+29UK Innovation Survey Report 2021
+Further Definitions and Terminology 
+Co-operation 
+ArrangementsCo-operation occurs when two or more participants agree to take responsibility for a task or series of tasks and information is shared 
+between the parties to facilitate the agreement. An innovation-active 
+business co-operates with another business if it procures ideas or inputs from the other business by providing it with a detailed 
+specification of its needs.
+EU European Union.
+Innovation 
+Investment activitiesBusiness that reported spending in each of the specified main 
+innovation related investments (as described in point 4 above)
+Innovation-related 
+activitiesCategories of innovation directed investment such as: R&D, capital goods and software acquisition, design activity, for implementing 
+current innova tions or directed to future product or process changes .
+Large business A business with 250 or more employees.
+New to market The introduction of a new good or service to the market before 
+competitors.
+New to this 
+businessintroduction of a new good or service that was essentially the same 
+as a good or service already available from competitors
+OECD Organisation for Economic Co -operation and Development.
+Product innovation Bringing to the market or into use by business, new and improved 
+products, including both tangible goods and the provision of services. The degree of innovativeness is shown by the distinction between 
+products new just to the business or which are also new to the 
+market.
+Process innovation Significant changes in the way that goods or services are produced or 
+provided, again differentiating between processes new to the 
+business only or also new to the industry.
+R&D Research and Development.
+Small and medium-
+sized enterprises 
+(SMEs)Businesses with 0-249 employees. This survey does not include any 
+businesses with less than 10 employees.
+30UK Innovation Survey Report 2021
+Further information
+Future updates to these statistics
+Detailed microdata will be made available to accredited researchers through the ONS Secure 
+Research Service  and the UK Data Service .
+A UKIS 2023 report covering the survey period 2020-2022 will be published in spring 2024. A 
+Statistical Annex with further data will accompany this publication.
+Related statistics
+International comparisons
+The UKIS data is used for international statistics on innovation:
+ International comparisons are published by the OECD in Business innovation statistics 
+and Indicators
+European innovation scoreboard : This provides a comparative analysis of innovation 
+performance in EU countries, other European countries, and regional neighbours.
+Research and development
+The Office for National Statistics (ONS) publishes detailed statistics on research and 
+development. The links below are the most recent data at the time of UKIS 2021 Report 
+publication:
+Business enterprise research and development (2020)
+Gross domestic expenditure on research and development (2019)
+Research and development expenditure by the UK government (2020)
+Business statistics 
+For more general business statistics, please see:
+Business population estimates for an estimate of the total number of registered and 
+unregistered businesses in the UK. 
+UK business; activity, size and location  for UK registered businesses by legal status, 
+industry, region, employment and turnover size bands. 
+Longitudinal Small Business Survey for information on survey responses for businesses 
+with employees and businesses with no employees on a range of topics including 
+innovation.
+31UK Innovation Survey Report 2021
+Business insights and impact on the UK economy publishes information from the Office 
+for National Statistics Business Insights and Conditions Survey
+Revisions policy
+The BEIS statistical revisions policy sets out the revisions policy for these statistics, which has 
+been developed in accordance with the UK Statistics Authority Code of Practice for Statistics.
+Uses of these statistics
+The UK Innovation Survey (UKIS) is the main data source for business innovation in the UK. It 
+is used widely across government and by the research community (including the Enterprise 
+Research Centre ) for understanding the innovation landscape, drivers of business growth and 
+productivity and to help the Government develop, improve, and evaluate policy. 
+Internationally, it is used by OECD for international comparison (see Related statistics section).
+User engagement
+Users are encouraged to provide comments and feedback on how these statistics are used 
+and how well they meet user needs. Comments on any issues relating to this statistical release are welcomed and should be sent to: business.statistics@beis.gov.uk
+The BEIS statement on statistical public engagement and data standards sets out the 
+department’s commitments on public engagement and data standards as outlined by the Code 
+of Practice for Statistics.
+Pre-release access to statistics
+Some ministers and officials receive access to these statistics up to 24 hours before release. 
+Details of the arrangements for doing this and a list of the ministers and officials that receive 
+pre-release access to these statistics can be found in the BEIS statement of compliance  with 
+the Pre-Release Access to Official Statistics Order 2008.
+Contact
+Responsible statistician: James Achur 
+Email: business.statistics@beis.gov.uk
+Media enquiries: 020 7215 1000 
+Public enquiries: 07391 864586
+32© Crown copyright 2022 
+This publication is licensed under the terms of the Open Government Licence v3.0 except 
+where otherwise stated. To view this licence, visit nationalarchives.gov.uk/doc/open-
+government-licence/version/3  or write to the Information Policy Team, The National Archives, 
+Kew, London TW9 4DU, or email: psi@nationalarchives.gsi.gov.uk.
+Where we have identified any third-party copyright information you will need to obtain permission from the copyright holders concerned.
+This publication is available from: https://www.gov.uk/government/collections/community-
+innovation-survey
+If you need a version of this document in a more accessible format, please email 
+business.statistics@beis.gov.uk . Please tell us what format you need. It will help us if you say 
+what assistive technology you use.

@@ -1,0 +1,2641 @@
+UK  
+Transport  
+Vision 2050
+FEBRUARY 2024Investing in the future of mobility  
+Second Edition2 UK TRANSPORT VISION 2050Key messages
+Transport Vision 2050
+The quality and efficiency of the transport system are critical for the UK, 
+its economy and the wellbeing of the population. Significant change over 
+coming decades will drive and necessitate innovation. Innovate UK has 
+identified three strategic imperatives to guide investments to minimise 
+risks and maximise benefits.
+The strategic imperatives are: 
+ 
+UK transport is key to keeping the economy and society moving and to  
+reaching net zero. Share your thoughts and get involved. Visit our website .scale-up manufacturing to 
+deliver net zero productsNet zero 
+greater efficiency and new 
+products and servicesDigitally enabled
+continuous safe and secure 
+operationResilient and responsive3 UK TRANSPORT VISION 2050Foreword
+ 
+Transport is vital for the success 
+of the UK’s economy and for that 
+of our society more broadly.
+So much is changing and needs to 
+change, and our transport systems and 
+providers have a great opportunity to innovate together to make 
+that happen.
+The need to decarbonise; the need for greater resilience and 
+flexibility; and pervasive digital technologies all mean that this is 
+and needs to be a time for real innovation.
+As the UK’s innovation agency, Innovate UK works to support the 
+innovation and productivity journey for UK business, and transport 
+innovation is a very important part of that work.
+The Innovate UK team worked with over 200 partners in industry, 
+academia, and government to develop Transport Vision 2050, first 
+published in August 2021. This work reflected and stimulated many 
+exciting ideas and discussions from electric HGVs to methanol for 
+shipping.
+Using many of the ideas and discussions, the Innovate UK team 
+has updated Transport Vision 2050 and has created an enduring 
+community for shared learning and working to build a prosperous 
+future for the UK.
+Welcome to the updated Innovate UK Transport Vision 2050.
+Welcome to our active innovation community - let’s reimagine 
+transport now.
+Indro Mukerjee
+Chief Executive  |  Innovate UK
+Executive summary
+Transport is fundamental to the 
+daily movement and communication 
+of people and organisations, and 
+trade of goods across the globe. The 
+quality and efficiency of the transport 
+system are critical factors for a place, 
+its economy and wellbeing of the 
+population.
+Transportation and transport manufacturing generated 
+more than £274 billion added value for the UK in 2022, 4% 
+of the total UK output. 
+Transport remains one of the largest sources of 
+greenhouse gas emissions in the UK, accounting for 25.5% 
+in 2021 [5]. In parallel, technological advances improve 
+safety, efficiency and offer new business models. These 
+technologies and trends are also changing lifestyles and 
+the need to travel.
+The UK must respond to the challenges and opportunities 
+represented by these significant changes. Innovate UK and 
+our partners will invest £2 billion in transport innovation 
+between April 2021 and March 2025. This investment will 
+shape transport in the UK for many years.
+This vision was first published in 2021. This second version 
+has been updated to reflect increased understanding and 
+changing circumstances. It has grown out of extensive 
+research combined with consultation with our partners 
+across industry, academia and government.
+Our aim is to gather UK government and industry around 
+a single vision that will inform the way we all invest 
+in the future of transport to deliver economic growth 
+and societal benefit. It is also to provoke debate. We 
+recognise that this is one vision and others may come to a 
+different conclusion. We welcome challenge that leads to 
+constructive conversation, and we will continue to update 
+the vision to reflect the latest thinking.
+4 UK TRANSPORT VISION 2050Vision for UK transport 2050
+Our vision is for a 2050 transport system that enables 
+the movement of people and goods from one location 
+to another through safe, seamless, net zero, connected, 
+cost effective, accessible and reliable means. It will be 
+a world leader in design, innovation, manufacturing and 
+deployment. Industry will provide high-quality and skilled 
+employment and remain a major contributor to UK GDP 
+and to UK innovation
+The transport system is driven by transport and traveller 
+demand and needs. Our vision is informed by this and 
+influenced by three strategic imperatives that are mutually 
+supportive. The UK will increasingly meet transport and 
+traveller needs with a transport system that embraces 
+innovation to be:
+ net zero by scaling-up manufacturing to deliver net 
+zero products
+ digitally enabled to deliver greater efficiency and new 
+products and services
+ resilient and responsive with continuous, safe and 
+secure operation
+By understanding and responding to traveller needs, and 
+using the strategic imperatives to guide investments the 
+transport system will support people’s wellbeing and 
+underpin the economy’s productivity.
+THE DRIVERS, ENABLERS AND PATHWAYS TO 2050
+We have identified key drivers and enablers that shape the 
+future transport system and five pathways where steps 
+need to be taken to achieve the 2050 vision:
+ driver: travel and transport demand
+ enabler: digital
+ connectivity
+ energy vectors
+ autonomy
+ business models
+ infrastructure
+Travel and transport demand is driven by society and 
+economic needs. The transport system must understand 
+and respond to these requirements. 
+Digital, a key enabler, has been added to this second 
+version of the transport vision. It impacts all pathways, so 
+we have chosen to outline where those impacts are rather 
+than have a separate pathway. 5 UK TRANSPORT VISION 2050In each pathway we lay out a central assumption of 
+the future and the steps and timescales on the road to 
+achieving that future. 
+Fundamental, technical and applied research and 
+innovation challenges need to be addressed in all areas. 
+There is greater certainty about the direction and the needs 
+in some areas than others. The pathways are colour-coded 
+to reflect the level of certainty.
+TRAVEL AND TRANSPORT DEMAND
+Advances in technology and changing lifestyles will 
+accelerate changes in the way people travel and behave 
+and drive improved transport services. We expect to see an 
+increase in the use of most travel modes driven in part by 
+increasing population and rising GDP .[6] 
+This is despite the changes that followed the COVID-19 
+pandemic, trends towards alternative forms of mobility and 
+rises in the cost of living.
+Growing demand for transport is a serious challenge 
+to the UK’s plan to reduce carbon-intensive activities by 
+2050. Reducing demand has a role to play alongside zero 
+emission technology and modal shift away from more 
+polluting transport modes. Policy changes and technology 
+advances that aid behaviour change can reduce demand.
+DIGITAL
+Digitalisation is already changing transport services and 
+we expect that impact to grow. Use of data and artificial 
+intelligence to integrate and optimise services will allow 
+millions of people to make journeys they would not have 
+previously made. It will also enable travellers to make 
+better informed journey decisions and mean greater 
+driver and pilot assistance in vehicles, increasing levels of 
+automation and better delivery services. 
+CONNECTIVITY
+Improved communications and data connectivity will 
+create opportunities for greater efficiency, new services 
+for travellers, and new business products and amenities. 
+We expect all vehicles and craft to be able to move 
+cooperatively by 2050. Infrastructure maintenance, traffic 
+planning, management and routing, refuelling systems 
+and freight operations across all modes will all benefit 
+significantly.
+ENERGY VECTORS
+The move to net zero by 2050 requires surface transport 
+to make a complete shift from fossil fuels to sustainably 
+produced electricity, hydrogen and other alternatives. For 
+transport, we expect the main transition will come between 2030 and 2050. Electric propulsion will be dominant by 
+2050 and requires significant battery production and raw 
+materials. We expect hydrogen to fuel 20% of heavy goods 
+vehicles and coaches and 5% of aircraft by 2050. Aviation 
+will still mainly use fossil fuels and will need to offset or 
+remove carbon dioxide equivalent emissions.
+AUTONOMY
+Autonomy will make vehicles and craft smarter, provide 
+accessible, fully autonomous transport and create new 
+services such as medical deliveries by drone. Autonomy 
+will be increasingly present and a significant part of the 
+value offering, enabling new services and business models. 
+We anticipate that road transport, air transport, rail freight 
+and domestic ferries will be predominately autonomous  
+by 2050. 
+BUSINESS MODELS
+Evolving customer needs and advances in technology 
+will transform business models and lead to bundling of 
+services, better use of resources and mass customisation. 
+The growth of online retail, improved logistics, use of 
+drones, greater understanding of insurance and risk and 
+improved connectivity will all have an impact on business 
+models.
+INFRASTRUCTURE
+UK transport infrastructure will adapt to changing lifestyles 
+and cleaner energy supplies. The need to meet net 
+zero will create significant new business opportunities. 
+Infrastructure development will include more green space 
+and water environments. Transport charging networks 
+will grow to serve the needs for both high and low power 
+charging, and transport networks will become smarter and 
+more reliable.
+The route ahead
+Changes to the transport system over the coming decades 
+present significant challenges and great opportunities for 
+the UK transport sector. By understanding and responding 
+to traveller needs, and using the strategic imperatives to 
+guide investments the UK can maximise societal benefits 
+and economic growth.
+We will use this vision and our assessment of the UK’s 
+relative strengths to determine where we invest our efforts 
+and resources. We also want this vision to inform and 
+guide our partners in the public sector and in industry 
+when they are making their investment decisions. We look 
+forward to working collaboratively to invest in the future  
+of transport.6 UK TRANSPORT VISION 20507 UK TRANSPORT VISION 2050Contents
+Key messages  .................................................................. 2
+Foreword .......................................................................... 3
+Executive summary .......................................................... 4
+Introduction  ...................................................................... 8
+Vision for UK transport 2050  .......................................... 10
+The drivers, enablers and pathways to 2050  ................... 12
+Travel and transport demand ................................................ 14
+Digital  ........................................................................................ 18
+Connectivity  ............................................................................. 20
+Energy vectors  .......................................................................... 24
+Autonomy  ................................................................................. 28
+Business models  .................................................................... 32
+Infrastructure ............................................................................ 37
+The route ahead  ............................................................. 40
+Annex 1  .......................................................................... 42
+References ..................................................................... 448 UK TRANSPORT VISION 2050Introduction 
+Transport enables mobility, communication, trade and other forms of 
+exchange between people. 
+The quality and efficiency of the transport system are 
+critical factors for a place, its economy and its residents’ 
+well-being. Good transport helps people to get jobs, access 
+services and enjoy social activities. 
+Transport connections also support businesses and trade, 
+bringing industries closer together and reducing barriers. 
+Transport industries directly contribute to the economy. 
+Transportation and transport manufacturing generated 
+more than £274 billion added value for the UK in 2022, 4% 
+of the total UK output [1], and efficient transport impacts 
+almost all other UK businesses [2][3][4]. 
+Time for change
+The way transport is delivered is changing. Transport 
+remains one of the largest sources of greenhouse gas 
+emissions in the UK, accounting for 25.5% in 2021 [5]. This 
+is incompatible with the UK’s legal commitment to reach 
+net zero. Regulation and consumer demand are also driving 
+change through the system.
+In parallel, technological advances are creating tools that 
+improve safety and efficiency and offer new business 
+models. These technologies and trends are also changing 
+lifestyles and the need to travel, reducing some demands 
+and increasing others. 
+These changes create challenges and opportunities for 
+those who deliver and use transport. Increasing digitalisation 
+and connectivity, the drive towards zero emissions and 
+sustainability, and a greater appreciation for travellers’ needs 
+are placing increasing demands on transport systems. 
+The development and adoption of innovative products and 
+services are increasingly important for UK competitiveness 
+and to delivering value and providing accessibility to all. The opportunity
+Transport’s wide-reaching impact and the high level 
+of change make it an area of major importance to 
+UK government and industry. There is opportunity 
+for substantial societal benefit, environmental gains, 
+increased productivity and greater economic growth. 
+This is recognised in the Department for Transport (DfT) 
+science and transport decarbonisation plans [4] and in the 
+government commitment to raise investment in research 
+and development, including through its UK Research and 
+Development Roadmap [7].9 UK TRANSPORT VISION 2050What do we mean by transport?
+Transport vision 2050 encompasses the use of vehicles, 
+fuels or energy vectors and supporting infrastructure to 
+move people and goods, and an assessment of what is 
+needed to support the future transport system, including 
+amounts and sources of energy, levels of connectivity and 
+data services. The vision details the expected vehicles or 
+vessel fleets in service at particular points in the timelines, 
+rather than the latest models being sold. 
+We do not include the construction, manufacture or 
+recycling of vehicles or supporting infrastructure, or the 
+production of fuels or energy vectors. This means we 
+exclude off-highway vehicles as they facilitate transport 
+rather than being transport themselves. We recognise 
+the need to work with constructors, manufacturers and 
+recyclers. This is addressed in the Innovate UK Materials 
+and Manufacturing vision. Similarly, we do not include 
+workforce skills and training. This is an area that requires 
+broader consideration beyond transport alone.Putting forward a vision
+This is the Innovate UK vision of UK transport in 2050 and 
+the steps along the way to achieving this. This is intended to 
+be an aspirational but realistic view of the future  
+transport system.
+The vision is tailored to UK challenges and opportunities 
+but is also a strong indicator of global trends. The UK 
+transport system must interact with and work as part of 
+a global system. The vision complements government 
+policy documents, building on these and drawing on current 
+evidence to provide specifics about the likely future.
+The transport vision will do three things:
+ inform our investments and activities. We’ll use this 
+vision of the future alongside other inputs, including 
+our international benchmarking work, and our 
+strategic priorities to guide our investments in the 
+future of transport
+ inform others investing in transport, including industry, 
+UK government and arm’s-length bodies. By having 
+a common view of the future, investments can 
+be aligned allowing the UK to gain the economic, 
+environmental and societal benefits more quickly and 
+at the appropriate value for money
+ provide a platform for discussion and debate. We 
+recognise that others may come to different conclusions 
+based on different evidence. We welcome challenge to 
+this vision that leads to constructive conversations on 
+how to align ourselves or acknowledge our differences 
+and will reflect this in future versions of the vision
+Our aim is to bring together UK government and industry 
+around a single common vision for the expected future of 
+UK transport. We intend this vision as an exercise in thought 
+leadership. It is available on the UKRI website, and we will 
+continue to update it regularly to reflect the pace of change 
+in transport. Innovate UK is the UK’s 
+innovation agency. 
+We support business-led innovation in all sectors, 
+technologies and UK regions. We help businesses grow 
+through the development and commercialisation of new 
+products, processes, and services. This access across 
+sectors and organisations gives us a unique view.
+Innovate UK and our partners will invest £2 billion in 
+transport between April 2021 and March 2025. These 
+investments are informed by our understanding of the 
+future of transport.
+This is the second iteration of our transport vision. We 
+have had input from industry and academia and from 
+our partners in UK Research and Innovation (UKRI) 
+(including Engineering and Physical Sciences Research 
+Council and Economic and Social Research Council), 
+Innovate UK Business Connect, Connected Places 
+Catapult, and the Department for Business and Trade, 
+the Department for Transport and their arms  
+length bodies.10 UK TRANSPORT VISION 2050The UK transport system will be recognised as an asset for 
+the UK, supporting people’s well-being and underpinning the 
+economy’s productivity. It will be a world leader in design, 
+innovation, manufacturing and deployment. The supporting 
+industry will provide high-quality and skilled employment and 
+continue to be a major contributor to UK GDP .
+The purpose of a transport system is to connect people 
+to other people and the things they need. The quality and 
+efficiency of a transport system are a key part of how a 
+place delivers for the people that live there. They are critical 
+for the economy and people’s well-being. Transport systems 
+should therefore focus on the user, what they need now, and 
+what they might need in the future. 
+Meeting societal and transport 
+user needs
+The 2050 traveller will experience a connected, cost-
+effective, accessible and reliable transport system. 
+Transport will be accessible to people of all ages, 
+locations and abilities. Comfort, convenience, safety 
+and perceived status will be critical in influencing user 
+decisions. Transport will be an integrated, energy efficient, 
+intermodal system, taking travellers from door-to-door 
+in an efficient, safe, affordable and sustainable manner, 
+offering an acceptable level of choice. Inclusivity will be 
+embedded as the transport system adjusts to suit the 
+traveller, connecting people regardless of age, gender or 
+ability. Travellers will be fully connected with work or leisure 
+activities during the entire journey. They will continue to be 
+productive and able to maximise the value of time spent 
+travelling. Travellers will experience near 100% reliability 
+and arrive on time. 
+Travellers will experience near  
+100% reliability and arrive on time Our strategic imperatives  
+The transport system is essential for our vision for the 
+UK, its economy and the wellbeing of the population. Our 
+vision is influenced by three strategic imperatives that 
+are mutually supportive. The UK will increasingly meet 
+transport and traveller needs with a transport system that 
+embraces innovation to be:
+NET ZERO
+Almost all transport will be zero emission at point of use in 
+2050, and the remainder offset. There will be a complete 
+shift to sustainably produced electricity, hydrogen and 
+other alternatives requiring new and revised infrastructure 
+to produce and distribute energy vectors. Significant 
+changes to vehicles and vessel design and production will 
+radically alter production and supply chains. This carries 
+risks and opportunities for manufacturing and supply 
+chains, which will need to adapt and scale-up to secure 
+market position and grow.
+Emissions from the manufacture of transport solutions 
+will be zero or offset with raw materials sustainably 
+and ethically sourced. The Innovate UK materials and 
+manufacturing vision  focuses on how this will be 
+achieved.Vision for UK transport 2050
+Our vision is for a 2050 transport system that enables the movement of people 
+and goods from one location to another through safe, seamless, net zero, 
+connected, cost effective , accessible and reliable  means.11 UK TRANSPORT VISION 2050DIGITALL Y ENABLED
+Advances in robotics, autonomy and artificial intelligence 
+along with increasing connectivity and data transmission 
+and processing will create opportunities for greater 
+efficiency, new services for travellers and new business 
+models in multi-billion global markets and be critical to the 
+operation of transport as a national infrastructure. 
+The 2050 UK transport system will be fully integrated, 
+providing interconnected mobility that allows the seamless 
+and sustainable transport of people and goods from one 
+location to another. This includes both movements within 
+the UK and those made on overseas legs of journeys to 
+and from the UK.
+RESILIENT AND RESPONSIVE
+All travellers will feel safe to choose from all transport 
+options, and confident in reaching their destination.
+Deaths and serious injuries from transport-related 
+incidents will be reduced to near zero in 2050 through 
+systems to protect travellers and other users. When 
+incidents do occur, technology will be reliable enough to 
+redirect travellers, and provide real-time information to both 
+incident-response teams and those travelling. Standards 
+will ensure safety and interoperability of transport products 
+and services across modes, regions and data sources. 
+Data, including personal data, will be protected, and 
+systems will be secure from cyber-attack. The transport 
+network will be secure, resilient and meet the challenges of 
+climate adaption, such as changes to weather and water 
+levels. 
+Transport-related deaths and 
+serious injuries will be reduced to 
+near zero in 2050
+Economic Contribution 
+By using the strategic imperatives to guide investments 
+in the transport system, the UK will meet transport and 
+traveller needs. It will also deliver economic impact. 
+A high-quality, efficient and effective transport system 
+in 2050 makes the UK a more productive place to do 
+business and drives economic growth, exports, and jobs. 
+It will be underpinned by the global leadership of UK 
+companies and academia in research and development, 
+manufacturing and delivery of transport systems, 
+infrastructure, and resilient and secure supply chains.
+DRIVER: TRAVEL AND TRANSPORT DEMAND
+ENABLER: DIGITAL 
+CONNNECTIVITY
+ENERGY VECTORS
+AUTONOMY
+BUSINESS MODELS
+INFRASTRUCTURE
+12 UK TRANSPORT VISION 2050The drivers, enablers and pathways  
+to 2050 
+In this second version of the transport vision, we have identified key drivers 
+and enablers that shape the future transport system and five pathways where 
+steps need to be taken to achieve the 2050 vision. They are:
+Travel and transport demand is driven by society and economic needs. The 
+transport system must understand and respond to these requirements. 
+Digital, a key enabler, has been added to this second version of the transport 
+vision. It impacts all pathways, so we have chosen to outline where those 
+impacts are rather than have a separate pathway. Each pathway also reflects 
+the expected impact of digital.
+The five pathways set out our expectations in the timeframe between now and 
+2050. They draw on referenced sources and our key assumptions based on our 
+sector knowledge and input from a wide range of stakeholders. 
+We have reviewed different scenarios for each key area but have included only a 
+single scenario that we consider the most likely path and outcome. We will keep 
+this under review and update as needed in future versions.
+The pathways lay out a central assumption for the future and the routes to 
+it. Our certainty and confidence in some routes and solutions is greater than 
+others. Areas of higher confidence in a destination or route should provide 
+greater certainty for investors in the system. 
+Where our certainty is lower, there is a higher chance that the ultimate solutions 
+and routes will be different to those we have identified. We will update the 
+pathway accordingly as new information becomes available. The shadings in 
+figure 1 show how we represent our level of certainty in the pathways. 
+The pathways contain many abbreviations for the sake of brevity. A list of 
+common abbreviations can be found in Annex 1 .
+There are fundamental, technical and applied research and innovation 
+challenges that need to be tackled across and within each pathway and 
+transport mode even where there is more certainty.
+We have broken the transport system down into these areas. However, we 
+recognise that there is significant interaction between pathways. A holistic 
+approach is clearly needed to keep the UK on the path to 2050. 13 UK TRANSPORT VISION 2050Certainty key used in each pathway
+high 
+med
+low
+speculativeTravel and transport demand
+Advances in technology and changing lifestyles will accelerate changes in the 
+way people travel and behave and drive improved transport services. 
+Predicting demand beyond 2030 with confidence is 
+challenging. The sector’s size and huge variables, including 
+changing demographics, create a melting pot of possible 
+scenarios. Using available references and informed opinion 
+we have presented one possible scenario to encourage 
+debate and draw our conclusions.
+Population growth and rising GDP historically result in 
+greater demand for mobility. The emergence of COVID-19 
+[7], a greater push for reducing travel [36] and alternative 
+forms of mobility ought to be challenging this trend. An 
+increasing focus on ‘avoid’ (or reduce non-essential travel), 
+‘shift’ (to more sustainable transport modes) and ‘improve’ 
+(vehicle technology and efficiency) [60] is expected. The 
+Scottish Government have set their reduce, switch and 
+combine approach as part of a commitment to reducing 
+car kilometres by 20 per cent by 2030 [41]. Cost of living, the 
+increase in energy prices and industrial action have also 
+impacted the way people travel. More than a third of British 
+adults reported cutting back on non-essential journeys 
+because of rising cost of living [59]. However, most sources 
+predict an increase in most travel modes both in the UK 
+and globally [32] [35] [40].
+AVIATION
+World passenger numbers in 2022 were estimated to 
+be down by up to 1.281 billion (29%) compared to 2019. 
+Passenger demand is expected to recover by the mid-
+2020s and then grow 1.4% a year to 2050. This assumes 
+demand management measures are not implemented. 
+We expect international air freight to grow 5.5% a year to 
+2030 and then 4.5% a year to 2050. However, volumes will 
+remain comparatively low given high cost compared to 
+shipping, rail or road freight. Advanced air mobility (AAM) 
+– air transportation services for people and/or cargo using 
+revolutionary new aircraft – is forecast to be worth US$510 
+billion by 2040 [51] and there could be more than 900,000 
+operational drones by 2030 [5]. 
+MICROMOBILITY AND ACTIVE TRAVEL
+Active travel (walking and cycling) rose during the pandemic. 
+The Department for Transport’s Gear Change [21] strategy 
+from 2020, has a challenging aim for 50% of all journeys 
+in urban areas in England to be cycled or walked by 2030. 
+Higher energy prices and cost of living have also impacted 
+travel, and 35% of people have replaced some car journeys with walking or cycling [53]. However current statistics show 
+levels of walking and cycling are relatively unchanged over 
+the last 20 years [70]. Micromobility – use of electric and 
+human-powered vehicles under 600kg and with speeds 
+under 25kmph – will be prevalent in urban areas from 
+2025 and provide a transport option for all trips under 8km 
+[23]. A balance between promoting active travel, with its 
+health benefits, and use of micromobility will be necessary. 
+Micromobility and active travel plans and policies for rural 
+areas are less well developed.
+MARITIME
+Shipping accounts for 95% of international freight arriving 
+in the UK [9]. 447.9 million tonnes of goods were handled 
+between June 2021 and June 2022 (an increase of 4% on 
+the previous year) [11]. Freight is expected to grow in the 
+short to medium term with the advent of new freeports 
+[43] and the associated improvements in efficiency and 
+cost of operations at UK ports [12]. Coastal ports and their 
+interaction with larger hubs will unlock the potential of 
+short shipping for freight movement between 2025 and 
+2040 [12]. However, coastal ports will require investment to 
+handle increased freight volumes efficiently [44], and there 
+will be a need for short-distance transfer from port to 
+destination by road or rail freight as required.
+RAIL
+Passenger journeys in January to March 2023 were 88% 
+of the journeys in the same quarter four years ago (pre-
+pandemic, 2019) [67]. It is still relatively early to see the 
+long-term impacts of COVID-19 on rail (and other forms 
+of) transport. Passengers will continue to use rail, but 
+changing home and office work patterns are impacting 
+passenger numbers [45]. The volume of rail freight will grow 
+to more than pre-COVID-19 levels, with the government 
+setting a target for at least 75% growth in rail freight 
+by 2050 [68]. This coincides with wider improvements, 
+including in access and flexibility [31]. The introduction of 
+some automation to parts of the network will also have 
+significant impact. We expect improved rail links, with 
+freight hubs bringing modal shift to track in some cases. 
+ BUS  
+Local bus passenger journeys in England recovered to 3.09 
+billion in the year ending June 2022. Whilst numbers have 
+14 UK TRANSPORT VISION 205015 UK TRANSPORT VISION 2050 15 UK TRANSPORT VISION 2050risen each quarter, they are still 27% below pre-COVID-19 
+levels [46]. Bus use nationally has been declining [69] and we 
+forecast this to continue to 2040 due to modal shift and 
+increases in shared services. This trend could, however, 
+be reversed if projected reductions in operational costs 
+are passed on to the customer and bus services grow in 
+quality, frequency and coverage [47]. Recent bus subsidies 
+and franchising in some regions could reverse projections. 
+ROAD LIGHT COMMERICAL VEHICLES (LCV)
+LCV traffic increased 11.9% between 2020 and 2021 [18]. 
+This is despite non-store (online) retail sales volumes 
+falling since early 2021 as the wider economy re-opened 
+after COVID-19. December 2022 to January 2023 saw 
+non-store sales volumes rise by 2% [48]. Government data 
+shows that LCV (and HGV) traffic is significantly above pre-
+pandemic levels, and that LCV traffic will grow in line with 
+other traffic by between 8% and 54% between 2025 and 
+2060. The same National Road Traffic Projections 2022 
+predicts LCV mileage to grow from 57 billion in 2025 to 77 
+billion by 2060 [35]. However, disruptive modes that support 
+last-mile delivery, including drones, may remove some 
+LCVs or miles from UK roads by 2040. 
+ROAD HEAVY GOODS VEHICLES (HGV)
+Truck movements and distance are expected to increase 
+from 16 billion miles in 2025 to 18 billion by 2060, only a 
+moderate increase when compared to LCVs [35]. However, 
+truck movements will be focused on highways and the 
+strategic road network. Noise and emission reductions 
+associated with zero emission capability will  
+improve operations. 
+ROAD CARS
+While car traffic remained lower than pre-pandemic levels 
+in 2021 (down 15.8% compared to 2019), there was an 
+increase of 12.2% from 2020 to 2021 [18]. However, changes 
+in car use are notoriously difficult to predict given changes 
+in technology, society and in transport systems [47]. While 
+car traffic is projected to increase, the Committee on 
+Climate Change reports that approximately 9% of car miles 
+can be reduced or shifted to lower-carbon modes by 2035, 
+increasing to 17% by 2050 [36]. The challenge remains to 
+ensure alternatives provide comparative accessibility, cost 
+and convenience, as private car use remains the most 
+attractive option for many reasons.TRANSPORT POLICY
+The push for zero emission vehicles and modal shift mean 
+alternative tax and subsidy approaches will be needed 
+if overall transport tax revenues are to remain level or 
+increase. This may include road pricing or congestion 
+charges. Policies that influence pricing and operating costs 
+will in turn impact demand. Any changes to the relatively 
+low global tax regimes for air and maritime transport are 
+likely to require international agreement but are one way to 
+encourage decarbonisation [50].
+Projected increased demand for transport is a serious 
+challenge to the UK’s plan to reduce carbon-intensive 
+activities by 2050. Demand can be reduced, but zero 
+emission technology and modal shift away from more 
+polluting transport modes is equally important. Policy 
+changes and technology advances that aid behaviour 
+change can encourage the shift, such as future 
+decentralised and remote operations reducing the need 
+to travel to work. COVID-19’s impact on society’s work 
+and leisure patterns could result in longer term demand 
+reduction and emissions benefits. Some reduced travel 
+numbers do not tell the whole story however, with less 
+commuting but more suburban car travel for example. 
+Post-pandemic economic recovery packages targeted 
+at decarbonisation and behaviour will greatly accelerate 
+the transition to sustainable transport [40]. Between now 
+and 2050, national and international taxes and subsidies 
+will also continue to influence both societal and business 
+approaches to transport. These will aid the delivery of an 
+optimised transport system.
+Figure 1: Vehicle miles travelled by selected vehicle  
+types in great Britain, 2011 - 2021
+140
+130
+120
+110
+100
+90
+80
+2011 2013 2015 2017 2019 2021Index of v ehicles miles 2011 = 100 Vans
+(Light
+Commercial
+Vehicles) 
+ 
+Lorries
+(Heavy Goods
+Vehicles) 
+All  Motor
+Vehicles 
+ 
+Cars
+& Taxis 12.2% -15.8%11.9% -12.1%7.9% 1.6%11.9% 1.7%Change 
+2019 - 2021  Change
+2020 - 2021  
+Source: Department for Transport Road Traffic Estimates Great Britain 2021,  
+September 2022 [18]■ Vans (LCV) ■ Lorries   
+(HGV)■ All Motor 
+Vehicles■ Cars & Taxis16 
+UK TRANSPORT VISION 205016 UK TRANSPORT VISION 2050Travel & transport demand pathway
+Transport 
+modes Elements 2023 position By 2025 By 2030 By 2040 By 2050
+MaritimeMarket DriversPax travel at historic low. Freight movements 
+hampered by C19 and EU exitEU Exit offers new way to trade incl. rise of 
+Freeports. Pax travel upCruise sector deadline to achieve 40% 
+emission reduction from 2008 levelsGrowth in line with Net Zero agenda. Smart 
+tech ensures high demandIntegrated, connected and zero  
+carbon operations
+PassengerHydrogen and batteries to make greater inroads 
+into the ferry and cruise sectors in 2023 [66]Pax growth close to pre-pandemic levels [12] and 
+increased demand for sustainable cruises [13] Pre C19 pax growth projections resumeZero emission option for domestic ferry and 
+leisure activitiesPorts onward connections make them a 
+multi-modal sustainable transport hub
+Freight95% of goods moved by ships in 2020 [9]Tonnage +3% dry bulks and containers Tonnage +8% compared to 20 level [14]Tonnage +23% compared to 20 level [14]Tonnage +41% compared to 20 level 
+In 2021 Tonnage traffic has continued to 
+recover towards pre-pandemic levels [11]Liquid bulk movements down due to less crude 
+oil being shipped [14]Increase in coastal shipping sees modal shift 
+away from roadCostal ports and their interaction with larger 
+hubs unlock potential of short shipping [16}Crude oil movements -43%
+Total tonnage +4% to 447.9m, June 2021-22 [11] Freeports increase trade volume, more vessels 
+in UK waters [15] Liquified gas +177% compared to 2020 [14]
+Micromobility 
+and Active 
+TravelMarket DriversC-19, cost of living and increase in fuel and 
+energy prices have impacted the way we travelPublic scooter use & shared-vehicle schemes 
+legalised Urban movements center around walking and 
+cyclingLarge-scale improvement in active travel & 
+micromobility infrastructureActive travel and micromobility embedded 
+into transport system
+Walking 2021 walking = 31% of all trips [55]Walking displaces other modes post C19 50% of urban journeys cycled or walked by 
+2030 [21] Health, wellbeing and accessibility benefits continue to result in high levels of active travel
+Cycling 2021 cycling = 2% of all trips [55]Gear Change start showing results [21}
+Micromobility (all modes)eScooter trials primed in circa 30 cities [56]ebike sales nearly triple [22] +5% user demand over 2025 levels [24]Micromobility 10% pax mode share Micromobility (incl. UAVs) serves majority of  
+last-mile deliveries +22.5m delivery app users in 2020 [19] [20]Journeys <8km travelled by micromobility [23]Complementary to public transport [52]Micromobility 30% of urban deliveries [25]
+RailMarket DriversPost-C19 travel remains lower than pre-C19. 
+Rail usage impacted by industry strikesCovid’s impact still felt. Some freight increases 
+as trade increasesUse of sunk (infrastructure) investments. 
+Balance pax and freight [38]Autonomy, connectivity and business models 
+[38] could see more passengersWholesale integration with energy and wider 
+transport system
+Passenger359m journeys made in Jul - Sep 22, 80.3% of 
+the same quarter of 2019 [26]Pax demand still 10% below pre-lockdown 
+levelsPax rail mode share and demand return to 
+pre-pandemic levels [30]Pax-km +5% over pre-pandemic levels with 
+mode share +5% [30]Pax rail mode share and demand flat on 2040 
+levels [30]
+In 2021 rail trips are 1% of all journeys [57]
+Almost half of rail journeys for commuting [57]
+Freight16.87bn net tonne kms rail freight / year [57]2.9% annual growth after 2022 [30]Demand +25% over 2022, mode share 10% [30]Demand +65% over 2022, mode share 12% [30]Demand +65% over 2022, mode share 14% [32]
+Freight moved -6.4% in Jul – Sep 22 compared  
+with 21 [28]Flexibility and road, air and sea tech 
+advances could hamper demandModal competition drives down cost
+Air 
+TransportMarket DriversAAM Research, development and innovation, 
+tech trials and piloted dronesPax AAM available but piloted. Large growth in 
+drone freight delivery. Air travel upPax AAM available but piloted. Large growth 
+in drone freight deliveryFreight delivery and pax transport drives AAM 
+deploymentEconomics drive AAM forward. Intern’ air 
+freight remains low vol high price
+Air Mobility VehiclesDesign and development ramping up Rural routes certified for BVLOS 900k drones in UK airspace [5]
+High demand - middle mile deliveries and into 
+rural areas50% of mode share for delivery
+Investor confidence and consumer interest high 
+[0] Early Adopters - Gov. and public services [5] Commercially viable for metro air services - 
+regs in place [6] Common modal option for Pax
+Civil Aviation Global pax reduction of c.1.3m (-29%) [1] 
+Domestic 80% pre-C19 levels by 2022International travel back to 2019 levels [3] Passenger numbers approx. 13% higher in 
+2030 than in 2019 [3]Passenger numbers approx. 38% higher in 
+2040 than in 2019 [3]Passenger numbers approximately 60% 
+higher in 2050 than in 2019 [3]
+International Freight 2020 UK airports handled 2m tonnes [39]Air Freight - high value but very low volume Air freight 5.5% compound growth [7]Air freight 4.5% compound growth rate [7]
+RoadMarket DriversOEMs / gov. pledge to zero. TCO of ZEVs 
+down. Freight up due to trade and consumer 
+behaviourPrivate car ownership continues upward.  
+Last mile delivery options impact LCVsReduced car travel encouraged. Consumers 
+seek personalisation, cost and accessibilityAutonomy improves economics of HGVs. 
+Personalised travel and sharing increaseShift to personalised and on demand.  
+17% of car journeys replaced or removed [36]
+Car2021 car traffic -12.1% from 2019 [18]+5% increase in demand vs 2015 [35]+13% demand vs 2015 [35] +25% in demand vs 2015 [35]Cars up to 81% of traffic mileage [35]
+Depression in mobility due to C-19 pandemic 
+being short-livedLess daily commute and public transport. 
+Disincentivisation for private car use growsTCO down and population upReduction in TCO, uptake of CAVs and shared 
+services [35]40% net increase in demand vs 2015 from 
+CAVs and shared services [35]
+9% of journeys replaced / removed [36]Increases in effective road capacity
+Bus & CoachesBus usage recovered to between 77% and 93% 
+of pre-Covid use [53]Demand decrease - less commuting and shift 
+to micromobilityIncreased leisure travel difficult to satisfy with 
+public busesBus travel down given more mode choice and 
+reduced cost for personalised /  
+private travelTravel increasingly personalised = significant 
+drop in bus demand 
+Long distance low cost services continue Buses retained for commuting
+Freight - Van /  
+Light commercialTraffic 11.9% from 2020 to 2021 to 54.4bvm [18]‘+7% demand compared to 2018 [35]Growth of between 23% and 108% [35]
+LCVs 18% of total UK  traffic [18]Miles travelled may not reduce due to increased volume of goods
+Demand  may exceed pre c19 levels [33]Increase in other last mile mode options may limit LCV demand
+Freight - HGVLorry traffic Increased by 7.9% from 2020 to 
+2021 to 17.5bvm [18]Flat to gradual increase in demand of 2% 
+compared to 2018 Flat to gradual increase in demand of 4% 
+compared to 2018 [35] HGV autonomy switch to HGVs for  
+domestic freight [37]Increase in demand of up to 12% compared 
+to 2018 [35]
+Lorry traffic in 2021 was 1.6% higher than 2019 
+levels. [18]International RORO up due to improved 
+economies [37] Distance travelled reduced - influence of wider 
+transport system 17 
+UK TRANSPORT VISION 205017 UK TRANSPORT VISION 2050CERTAINTY high med low speculative
+Travel & transport demand pathway
+Transport 
+modes Elements 2023 position By 2025 By 2030 By 2040 By 2050
+MaritimeMarket DriversPax travel at historic low. Freight movements 
+hampered by C19 and EU exitEU Exit offers new way to trade incl. rise of 
+Freeports. Pax travel upCruise sector deadline to achieve 40% 
+emission reduction from 2008 levelsGrowth in line with Net Zero agenda. Smart 
+tech ensures high demandIntegrated, connected and zero  
+carbon operations
+PassengerHydrogen and batteries to make greater inroads 
+into the ferry and cruise sectors in 2023 [66]Pax growth close to pre-pandemic levels [12] and 
+increased demand for sustainable cruises [13] Pre C19 pax growth projections resumeZero emission option for domestic ferry and 
+leisure activitiesPorts onward connections make them a 
+multi-modal sustainable transport hub
+Freight95% of goods moved by ships in 2020 [9]Tonnage +3% dry bulks and containers Tonnage +8% compared to 20 level [14]Tonnage +23% compared to 20 level [14]Tonnage +41% compared to 20 level 
+In 2021 Tonnage traffic has continued to 
+recover towards pre-pandemic levels [11]Liquid bulk movements down due to less crude 
+oil being shipped [14]Increase in coastal shipping sees modal shift 
+away from roadCostal ports and their interaction with larger 
+hubs unlock potential of short shipping [16}Crude oil movements -43%
+Total tonnage +4% to 447.9m, June 2021-22 [11] Freeports increase trade volume, more vessels 
+in UK waters [15] Liquified gas +177% compared to 2020 [14]
+Micromobility 
+and Active 
+TravelMarket DriversC-19, cost of living and increase in fuel and 
+energy prices have impacted the way we travelPublic scooter use & shared-vehicle schemes 
+legalised Urban movements center around walking and 
+cyclingLarge-scale improvement in active travel & 
+micromobility infrastructureActive travel and micromobility embedded 
+into transport system
+Walking 2021 walking = 31% of all trips [55]Walking displaces other modes post C19 50% of urban journeys cycled or walked by 
+2030 [21] Health, wellbeing and accessibility benefits continue to result in high levels of active travel
+Cycling 2021 cycling = 2% of all trips [55]Gear Change start showing results [21}
+Micromobility (all modes)eScooter trials primed in circa 30 cities [56]ebike sales nearly triple [22] +5% user demand over 2025 levels [24]Micromobility 10% pax mode share Micromobility (incl. UAVs) serves majority of  
+last-mile deliveries +22.5m delivery app users in 2020 [19] [20]Journeys <8km travelled by micromobility [23]Complementary to public transport [52]Micromobility 30% of urban deliveries [25]
+RailMarket DriversPost-C19 travel remains lower than pre-C19. 
+Rail usage impacted by industry strikesCovid’s impact still felt. Some freight increases 
+as trade increasesUse of sunk (infrastructure) investments. 
+Balance pax and freight [38]Autonomy, connectivity and business models 
+[38] could see more passengersWholesale integration with energy and wider 
+transport system
+Passenger359m journeys made in Jul - Sep 22, 80.3% of 
+the same quarter of 2019 [26]Pax demand still 10% below pre-lockdown 
+levelsPax rail mode share and demand return to 
+pre-pandemic levels [30]Pax-km +5% over pre-pandemic levels with 
+mode share +5% [30]Pax rail mode share and demand flat on 2040 
+levels [30]
+In 2021 rail trips are 1% of all journeys [57]
+Almost half of rail journeys for commuting [57]
+Freight16.87bn net tonne kms rail freight / year [57]2.9% annual growth after 2022 [30]Demand +25% over 2022, mode share 10% [30]Demand +65% over 2022, mode share 12% [30]Demand +65% over 2022, mode share 14% [32]
+Freight moved -6.4% in Jul – Sep 22 compared  
+with 21 [28]Flexibility and road, air and sea tech 
+advances could hamper demandModal competition drives down cost
+Air 
+TransportMarket DriversAAM Research, development and innovation, 
+tech trials and piloted dronesPax AAM available but piloted. Large growth in 
+drone freight delivery. Air travel upPax AAM available but piloted. Large growth 
+in drone freight deliveryFreight delivery and pax transport drives AAM 
+deploymentEconomics drive AAM forward. Intern’ air 
+freight remains low vol high price
+Air Mobility VehiclesDesign and development ramping up Rural routes certified for BVLOS 900k drones in UK airspace [5]
+High demand - middle mile deliveries and into 
+rural areas50% of mode share for delivery
+Investor confidence and consumer interest high 
+[0] Early Adopters - Gov. and public services [5] Commercially viable for metro air services - 
+regs in place [6] Common modal option for Pax
+Civil Aviation Global pax reduction of c.1.3m (-29%) [1] 
+Domestic 80% pre-C19 levels by 2022International travel back to 2019 levels [3] Passenger numbers approx. 13% higher in 
+2030 than in 2019 [3]Passenger numbers approx. 38% higher in 
+2040 than in 2019 [3]Passenger numbers approximately 60% 
+higher in 2050 than in 2019 [3]
+International Freight 2020 UK airports handled 2m tonnes [39]Air Freight - high value but very low volume Air freight 5.5% compound growth [7]Air freight 4.5% compound growth rate [7]
+RoadMarket DriversOEMs / gov. pledge to zero. TCO of ZEVs 
+down. Freight up due to trade and consumer 
+behaviourPrivate car ownership continues upward.  
+Last mile delivery options impact LCVsReduced car travel encouraged. Consumers 
+seek personalisation, cost and accessibilityAutonomy improves economics of HGVs. 
+Personalised travel and sharing increaseShift to personalised and on demand.  
+17% of car journeys replaced or removed [36]
+Car2021 car traffic -12.1% from 2019 [18]+5% increase in demand vs 2015 [35]+13% demand vs 2015 [35] +25% in demand vs 2015 [35]Cars up to 81% of traffic mileage [35]
+Depression in mobility due to C-19 pandemic 
+being short-livedLess daily commute and public transport. 
+Disincentivisation for private car use growsTCO down and population upReduction in TCO, uptake of CAVs and shared 
+services [35]40% net increase in demand vs 2015 from 
+CAVs and shared services [35]
+9% of journeys replaced / removed [36]Increases in effective road capacity
+Bus & CoachesBus usage recovered to between 77% and 93% 
+of pre-Covid use [53]Demand decrease - less commuting and shift 
+to micromobilityIncreased leisure travel difficult to satisfy with 
+public busesBus travel down given more mode choice and 
+reduced cost for personalised /  
+private travelTravel increasingly personalised = significant 
+drop in bus demand 
+Long distance low cost services continue Buses retained for commuting
+Freight - Van /  
+Light commercialTraffic 11.9% from 2020 to 2021 to 54.4bvm [18]‘+7% demand compared to 2018 [35]Growth of between 23% and 108% [35]
+LCVs 18% of total UK  traffic [18]Miles travelled may not reduce due to increased volume of goods
+Demand  may exceed pre c19 levels [33]Increase in other last mile mode options may limit LCV demand
+Freight - HGVLorry traffic Increased by 7.9% from 2020 to 
+2021 to 17.5bvm [18]Flat to gradual increase in demand of 2% 
+compared to 2018 Flat to gradual increase in demand of 4% 
+compared to 2018 [35] HGV autonomy switch to HGVs for  
+domestic freight [37]Increase in demand of up to 12% compared 
+to 2018 [35]
+Lorry traffic in 2021 was 1.6% higher than 2019 
+levels. [18]International RORO up due to improved 
+economies [37] Distance travelled reduced - influence of wider 
+transport system 18 UK TRANSPORT VISION 2050Digital
+The digital revolution will transform transport by using data and artificial 
+intelligence to integrate and optimise existing services and allow millions of 
+people to make journeys that were previously inaccessible. 
+The increasing levels of connectivity and processing 
+power mean increasing amounts of data can be collected, 
+transmitted and processed. This is changing services, 
+business models and traveller experiences by delivering 
+information, recommendations and actions for individual 
+travellers, transport providers and the transport system.
+The digital revolution is already impacting daily journeys, 
+including through digital tickets or dynamic planning of 
+journeys that take account of changes in the transport 
+system as they happen. Vehicles have increasing levels of 
+automation. Assisted braking, lane keeping and parking now 
+regularly feature in cars. And, behind the scenes, digital tools 
+are used to make more cost-effective or efficient decisions 
+such as on maintenance schedules.
+We expect digitalisation to have an increasing impact in  
+the future. 
+Cyber-physical systems such as digital twins – real-time 
+digital counterparts of physical objects, systems and 
+processes - will enable transport planners to efficiently 
+model scenarios to understand impacts and optimise 
+decision-making. Real-time information will provide live 
+insights and the ability to proactively intervene and fix any 
+emerging problems, increasing resilience and safety. 
+Travellers will be offered more journey-focused ticketing, 
+with greater flexibility to make the right journey for the 
+individual context and circumstances or in response to 
+changes as they happen in the transport system.
+Increasing levels of automation will mean vehicles and craft 
+can operate without drivers or pilots, increasing safety and 
+efficiency and reducing cost. Public transport and deliveries 
+will be able to expand into under-served areas, and users will 
+be able to access on-demand services to make both end-
+to-end journeys and to connect to further transport options. 
+Both increase travel options and increase accessibility  
+and inclusion.
+The transport system must operate as a whole to truly 
+unlock the value of digitalisation of transport, with 
+secure but frictionless data access and decisions made 
+automatically in a way that is fully trusted and safe. This 
+requires a systems approach. International collaboration will 
+be needed, and the UK will need to manage the risks and 
+opportunities of international partnering and supply chain to deliver critical services. The way digitalisation is applied 
+across the transport system will impact and be impacted by 
+multiple different areas and stakeholders.
+WIDER TRANSPORT NETWORK
+Engagement across the transport sector is needed to 
+realise the benefits of digitalisation. We have summarised 
+below the key ways that digitalisation of transport over the 
+coming decades interacts with and impacts on the main 
+trends presented in the six pathways. Whilst digitalisation 
+can enhance the progress set out in this vision, it is crucial 
+that a wide range of stakeholders are engaged to maximise 
+impacts and benefits. This includes communication with 
+travellers to maximise understanding and adoption of new 
+products and services.
+TRAVEL AND TRANSPORT DEMAND
+Predicting transport usage is extremely difficult and 
+uncertainty is high even across the rest of this decade. 
+Whilst one vision out to 2050 is presented, there remains 
+significant scope to accommodate and influence shifting 
+passenger flows and behaviours to deliver a more effective 
+and user-centric transport network. Digitalisation will provide 
+new and far greater insights into the transport network 
+both in real time and in modelling future scenarios. This will 
+enable decision-makers to balance supply and demand and 
+plan effectively for the future. 
+CONNECTIVITY
+Greater connectivity is a key to more efficient operations 
+and to transport providers offering a wider range of 
+services to make journeys more appealing. These services 
+include traffic management in real time, traffic, service and 
+infrastructure planning and user services whilst travelling. 
+Connectivity needs to be combined with other digital tools to 
+deliver this. 
+Key to this connectivity will be effective collaboration and 
+dialogue between the wide range of stakeholders across the 
+transport network and telecoms industry in areas such as 
+availability, compatibility, accountability, and transparency in 
+data exchange. 19 UK TRANSPORT VISION 2050ENERGY VECTORS
+Transport will transition to new renewable energy sources 
+over the coming decades. The transition to net zero also 
+requires vehicles and refuelling or charging infrastructure to 
+be used in a more efficient way to reduce the total energy 
+demand for transport. Digitalisation of the transport network 
+will enable more efficient traffic flow, smoother driving 
+operations and better connections to infrastructure. 
+AUTONOMY
+Increasing autonomy will bring significant benefits, including 
+safety, efficiency and inclusivity. Decision-making is at the 
+heart of autonomy and needs to be trusted by the public, 
+regulators, insurers and others. 
+That decision-making process must be interrogatable and 
+understandable to enable learning and testing before it is 
+approved for use, and it must be secure and robust when 
+in use. AI must be developed and deployed responsibly. 
+Multiple digital tools are needed, including efficient 
+processing, security by design, robust data management 
+and secure connectivity. These tools will also support 
+developments outlined in other pathways. 
+INFRASTRUCTURE
+Digital technologies will help us manage infrastructure more 
+efficiently, supporting monitoring, more timely maintenance and better design and construction. Improvements to the 
+supporting cyber-physical infrastructure are needed for 
+digital technologies to deliver these benefits. This includes 
+improvements to connectivity, data processing and storage, 
+security and ability to evolve to meet future needs.
+BUSINESS MODELS
+Enabling appropriate, effective and secure data exchange 
+across the range of stakeholders in the transport network is 
+vital to improve the experience of transport users and bring 
+other benefits. The specific business models for transport 
+data exchange continue to evolve, so data models and 
+service providers need to remain flexible and responsive. 
+The value of data can be realised by the right business 
+models and governance, unlocking data flows, innovation 
+and growth. 
+Digital logic model
+Digitalisation can enhance capabilities across the transport 
+network, both within specific modes but also crucially in 
+creating more effective cross-modal operations. Whilst 
+the wider Transport Vision 2050 has been refreshed, the 
+inclusion of a digital section marks the most significant 
+addition to the vision. This section provides an overarching 
+logic model for digitalisation using digital tools and inputs 
+to achieve desired societal and economic benefits or 
+outcomes. Key areas for innovation are included as critical 
+to delivering these benefits. 
+Figure 2 - Digital logic model20 UK TRANSPORT VISION 2050Connectivity
+Improved communications and connectivity will create opportunities for greater 
+efficiency, new business products and new services for travellers. 
+Connecting transport systems and vehicles through cellular, 
+satellite and other communication technologies will allow 
+significant safety and efficiency gains and new services 
+for both travellers and freight. Increasing data and digital 
+connectivity will enable new business models and services, 
+unlocking significant new economic and social value. Secure 
+connectivity will be critical to the reliable operation of such 
+businesses and services.
+We expect this to be enabled by widespread 5G connectivity 
+replacing 4G in populated areas by 2030 [17] and LEO 
+satellite communications supporting areas of poor 
+terrestrial coverage. 6G trials from 2028 [17] and rollout will 
+be largely replaced with widespread 7G by 2050. These will 
+increasingly connect all road vehicles with each other and 
+enable a sophisticated central traffic management system. 
+Road vehicles will offer users increasing levels of connected 
+services, personalisation and experiences by 2030 [28] and 
+seamless transfers across connectivity modes by 2050. 
+Road vehicles will be capable of cooperating with other 
+nearby vehicles to support traffic flow and safety by 2050. 
+Road vehicles and road users will be 
+capable of fully cooperative operation 
+and interaction by 2050
+This improved connectivity will be vital for real-time data 
+gathering. It will provide key information for the public 
+sector, industry, travellers and maintenance. For example, 
+more real-time data will lead to improvements in traffic 
+management on traditional roads and to efficiencies, cost 
+savings and emissions reductions.
+Improved connectivity and data will bring planning and 
+payment services that allow people to choose alternatives 
+to private cars, including moving away from personal vehicle 
+ownership to usership models. 
+Connectivity will support the optimisation of freight 
+movement at ports, depots and across borders and will  
+help to maximise efficiencies in time, miles travelled and  
+use of space.
+The advanced train protection system, the European Train 
+Control System (ETCS) level 2, will be rolled out on almost all 
+UK passenger trains by 2040, and nearly all signalling will be 
+digital by 2050. Autonomous unmanned air traffic management (UTM) has 
+been demonstrated and could be adopted commercially in 
+the 2020s. This will be fully integrated into current air traffic, 
+including commercial flight, by 2050 [4].
+People using active forms of travel, such as cycling and 
+walking, will make more such trips [38] as they feel safer, 
+experience better air quality and have more confidence in a 
+connected and informed journey.
+Connectivity and rich data gathering underpin the creation of 
+cyber-physical systems such as digital twins. Better digital 
+twins will facilitate improved travel planning and routing. 
+AI and machine learning will enable improved simulations, 
+leading to more transformational infrastructure usage. 
+All recharging and refuelling systems of vehicles and craft 
+of all modes will be securely internet connected by 2030 
+to maximise energy management of electricity and all fuel 
+types for users and energy networks.
+Communications requiring precision timing will rely less on 
+satellite systems and use more resilient terrestrial  
+sources [39].
+21 UK TRANSPORT VISION 2050Figure 3 - Prediction of percentage of UK 
+roads with consistent terrestrial cellular 
+coverage by at least one mobile network 
+operator. 
+Roads with 5G, 6G, 7G may also have 
+lower generation technologies down to 
+4G. Levels up to 3G likely to be phased 
+out after 2024, so ‘0-3G’ after this time will 
+likely reflect no cellular connectivity.
+2023 2025 2030 2035 2040 2045 20500%20%40%60%80%100%
+0-3G
+4G
+5G 6G
+7G
+22 
+UK TRANSPORT VISION 205022 UK TRANSPORT VISION 2050Connectivity pathway
+Transport 
+modesElements 2021 position By 2025 By 2030 By 2040 By 2050
+All modesCellular connectivity Increasing connectivity
+Satellite communications, 
+positioning and timingIncreasing connectivity
+Air transportTraffic managementUpgrading air traffic infrastructure [1]PBN using satellites Defragmentation of EU Skies [2]Digital European Sky adopted
+ADS-B Trials [3]Airspace systemised [4]UTM and ATM running together UTM adopted
+OTS allows free routing [3]Digital sharing ATC across airports [5]
+User connectivity EAN allows connectivity [6]Widespread satellite connectivity [7] [8] [9]Users routinely connected
+MaritimeTraffic managementAnonymous tracking trials Shift to digital logistics via IoT Increased use of AIS and LRIT for tracking CAV capable vessels for berthing Individual consignment tracking
+5G unmanned CAV trials [10]Increased use of IoT devices Routes optimised for emissions [11]Port side control for consignments
+User connectivityReliance on land based comms HAPS and Sat comms increased speed Centre for Smart Shipping established [10]
+Expensive and unreliable sat comms [12]
+RailTraffic ManagementGSM-R migrates to packet switching FRMCS trials start ~40% pass. trains fitted with ETCS L2 >99% pass. trains ETCS L2 >Most trains ETCS L2
+ERTMS trials continue FMRCS roll out ~5% signalling will be digital ~40% signalling will be digital ~80% signalling will be digital
+Reduce ETCS deployment costs [13]ETCS level 2 roll out [13]
+User connectivity4G/5G provision location dependent Trackside fibre available for pass comms [14]Some mainlines have trackside coverage Most mainlines have trackside coverage
+Ongoing discussion for national 5G Some pass trains have wi-fi connectivity Trains have wi-fi connectivity
+RoadTraffic managementC-ITS enabling road safety, efficiency [15]More C-V2V built in or added on [16]Traffic control systems influenced by AIMore traffic systems influenced by AI 
+systemsJunctions controlled by AI [17]
+No. vehicles with C-V2X increases [18]Data linked to insurance premiums [19]New veh.s V2X / C-V2X, older ones retrofit AV routes influenced by road authorities
+Vehicles broadcast emergency events [20]Sensor enabling traffic management [21]Remote driving capability deployed
+Use of sensors to monitor traffic [22]Geospatial info improving data [23]Sensor tech for informed choice [24]
+AI traffic management trials in UK [25]
+User connectivity4G across most of network [17] [26]Many vehicles have connectivity [27]New vehicles have 5G capability [27]C3X on new vehicles: 70%: L3, 25%: L5 [28]All new vehicles have 7G
+C3X on new vehicles: 80%: L1, 10%: L2 [28]C3X on new vehicles: 40%: L2, 20%: L3 [28]In-vehicle infotainment run on 5G [27]New vehicles report status to VOSA [30]C3X on new vehicles: 25%: L4, 75%: L5 [28]
+ALN [31] and AURN data [32]Trials on 6G commence 2028 [17] [29]6G rollout by 2035 [33]
+AV monitoring established Automatic switching between 4G/5G
+Users informed about route issues [34]C3X on new vehicles: 60%: L3, 10%: L4 [28]
+Active travelTraffic management Sensor tech to enable C-ITS Improved connectivity [17] [34]Improved connectivity [17]Cooperative road usage trials Cooperative road usage common
+User connectivity Some info available on some routes [37]Active travel increases [29] [30]Active travel suppored by real time data [35] [38]Cycling and walking natural choice [35]Improved connectivity [36]23 
+UK TRANSPORT VISION 2050Connectivity pathway
+Transport 
+modesElements 2021 position By 2025 By 2030 By 2040 By 2050
+All modesCellular connectivity Increasing connectivity
+Satellite communications, 
+positioning and timingIncreasing connectivity
+Air transportTraffic managementUpgrading air traffic infrastructure [1]PBN using satellites Defragmentation of EU Skies [2]Digital European Sky adopted
+ADS-B Trials [3]Airspace systemised [4]UTM and ATM running together UTM adopted
+OTS allows free routing [3]Digital sharing ATC across airports [5]
+User connectivity EAN allows connectivity [6]Widespread satellite connectivity [7] [8] [9]Users routinely connected
+MaritimeTraffic managementAnonymous tracking trials Shift to digital logistics via IoT Increased use of AIS and LRIT for tracking CAV capable vessels for berthing Individual consignment tracking
+5G unmanned CAV trials [10]Increased use of IoT devices Routes optimised for emissions [11]Port side control for consignments
+User connectivityReliance on land based comms HAPS and Sat comms increased speed Centre for Smart Shipping established [10]
+Expensive and unreliable sat comms [12]
+RailTraffic ManagementGSM-R migrates to packet switching FRMCS trials start ~40% pass. trains fitted with ETCS L2 >99% pass. trains ETCS L2 >Most trains ETCS L2
+ERTMS trials continue FMRCS roll out ~5% signalling will be digital ~40% signalling will be digital ~80% signalling will be digital
+Reduce ETCS deployment costs [13]ETCS level 2 roll out [13]
+User connectivity4G/5G provision location dependent Trackside fibre available for pass comms [14]Some mainlines have trackside coverage Most mainlines have trackside coverage
+Ongoing discussion for national 5G Some pass trains have wi-fi connectivity Trains have wi-fi connectivity
+RoadTraffic managementC-ITS enabling road safety, efficiency [15]More C-V2V built in or added on [16]Traffic control systems influenced by AIMore traffic systems influenced by AI 
+systemsJunctions controlled by AI [17]
+No. vehicles with C-V2X increases [18]Data linked to insurance premiums [19]New veh.s V2X / C-V2X, older ones retrofit AV routes influenced by road authorities
+Vehicles broadcast emergency events [20]Sensor enabling traffic management [21]Remote driving capability deployed
+Use of sensors to monitor traffic [22]Geospatial info improving data [23]Sensor tech for informed choice [24]
+AI traffic management trials in UK [25]
+User connectivity4G across most of network [17] [26]Many vehicles have connectivity [27]New vehicles have 5G capability [27]C3X on new vehicles: 70%: L3, 25%: L5 [28]All new vehicles have 7G
+C3X on new vehicles: 80%: L1, 10%: L2 [28]C3X on new vehicles: 40%: L2, 20%: L3 [28]In-vehicle infotainment run on 5G [27]New vehicles report status to VOSA [30]C3X on new vehicles: 25%: L4, 75%: L5 [28]
+ALN [31] and AURN data [32]Trials on 6G commence 2028 [17] [29]6G rollout by 2035 [33]
+AV monitoring established Automatic switching between 4G/5G
+Users informed about route issues [34]C3X on new vehicles: 60%: L3, 10%: L4 [28]
+Active travelTraffic management Sensor tech to enable C-ITS Improved connectivity [17] [34]Improved connectivity [17]Cooperative road usage trials Cooperative road usage common
+User connectivity Some info available on some routes [37]Active travel increases [29] [30]Active travel suppored by real time data [35] [38]Cycling and walking natural choice [35]Improved connectivity [36]
+23 UK TRANSPORT VISION 2050CERTAINTY high med low speculative24 UK TRANSPORT VISION 2050 24 UK TRANSPORT VISION 2050Energy vectors
+The move to net zero by 2050 requires surface transport to make a complete 
+shift from fossil fuels to sustainably produced electricity, hydrogen and other 
+alternatives. Aviation will still use some fossil fuels and will need to offset or 
+remove carbon dioxide equivalent emissions.
+Despite efforts to decarbonise using high-blend biofuels 
+and electrification, fossil fuels will still be the dominant 
+energy vector in 2030. This has consequences for policies 
+to decarbonise transport. Most vehicles on the road will 
+use fossil fuels in internal combustion engines (including 
+hybrids), including at least two in three cars and vans, and 
+about 80% of HGVs and buses. Nearly 90% of maritime 
+crafts will be powered by liquid fuel. Around 15% of the 
+rail fleet will be wholly diesel-powered. Most energy for air 
+transport will be from fossil kerosene, although advanced 
+air mobility (AAM) will predominately operate using 
+renewable energy.
+There will be a major transition to other energy vectors 
+between 2030 and 2050. Digitalisation of the transport 
+network will enable more efficient traffic flow, smoother 
+driving operations and better connections to the 
+infrastructure, contributing significantly to this aim. All 
+domestic flights will be net zero by 2040 [3]. Goods and 
+people may travel shorter journeys by air, using new 
+electrified modes. 
+Decarbonising the maritime sector requires a range of 
+energy sources, although there is limited consensus on the 
+best approach. Methanol is now expected to play a more 
+significant role in 2050 with a reduced role for ammonia 
+in that timeframe. This update is in response to a growing 
+order book for methanol-fuelled ships [37]. A plan for rail 
+to achieve net zero is not yet approved but likely requires 
+mass electrification. Battery electric with renewable energy 
+will power more than 95% of cars and vans and the vast 
+majority of HGVs and buses in 2050.
+Hydrogen-powered aircraft will be commercialised by 
+2035. Hydrogen will begin as an energy vector for short 
+and medium-range aircraft, although it may be used earlier 
+in smaller commuter aircraft. Sustainable fuels and e-fuels 
+will increase in production and uptake for air transport by 
+2030, and hydrogen will power 5% of flights by 2050.
+Achieving net zero by 2050 means electrification will be the 
+dominant energy vector. It will power at least nine in ten 
+cars and vans, most buses, coaches and HGVs, most rail 
+movements and all micromobility. These vehicles will also support a renewable electricity grid through bidirectional 
+and smart charging. 
+Hydrogen will also be a significant energy vector by 2050, 
+although below previous estimates. It will fuel around 20% 
+of HGVs, buses and coaches, 5% of air transport and 3% 
+of maritime directly. Ammonia and methanol will fuel 24% 
+and 44% of maritime respectively, further adding to the 
+hydrogen required. This hydrogen will need to be produced 
+from renewable and low carbon sources. Autonomous 
+aircraft, drones and regional air travel will mostly be 
+electric/hybrid or hydrogen-fuelled. Gas (compressed or 
+liquified methane) does not see  
+significant share.
+It is estimated 163TWh of electricity 
+will be needed for transport by 2050
+The future transport system is expected to use significantly 
+less energy despite rising demand. This is thanks to the 
+efficiency gains of renewably powered transport solutions 
+over the current fossil fuel approach. In 2050 we expect to 
+use:
+ 69 TWh of hydrogen for transport, including ammonia 
+and methanol for maritime
+ 163 TWh of electricity for transport
+The impact of these changes is substantial. It will require 
+significant battery production and the requisite raw 
+materials. By 2040, nearly 200 GWh a year of battery 
+supply will be needed in the UK to satisfy the demand 
+for batteries in transport and grid storage [35]. This is a 
+seismic change and carries a risk around supply chains 
+and manufacturing scale-up. Furthermore, our vision 
+could be altered by a range of unforeseen events, including 
+increased electricity prices and the ability to cost effectively 
+scale renewable hydrogen production and distribute it. 
+Ensuring renewable energy is the first choice for mass 
+transit is key to a net zero future. Our vision suggests that 
+further effort is required to ensure the UK achieves this.25 UK TRANSPORT VISION 2050Figure 4 – Tank to wheel/propellor 
+energy vector changes over time
+163 TWh of electricity and 69 TWh 
+of hydrogen are among the energy 
+vectors replacing nearly 50 million 
+tonnes of fossil fuel a year by 2050.
+We have extrapolated from our 
+energy vector assumptions and 
+assumed total traction energy 
+needed for transport remains 
+constant. 
+The reduction in overall energy 
+consumed is enabled by greater 
+efficiencies from electrified 
+powertrains replacing less efficient 
+combustion engines.■ Road Hydrogen
+■ Rail Hydrogen
+■ Maritime Methanol
+■ Maritime Ammonia
+■ Air Hydrogen■   Air SAF
+■  Road Electricity
+■ Road Electricity
+■ Maritime Electricity
+■ Road Petroleum products■ Rail Petroleum products
+■ Maritime Petroleum 
+products
+■ Air Petroleum products700800
+600
+500
+400
+300
+200
+100
+0
+2021 2025 2030 2040 2050TWh26 UK TRANSPORT VISION 2050 26 UK TRANSPORT VISION 2050Energy vectors pathway
+Transport 
+modesElements 2023 position By 2025 By 2030 By 2040 By 2050
+Air 
+Transport 
+[1 - 7]EnablersEarly development of alternative energy 
+vectorsUK SAF mandate implemented  All aircraft certified for 100% SAF UK SAF industry established
+CORSIA mandatory for all UK int flights Sufficient SAF for domestic flights
+Power to Liquid (PtL) fuel Strategy 2023
+Advanced Air Mobility 
+(AAM)>99% Battery electric or Hydrogen
+Fuel mix [1-7] [36]>99% Kerosene 98% Kerosene 90% Kerosene 85% Kerosene 75% Kerosene Offset [1-3] [40] 
+<1% Sustainable Aviation Fuel (SAF) 2% SAF 10% SAF 15% SAF 20% SAF (including some PtL)
+Development of hydrogen fuelled aviation 5% Hydrogen
+International and 
+DomesticA civilian flight using 100% SAF demonstrated 
+before 2024Majority of UK airport ground operations are 
+zero emissionAll airport operations in England zero 
+emission
+At scale SAF plant by 2025 Zero-E flight demonstrator 2026 UK domestic aviation net zero by 2040
+SAF significant increase in production Zero-E planes enter into service in 2035
+Maritime  
+[8 - 15]Trends [8-11]All Marine Diesel & Heavy Fuel Oil (HFO)BEV for short journeys only All new ships to be ZE capable Large shift in take up of zero emission energy 
+sources from 2030sDomestic all zero emissionTRL3-7 Hydrogen & Ammonia projects Wind, biofuel, electro-fuel and H2 demos
+Fuel mix [12-14] [33-34]52% Marine diesel 52% Marine diesel 41% Marine diesel, including renewable 28% Marine diesel, increasingly renewable 13% Marine diesel, largely renewable
+48% Heavy & Low Sulphur Fuel Oil 47.9% Low sulphur and heavy fuel oil 47% Low sulphur and heavy fuel oil 33% Low sulphur and heavy fuel oil 0% Low sulphur and heavy fuel oil
+4% Methanol 12% Methanol 44% Methanol (renewable)
+0.1% Battery electric and shore Power 3% Battery electric and shore power 7% Battery electric and shore power 14% Battery electric and shore power
+4% Ammonia 18% Ammonia 24% Ammonia
+1% Hydrogen 2% Hydrogen 3% Hydrogen
+Powered 
+Light 
+Vehicles [24]EnablersEncourage more active travel Develop micro-consolidation hubs Large-scale urban freight consolidation
+Provide infrastructure Electric-powered last-mile delivery
+Micromobility E-scooter and e-cargo bike trials ongoing >99% BEV and active travel modes 100% BEV and active travel modes
+Motorcycles (2023: 1.5m) 92% Fossil Fuel and renewable ICE [24]84% Fossil fuel and renewable ICE 57% Fossil fuel and renewable ICE 8% Fossil Fuel and renewable ICE
+3% BEV [24]9% BEV 34% BEV 87% BEV 99% BEV
+5% Hybrid [24]7% Hybrid 9% Hybrid 5% Hybrid 1% Hybrid
+Rail
+[16 - 22]EnablersDevelop hydrogen and battery solutions Hydrogen and Battery electric trials Increased electrification of network Diesel trains removed by 2040 Wholesale integration with energy system
+Manufacture of non-hybrid diesel trains ends  Manufacture of ZE trains only Net zero rail network [16]
+Fuel mix to power 
+traction, light and heavy 
+rail [17-18]71% electric 75% electric 80% electric - direct and hybrid 85% direct electric
+29% diesel 25% diesel 15% fossils fuels and bio fuels Electric diesel hybrids phased out
+2% hydrogen 5% hydrogen
+2% battery electric hybrids 5% battery electric hybrids
+1% battery 5% battery
+Road
+[23 - 33]Enablers End of sale dates proposed for new non ZEVs ZEV capability and affordability increasedEmitting vehicles de-incentivised, economics 
+generally support ZEVs End of sale of new non ZE HGVs (smaller 
+HGVs earlier) [16]Circular economy for ZEVs, bidirectional 
+charging normal
+Cars (2022: 35.1m)  
+[23-26] [33]92% Fossil Fuel and renewable ICE [26]84% Fossil Fuel and renewable ICE 57% Fossil Fuel and renewable ICE 8% Fossil Fuel and renewable ICE
+3% BEV [26]9% BEV 34% BEV 80% BEV 95% BEV
+5% Hybrid [26]7% Hybrid 9% hybrid 12% Hybrid 5% Hybrid
+Light Commercial 
+Vehicles  
+(2022: 4.9m) [26] [33]98.5% Fossil Fuel and renewable ICE [24] [27]84% Fossil Fuel and renewable ICE 56.5% Fossil Fuel and renewable ICE 8% Fossil Fuel and renewable ICE
+1.3% BEV [24] [27]9% BEV 34% BEV 86% BEV 94% BEV
+0.2% Hybrid [24] [27]7% hybrid 9% Hybrid 5% Hybrid 3% Hybrid
+0% Hydrogen 0% Hydrogen 0.5% Hydrogen 1% Hydrogen 3% Hydrogen
+Bus & Coaches (2022: 
+145k) [24] [26] [33]97.6% Fossil fuel and biofuel ICE [24] [28]95% Fossil fuel and high blend biofuel ICE 83.6% Fossil fuel and high blend biofuel ICE 49% Fossil fuel and high blend biofuel ICE 5% high blend biofuel or renewable ICE
+0.4% Gas [24], increasingly renewable 0.6% Gas, largely renewable 1.4% Gas, largely renewable 1% Gas, largely renewable 0.5% Gas, largely renewable
+2% BEV [24]4% BEV 12% BEV 42% BEV 74.5% BEV
+0.1% Hydrogen [24]0.4% Hydrogen 3% Hydrogen 8% Hydrogen 20% Hydrogen
+HGV (2022: 615k) [26] [33]99% Fossil fuel and renewable ICE [24] [27] [28]95.9% Fossil fuel and renewable ICE 84% Fossil fuel and renewable ICE 46% Fossil fuel and renewable ICE 4% Renewable ICE (includes range extension)
+0.6% Gas [24]3% Gas, increasingly renewable 6% Gas, increasingly renewable 8% Gas, increasingly renewable 2% Gas, majority renewable
+0.4% BEV [27]1% BEV 8% BEV 40% BEV 77% BEV
+0% Hydrogen 0.1% Hydrogen 2% Hydrogen 6% Hydrogen 17% HydrogenEnergy vectors pathway
+Transport 
+modesElements 2023 position By 2025 By 2030 By 2040 By 2050
+Air 
+Transport 
+[1 - 7]EnablersEarly development of alternative energy 
+vectorsUK SAF mandate implemented  All aircraft certified for 100% SAF UK SAF industry established
+CORSIA mandatory for all UK int flights Sufficient SAF for domestic flights
+Power to Liquid (PtL) fuel Strategy 2023
+Advanced Air Mobility 
+(AAM)>99% Battery electric or Hydrogen
+Fuel mix [1-7] [36]>99% Kerosene 98% Kerosene 90% Kerosene 85% Kerosene 75% Kerosene Offset [1-3] [40] 
+<1% Sustainable Aviation Fuel (SAF) 2% SAF 10% SAF 15% SAF 20% SAF (including some PtL)
+Development of hydrogen fuelled aviation 5% Hydrogen
+International and 
+DomesticA civilian flight using 100% SAF demonstrated 
+before 2024Majority of UK airport ground operations are 
+zero emissionAll airport operations in England zero 
+emission
+At scale SAF plant by 2025 Zero-E flight demonstrator 2026 UK domestic aviation net zero by 2040
+SAF significant increase in production Zero-E planes enter into service in 2035
+Maritime  
+[8 - 15]Trends [8-11]All Marine Diesel & Heavy Fuel Oil (HFO)BEV for short journeys only All new ships to be ZE capable Large shift in take up of zero emission energy 
+sources from 2030sDomestic all zero emissionTRL3-7 Hydrogen & Ammonia projects Wind, biofuel, electro-fuel and H2 demos
+Fuel mix [12-14] [33-34]52% Marine diesel 52% Marine diesel 41% Marine diesel, including renewable 28% Marine diesel, increasingly renewable 13% Marine diesel, largely renewable
+48% Heavy & Low Sulphur Fuel Oil 47.9% Low sulphur and heavy fuel oil 47% Low sulphur and heavy fuel oil 33% Low sulphur and heavy fuel oil 0% Low sulphur and heavy fuel oil
+4% Methanol 12% Methanol 44% Methanol (renewable)
+0.1% Battery electric and shore Power 3% Battery electric and shore power 7% Battery electric and shore power 14% Battery electric and shore power
+4% Ammonia 18% Ammonia 24% Ammonia
+1% Hydrogen 2% Hydrogen 3% Hydrogen
+Powered 
+Light 
+Vehicles [24]EnablersEncourage more active travel Develop micro-consolidation hubs Large-scale urban freight consolidation
+Provide infrastructure Electric-powered last-mile delivery
+Micromobility E-scooter and e-cargo bike trials ongoing >99% BEV and active travel modes 100% BEV and active travel modes
+Motorcycles (2023: 1.5m) 92% Fossil Fuel and renewable ICE [24]84% Fossil fuel and renewable ICE 57% Fossil fuel and renewable ICE 8% Fossil Fuel and renewable ICE
+3% BEV [24]9% BEV 34% BEV 87% BEV 99% BEV
+5% Hybrid [24]7% Hybrid 9% Hybrid 5% Hybrid 1% Hybrid
+Rail
+[16 - 22]EnablersDevelop hydrogen and battery solutions Hydrogen and Battery electric trials Increased electrification of network Diesel trains removed by 2040 Wholesale integration with energy system
+Manufacture of non-hybrid diesel trains ends  Manufacture of ZE trains only Net zero rail network [16]
+Fuel mix to power 
+traction, light and heavy 
+rail [17-18]71% electric 75% electric 80% electric - direct and hybrid 85% direct electric
+29% diesel 25% diesel 15% fossils fuels and bio fuels Electric diesel hybrids phased out
+2% hydrogen 5% hydrogen
+2% battery electric hybrids 5% battery electric hybrids
+1% battery 5% battery
+Road
+[23 - 33]Enablers End of sale dates proposed for new non ZEVs ZEV capability and affordability increasedEmitting vehicles de-incentivised, economics 
+generally support ZEVs End of sale of new non ZE HGVs (smaller 
+HGVs earlier) [16]Circular economy for ZEVs, bidirectional 
+charging normal
+Cars (2022: 35.1m)  
+[23-26] [33]92% Fossil Fuel and renewable ICE [26]84% Fossil Fuel and renewable ICE 57% Fossil Fuel and renewable ICE 8% Fossil Fuel and renewable ICE
+3% BEV [26]9% BEV 34% BEV 80% BEV 95% BEV
+5% Hybrid [26]7% Hybrid 9% hybrid 12% Hybrid 5% Hybrid
+Light Commercial 
+Vehicles  
+(2022: 4.9m) [26] [33]98.5% Fossil Fuel and renewable ICE [24] [27]84% Fossil Fuel and renewable ICE 56.5% Fossil Fuel and renewable ICE 8% Fossil Fuel and renewable ICE
+1.3% BEV [24] [27]9% BEV 34% BEV 86% BEV 94% BEV
+0.2% Hybrid [24] [27]7% hybrid 9% Hybrid 5% Hybrid 3% Hybrid
+0% Hydrogen 0% Hydrogen 0.5% Hydrogen 1% Hydrogen 3% Hydrogen
+Bus & Coaches (2022: 
+145k) [24] [26] [33]97.6% Fossil fuel and biofuel ICE [24] [28]95% Fossil fuel and high blend biofuel ICE 83.6% Fossil fuel and high blend biofuel ICE 49% Fossil fuel and high blend biofuel ICE 5% high blend biofuel or renewable ICE
+0.4% Gas [24], increasingly renewable 0.6% Gas, largely renewable 1.4% Gas, largely renewable 1% Gas, largely renewable 0.5% Gas, largely renewable
+2% BEV [24]4% BEV 12% BEV 42% BEV 74.5% BEV
+0.1% Hydrogen [24]0.4% Hydrogen 3% Hydrogen 8% Hydrogen 20% Hydrogen
+HGV (2022: 615k) [26] [33]99% Fossil fuel and renewable ICE [24] [27] [28]95.9% Fossil fuel and renewable ICE 84% Fossil fuel and renewable ICE 46% Fossil fuel and renewable ICE 4% Renewable ICE (includes range extension)
+0.6% Gas [24]3% Gas, increasingly renewable 6% Gas, increasingly renewable 8% Gas, increasingly renewable 2% Gas, majority renewable
+0.4% BEV [27]1% BEV 8% BEV 40% BEV 77% BEV
+0% Hydrogen 0.1% Hydrogen 2% Hydrogen 6% Hydrogen 17% Hydrogen
+27 UK TRANSPORT VISION 2050 27 UK TRANSPORT VISION 2050CERTAINTY high med low speculative28 UK TRANSPORT VISION 2050Autonomy
+Automation will make vehicles and craft safer and smarter, provide various types 
+of accessible, fully autonomous transport and create new services such as 
+medical deliveries by drone.
+Automation is being introduced in transport to improve 
+overall efficiency and safety or to perform dull, dirty or 
+dangerous human tasks. The balance between these 
+objectives varies across different modes and applications, 
+with some drivers and pilots expected to transition to 
+remote support activities. However, the increased value is 
+universal and the trend clear. Autonomy will be increasingly 
+present and a significant part of the value offering, enabling 
+new services and business models. 
+Road vehicles are rapidly becoming smarter. We expect 
+to see private vehicles capable of Society of Automotive 
+Engineers level 4 autonomy – operating in self-driving 
+mode in limited areas – by 2035 [26]. They will allow 
+those with mobility impairment to gain or maintain 
+independence. Automated buses and minibuses will 
+become commonplace (40% of those in service) by 2035. 
+Low-speed public service vehicles will likely be deployed 
+first. 
+Automated buses and minibuses  
+will be commonplace by 2035 
+Use of automated goods vehicles is likely to begin in 
+depots and other restricted areas such as airports and 
+docks before more widespread usage. Agricultural and 
+heavy plant automation will continue to grow [46].
+Further trials of autonomous trains will take place on the 
+intercity rail network by 2030. Freight trains and depot-
+shunting are likely to be the first areas to adopt automated 
+movement. Train automation is highly dependent on 
+rail connectivity and on changing working practices. 
+Automation of maintenance will continue to grow, including 
+use of drones for remote inspection. 
+New passenger and freight carrying air vehicles will be 
+developed with increasing levels of autonomy and able to 
+operate with full autonomy by 2025 [3]. It is likely that these 
+services will continue to have a pilot on board until public 
+trust in the technology is suitably high. Increasing numbers 
+of delivery, inspection, surveying and search and rescue 
+services will be carried out by drones in ‘beyond visual line 
+of sight’ and autonomous operations.Autonomous trials of surface vessels in UK waters will 
+expand. Automation will be adopted earlier at sea than in 
+harbour. Automation will help smaller vessels to reduce 
+operational costs and reduce risk to life on hazardous routes 
+or missions. Subsea automation will develop from the use of 
+remotely operated vehicles. 
+Cyber security and trusted monitoring of the health of 
+automated systems that have no human input will be key to 
+public and commercial acceptance. 
+90% of motorway HGVs will be 
+autonomous by 2050
+We anticipate that road transport, air transport, rail freight 
+and domestic ferries will be predominantly autonomous 
+by 2050. Some on-board staff will be retained to assist 
+travellers and ensure accessibility. 90% of motorway HGVs 
+will be autonomous by 2050. Last-mile deliveries in urban 
+and rural areas will increasingly be completed by drone. 
+Figure 5 – Prediction of percentage of private and light 
+commercial vehicles sold with automated functions
+Today private vehicles operate with some levels of  
+driver support, defined by the Society of Automotive 
+Engineers, level 0-2.
+In the future we expect to see private vehicles capable 
+of operating in self-driving mode  in specific scenarios 
+(level 3) by 2025, and operating in self-driving mode for all 
+scenarios in limited areas (level 4) by 2030, with those areas 
+expanding over time.
+■ Almost all of UK roads
+■ Most rural roads
+■ Highway & suburban roads■ Urban roads
+■   Fixed routes29 UK TRANSPORT VISION 2050 29 UK TRANSPORT VISION 2050L0
+L1
+L2
+L330 UK TRANSPORT VISION 2050Autonomy pathway
+Transport 
+modesElements 2023 position By 2025 By 2030 By 2040 By 2050
+Cross 
+mode 
+enablersPerception & sensing Technologies with increasing capabilities & reliability (hardware and software) with cost reductions
+Autonomous control 
+systems Compute technologies with increasing capabilities (hardware and software) and cost reductions
+Connectivity &  
+Cyber SecurityIncreasing connectivity capabilities, evolving cyber threats and cyber security technologies
+Air 
+transportAirspace managementUpgrading air traffic infrastructure Advanced network & operation services ATM Data Services support CoD [1]Digital European Sky [2]
+Cross border free routes [1] Virtual Centres support CoD [1]
+Change to trajectory based operations
+UTM system pilot UTM adopted UK: 2035, internat: 2040
+Autonomy Level 3/5 Autonomy Level 4/5
+Air vehiclesInitial UAM passenger ops by 2024 [3]Expanded network of UAM pass. ops [3]Drones carrying loads <1 tonnes Intercity passenger UAVs common [3]
+BVLOS UAV delivery/inspection. ops routine Assisted/autonomous systems certified UAVs communicate autonomously with UTM
+Pilots to supervisorsSingle pilot operations trial [4]Single pilot ops, auton separation [1]
+Autonomous system + human supervisors Auton. system, no human intervention
+Ground infrastr. & opsAuton Taxi, Take-Off & Land trials [5]Auton Taxi, Take-Off & Land ops [5]
+Quantum sensors for poor weather [4]
+Social acceptance of 
+UAVsPoor: Noise, privacy & environ impacts Improving, with technology advances Generally widespread public acceptance
+MaritimeVessel operationUnmanned trials underway [6]Unmanned vessels - deployment  Auton. shipping market £10.33bn [9]
+5G supports short sea autonomy [6]Unmanned vessels - surveillance 6G supports surface vessel trials
+Sat comms for deep sea trials [6]Unmanned vessels - marine observation
+Autonomous vessel trials [7] [8]
+Vessel automation in 
+portsVessel automat. trials - UK ports [10]Some automated vessel berthing in port Automated arrival & berthing common
+Remote pilotage trials Software pilotage trials Software pilotage common
+Port side automation Automated goods handling at ports [11]Auton goods transport to / from ports 1st MAFM through a UK port by 2035 [6]Most ports smart & inter-connected
+Autonomous trucks at Felixstowe [12]Auton passenger transport around ports
+Standards/LegislationMASRWG 4th Code of Practice [13]IMO MASS Code Published [14]IMO MASS Code Mandated 2028
+MARLab report [15] & Maritime 2050 [16]Updated Code of Practice Published Updated Code of Practice Published Updated Code of Practice by 2036
+Workboat Code Ed.3 Ann.2 ROUV [17]Centre for Smart Shipping estab [6]Type approval framework for MASS
+National maritime security strategy [18]
+RailTrendsAutomation options discussion [19]Better connectivity -> more automation In-cab signalling commences Smart trains adapt to situations [20]Services adapt to meet demand [20]
+DLR has been driverless since 1987 New operational concepts ATO (Freight) inc auton. handling [20]Efficient pass. flow at stations [20]
+Network FMRCS trials start ~ 2023 [21]FMRCS on priority routes from 2025 Digital signalling: 25% by 2035, 40% by 2040 Digital signalling: 60% by 2045, 80% by 2050
+Design & operationATO/ETCS trials on UK mainlines [22]ERTMS / ETCS L2 rollout commences [21]40% pass trains ETCS L2 fitted >99% pass trains fitted for ETCS L2 [21]
+Autonomous trams / VLR trials [23]Initial autonomous trams / VLR services
+MaintenanceNetwork Rail autonomous inspection [24]Inspecting railways with drones [24]More auton maint. reduces human risk
+Automat. roll. stock insp. concepts [25]Outside automated inspection trials Outsde & inside autom. inspect starts Automated maint. of roll stock scales up
+RoadTrends L4 Road Trials with safety driver [26] Advanced road trials: no safety driver, 
+segregated L4 comm deploymentsInitial L4 road deployments CAV industry worth £41.7billion [27]Autonomous usage normal
+MaaS / pods / taxis Autonomous vehicle trials [28] [29]Pod road trials, no safety driver L4 Services common in urban areas
+PSVs / Buses / Trackless 
+Trams / ART / AVRTAutonomous bus service trials [30] [31]Bus depot automation [32]L4 pods on low complexity routes L4 rural HARPS deployments Majority of PSVs are HARPS
+L4 buses & pods - lo complex. ODD [33] [34]Some L3 capabilities on traditional buses L4 buses with “captains” not drivers
+ART / AVRT Feasibility studies [35]AVRT / ART / Trackless tram trials [36]AVRT / ART / Trackless tram services
+Private vehiclesInitial vehicles with ALKS Private vehicles with ALKS L4 trials on series private vehicles Self-driving mode on 40% new cars [27]Self-driving mode on 95% new cars
+AVP concepts under consideration Off-road AVP trials Limited private vehicles with ALKS+ & AVP Mid complexity / mid volumes [37]High complexity / high volumes [26]
+Main automation is ADAS Improved safety intervention ADAS High complexity / low volumes [37]
+Freight / Plant Freight depot automation trials [38]Freight depot automation [39]Some L3 capabilities on freight vehicles [40]L4 freight deployment (simple road ODD) Widespread L4 freight deployments
+Standards / legislationALKS adoption (2021) [41]ALKS+ consultation (ECE) ALKS+ adoption (ECE) Full AD system approvals (ECE) by 2035
+CCAV Policy Paper [42]Full AD system consultation (ECE)
+Code of Practice (trials) [43]Advanced CAM trial approvals by 2023 
+CAVPASS [44]Low complexity ODD - GBTA Medium complexity ODD – GBTA 2028 High complexity ODD - GBTA by 2032
+Scenarios & weather standards in devt. [45]Scenarios & weather standards in GBTA Complex scenarios agreed by ECE31 UK TRANSPORT VISION 2050Autonomy pathway
+Transport 
+modesElements 2023 position By 2025 By 2030 By 2040 By 2050
+Cross 
+mode 
+enablersPerception & sensing Technologies with increasing capabilities & reliability (hardware and software) with cost reductions
+Autonomous control 
+systems Compute technologies with increasing capabilities (hardware and software) and cost reductions
+Connectivity &  
+Cyber SecurityIncreasing connectivity capabilities, evolving cyber threats and cyber security technologies
+Air 
+transportAirspace managementUpgrading air traffic infrastructure Advanced network & operation services ATM Data Services support CoD [1]Digital European Sky [2]
+Cross border free routes [1] Virtual Centres support CoD [1]
+Change to trajectory based operations
+UTM system pilot UTM adopted UK: 2035, internat: 2040
+Autonomy Level 3/5 Autonomy Level 4/5
+Air vehiclesInitial UAM passenger ops by 2024 [3]Expanded network of UAM pass. ops [3]Drones carrying loads <1 tonnes Intercity passenger UAVs common [3]
+BVLOS UAV delivery/inspection. ops routine Assisted/autonomous systems certified UAVs communicate autonomously with UTM
+Pilots to supervisorsSingle pilot operations trial [4]Single pilot ops, auton separation [1]
+Autonomous system + human supervisors Auton. system, no human intervention
+Ground infrastr. & opsAuton Taxi, Take-Off & Land trials [5]Auton Taxi, Take-Off & Land ops [5]
+Quantum sensors for poor weather [4]
+Social acceptance of 
+UAVsPoor: Noise, privacy & environ impacts Improving, with technology advances Generally widespread public acceptance
+MaritimeVessel operationUnmanned trials underway [6]Unmanned vessels - deployment  Auton. shipping market £10.33bn [9]
+5G supports short sea autonomy [6]Unmanned vessels - surveillance 6G supports surface vessel trials
+Sat comms for deep sea trials [6]Unmanned vessels - marine observation
+Autonomous vessel trials [7] [8]
+Vessel automation in 
+portsVessel automat. trials - UK ports [10]Some automated vessel berthing in port Automated arrival & berthing common
+Remote pilotage trials Software pilotage trials Software pilotage common
+Port side automation Automated goods handling at ports [11]Auton goods transport to / from ports 1st MAFM through a UK port by 2035 [6]Most ports smart & inter-connected
+Autonomous trucks at Felixstowe [12]Auton passenger transport around ports
+Standards/LegislationMASRWG 4th Code of Practice [13]IMO MASS Code Published [14]IMO MASS Code Mandated 2028
+MARLab report [15] & Maritime 2050 [16]Updated Code of Practice Published Updated Code of Practice Published Updated Code of Practice by 2036
+Workboat Code Ed.3 Ann.2 ROUV [17]Centre for Smart Shipping estab [6]Type approval framework for MASS
+National maritime security strategy [18]
+RailTrendsAutomation options discussion [19]Better connectivity -> more automation In-cab signalling commences Smart trains adapt to situations [20]Services adapt to meet demand [20]
+DLR has been driverless since 1987 New operational concepts ATO (Freight) inc auton. handling [20]Efficient pass. flow at stations [20]
+Network FMRCS trials start ~ 2023 [21]FMRCS on priority routes from 2025 Digital signalling: 25% by 2035, 40% by 2040 Digital signalling: 60% by 2045, 80% by 2050
+Design & operationATO/ETCS trials on UK mainlines [22]ERTMS / ETCS L2 rollout commences [21]40% pass trains ETCS L2 fitted >99% pass trains fitted for ETCS L2 [21]
+Autonomous trams / VLR trials [23]Initial autonomous trams / VLR services
+MaintenanceNetwork Rail autonomous inspection [24]Inspecting railways with drones [24]More auton maint. reduces human risk
+Automat. roll. stock insp. concepts [25]Outside automated inspection trials Outsde & inside autom. inspect starts Automated maint. of roll stock scales up
+RoadTrends L4 Road Trials with safety driver [26] Advanced road trials: no safety driver, 
+segregated L4 comm deploymentsInitial L4 road deployments CAV industry worth £41.7billion [27]Autonomous usage normal
+MaaS / pods / taxis Autonomous vehicle trials [28] [29]Pod road trials, no safety driver L4 Services common in urban areas
+PSVs / Buses / Trackless 
+Trams / ART / AVRTAutonomous bus service trials [30] [31]Bus depot automation [32]L4 pods on low complexity routes L4 rural HARPS deployments Majority of PSVs are HARPS
+L4 buses & pods - lo complex. ODD [33] [34]Some L3 capabilities on traditional buses L4 buses with “captains” not drivers
+ART / AVRT Feasibility studies [35]AVRT / ART / Trackless tram trials [36]AVRT / ART / Trackless tram services
+Private vehiclesInitial vehicles with ALKS Private vehicles with ALKS L4 trials on series private vehicles Self-driving mode on 40% new cars [27]Self-driving mode on 95% new cars
+AVP concepts under consideration Off-road AVP trials Limited private vehicles with ALKS+ & AVP Mid complexity / mid volumes [37]High complexity / high volumes [26]
+Main automation is ADAS Improved safety intervention ADAS High complexity / low volumes [37]
+Freight / Plant Freight depot automation trials [38]Freight depot automation [39]Some L3 capabilities on freight vehicles [40]L4 freight deployment (simple road ODD) Widespread L4 freight deployments
+Standards / legislationALKS adoption (2021) [41]ALKS+ consultation (ECE) ALKS+ adoption (ECE) Full AD system approvals (ECE) by 2035
+CCAV Policy Paper [42]Full AD system consultation (ECE)
+Code of Practice (trials) [43]Advanced CAM trial approvals by 2023 
+CAVPASS [44]Low complexity ODD - GBTA Medium complexity ODD – GBTA 2028 High complexity ODD - GBTA by 2032
+Scenarios & weather standards in devt. [45]Scenarios & weather standards in GBTA Complex scenarios agreed by ECECERTAINTY high med low speculative32 UK TRANSPORT VISION 2050Business models
+Evolving customer needs and advances in technology will transform  
+business models and lead to a bundling of services, better use of resources  
+and mass customisation.
+Travel demands and needs are evolving with changing 
+lifestyles. Expectations when travelling are also adapting, 
+as is the way travellers buy products and services. 
+Factors such as carbon footprint and accessibility for 
+the estimated 16 million people in the UK with a disability 
+[34] increasingly impact consumer choices. All of these 
+changes offer significant business opportunities.
+Increasing digitalisation of the transport sector offers 
+many opportunities for those with the agility and 
+confidence to innovate. Increased data flow will offer more 
+avenues for data collection and therefore greater scope for 
+use and exchange of data. Interoperability and openness 
+through technical standards and ethical, legal and 
+commercial frameworks are key to maximising societal 
+and economic potential. 
+Cyber resilience will be critical to a trusted service and 
+creation of a significant market opportunity. The global 
+automotive cyber security market is predicted to grow to 
+US$6 billion by 2028 [30]. The size of the market for data 
+resulting from greater vehicle connectivity is estimated to 
+be up to US$750 billion by 2030 [25].
+Greater availability of data will allow deeper insights into 
+the environmental and societal factors, including from the 
+perspective of equality, inclusivity and accessibility. These 
+should become increasingly influential in approaches to 
+transport design.
+Policy, legislation, green finance decisions, carbon 
+accounting, tax and incentives will also significantly shape 
+the future transport system. Businesses will find creative 
+ways to minimise costs and maximise revenues, sharing 
+these benefits with their customers to increase market 
+share. However, they will also face increasing pressures 
+to deliver green credentials. Creative approaches could all 
+potentially shape future markets including:
+ bundling services in a one-stop contract and increasing 
+land-based shared mobility options 
+ maximising use of assets at times of low demand,  
+such as using idle vehicles to transport goods or 
+batteries for grid management
+ mass customisation of transport products and 
+offerings through data capture and personalisationForecasting the most successful business opportunities is 
+extremely challenging, and policymakers and commercial 
+organisations alike will need to react quickly as winners 
+emerge and shape revenue flows. This is reflected in the 
+low confidence rating in most of the forecast.
+We expect online retail and associated home deliveries 
+will increase from 26.5% in 2022 to over 60% by 2030 [6] [7]. 
+About 40% of overall global logistics costs are associated 
+with the last mile [13] [14]. Consumers are demanding faster 
+and more reliable and convenient delivery services. This 
+leads carriers to offer expensive timed, same-day and other 
+traceable services [11] [12]. Industry innovation will continue 
+to reduce the cost and complexity of logistics through 
+measures such as automation of shared storage and 
+distribution systems and increased levels of connectivity 
+[16] [17]. A push for cleaner, more sustainable urban mobility 
+modes and the increased use of commercial drones will 
+also impact the logistics industry [18] [31].
+Insurance markets will be disrupted, with increasing 
+levels of connectivity and data processing giving greater 
+understanding of risk. Realtime data and calculations will 
+offer deeper personalisation for individuals. Automated 
+mobility will move the need for insurance away from the 
+user and to the vehicle [1] [3].
+We expect online retail and 
+associated home deliveries will 
+increase from 26.5% in 2022 to  
+over 60% by 2030
+Greater connectivity of services and users will increase the 
+use of apps to plan journeys, including replanning when 
+travel is disrupted, and deliver on-demand personalised 
+services. It will also expand the use of bundled services, 
+including hailing of taxis, ordering of electric bikes and the 
+purchasing of tickets for public transport [5, 8, 9, 10].
+Planning and developments, both existing and new, 
+will become more people and lifestyle-focused. Access 
+to services and the need for transport will be key 
+considerations. There will be an increasing focus on the 
+environmental and human impacts, and how place and the 
+transport network deliver for society.33 UK TRANSPORT VISION 205034 UK TRANSPORT VISION 2050Business models pathway
+Business model areas 2023 position By 2025 By 2030 By 2040 By 2050
+RetailDelivery requirementsConsumer demand for faster, more reliable and convenient delivery services
+Carriers to offer costly timed, same-day and other traceable services [11] [12]Increasing use of consolidation models and data-driven non-traditional logistic methods
+Last mile delivery 
+mode98% van, <1% bike20% robot / drone, 78% van, 2% bike and 
+powered light vehicles (PLVs)35% robot / drone, 43% van, 22% bike and 
+powered light vehicles (PLVs)80% robot/drone, 18% van, 2% bike [31]
+InsuranceUser insurance Insurance on static risk model Pay how you drive [1] [4]AV insurance (cheaper vs human) [1]Real-time risk insurance [1]
+Multimodal Developing market for liabilities on system and service reliability Increasing market for liabilities on system and service reliability
+Vehicle insurance Insurance adapting to ride sharing and gig Major shift to insuring vehicles [2]Real-time risk insurance [1]Real time risk insurance [1]
+Circular & 
+resource effi -
+cient modelsAir Transport [20]End of use: 80-85% repurposed/recycled 95% repurposed/recycled [22]100% repurposed/recycled [21]End of life aircraft material become cheaper than primary materials
+Rail [23]Supply chain materials & waste mapped Embed circular thinking in decision 100% reuse/recycle non-hazardous infra 100% circular processes across network
+Road [19]Low levels of circularity More circularity & efficient asset use Circularity widely in business models Full circular value chain & net +ve
+Point of salePublic, private and 
+sharedIncreasing use of apps (with predictive analytics) to plan journey and delivering on demand personalised service. Data capture then used to tailor and influence travel options. 
+Increasing levels of bundled services including hailing taxis, ordered electric bikes, as tickets for buses and trains [5] [8] [9] [10]
+Reducing car ownership / ability to drive -> increasing fleet operators, with companies repositioning to sell multi modal mobility service rather than products
+Data flow and 
+securityData flow Cars 25GB data per hour [26]AVs 3,600GB data per hour [26]Digital twin enable services [27]Real time digital twins enable new business models
+Cyber security Global auto market $5.56bn [28], aviation $6.5bn [29]Cyber in vehicle approval [27]Continued 10-20% CAGR expected. Critical to national asset
+BatteriesAutomotive Limited trials of battery swapping/BaaS Selective OEMs to offer battery swapping/BaaS as part of their services
+Micromobility Trials of battery swapping offerings Widespread battery swapping for shared services
+EnablersPublic policy changes.  
+Advancing technologies and expanding opportunities for data exchange.  
+More journey options with enhanced services.  
+More cost effective system.  
+Improved accessbility and inclusivity leading to more flexible personal mobility.
+Air Transport [24]‘Hub and spoke’ operating model Consistent operating / revenue model Consistent operating / revenue model Increased regional hubs & p2p travel Int travel at few large airports
+Traffic returned to pre pandemic level Pilot distributed aviation Distributed aviation fully realised Increased on demand services
+Advanced air mobility Concept Trials Trials Pilot UAM private hire Early deployment UAM private hire
+Maritime (ferry) Fixed route & schedule, discrete ticket Fixed route & schedule, increasing integration of travel pricing Fixed route & schedule, full integration of pricing – purchasing mobility
+Maritime (private hire) On demand door-to-door service, private hire, priced by arrangement
+Maritime (freight) Fixed routes & schedule, commercial pricing
+Maritime (ports and harbours) Smart ports and harbours trialsWidespead use of smart ports and harbours 
+[32]
+MicromobilityInitial private hire e-scooter & bike Wide deployment hire e-scooter & bike Increasing market for personal scooters (lightweight, high density battery). Impacts fleet scooter market
+Private payment, not integrated Private payment, not integrated Greater integration of mobility pricing
+Rail Fixed route & schedule, discrete ticket Fixed route & schedule, increasing integration of travel pricing Fixed route & schedule, full integration of pricing – purchasing mobility
+Product based value chain Pilot revenue & operating model changes Services through private partnerships Service based value chain
+Some service and utilisation contracts Block chain enables micro-investment Block chain secures digital data - individual tailored travel plan & track asset utilisation & maintenance
+Road (private vehicle)>90% of cars bought on finance Peer car share & car club growth Lower utilisation of private vehicles
+Revenue from vehicle sale & servicing Growth in fully serviced vehicles On demand shared vehicles more affordable and more reliable
+Road (bus) Fixed route & schedule, discrete ticket Intelligent routes & schedule, increasing integration of travel pricing Intelligent routes & schedule, full integration of mobility pricing
+Road (taxi)On demand door-to-door, private and shared, priced per mile / time Increasing micro transit services Increasing competition in on demand private vehicles
+Increasing market for on demand vehicle support - maintenance, cleaning, servicing etc. - brand differentiator and significant revenue source
+Increasing utilisation of private hire fleet during non peak passenger times, generating value streams from goods services or V2G allowing cost savings to be shared with passengers
+Kerbside Digitalised kerbside mapping and kerbside strategies createdDynamic kerbside managerment widespread in urban centres with flexible bookable, reservable and paid-for kerbsides. Residential kerbside 
+sees greater priority given to sustainable travel modes [33]35 UK TRANSPORT VISION 2050Business models pathway
+Business model areas 2023 position By 2025 By 2030 By 2040 By 2050
+RetailDelivery requirementsConsumer demand for faster, more reliable and convenient delivery services
+Carriers to offer costly timed, same-day and other traceable services [11] [12]Increasing use of consolidation models and data-driven non-traditional logistic methods
+Last mile delivery 
+mode98% van, <1% bike20% robot / drone, 78% van, 2% bike and 
+powered light vehicles (PLVs)35% robot / drone, 43% van, 22% bike and 
+powered light vehicles (PLVs)80% robot/drone, 18% van, 2% bike [31]
+InsuranceUser insurance Insurance on static risk model Pay how you drive [1] [4]AV insurance (cheaper vs human) [1]Real-time risk insurance [1]
+Multimodal Developing market for liabilities on system and service reliability Increasing market for liabilities on system and service reliability
+Vehicle insurance Insurance adapting to ride sharing and gig Major shift to insuring vehicles [2]Real-time risk insurance [1]Real time risk insurance [1]
+Circular & 
+resource effi -
+cient modelsAir Transport [20]End of use: 80-85% repurposed/recycled 95% repurposed/recycled [22]100% repurposed/recycled [21]End of life aircraft material become cheaper than primary materials
+Rail [23]Supply chain materials & waste mapped Embed circular thinking in decision 100% reuse/recycle non-hazardous infra 100% circular processes across network
+Road [19]Low levels of circularity More circularity & efficient asset use Circularity widely in business models Full circular value chain & net +ve
+Point of salePublic, private and 
+sharedIncreasing use of apps (with predictive analytics) to plan journey and delivering on demand personalised service. Data capture then used to tailor and influence travel options. 
+Increasing levels of bundled services including hailing taxis, ordered electric bikes, as tickets for buses and trains [5] [8] [9] [10]
+Reducing car ownership / ability to drive -> increasing fleet operators, with companies repositioning to sell multi modal mobility service rather than products
+Data flow and 
+securityData flow Cars 25GB data per hour [26]AVs 3,600GB data per hour [26]Digital twin enable services [27]Real time digital twins enable new business models
+Cyber security Global auto market $5.56bn [28], aviation $6.5bn [29]Cyber in vehicle approval [27]Continued 10-20% CAGR expected. Critical to national asset
+BatteriesAutomotive Limited trials of battery swapping/BaaS Selective OEMs to offer battery swapping/BaaS as part of their services
+Micromobility Trials of battery swapping offerings Widespread battery swapping for shared services
+EnablersPublic policy changes.  
+Advancing technologies and expanding opportunities for data exchange.  
+More journey options with enhanced services.  
+More cost effective system.  
+Improved accessbility and inclusivity leading to more flexible personal mobility.
+Air Transport [24]‘Hub and spoke’ operating model Consistent operating / revenue model Consistent operating / revenue model Increased regional hubs & p2p travel Int travel at few large airports
+Traffic returned to pre pandemic level Pilot distributed aviation Distributed aviation fully realised Increased on demand services
+Advanced air mobility Concept Trials Trials Pilot UAM private hire Early deployment UAM private hire
+Maritime (ferry) Fixed route & schedule, discrete ticket Fixed route & schedule, increasing integration of travel pricing Fixed route & schedule, full integration of pricing – purchasing mobility
+Maritime (private hire) On demand door-to-door service, private hire, priced by arrangement
+Maritime (freight) Fixed routes & schedule, commercial pricing
+Maritime (ports and harbours) Smart ports and harbours trialsWidespead use of smart ports and harbours 
+[32]
+MicromobilityInitial private hire e-scooter & bike Wide deployment hire e-scooter & bike Increasing market for personal scooters (lightweight, high density battery). Impacts fleet scooter market
+Private payment, not integrated Private payment, not integrated Greater integration of mobility pricing
+Rail Fixed route & schedule, discrete ticket Fixed route & schedule, increasing integration of travel pricing Fixed route & schedule, full integration of pricing – purchasing mobility
+Product based value chain Pilot revenue & operating model changes Services through private partnerships Service based value chain
+Some service and utilisation contracts Block chain enables micro-investment Block chain secures digital data - individual tailored travel plan & track asset utilisation & maintenance
+Road (private vehicle)>90% of cars bought on finance Peer car share & car club growth Lower utilisation of private vehicles
+Revenue from vehicle sale & servicing Growth in fully serviced vehicles On demand shared vehicles more affordable and more reliable
+Road (bus) Fixed route & schedule, discrete ticket Intelligent routes & schedule, increasing integration of travel pricing Intelligent routes & schedule, full integration of mobility pricing
+Road (taxi)On demand door-to-door, private and shared, priced per mile / time Increasing micro transit services Increasing competition in on demand private vehicles
+Increasing market for on demand vehicle support - maintenance, cleaning, servicing etc. - brand differentiator and significant revenue source
+Increasing utilisation of private hire fleet during non peak passenger times, generating value streams from goods services or V2G allowing cost savings to be shared with passengers
+Kerbside Digitalised kerbside mapping and kerbside strategies createdDynamic kerbside managerment widespread in urban centres with flexible bookable, reservable and paid-for kerbsides. Residential kerbside 
+sees greater priority given to sustainable travel modes [33]CERTAINTY high med low speculative36 UK TRANSPORT VISION 2050
+37 UK TRANSPORT VISION 2050Infrastructure
+Transport infrastructure will respond to changing lifestyles, cleaner forms of 
+energy and climate pressures, creating significant new business opportunities. 
+The development of secure and resilient-by-design 
+infrastructure for energy supply, cross-modal mobility hubs 
+and smart transport tools will accelerate. New business 
+models will emerge to support the UK’s need to meet net 
+zero commitments. 
+This section focuses on the infrastructure required to 
+deliver a transport system meeting both domestic and 
+commercial users’ travel needs whilst also protecting the 
+natural environment. 
+The use of natural features in infrastructure development 
+will increase to reduce environmental impacts and improve 
+climate resilience. This green and blue infrastructure 
+will improve air quality, biodiversity, woodland cover and 
+drainage systems and mitigate air, light, noise and visual 
+impacts. Infrastructure will deliver social, environmental, 
+economic and cultural regeneration using modern methods 
+of construction (MMC) [55].
+The road network will be safer, more reliable, integrated 
+and smart to maximise the use of space, reduce 
+congestion and improve user experience [6] 
+The public smart charging network will grow with the right 
+type of charge points in the right places. This will facilitate 
+short duration charging for long-distance users, high power 
+charging for heavy-payload vehicles and lower power 
+charging to meet the needs of long duration residential 
+users who cannot charge at home. Smart charging 
+facilities in depots will be essential to manage complex 
+operational pressures for logistics organisations. Static 
+wireless charging will be deployed for some fleet uses, but 
+the business case for dynamic inductive or conductive 
+charging is still uncertain. Battery-swap will be more-widely 
+used for micromobility solutions and will also be explored 
+for some heavy-freight uses.
+Electric vehicles will help energy systems cope with extra 
+demand by acting as distributed energy storage resources 
+(V2X).For long-distance, heavy vehicles where hydrogen 
+may be a more effective zero carbon fuel, significant 
+advancements in clean hydrogen production and 
+distribution systems will create an effective infrastructure. 
+Electric vehicles will help energy 
+systems cope with extra demandNetwork Rail will produce 25% of its feed-in electricity 
+needs from renewable sources by 2030 through 
+connection of solar and wind generation to buildings and 
+infrastructure, becoming zero carbon by 2050. Trials of 
+bi-mode, hydrogen and battery trains are already underway, 
+and all diesel-only trains will be removed from the network 
+by 2040. Increasing track electrification will be seen out 
+to 2050, with comparatively limited use of hydrogen and 
+battery options.
+Decarbonisation is more complicated, protracted and 
+uncertain in maritime and air because of the wide variety 
+of infrastructure needs. Ground support and on-shore 
+equipment will be largely electrified but a range of alternate 
+fuels will be needed for the wide range of aircraft  
+and vessels. 
+Urban fringes, ports and airports will be ideally suited for 
+the development of multi-modal transport hubs for both 
+personal and commercial travel needs. 
+Digitalisation will enable more resilient and adaptable 
+management of transport infrastructure by gathering real-
+time insights, accurately diagnosing issues, and proposing 
+responses quickly. This will lead to lower down time, 
+enhanced maintenance capabilities and a reduced number 
+of failures. These enhanced capabilities will support the 
+adaptation and resilience of transport systems to better 
+withstand the impacts of climate change.
+The increasing prevalence of a virtual world when 
+thinking about transport infrastructure will enable more 
+sophisticated testing and design to ensure solutions 
+are as safe and effective as possible before real-world 
+deployment. 
+Through effective use of data, decision-making for 
+infrastructure will also be improved, for example in 
+planning the deployment of new EV charging infrastructure 
+or in the deployment of new micromobility solutions.
+Understanding consumers’ likely adoption of transport 
+infrastructure innovations is key to enable markets and 
+investors to align, share costs and help to shape the 
+desired transitions in technology and behaviour. This 
+requires an understanding of existing behaviour as well 
+as culture, habits, knowledge and acceptance to minimise 
+infrastructure adoption risks.38 
+UK TRANSPORT VISION 2050Infrastructure pathway
+Transport 
+modesElements 2023 position By 2025 By 2030 By 2040 By 2050
+All mode 
+enablersDataNational Digital Twin Programme [19]
+Promoting open data sources for infrastructure.Transport Location Data tools [19] CAM 
+federated data architecture framework [46]National Underground Asset register [19] CAM 
+Vehicle-to-infrastructure (V2I) connectivity [46]Predictive pipeline tool to assess 
+Infrastructure needs and constraints [19]
+Transport energy system 
+- electricityDeveloping V2X flexibility solutions [24] Standard approach for DNO flex procurement 
+& energy network access reforms [24]2035 Net-zero power system [42]
+Most EVs provide energy flex services [3]
+Transport energy system 
+- hydrogenSmall-scale electrolytic production co-located 
+with early users [3]Large-scale CCUS-enabled Hydrogen 
+production in at least one location [3]  Integration with gas network [3] Distribution & storage integrated with CCUS, 
+gas & electricity networks [3]
+Air  
+transportAir Traffic ManagementSmall scale demonstrations on infrastructure Improved traffic control for drones Airspace modernisation [2]Autonomous traffic control in service
+Upgrade for future demand [11]Autonomous traffic control pilots Re-design of lower airspace [2]
+Electric InfrastructureLow & high voltage chargers implemented [27]Aircraft battery swapping available  [27]
+Battery charging at lead airports [2]Airports substantially electrified Battery charging at all airports
+Hydrogen Infrastructure Hydrogen available at lead airports [2]Liquid Hydrant Systems available [27] Hydrant refuelling systems replacing Bowser tanks at medium and large airports [17]
+Medium and large airports deploying on-site liquefaction of Hydrogen [17]
+SAF Infrastructure>5 UK SAF plants under construction [2]Sufficient SAF for domestic flight [2]2037 - Up to 14 SAF production facilities [16]
+SAF at lead airports & SAF Mandate introduced [2]SAF Mandate requiring at least 10% SAF UK SAF industry established by 2038 [2]
+Ground support 5% zero emission 20% zero emission 60% zero emission 100% zero emission
+UAM / AAM Pilot (100s) loading and charging pads 1,000s loading and charging pads 10,000s loading and charging pads
+Other infrastructure Pilot EV/V2G systems at airports [2]Pilot charging and maintenance infra Airport ops in England zero emission [2]Urban airports/ helipads implemented
+MaritimeAlternative fuel bunkering 
+(including storage)Improved solutions for fuel flexibility and  
+multi-fuel use [18]Safe high volume storage capability for 
+ammonia and hydrogen [18]By 2035, low or zero emission fuel bunkering 
+options readily available [10]
+Alternative fuel production 
+and logisticsLimited logistics for alternative fuels [35]Pilot alternative fuel for demonstration Local H2 generation at ports [36]Berthing infrastructure updated
+Connected infrastructure 
+and smart shippingIncreased use of IoT to improve flow Electrification of port equipment [37]Ports as multi-mode hubs [8]
+Pilot connected infrastructure Pilot smart shipping concept [8]Digital port with central control [8]
+Offshore charging Pilot shore-to-ship connections [34]Shore-side power c60GWh / year [38]
+Port & Marina develop-
+mentsIncreasing “blue tourism” [8]
+Development of marina V2G [47]Automated e-boat charging system 
+developments [49]Increasing use of BESS systems at marinas 
+& V2G by moored leisure craft [49]
+Active travelCycling and Walking12,800 miles in the National Cycle Network [28]
+Improving cycling & walking infrastructure [12]Increasing combo travel [7] World class cycling and walking network in 
+England [1] 6 billion active travel stages [1]
+Shared cycle hire in most cities [39]
+C-ITS C-ITS for active travel pilot [40] [41]Pilot C-ITS to protect travellers [33]Aim: half of urban journeys cycled or walked [1]Active travel for short journeys and combo travel for long journeys are the natural choices [1]
+Micromobility (MM)Enabling policies for MM infrastructure [30]25% EV chargers cover mixed vehicles [39] 100% of shared MM pair with infrastructure 
+[39] 50% EV chargers cover mixed vehicles [39]
+Trials to support infra decision-making [30]Pilot multimode e-Mobility hubs [39]Increased use of battery swap (BaaS) 50% of private MM pair with infra [39]1% of urban roads have MM lane [39]
+RailVehicle Fleet Trials of bi-mode, hydrogen, and battery trains begin [15]Network Rail 25% renewable electricity [15]All diesel-only trains removed [1] [5] [15]Network Rail zero carbon [15]
+Traffic Management Conventional signalling [22]ERTMS / ETCS level 2 roll-out [22]50% covered by ERTMS / ETCS L2 [22]70% covered by ERTMS / ETCS L2 [22]95% covered by ERTMS / ETCS L2 [22]
+Track38% (12000 STK) track electrified [14]40% (12600 STK) track electrified  [52]50% (15800 STK) track electrified  [52]70% (22100 STK) track electrified [52]91% (25000 STK) track electrified [4]
+Restoration and reopening of a number of old stations and lines [31]
+Hydrogen Infrastructure Pilot H2 fuelling deployed 5% track H2 (1300 STK) [4]
+Battery infrastructure Pilot battery charging points 3% track battery (800 STK) [4]
+RoadHighwaysLittle use of Green & Blue Infrastructure (GBI)  
+in local area planning & deployment [51].Improvements to freight corridors & 
+connectivity [6]
+Education and support for GBI [51]Improve public transport hubs, micromobility 
+& walking routes on SRN [6]
+National GBI standards for highways [51]Increase connectivity on SRN [6] 
+Net gain in biodiversity [6]
+“Zero Harm” goal nearing zero [25]SRN & MRN connect all areas well [25]
+By 2050, SRN user emissions to be net zero [6]
+Home & workplace  
+charge points (CP)>277k home + 22k workplace chargers [20]
+New private CP must be smart [20]Smart charging becomes the norm [24]
+Reduced upfront connection costs [20]Bi-directional charging (V2X) becomes the 
+norm, EVs storing & exporting energy [24]
+Public EV charge points 
+(CP) (cars & vans)42,500+ Public CP installed [9] 
+Trials of wireless charging for fleetsVoluntary consumer service code of conduct 
+[24] . SRN blueprint for charging [6]300,000 public CP installed [20]
+Long duration public charging mostly smart 
+[24]Some use of battery swap stations (BaaS) - 
+dependent upon EV OEMs520,000 public chargepoints [48]
+Public CP growth (types and locations) will 
+be driven by need and business models 7,920+ rapid CP in UK [9]
+Never >25 miles from rapid charger on SRN [20]Every motorway service area has 6+ high 
+power CP (>100kW) [20] >2,500 high-powered chargers in England [20] 6,000 high power CP on SRN in England by 
+2035 [20]
+Heavy freight Chargin (CP) 
+infrastructureZero Emission HGV Demonstrations 
+announced inc electric & hydrogen 
+infrastructure [13]350kW chargers & 1st MW - hubs & major 
+routes.
+22-100kW - depots [32]
+HGV charging Investment plan 2028 [6]>500kW - 1MW chargers - hubs & major 
+routes
+<100 kW - depots [32] [43]
+1,500 kW every 100 miles on SRN [45].
+Hydrogen refuelling  
+stations9 H2 fuelling stations in UK [53] 15 H2 fuelling stations in UK 40 H2 fuelling stations in UK 250 H2 fuelling stations in UK [54]300 H2 fuelling stations in UK
+Few examples of public infrastructure, others 
+under development [50] [43] [13] Revenue support (RTFO) in place [3] 700-bar dispenser every 200km [45]
+1 hydrogen station per 60 trucks [32]39 
+UK TRANSPORT VISION 2050Infrastructure pathway
+Transport 
+modesElements 2023 position By 2025 By 2030 By 2040 By 2050
+All mode 
+enablersDataNational Digital Twin Programme [19]
+Promoting open data sources for infrastructure.Transport Location Data tools [19] CAM 
+federated data architecture framework [46]National Underground Asset register [19] CAM 
+Vehicle-to-infrastructure (V2I) connectivity [46]Predictive pipeline tool to assess 
+Infrastructure needs and constraints [19]
+Transport energy system 
+- electricityDeveloping V2X flexibility solutions [24] Standard approach for DNO flex procurement 
+& energy network access reforms [24]2035 Net-zero power system [42]
+Most EVs provide energy flex services [3]
+Transport energy system 
+- hydrogenSmall-scale electrolytic production co-located 
+with early users [3]Large-scale CCUS-enabled Hydrogen 
+production in at least one location [3]  Integration with gas network [3] Distribution & storage integrated with CCUS, 
+gas & electricity networks [3]
+Air  
+transportAir Traffic ManagementSmall scale demonstrations on infrastructure Improved traffic control for drones Airspace modernisation [2]Autonomous traffic control in service
+Upgrade for future demand [11]Autonomous traffic control pilots Re-design of lower airspace [2]
+Electric InfrastructureLow & high voltage chargers implemented [27]Aircraft battery swapping available  [27]
+Battery charging at lead airports [2]Airports substantially electrified Battery charging at all airports
+Hydrogen Infrastructure Hydrogen available at lead airports [2]Liquid Hydrant Systems available [27] Hydrant refuelling systems replacing Bowser tanks at medium and large airports [17]
+Medium and large airports deploying on-site liquefaction of Hydrogen [17]
+SAF Infrastructure>5 UK SAF plants under construction [2]Sufficient SAF for domestic flight [2]2037 - Up to 14 SAF production facilities [16]
+SAF at lead airports & SAF Mandate introduced [2]SAF Mandate requiring at least 10% SAF UK SAF industry established by 2038 [2]
+Ground support 5% zero emission 20% zero emission 60% zero emission 100% zero emission
+UAM / AAM Pilot (100s) loading and charging pads 1,000s loading and charging pads 10,000s loading and charging pads
+Other infrastructure Pilot EV/V2G systems at airports [2]Pilot charging and maintenance infra Airport ops in England zero emission [2]Urban airports/ helipads implemented
+MaritimeAlternative fuel bunkering 
+(including storage)Improved solutions for fuel flexibility and  
+multi-fuel use [18]Safe high volume storage capability for 
+ammonia and hydrogen [18]By 2035, low or zero emission fuel bunkering 
+options readily available [10]
+Alternative fuel production 
+and logisticsLimited logistics for alternative fuels [35]Pilot alternative fuel for demonstration Local H2 generation at ports [36]Berthing infrastructure updated
+Connected infrastructure 
+and smart shippingIncreased use of IoT to improve flow Electrification of port equipment [37]Ports as multi-mode hubs [8]
+Pilot connected infrastructure Pilot smart shipping concept [8]Digital port with central control [8]
+Offshore charging Pilot shore-to-ship connections [34]Shore-side power c60GWh / year [38]
+Port & Marina develop-
+mentsIncreasing “blue tourism” [8]
+Development of marina V2G [47]Automated e-boat charging system 
+developments [49]Increasing use of BESS systems at marinas 
+& V2G by moored leisure craft [49]
+Active travelCycling and Walking12,800 miles in the National Cycle Network [28]
+Improving cycling & walking infrastructure [12]Increasing combo travel [7] World class cycling and walking network in 
+England [1] 6 billion active travel stages [1]
+Shared cycle hire in most cities [39]
+C-ITS C-ITS for active travel pilot [40] [41]Pilot C-ITS to protect travellers [33]Aim: half of urban journeys cycled or walked [1]Active travel for short journeys and combo travel for long journeys are the natural choices [1]
+Micromobility (MM)Enabling policies for MM infrastructure [30]25% EV chargers cover mixed vehicles [39] 100% of shared MM pair with infrastructure 
+[39] 50% EV chargers cover mixed vehicles [39]
+Trials to support infra decision-making [30]Pilot multimode e-Mobility hubs [39]Increased use of battery swap (BaaS) 50% of private MM pair with infra [39]1% of urban roads have MM lane [39]CERTAINTY high med low speculative
+RailVehicle Fleet Trials of bi-mode, hydrogen, and battery trains begin [15]Network Rail 25% renewable electricity [15]All diesel-only trains removed [1] [5] [15]Network Rail zero carbon [15]
+Traffic Management Conventional signalling [22]ERTMS / ETCS level 2 roll-out [22]50% covered by ERTMS / ETCS L2 [22]70% covered by ERTMS / ETCS L2 [22]95% covered by ERTMS / ETCS L2 [22]
+Track38% (12000 STK) track electrified [14]40% (12600 STK) track electrified  [52]50% (15800 STK) track electrified  [52]70% (22100 STK) track electrified [52]91% (25000 STK) track electrified [4]
+Restoration and reopening of a number of old stations and lines [31]
+Hydrogen Infrastructure Pilot H2 fuelling deployed 5% track H2 (1300 STK) [4]
+Battery infrastructure Pilot battery charging points 3% track battery (800 STK) [4]
+RoadHighwaysLittle use of Green & Blue Infrastructure (GBI)  
+in local area planning & deployment [51].Improvements to freight corridors & 
+connectivity [6]
+Education and support for GBI [51]Improve public transport hubs, micromobility 
+& walking routes on SRN [6]
+National GBI standards for highways [51]Increase connectivity on SRN [6] 
+Net gain in biodiversity [6]
+“Zero Harm” goal nearing zero [25]SRN & MRN connect all areas well [25]
+By 2050, SRN user emissions to be net zero [6]
+Home & workplace  
+charge points (CP)>277k home + 22k workplace chargers [20]
+New private CP must be smart [20]Smart charging becomes the norm [24]
+Reduced upfront connection costs [20]Bi-directional charging (V2X) becomes the 
+norm, EVs storing & exporting energy [24]
+Public EV charge points 
+(CP) (cars & vans)42,500+ Public CP installed [9] 
+Trials of wireless charging for fleetsVoluntary consumer service code of conduct 
+[24] . SRN blueprint for charging [6]300,000 public CP installed [20]
+Long duration public charging mostly smart 
+[24]Some use of battery swap stations (BaaS) - 
+dependent upon EV OEMs520,000 public chargepoints [48]
+Public CP growth (types and locations) will 
+be driven by need and business models 7,920+ rapid CP in UK [9]
+Never >25 miles from rapid charger on SRN [20]Every motorway service area has 6+ high 
+power CP (>100kW) [20] >2,500 high-powered chargers in England [20] 6,000 high power CP on SRN in England by 
+2035 [20]
+Heavy freight Chargin (CP) 
+infrastructureZero Emission HGV Demonstrations 
+announced inc electric & hydrogen 
+infrastructure [13]350kW chargers & 1st MW - hubs & major 
+routes.
+22-100kW - depots [32]
+HGV charging Investment plan 2028 [6]>500kW - 1MW chargers - hubs & major 
+routes
+<100 kW - depots [32] [43]
+1,500 kW every 100 miles on SRN [45].
+Hydrogen refuelling  
+stations9 H2 fuelling stations in UK [53] 15 H2 fuelling stations in UK 40 H2 fuelling stations in UK 250 H2 fuelling stations in UK [54]300 H2 fuelling stations in UK
+Few examples of public infrastructure, others 
+under development [50] [43] [13] Revenue support (RTFO) in place [3] 700-bar dispenser every 200km [45]
+1 hydrogen station per 60 trucks [32]40 UK TRANSPORT VISION 2050The route ahead
+The vision and pathways highlight 
+major new opportunities for economic 
+growth and societal benefit and 
+convey how businesses need to adapt 
+and evolve in order to secure market 
+position and grow.
+These challenges and opportunities are largely the  
+same across the globe. The strategic imperatives and 
+drivers we identify are listed below:
+Net Zero
+The transition to alternative energy vectors brings 
+substantial changes to transport production and supply 
+chains. It will require significant battery production and the 
+requisite raw materials. This carries risks and opportunities 
+for manufacturing scale-up and supply chains, which will 
+need to adapt and evolve to secure market position and 
+grow.
+Innovate UK will work with government and industry to 
+maximise UK content and the role of UK companies in 
+future supply chains to secure economic benefit  
+including jobs.
+Digital enabled 
+Advances in robotics, autonomy and artificial intelligence 
+along with increasing connectivity, data transmission and 
+processing will create opportunities for greater efficiency, 
+new services for travellers and new business models in 
+multi-billion pound global markets and be critical to the 
+operation of transport as a national infrastructure.
+Innovate UK will work with the transport and digital 
+industries to gain maximum advantage for the UK from the 
+digital revolution and work with government to understand 
+and mitigate risks.Resilient and responsive
+Traveller safety and confidence is essential for society 
+whilst the continuous operation of the transport system 
+underpins business and societal activity. It must be 
+resilient to environmental impacts, production and supply 
+challenges, and geopolitical events. Digital solutions must 
+be implemented in a safe and secure way. 
+Innovate UK will work with government and industry to 
+identify and manage threats and to embrace emerging 
+and digital technologies, develop skills and embed safety 
+and resilience.41 UK TRANSPORT VISION 2050Investing collaboratively
+We must invest collaboratively across the UK’s transport 
+system to maximise societal and economic benefit. UK 
+transport is part of a global system and the UK must work 
+with international partners to develop global solutions. 
+We will take a systems-wide approach needed to ensure 
+that changes to the way people and goods move are well 
+considered and benefit everyone. We will use this Vision 
+2050 document alongside our international benchmarking 
+and other inputs to inform our decisions, including on 
+where to invest.
+The future is yet to be written. We have based our 
+conclusions on information available today and on 
+the welcome contributions of many organisations and 
+stakeholders. New information and future change will need 
+to be reflected in future versions. We will ensure there are 
+ways to provide feedback to us and we will update this 
+vision as often as we need to. We look forward to working 
+with you to invest in the future of transport.Responding to evolving  
+traveller needs
+The transport system is driven by transport and traveller 
+demand and needs. The more these demands and 
+needs are understood, the better the transport system. 
+Technology advances to improve transport services, 
+reduce costs and revolutionise business models will 
+accelerate the changes already apparent in the way 
+people travel. This includes increasing understanding 
+and accommodation of travellers’ needs. Smart polices 
+are needed to cater for these changes and ensure a 
+sustainable and more inclusive transport system.
+Innovate UK will work with others to understand the 
+impact of innovation and evolving traveller requirements 
+to help inform policy to deliver an optimised transport 
+system.
+Delivering for the economy
+A high-quality, efficient and effective transport system in 
+2050 makes the UK makes the UK a better connected and 
+more productive place to do business. 
+By understanding and responding to traveller needs, and 
+using the strategic imperatives to guide investments the 
+UK can maximise economic growth, UK content,  
+exports, and jobs.42 UK TRANSPORT VISION 2050Annex 1
+Abbreviations used in pathway summaries
+4G fourth generation of broadband cellular network technology
+5G fifth generation of broadband cellular network technology
+6G sixth generation of broadband cellular network technology
+7G seventh generation of broadband cellular network technology
+AAM advanced air mobility
+AD automated (or autonomous) driving
+ADAS advanced driver assistance system
+ADS-B  automatic dependence surveillance broadcast
+AI artificial intelligence
+AIS automatic identification system
+ALKS  automated lane keeping system
+ALN  Automatic London Network
+Alt. alternative
+AMV air mobility vehicle
+app mobile app
+AURN automatic urban and rural network
+ATM  air traffic management
+ATO  automatic train operation
+AV autonomous vehicle
+AVP  autonomous valet parking
+BEV  battery electric vehicle 
+BVLOS beyond visual line of sight
+C3X L1 etc  connected car customer experience
+CAM connected autonomous mobility
+CARG   Compound Annual Growth Rate
+CAV  connected autonomous vehicle
+CAVPASS  connected and autonomous vehicle process for assuring safety and security
+C-ITS cooperative intelligent transport systems
+CoD  capacity on demand
+CORSIA carbon offsetting and reduction scheme for international aviation
+CP control period
+C-V2X cellular vehicle to everything
+DLR Docklands Light Railway
+EAN  European Aviation Network
+ECE United Nations Economic Commission for Europe (also UNECE)
+e-mobility electric mobility
+ERTMS / ETCS European Rail Traffic Management System / European Train Control System
+EV electric vehicle
+FRMCS future railway mobile communication system
+GBTA  Great Britain Type Approval
+GDP gross domestic product
+GSM-R global system for mobile communications - railway
+H2 hydrogen
+HARPS  Highly Automated Road Passenger Services
+HGV  heavy goods vehicle
+ICE internal combustion engine
+IMO International Maritime Organisation43 UK TRANSPORT VISION 2050IoT internet of things
+LCV / LGV light commercial vehicle / light goods vehicle
+LEO low earth orbit 
+LRIT long range identification and tracking
+MaaS mobility as a service
+MAFM multimodal autonomous freight movement
+MARLab Maritime Autonomy Regulation Lab
+MASRWG  Maritime Autonomous Systems and Regulatory Working Group
+MASS  maritime autonomous surface ships
+Micromobility  electric and human-powered vehicles under 200kg and with speeds restricted to
+ under 25mph
+no number
+ODD operational design domain
+OTS  organised track structure
+P2P peer to peer
+pax passengers
+PAYG  pay as you go
+PBN performance based navigation
+PtL power to liquid
+PSV Passenger Service Vehicle
+R&D&I  Research, Development and Innovation
+RORO  roll on roll off
+SAE  Society of Automotive Engineers
+SAF  sustainable aviation fuel
+SD safety driver
+STK  single track kilometre
+SRN  Strategic Road Network
+TCO  total cost of ownership
+TPNT terrestrial positioning, navigation and timing
+TRL technology readiness level
+UAM  urban air mobility
+UAV  unmanned aerial vehicle
+UTM unmanned air traffic management
+V2X vehicle to x
+VOSA Vehicle and Operator Services Agency
+VTOL vertical take-off and landing
+Zero-E Zero Emission 44 UK TRANSPORT VISION 2050References
+Introduction
+[1]  House of Commons Library, Industries in the UK , October 2023
+[2]  Statista, Gross value added of the transportation and storage sector in the United Kingdom from 1990 to   
+ 2022
+[3]  Statista, Gross value added of the manufacturing sector in the United Kingdom from 1990 to 2022
+[4]  House of Commons Library, Gross Domestic Product (GDP): Key Economic Indicators, December 2023
+[5]  Department for Energy Security & Net Zero, 2022 UK greenhouse gas emissions, provisional figures,   
+ March 2023
+Travel and transport demand
+[0]  McKinsey and Company, Up in the air: How do consumers view advanced air mobility?  June 2021
+[1]  ICAO, Effects of Novel Coronavirus (COVID‐19) on Civil Aviation: Economic Impact Analysis , April 2023
+[2]  IATA, Air Cargo Demand , January 2023
+[3]  Destination 2050, A route to net zero European aviation, February 2021
+[4]  Roland Berger GmbH, Turbulent times in aerospace MRO , October 2020 
+[5]  PWC, Skies Without Limits v2.0 , July 2022
+[6]  Urban Air Mobility (UAM) Market Study - NASA Technical Reports Server (NTRS)
+[7]  OECD International Transport Forum (ITF),Transport Outlook 2019 , May 2019
+[8]  Department for Transport, Sea passenger statistics: data tables , 2023
+[9]  Department for Transport, Maritime 2050: Trade Route Map, June 2022, Maritime recovery route map
+[10]  Department for Transport, Port freight quarterly statistics : July to September 2020
+[11]  Department for Transport, Port freight quarterly statistics : April to June 2022
+[12]  Department for Transport, Maritime 2050 , January 2019
+[13]  CBI, The European market potential for cruise tourism , February 2021
+[14]  Department for Transport, UK port freight traffic: 2019 forecasts, January 2019
+[15]  UK Trade Policy Observatory, What is the extra mileage in the reintroduction of ‘free zones’ in the UK? ,  
+January 2019
+[16]  Foresight Future of the Sea: a report from the Government Chief Scientific Adviser
+[17]  House of Commons Library, Active travel: Trends, policy and funding , August 2020
+[18]  Department for Transport, Road Traffic Estimates: Great Britain 2021 , September 2022
+[19]  Food Navigator, Online food delivery report, March 2020
+[20]  The Guardian, Bike boom report, June 2020
+[21]  Department for Transport, Gear Change: A bold vision for cycling and walking, 2020
+[22]  Bicycle Association, Covid cycling boom report, April 2021
+[23]  MDPI, Impacts of E-Micromobility on the Sustainability of Urban Transportation—A Systematic Review ,  
+June 2021
+[24]  McKinsey & Company, The future of micromobility: Ridership and revenue after a crisis , July 2020
+[25]  Bicycle Association, Potential for e-cargo bikes to reduce congestion and pollution from vans in cities ,  
+July 2019
+[26]  Office of Road and Rail, Passenger Rail Usage , July to September 2022
+[27]  Office of Road and Rail, Passenger Rail Usage 2020-21 Quarter 2
+[28]  Office of Road and Rail, Freight Rail Usage and Performance July to September 2022
+[29]  Office of Road and Rail, Freight Rail Usage and Performance 2020-21 Quarter 3
+[30]  Department for Transport, Rail Freight Strategy , September 2016  
+[31]  Department for Transport, Great British Railways: Williams-Shapps plan for rail, May 2021
+[32]  National Infrastructure Commission, Future of Freight Demand , January 2019
+[33]  Department for Transport, Domestic Transport Usage by Mode, June 2021
+[34]  Light Commercial Vehicles: Delivering for the UK Economy - SMMT
+[35]  Department for Transport, Road traffic Projections 2022 , December 2022
+[36]  Climate Change Committee, The Sixth Carbon Budget , December 2020
+[37]  National Infrastructure Commission, Future of Freight Demand , January 2019
+[38]  European Rail Research Advisory Committee, Rail 2050 Vision , 2017
+[39]  Civil Aviation Authority, Freight 2010 - 2020 Tonnes dataset, 2020, Table 13.2
+[40]  OECD International Transport Forum (ITF), Transport Outlook  2021
+[41] Transport Scotland, A route map to achieve a 20 per cent reduction in car kilometres by 2030 , January 2022
+[42]  National Travel Attitudes Study (NTAS) - Wave 4 (final)
+[43]  The Free Ports Opportunity - The Centre for Policy Studies , November 2016
+[44]  Advancing Earth and Space Science, Demand for Ports to 2050: Climate Policy, Growing Trade and the 
+Impacts of Sea-Level Rise, July 2020
+[45]  Economics Observatory, What is the future of commuting to work, May 2021
+[46]  Department for Transport, Quarterly bus statistics : April to June 2022, December 2022
+[47]  Government Office for Science, A time of unprecedented change in the transport System , January 201945 UK TRANSPORT VISION 2050[48]  Office for National Statistics, Internet sales as a percentage of total retail sales (ratio) (%) , January 2022
+[49]  Government office for science, Human Factors in Exclusive and Shared Use in the UK Transport System , 
+January 2019
+[50]  International Chamber of Shipping, Shipping bodies call on world leaders to bring forward discussions on 
+global market-based measures, April 2021
+[51] ADS Group, Advanced Air Mobility Annual Market Outlook, ADS , June 2021
+[52]  EY, Micromobility: moving cities into a sustainable future, 2020
+[53]  Department for Transport, National Travel Attitudes Study : Wave 7, February 2023
+[54]  Department for Transport, Domestic Transport Usage by Mode, February 2023
+[55]  Department for Transport, Walking and cycling statistics, England, 2021 , August 2022
+[56]  Department for Transport, E-scooter trials: guidance for users , 2023
+[57]  Department for Transport, Rail factsheet: 2022, February 2023
+[58]  Official Gov statistics, Domestic Transport Usage by Mode, February 2023
+[59]  Office for National Statistics, Cost of living insights: Transport, April 2023
+[60]  Transformative Urban Mobility Initiative (TUMI), Sustainable Urban Transport: Avoid-Shift-Improve,  
+April 2019
+[61]  The Centre for Research into Energy Demand Solutions (CREDS), The role of energy demand reduction in 
+achieving net-zero in the UK , October 2021
+[62]  Office for Statistics Regulation, Review of Transport Accessibility Statistics , April 2022
+[63]  Travel forecasting resource, Accessibility , March 2023
+[64]  Department for Transport, Transport Uncertainty Guidance (TAG) Uncertainty Tool Kit , May 2023
+[65]  Department for Transport, £2 Bus Fair Cap Evaluation: Interim report, May 2023
+[66]  Riviera, The trends that will shape 2023 in Passenger Ship Technology , January 2023
+[67]  Office of Rail and Road, Passenger rail usage January to March 2023 , June 2023
+[68] Department for Transport, Rail freight growth target, December 2023
+[69] Department for Transport, Annual bus statistics: year ending March 2023 , November 2023
+[70] Department for Transport, Walking and Cycling Statistics, England: 2022 , August 2023
+Digital 
+[1]  International Transport Forum, Transport Outlook 2021 , 2021
+[2]  Department for Transport, Transport Decarbonisation Plan , July 2021 (updated January 2023)
+[3]  EU Digital Strategy , accessed February 2023
+[4]  McKinsey, Special digital Themes, July 2022
+[5]  European Commission, Sustainable and Smart Mobility Strategy , accessed February 2023
+[6]  European Commission, Digital Transport and Logistics Forum (DTLF) , accessed February 2023
+[7]  HM Government, National Cyber Strategy 2022, 2022
+[8]  European Commission, The Digital Europe Programme, accessed February 2023
+[9]  Automotive council UK, CAM working group, not available online
+[10] TRL, Digitisation of Transport - Think Different, 2021
+[11]  Department for Transport, Transport Data Strategy , 2023
+[12] ioki, Planning mobility for rural areas: What about public transport in England, Wales and Scotland?, 2023
+Connectivity 
+[1]  Civil Aviation Authority, Airspace Modernisation Strategy CAP 1711, December 2018
+[2]  European ATM Master Plan, Digitalising Europe’s Aviation Infrastructure , 2020
+[3]  NATS, NATS records first day with zero westbound North Atlantic tracks, March 2021
+[4]  NATS, The future of airspace, accessed May 2021  
+[5]  ACARE, Time For Change - FlightPath 2050 , accessed June 2021
+[6]  European Aviation Network , accessed May 2021
+[7]  European Telecommunications Standards Institute, ETSI White Paper No.4 GSM Operation Onboard 
+Aircraft, January 2007
+[8]  Thales, In-Flight Broadband Reaches New Highs with 4G Solution from Thales in the UK, Nokia and Skyfive , 
+October 2020
+[9]  Ofcom, Mobile Communications on-board Aircraft, October 2007
+[10]  Department for Transport, Maritime 2050 Navigating the Future, January 2019
+[11]  Port Technology, The Future of Vessel Traffic Management in Europe, accessed May 2021
+[12]  Marine Insight, Maritime Internet Options: How is Internet Provided on Ships, March 2021
+[13]  Network Rail, Digital Railway Long-Term Deployment Plan
+[14] Network Rail, Project “Reach”: Network Rail invites £1bn private sector investment in telecoms , April 2021
+[15]  Department for Transport, Intelligent Transport Systems in the UK Progress Report, August 2017
+[16] Traffic Technology Today, C-V2X Industry: What does the future look like?, 7 January 2020
+[17]  DSIT, UK Wireless Infrastructure Strategy , April 2023
+[18]  S&P global mobility, 5G, C-V2X, and automotive connectivity in 2021 , January 202146 UK TRANSPORT VISION 2050[19]  HERE and Swiss Re, The future of motor insurance, 2016
+[20]  Thatcham, What is AEB? , accessed May 2021
+[21]  Perspectives on Future Transportation Research: Impact of Intelligent Transportation System technologies 
+on Next Generation Transportation Modelling , November 2012
+[22]  New Civil Engineer, Innovative traffic insight sensors installed to monitor Kent traffic patterns ,  
+22 February 2021
+[23]  Cabinet Office, Policy Paper, Unlocking the Power of Location: The UK’s Geospatial Strategy 2020 to 2025 , 
+July 2020
+[24]  Department for Transport, Inclusive Transport Strategy: Achieving Equal Access for Disabled People, 
+November 2020
+[25]  Traffic Technology Today, Artificial intelligence to plan new cycle routes trials begin in London ,  
+January 2020
+[26]  ISP review, EE’s 4G Mobile Network Covers 94% of All Great Britain’s Roads, December 2020
+[27]  Automotive Council UK, Product Roadmap, Intelligent Connected Vehicle, Automotive Council UK, 2017  
+[28]  McKinsey, Setting the framework for car connectivity and user experience , November 2018
+[29]  6G Flagship, 6G White Paper on Validation and Trials for Verticals towards 2030’s, April 2020
+[30]  Institute of the Motor Industry, Five Predictions about the MOT test of 2020 , November 2019
+[31] Department for Environment Food & Rural Affairs, Automatic London Network , accessed May 2021
+[32] Department for Environment Food & Rural Affairs, Automatic Urban and Rural Network, accessed May 2021
+[33] Wikipedia, 6G Network, accessed May 2021
+[34] National Highways, Digital Roads, accessed October 2022
+[35] Department for Transport - Cycling & Walking Investment Strategy, Report to Parliament, February 2020
+[36] London Infrastructure Plan 2050, accessed May 2021
+[37] Welsh Government, Active travel, safe routes in communities and road safety schemes: funding allocation 
+to local authorities 2020 to 2021 , July 2020
+[38] Department for Transport, The second cycling and walking investment strategy (CWIS2), March 2023
+Energy vectors
+[1]  Fuel Cells and Hydrogen 2 Joint Undertaking, Hydrogen-powered aviation: a fact-based study of hydrogen 
+technology, economics, and climate impact by 2050 , 2020
+[2]  Sustainable Aviation, Sustainable Aviation Fuels Roadmap: Fuelling the future of UK aviation, February 2019
+[3]  Department for Transport, Jet Zero Strategy: Delivering net zero aviation by 2050 , July 2022
+[4]  World Economic Forum, How sustainable aviation fuels can tackle aviation’s carbon footprint ,  
+January 2023
+[5]  Norton Rose Fulbright, New regulatory initiatives supporting Sustainable Aviation Fuel, October 2021
+[6]  Sustainable Aviation, Decarbonisation Road-map: A path to Net Zero, February 2020
+[7]  Aviation benefits beyond borders, Beginner’s Guide to Sustainable Aviation Fuel Edition 3 , November 2017
+[8]  Advanced Propulsion Centre, Transport Energy Network, accessed November 2023
+[9]  Department for Transport, Clean Maritime Plan Main report, July 2019
+[10]  Clean Maritime Plan Scenario analysis: take-up of emissions reduction options and their impacts on 
+emissions and costs , July 2019
+[11]  Report for Department for Transport, Clean Maritime Plan, Maritime emission reduction options , July 2019
+[12]  Report for Department for Transport, Reducing the Maritime Sector’s Contribution to Climate Change and 
+Air Pollution , July 2019
+[13] Innovate UK conclusion after analysing ref [12] along with consultation including with Maritime and 
+Coastguard Agency. Includes inferences based on other internationally focused documents [33] [34] [35]
+[14]  Department for Transport, UK Domestic Maritime Decarbonisation Consultation: Plotting the Course to 
+Zero , July 2022
+[15]  Department for Energy Security & Net Zero, Powering up Britain , March 2023
+[16]  Department for Transport, Decarbonising Transport - A Better, Greener Britain, July 2021
+[17]  HM Government, The Ten Point Plan for a Green Industrial Revolution , November 2020
+[18]  Office of Rail & Road, Rail Infrastructure and Assets, October 2022
+[19]  Network Rail, Traction Decarbonisation Network Strategy - Interim Programme Business Case ,  
+September 2020
+[20]  RSSB, Final Report to the Minister for Rail, Rail Industry Decarbonisation Taskforce, July 2019
+[21]  Railway Technology, UK to phase-out diesel-only trains by 2040 , February 2018
+[22]  Department for Transport, Decarbonising Transport: Setting the Challenge, 2020
+[23]  Climate Change Committee, The Sixth Carbon Budget, Page 98 , December 2020
+[24]  Department for Transport, VEH1103: Licensed vehicles at the end of the quarter by body type and fuel type: 
+Great Britain and United Kingdom , December 2022
+[25]  Department for Transport, Road Traffic Forecasts, September 2018
+[26]  SMMT, Britain gets back in the driving seat with more than a million EVs on the road , April 2023
+[27]  Department for Transport, Licensed vehicles dataset , May 2021
+[28]  Zemo Partnership, Market opportunities to decarbonise heavy duty vehicles using high blend renewable 
+fuels, March 2021
+[29]  Zemo Partnership, European truck makers promise to phase out IC-engines by 2040 , January 2021
+[30]  Department for Transport, Ultra-low emission bus scheme , March 201847 UK TRANSPORT VISION 2050[31]  Energy savings trust, Incorporating EV chargepoints into local planning policies for new developments , 
+April 2020
+[32]  Department for Transport, Annual bus statistics: England 2019/20 , October 2020
+[33]  BP , BP Energy Outlook 2023 , July 2023 edition
+[34]  DNV, Enhanced modelling of maritime’s future fuel mix , October 2022
+[35]  Report for Department for Transport, Reducing The Maritime Sector’s Contribution To Climate Change And 
+Air Pollution , July 2019
+[36]  Department for Transport, Pathway to net zero aviation: Developing the UK sustainable aviation fuel 
+mandate , March 2023
+Autonomy
+[1]  European ATM Master Plan 2020 Exec View , 2020
+[2]  Digital European Sky Blueprint , 2020 
+[3]  Royal aeronautical society, Making money out of air , October 2019
+[4]  Aerospace Technology Institute, ATI Insight 15 - The journey towards autonomy in civil aerospace,  
+August 2020  
+[5] Airbus, Airbus demonstrates first fully automatic vision-based take-off, January 2020    
+[6]  Department for Transport, Maritime 2050 - Navigating the future, January 2019    
+[7]  Ocean Infinity, Armada launches to see, May 2023 
+[8]  Mayflower Autonomous Ship, Mayflower Autonomous Ship , June 2021
+[9]  Markets and markets, Autonomous Ships Market worth $14.2 billion by 2030 , June 2021
+[10]  Wärtsilä, Wärtsilä Smartmove Suite, March 2023
+[11]  Port technology international, Peel Ports opens UK’s first fully-automated steel terminal , June 2016
+[12]  Hutchinson ports, Hutchinson agree deal for 100 Westwell autonomous trucks for Felixstowe, June 2023  
+[13]  Maritime UK, MASS UK Industry Conduct Principles and Code of Practice 2022 (V6), November 2022
+[14]  International Maritime Organisation, IMO MASS code symposium , March 2023
+[15]  Maritime and Coastguard Agency, Maritime Autonomy Regulation Lab (MARLab) Report, November 2020 
+[16]  House of Commons Transport Committee, Maritime 2050 , March 2023
+[17]  Maritime and Coastguard Agency, Workboat Code Edition 3, covers Remote Operated Unmanned Vessels, 
+Draft, 2022        
+[18]  Department for Transport, National maritime security strategy , August 2022
+[19] Atkins Realis, Why driverless operations are the key to Britain’s future railway, June 2021
+[20]  Rail Technical Strategy (RTS) 2022 , 2022  
+[21]  Network Rail, Digital Railway Long-Term Deployment Plan Technical Report Executive Summary ,  
+June 2019
+[22]  BBC, Passengers ride on the UK’s first automated mainline train, March 2018
+[23]  Siemens, Teaching trams to drive. On the way to smart and autonomous trams, 2019
+[24]  Network Rail, Automating Inspection and Maintenance Activities to Remove Workforce from High-Risk 
+Areas and Improved Data Capture, June 2021
+[25]  Singapore Mobility Challenge, Automated Inspection of Rail Vehicles, 2022
+[26]  SAE J3016 Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor 
+Vehicles, April 2021
+[27]  Department for Transport, UK on the cusp of a transport revolution, as self-driving vehicles set to be worth 
+nearly £42 billion by 2035 , January 2021
+[28]  Oxa, Project Endeavour concludes with autonomous vehicle passenger rides in London , August 2021
+[29]  ServCity: Hailing the Future of Mobility , Jun 2021
+[30]  Stagecoach, CAV Forth - the UK’s first autonomous bus service, June 2021
+[31]  Intelligent Transport, UK’s first zero-emission autonomous bus service launched in Oxfordshire,  
+March 2023
+[32]  Fusion Processing, Autonomous Bus depot , 2019
+[33]  Belfast Habour, Northern Ireland’s first self-driving shuttle , April 2023
+[34]  City of Sunderland, Sunderland Advanced Mobility Shuttle (SAMS) , April 2023
+[35]  Smart Cambridge, Affordable Very Rapid Transit (AVRT) Report. Vol 1., 2017
+[36]  World Economic Forum, How trackless trams could help revitalize city suburbs , September 2022
+[37]  Zenzic, UK Connected and Automated Mobility Roadmap to 2035 , January 2023
+[38]  UK5G, 5G CAL project, June 2022
+[39]  North East Automotive Alliance, V-CAL project, April 2023
+[40]  HVS, Hub-to-Hub project, Apr 2023
+[41]  United Nations, UN Regulation No. 157 - Uniform provisions concerning the approval of vehicles with 
+regard to Automated Lane Keeping Systems , January 2021
+[42]  HM Government, Connected & Automated Mobility 2025 , August 2022
+[43]  HM Government, Code of Practice: Automated vehicle trialling, January 2022
+[44]  Connected and automated vehicles, Process for assuring safety and security (CAVPASS), August 2022
+[45]  NPL, Improving safety in automated vehicles, 202248 UK TRANSPORT VISION 2050[46]  SMMT, Connected and automoted mobility: The UK economic and market opportunities , 2023
+Business models
+[1]  Association of British Insurers (ABI), Pay how you drive motor insurance
+[2]  Zurich, Driverless vehicles and the future of motor insurance, February 2020
+[3]  Forbes, The Future Of Car Insurance Is Behavior-Based, February 2020
+[4]  McKinsey, The future of mobility is at our doorstep , December 2019
+[5]  McKinsey, The trends transforming mobility’s future , March 2019
+[6]  ONS - Internet sales as a percentage of total retail sales (ratio) (%) , May 2023
+[7]  Research and Markets - E-commerce Global Market Report 2020-30: COVID-19 Implications and Growth, 
+12.1% CAGR during 2020-2030 , May 2020
+[8]  Octopus group, The future of transport in 2030 , December 2019
+[9]  Hitachi Urban Transport & Logistics , accessed May 2021
+[10]  Kantar Sustainable transport on track to overtake cars by 2030 in the world’s largest cities , February 2020
+[11]  Invesp, The Importance of Same Day Delivery – Statistics and Trends, 11 April 2021
+[12]  Government Office for Science, Last mile urban freight in the UK: how and why is it changing? ,  
+February 2019
+[13]  McKinsey, Parcel delivery The future of last mile , September 2016
+[14]  Marsh, Differentiating with Last-Mile Delivery , accessed May 2023
+[15]  Mass Alliance - Cargo bike industry survey expects over 50% market growth in 2020 , July 2020
+[16]  Alliance for Logistics Innovation through Collaboration in Europe (ALICE) - A framework and process for the 
+development of a Roadmap towards zero emissions logistics 2050 , December 2019
+[17]  Alliance for Logistics, Innovation through Collaboration in Europe (ALICE), Roadmap to the physical 
+internet , 2020
+[18]  PWC, The impact of drones on the UK economy , accessed May 2021
+[19]  World Economic Forum, Raising Ambitions: A new roadmap for the automotive circular economy , 
+December 2020
+[20]  Aerospace Technology Institute, Insight 16 - Sustainable Aviation: ATI Framework, December 2020
+[21]  Royal Haskoning DHV, Covid-19 pushing airports to diversify into non-passenger related revenues,  
+20 July 2020
+[22]  Royal NLR, Challenge accepted: Circular Economy in Aviation, 7 September 2020
+[23]  Network Rail, Environmental Sustainability Strategy , September 2020
+[24]  ADS group, Distributed aviation a new economic model for electric aviation, April 2021
+[25]  McKinsey, Setting the framework for car connectivity and user experience , November 2018
+[26]  OCTO Telematics, An alliance between OCTO Telematics and The European House – Ambrosetti in order to 
+define an “Italian way” towards connected mobility - Octo Telematics, February 2021
+[27]  Zenzic, UK Connected and Automated Mobility Roadmap to 2030 , June 2021
+[28]  Cision PR newswire, Automotive Cyber Security Market Size To Advance, February 2021
+[29]  Cision PR newswire, Global Aviation Cyber Security Market Nears $6.5 Billion by 2026 , August 2019
+[30] Yole Group, Towards 90% of cars connected in 2028: what are the driving forces?, August 2023
+[31] Energy Saving Trust, Electrifying last mile deliveries: A guide for businesses , 2020
+[32] Maritime 2050 - Navigating the Future, Department for Transport, January 2019
+[33] Centre for London, Reclaim the kerb: The future of parking and kerbside management in London ,  
+March 2020
+[34] House of Commons Library, UK disability statistics: Prevalence and life experiences, August 2023
+Infrastructure
+[1]  Department for transport, Decarbonising Transport – A Better, Greener Britain, July 2021
+[2]  Department for Transport, Jet Zero Strategy , July 2022
+[3]  HM Government, UK Hydrogen Strategy , August 2021
+[4]  Network Rail, Traction Decarbonisation Network Strategy - Interim Programme Business Case, Pg10,  
+July 2020
+[5]  Department for Transport, Future of Freight: a long-term plan , June 2022
+[6]  National Highways, Connecting the country: our long-term strategic plan to 2050 , May 2023
+[7]  Worktribe, Combo Travel - Active and motorised modes working better together , May 2021
+[8]  Department for Transport, Maritime 2050 - Navigating the Future, January 2019
+[9]  Zapmap, EV charging statistics 2023 , August 2023
+[10]  Department for Transport, Clean Maritime Plan , July 2019
+[11]  Civil Aviation Authority, CAP1711: Airspace Modernisation Strategy 2023–2040 Part 1: Strategic objectives 
+and enablers, January 2023
+[12]  Department for Transport, Cycling and Walking Investment Strategy , April 2017
+[13]  Innovate UK, Government invests £200 million to drive innovation and get more zero emission trucks on 
+our roads, March 2021[14]  Office of Rail and Road, Rail Infrastructure and Assets April 2022 to March 2023 , October 2023
+[15]  Network Rail, A low-emission railway , accessed November 2023
+[16]  Airport Operators Association , Decarbonisation Report, 2021
+[17]  Aerospace Technology Institute, Hydrogen Infrastructure and Operations , March 2022
+[18]  Zero-Emission Shipping Mission, Industry Roadmap for Zero-Emission Shipping , April 2022
+[19]  Infrastructure and Projects Authority, Transforming Infrastructure Performance: Roadmap to 2030 , 
+September 2021
+[20]  Department for Transport, UK electric vehicle infrastructure strategy , March 2022
+[21]  Department for Transport, Apply for Local Electric Vehicle Infrastructure (LEVI) funding February 2023
+[22]  Office for Zero Emission Vehicles, On-Street Residential Chargepoint Scheme guidance for local authorities , 
+December 2022 
+[23]  BSI, PAS-1899:2022 , 2022
+[24]  HM Government, Electric vehicle smart charging action plan , January 2023
+[25]  Department for Transport, Road Investment Strategy 2: 2020–2025 , March 2020
+[26]  National Highways, 5 year delivery plan : 2020-2025, 2020
+[27]  Connected Places Catapult, Preparing UK airports for zero emission aircraft, March 2023
+[28]  Sustrans, Paths for Everyone Three Years On, January 2022
+[29]  Department for Transport, A zero emission vehicle (ZEV) mandate and CO2 emissions regulation for new 
+cars and vans in the UK , March 2023
+[30]  WMG, Micromobility: a UK Roadmap , accessed November 2023
+[31]  Department for Transport, Restoring Your Railway Fund, June 2022
+[32]  European Automobile Manufacturers Association, ACEA Position Paper - Heavy‐duty vehicles: Charging 
+and refuelling infrastructure requirements, May 2021
+[33]  European Transport Safety Council, The European Union’s role in promoting the safety of cycling, July 2016
+[34]  Associated British Ports, Port of Southampton to open new cruise terminal for 2021 season ,  
+November 2020
+[35]  DNV, Methanol as a potential alternative fuel for shipping: A brief talk with Chris Chatterton of the Methanol 
+Institute , May 2020
+[36]  IEA, The Future of Hydrogen, July 2019
+[37]  Frontier Economics, Reducing the maritime sector’s contribution to climate change and air pollution ,  
+July 2019
+[38]  Frontier Economics, Reducing the maritime sector’s contribution to climate change and air pollution , July 
+2019, Page 26
+[39]  Innovate UK estimate 
+[40]  European Transport Safety Council, ETSC Briefing on Cooperative Intelligent Transport Systems (C-ITS), 
+November 2017
+[41]  Traffic Technology Today, Findings of major European C-ITS project revealed , February 2020
+[42]  HM Government, Net Zero Strategy: Build Back Greener , October 2021
+[43]  Department for Transport, Tees Valley Hydrogen Hub boosted by £20 million competition , October 2022
+[44]  Transport Environment, Why Great Britain’s long-distance, heavy-duty HGVs can go battery electric – and 
+what needs to be done to achieve this, April 2023
+[45]  International Council on Clean Transportation, European Union Alternative Fuel Infrastructure Regulation 
+(AFIR) , April 2023
+[46]  Zenzic, UK Connected and Automated Mobility Roadmap to 2035 , January 2023
+[47]  Cenex, Virtual Bunkering for electric vessels, September 2023
+[48]  Policy Exchange, Charging Up Policies to deliver a comprehensive network of public EV chargepoints , 2021
+[49]  Cenex, Charging Infrastructure for Near-Shore Electric Vessels, February 2022
+[50]  Aberdeen City Council, H2 Aberdeen Hydrogen is Here, accessed October 2023
+[51]  Chartered Institution of Highways & Transportation, Green and blue infrastructure: A transport sector 
+perspective, February 2023
+[52]  Innovate UK extrapolation using [4] and [14]
+[53]  UK H2 mobility, refuelling stations , accessed December 2023  
+[54]  Climate Change Committee, The Sixth Carbon Budget - The UK’s path to Net Zero, December 2020,  
+Pg 98 & 99
+49 UK TRANSPORT VISION 205050 UK TRANSPORT VISION 2050
+11312About Innovate UK 
+Innovate UK drives productivity and economic growth by 
+supporting businesses to develop and realise the potential 
+of new ideas. We connect businesses to the partners, 
+customers and investors that can help them turn ideas into 
+commercially successful products and services and business 
+growth. We fund business and research collaborations to 
+accelerate innovation and drive business investment into R&D. 
+Our support is available to businesses across all economic 
+sectors, value chains and UK regions. Innovate UK is part of 
+UK Research and Innovation. 
+For more information visit the Innovate UK  website
+ 
+Accessibility
+Accessibility To request copies of this report in large print or 
+in a different format, please contact the Equality, Diversity and 
+Inclusion team at UKRI:
++44 (0)1793 444000
+equality@ukri.org
+ 
+Follow us:
+LinkedIn
+Twitter  
+Facebook
+YouTube
+ 
+© 2024 Innovate UK part of UK Research and Innovation. All rights reserved

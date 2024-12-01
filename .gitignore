@@ -1,9 +1,9 @@
 deliverables/g20_ministers_of_innovation/tic_checkpoints
 experiments/article_annotation/logs
-training/
 azure_tandic.zip
-datasets.zip
-datasets/
+app/services/ti-classification/training/dataset/
+app/services/ti-classification/training/results/
+
 
 # Python
 __pycache__/

@@ -11,18 +11,14 @@
             "program": "${workspaceFolder}/experiments/article_annotation/article_labeling_using_chatgpt_2.0.py",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
-            // add testing argument
-            //"args": [
-            //    "--testing"
-            //]
         },
         {
             "name": "Train",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/training/train.py",
+            "program": "${workspaceFolder}/app/services/ti-classification/training/train.py",
             "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/app/services/ti-classification/training",
             "args": ["--debug", "--disable_wandb"]
         }
     ]

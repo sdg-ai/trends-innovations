@@ -1,4 +1,4 @@
-name: aiforgood-tandic-training
+name: ti-classifier
 channels:
   - conda-forge
 dependencies:

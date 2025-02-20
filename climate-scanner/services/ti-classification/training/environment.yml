@@ -20,3 +20,4 @@ dependencies:
     - pyarrow
     - wandb
     - torchmetrics
+    - scikit-learn

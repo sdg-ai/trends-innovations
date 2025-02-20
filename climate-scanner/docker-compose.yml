@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  ti-classification:
+    build:
+      context: ./services/ti-classification
+      dockerfile: app/Dockerfile
+    ports:
+      - "8501:8501"  # Streamlit default port
+    volumes:
+      - ./services/ti-classification/training:/app/training  # Mount training directory for model access
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

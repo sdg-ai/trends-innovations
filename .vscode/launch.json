@@ -13,7 +13,7 @@
             "name": "ti-training",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/climate-scanner/services/ti-classification/training/run.py",
+            "program": "${workspaceFolder}/climate-scanner/services/ti-classification/training/train.py",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/climate-scanner/services/ti-classification"
         },

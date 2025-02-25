@@ -8,3 +8,5 @@ pillow==11.1.0
 tqdm==4.67.1
 scikit-learn==1.5.2
 tokenizers==0.21.0
+fastapi
+uvicorn[standard]

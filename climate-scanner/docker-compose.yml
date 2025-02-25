@@ -7,8 +7,14 @@ services:
       dockerfile: app/Dockerfile
     ports:
       - "8501:8501"  # Streamlit default port
+      - "8000:8000"  # FastAPI port
     volumes:
       - ./services/ti-classification/training:/app/training  # Mount training directory for model access
     environment:
       - PYTHONUNBUFFERED=1
+    networks:
+      - climate-scanner-network
     restart: unless-stopped
+networks:
+  climate-scanner-network:
+    name: climate-scanner-network

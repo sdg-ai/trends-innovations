@@ -1,0 +1,2194 @@
+TECHNOLOGIES THAT WILL  
+SHAPE THE UK ECONOMY  
+IN 2040 AND BEYONDINSIGHTS REPORT
+Welcome  
+to the future  
+Innovate  
+UK’s 50  
+Emerging 
+Technologies02 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESFuture technology trends  
+matter to businesses. As  
+the UK’s innovation agency  
+we are frequently asked what  
+the future holds. It’s our duty  
+to help businesses explore  
+and answer this. 
+We work in a great research and 
+innovation environment where, with 
+input from our partners in Research 
+Councils and beyond, we have the 
+unique ability to identify interesting 
+emerging technologies and trends. 
+We have drawn on our ecosystem, 
+securing input from 300 stakeholders 
+to deliver a glimpse of the future  
+that helps the businesses we  
+work with every day to explore 
+emerging opportunities.
+Development of this report followed  
+a well-established and robust 
+emerging technology identification 
+process that has been independently 
+reviewed. Input came from a wide 
+range of academics, Government 
+departments, and Research Councils 
+including EPSRC, BBSRC, NERC,  
+MRC and STFC. For more on how  
+we made the report go to page 6.
+Read, share and discuss  
+Innovate UK’s 50 Emerging 
+Technologies report. 
+Contribute your thoughts to 
+horizonscanning@iuk.ukri.org
+Your input aids the UK in  
+attaining strategic advantage  
+within crucial future technologies. 
+Start creating the future, today.
+ Five key questions:
+  As technology is more embedded  
+in our bodies, will humans turn  
+into something new and different?  
+What makes us human will be 
+increasingly questioned. 
+  Should AI be allowed to make  
+decisions on our behalf?  
+All aspects of business and  
+society will be transformed  
+through AI and computing. 
+  If humans can expect a  
+century of good health, what  
+does this mean for employment, 
+pensions or housing?  
+The quality and length of our lives  
+will be greater than ever before. 
+  Will a shift towards cleaner, 
+affordable energy change  
+the way we live and work?  
+A transformed energy system  
+could help new industries to thrive.
+  What will a vast expansion of  
+our understanding of the world  
+mean for the UK economy?  
+The UK’s ability to draw on its  
+research and business strengths  
+will help us solve big problems  
+and seize opportunities.
+  Your answers to  
+questions like these  
+will shape our future.  1
+2
+3
+4
+5Innovate UK’s 50 Emerging 
+Technologies report03 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESThe UK is an important 
+global player in innovation. 
+Our nation boasts 
+recognised expertise 
+across many technological 
+domains, ranging from 
+artificial intelligence  
+and materials science to 
+robotics and healthcare. 
+At the same time, there 
+are many challenges 
+facing the economy, 
+society and the 
+environment that  
+make it essential that  
+we drive innovation  
+further and faster. 
+Innovate UK is the UK’s 
+innovation agency, and we 
+work to support economic 
+and productivity growth 
+through supporting 
+innovative businesses. 
+We also work to help 
+catalyse, connect, and 
+stimulate ideas- and that 
+work is at the heart of this 
+Innovate UK 50 Emerging 
+Technologies report. Unleashing opportunities  
+for the UK’s leadership  
+The Innovate UK team  
+has delved into some key 
+cutting-edge technologies 
+which are still in their 
+infancy, and framed 
+thoughts to stimulate 
+discussion; to stimulate 
+ideas; and to stimulate 
+possible future innovation. 
+The ideas presented  
+have the potential to, 
+directly or indirectly, 
+stimulate activities  
+which could help UK 
+organisations seize  
+the initiative and explore 
+nascent sectors of the 
+economy with potential  
+for growth. 
+Consider, for instance, 
+space-based solar power, 
+a concept that offers the 
+tantalising prospect of an 
+uninterrupted, clean energy 
+source. Furthermore,  
+soft robotics holds 
+tremendous potential  
+for the development  
+of artificial muscles  
+and organs that closely 
+resemble their biological 
+counterparts. 
+The Innovate UK team 
+recognises that the most 
+crucial element lies not in 
+the technology itself, but 
+rather in the people and 
+innovative businesses and 
+organisations behind them, 
+spread across the UK.It is these visionary  
+entities that possess  
+the ability to recognise 
+potential and transform  
+it into commercially 
+successful products of  
+the future. In this report, 
+we are not seeking to 
+predict the future, but to 
+stimulate curiosity, share 
+knowledge, and consider 
+the art of the possible.
+We will share this report 
+across our innovation 
+ecosystem- across 
+businesses, research and 
+technology organisations, 
+governmental bodies, 
+investors, lenders, 
+academic institutions,  
+and others. We are keen to 
+receive feedback and keen 
+to stimulate innovation in 
+action for the benefit of 
+the UK economy and so 
+that we can work on our 
+shared goal to transform 
+tomorrow together.FOREWORD BY   
+Indro Mukerjee  
+Chief Executive,  
+Innovate UK
+04 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESContents
+Our showcase technologies  
+are highlighted in bold.Introduction 05
+How the report is organised 05
+How we made the report 06
+AI, Digital and  
+Computing Technologies 07
+AI emotion and  
+expression recognition 08
+Artificial general  
+intelligence (AGI)08
+Biologically inspired AI 08
+Brain machine interface  
+(BMI) technologies09
+Quantum algorithms 10
+DNA data storage 10
+New computing models 11
+Novel immersive interfaces 11
+Advanced Materials  
+and Manufacturing12
+4D printing 13
+Biomimetic materials 13
+Nanoparticle manufacturing 13
+Metamaterials 14
+Electronics, Photonics  
+and Quantum Technologies 15
+Alternative and novel 
+semiconductor systems16
+Emerging microscopy 
+techniques  17
+Hyperspectral imaging 17
+Millimetre wave and  
+terahertz technologies 17
+Photon generators 18
+Plasmonics 18
+Post-quantum cryptography 19
+Room temperature 
+superconductors19Energy and Environmental 
+Technologies 20
+Cross-linked polymer recycling 21
+Gridscale wireless energy 
+transmission and charging21
+Hypersonics 22
+Novel propulsion or  
+ion based propulsion22
+Novel hydrogen production  
+and storage technologies23
+Novel negative  
+emissions technologies24
+Nuclear fusion 24
+Space-based solar power 24
+Biotechnology 25
+Artificial cells and artificial life 26
+Bacteria and microbe 
+manufacturing26
+Biocatalytic membranes 26
+Bioelectronics and 
+electroceuticals27
+Hybrid microbe biotechnology 28
+Programmable cells 28
+Biofabrication in  
+tissue engineering28Health and Medical 
+Technology 29
+Adult stem cell generation 30
+Fluxomics 30
+Anti-ageing drugs 30
+Antibiotic replacements 31
+Microbiome therapeutics 32
+Personalised RNA therapeutics 32
+Phased genome  
+assembly tools32
+Sensation  
+detection implants33
+Whole body-on-a-chip device 33
+Robotics and  
+Space Technologies34
+Fully autonomous vehicles 35
+Nanoscale robotics 35
+Robotic off-world manufacture 35
+Soft robotics 36
+Space nuclear power  
+and novel space  
+propulsion systems36
+Very low earth orbit  
+(VLEO) satellites37
+Conclusions and  
+the way forward3805 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESINTRODUCTION BY 
+Simone Boekelaar,  
+Head of Horizon 
+Scanning, Innovate UK 
+The aim of this report is to share  
+some of the most significant emerging 
+technologies likely to be important to  
+the UK’s industries of 2040 and beyond.
+Looking this far into  
+the future means we  
+can start talking with 
+partners across the 
+innovation ecosystem 
+about what support, if any, 
+is required to realise the 
+technology’s full potential.
+These technologies may 
+not be those getting the 
+most interest in policy  
+or investment right now.  
+They may not be the 
+hottest topics in research 
+and development circles. 
+But our analysis says  
+they have economy and  
+society-shaping potential.
+When reading this report, 
+we need to remember that 
+technologies themselves 
+have little intrinsic value. It 
+is only when they are put  
+to use that value manifests. 
+We know the greatest  
+value is created when 
+multiple technologies are 
+combined. When several 
+mature technologies are 
+brought together – that  
+can really change the world. For example, remote 
+surgery brings together 
+robotics, AI, advanced 
+materials, sensors,  
+imaging technologies. Or  
+a smartphone combines 
+touchscreen and camera 
+technologies, internet and 
+Bluetooth connectivity, 
+GPS, to name just a few.
+The focus here is primarily 
+on the technology rather 
+than their potential 
+applications. On the 
+building blocks, rather  
+than end results. 
+Our hope is that by 
+discovering these 
+technologies, you  
+can consider original 
+combinations. These  
+may then inspire new 
+applications or solutions 
+to societal challenges. 
+Then innovators are 
+inspired to develop these 
+technologies into new 
+products and services. 
+And we will all be inspired 
+to embrace the change 
+this future will bring.How the report  
+is organised
+Our 50 emerging 
+technologies are  
+organised within the  
+UK Innovation Strategy’s 
+seven technology families.  
+They were, in turn, inspired 
+by Innovate UK’s taxonomy 
+for structuring and 
+understanding the 1,000+ 
+technologies we support. 
+This allows us to  
+explore the relationships 
+between technologies  
+and technology families.  
+It ensures the technologies 
+we track cover all areas  
+of science and technology, 
+and all parts of  
+our economy. 
+For each technology,  
+we define and explain  
+why it is important, and 
+explore its potential future 
+significance. In each 
+family we highlight one 
+technology we think  
+could have a particularly 
+meaningful economic  
+or societal impact. 
+Turn the page to see  
+how we selected the  
+50 technologies.
+Read. Share. Discuss. Innovate.06 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIES1 — Define
+Our question:  
+Which emerging 
+technologies  
+are likely to be 
+important to the  
+UK economy 
+beyond 2040?2 — Gathering
+—  Survey of 
+scientists and 
+researchers
+—  Discussions  
+with experts
+—  Undertake  
+a review of 
+technology  
+scans undertaken 
+by others.
+6 — Output
+Use analysis  to 
+select interesting 
+technologies  
+for report.8 — Conclusion
+See on  
+page 38.7 — Communication
+—  Share findings
+— Seek feedback 
+—  Use feedback  
+for next report.3 — Filtering
+Combine new  
+ideas with existing 
+data. Consider:  
+(i)  Is it truly 
+emerging and 
+(ii)   Is there someone 
+in the UK with 
+expertise, to 
+create a shortlist.4 — Analysis
+Compare each 
+shortlisted idea, 
+using 30+ metrics. 
+Our criteria:  
+— Timing
+— Additionality 
+— UK Capability
+— Opportunity 
+— Societal Impact.How we made the report
+007 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIES
+These technologies  
+might not just transform  
+the way we live our lives,  
+but also make us consider  
+what it means to be human. 
+They could blur the boundaries between the real  
+and virtual world, and create a step-change in what  
+tech can do in the home and workplace. While there  
+are many possibilities which offer great hope, ethical 
+considerations need to be fully considered. If we do that, 
+we can make sure that our future society harnesses  
+the world of AI, digital and commuting technology  
+to the greatest benefit of the most people.AI, Digital and  
+Computing 
+Technologies 
+08 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESAI emotion  
+and expression 
+recognition 
+What is it?  Developing AI  
+that recognises and interprets 
+human emotions.
+Why is it interesting?  Can  
+you imagine a world where AI  
+and humans work seamlessly 
+together? Where Siri and  
+Alexa assist us in more  
+than simple tasks? 
+“Sentient” AI can recognise our 
+emotions and offer assistance, 
+companionship or alert medical 
+professionals when we need help. 
+We may need machines to express 
+emotional behaviours of their own, 
+for example in AI used in robots. 
+This would help patients in care 
+homes where emotional interaction 
+is key to improved wellbeing. 
+How could it change our lives?   
+It has the potential for very  
+positive impacts, improving our 
+daily lives in areas such as care 
+and companionship. Development 
+with strong ethical considerations 
+will open up endless opportunities. Artificial general 
+intelligence (AGI)
+AI is as capable of learning 
+intellectual tasks as humans  
+are. With the flexibility and 
+resourcefulness of human 
+intelligence, capable of  
+producing new ideas. 
+Why is it interesting?  AGI 
+enables machines to behave, 
+learn, create and perform as 
+humans do. It will help us explore 
+the creative abilities of AI and 
+understand the increasingly 
+‘natural’ interactions between 
+humans and machines.
+How could it change our lives?  
+AGI raises intriguing questions 
+about what it means to be 
+human. Will we always be able  
+to tell if we are interacting with 
+machines or humans? Will that 
+matter to us? The answers will 
+change our lives in ways we  
+don’t yet expect and cannot  
+yet forecast.Biologically  
+inspired AI
+What is it? It springs from the  
+idea that intelligence emerges  
+as much from cells, bodies, and 
+societies as it does from evolution 
+and learning. Traditionally, AI has 
+tried to reproduce human abilities. 
+Newer approaches take inspiration 
+from biological structures that  
+can organise themselves. These 
+include evolutionary computation 
+and electronics, artificial neural 
+networks, immune systems, 
+biorobotics and swarm intelligence.
+Why is it interesting?  
+It moves us towards computing 
+that mimics human brain 
+processes, potentially allowing 
+creative behaviour by machines.  
+It could provide new algorithms 
+for planning, remembering and 
+visual stimulation.
+How could it change our lives?   
+It could accelerate the 
+development of AI and enable 
+things that otherwise wouldn’t  
+be possible. It will likely inform  
+us about how our world functions.“ It moves us towards  
+computing that mimics  
+human brain processes.”AI, Digital  
+and Computing 
+Technologies “ The ultimate ability  
+to share data between 
+humans and machines  
+could alter the way we  
+regard mankind itself.”
+09
+ INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIES
+What is it?  Technologies  
+that connect the brain with a 
+computer or machine. It translates 
+our thoughts into commands that  
+can control external software or 
+hardware, such as a computer  
+or robotic arm. 
+Interface technologies are often 
+divided into those that ‘read’ brain 
+activity and decode its meaning,  
+and those that ‘write’ to the brain  
+to manipulate activity in specific 
+regions and affect their function.
+Why is it interesting? It gets us 
+closer to a full interface with the 
+human brain. The ultimate ability  
+to share data between humans  
+and machines could alter the  
+way we regard mankind itself.
+What industries could use this?  
+Medical, ageing society, sports, 
+military/defence, manufacturing, 
+services sector.How could it change our lives? 
+Advanced BMI technologies are 
+being trialled in prosthetics for 
+people with motor or sensory 
+impairments. They could allow 
+people who are paraplegic or 
+quadriplegic to regain limb control. 
+Those missing limbs could have 
+direct control – from brain to  
+device – of their prosthetics. 
+What do we need to start 
+discussing? The balance between 
+helping and protecting people who 
+need or want this technology is a  
+big topic. We need to think about 
+who should have access to this 
+technology, and what regulations,  
+if any, are needed. We would also 
+need to work out what happens  
+if a product is no longer supported 
+– this is an inconvenience with a 
+smartphone, but a much bigger 
+issue when a device is linked  
+to your brain. 
+SHOWCASE TECHNOLOGY:
+Brain machine  
+interface (BMI) 
+technologiesAI, Digital  
+and Computing 
+Technologies 10 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESQuantum 
+algorithms
+What is it?  Quantum  
+algorithms are a key element  
+of the software and tools that  
+will help quantum computers to 
+potentially outperform standard 
+computers. Quantum algorithms 
+can be applied to areas such  
+as cryptography, search 
+optimisation, and simulation  
+of quantum systems. 
+Why is it interesting?   
+Quantum computers are  
+coming! It is essential that for 
+new computing paradigms we 
+also develop the software and 
+tools to provide the applications 
+these computers can support.
+How could it change our lives?   
+The key to getting value  
+from quantum computing  
+will be finding the specific  
+set of algorithms that quantum 
+computers are better at than 
+classical computers. We know 
+some of these already, but there 
+are lots more to find and develop!DNA  
+data storage
+What is it?  It could exponentially 
+increase data storage capabilities 
+and, theoretically, be preserved 
+indefinitely. It’s the process  
+of encoding and decoding  
+data to and from synthesized  
+strands of DNA or RNA. 
+Why is it interesting?  Imagine 
+being able to store zettabytes 
+(that’s a hard-to-imagine one 
+billion terabytes), in compact, 
+high-density and molecular-  
+level data storage? Harnessing  
+the power of biotechnology  
+could meet our escalating data  
+storage demands, especially 
+important as we look to access 
+sophisticated AI technologies. 
+How could it change our lives?   
+We are reaching the physical 
+limitations of computing hardware 
+design. DNA synthesis could 
+remove this limitation, opening  
+up new computing applications, 
+capable of storing and retrieving 
+vast volumes of data. “ Imagine being 
+able to store 
+zettabytes  
+(that’s a hard-  
+to-imagine one 
+billion terabytes),  
+in compact, 
+high-density  
+and molecular  
+-level data 
+storage... ”
+AI, Digital  
+and Computing 
+Technologies 11 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESNew computing 
+models
+What is it?  New computing 
+techniques not based on 
+traditional circuit technology. 
+Why is it interesting?  Beyond 
+quantum computing, these are 
+new computing models offering 
+orders of magnitude performance 
+improvements out of reach of 
+conventional computers. These 
+include biological, photonic and 
+neuromorphic computing.
+How could it change our lives?   
+These technologies for completely 
+new ways to build computers  
+will allow scientists to answer 
+questions which are impossible 
+today. These include modelling  
+the human brain, complete climate 
+simulations, and understanding 
+data from space exploration. Novel immersive 
+interfaces
+What is it?  Offers new ways  
+of interacting, creating and 
+displaying content, applications 
+and experiences. These could 
+involve augmented reality,  
+a blend of real and virtual 
+experiences, or a fully simulated 
+digital experience. It requires  
+new forms of media that deeply 
+involve all our senses to create  
+a truer perception of reality.
+Why is it interesting?  Will blur the 
+off- and online world by allowing 
+us to use computer technology 
+through multiple senses.
+How could it change our lives?   
+Augmenting our senses with 
+technology creates opportunities, 
+ranging from performing surgery 
+remotely to advertising. It will 
+change the way we view the  
+world and access media, and 
+allow us to travel via our senses. 
+These advances could help the 
+world become more equitable.“ These advances could 
+help the world become 
+more equitable.”
+AI, Digital  
+and Computing 
+Technologies 012 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIES
+When we think of how society 
+will look in the decades to 
+come, advanced materials 
+will play an integral role. 
+These incredible materials all have properties made 
+through the development of specialised processing  
+and synthesis technology. They open the door to 
+new possibilities in healthcare and transport, and  
+can pave the way to a more energy-efficient future.  
+These materials will be the basis of the business 
+innovation we need to create a desirable future society. Advanced 
+Materials and 
+Manufacturing13 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIES4D printing 
+What is it?  3D printing is achieved 
+by layering 2D structures on top 
+of each other. Now, technology is 
+developing to change 3D shapes 
+over time through the addition  
+of heat, light, electricity or liquid, 
+creating a 4D structure.
+Why is it interesting?   
+Offers smart materials  
+which adapt over time, with  
+the potential for ‘self-repair’.  
+This offers possibilities such  
+as manufacturing in space,  
+better soft robotics and  
+new medical solutions.
+How could it change our lives?   
+If materials can repair themselves, 
+it reduces our need to perform 
+dangerous maintenance tasks. 4D 
+materials could create structures 
+in space or other challenging 
+locations. They could allow us  
+to create medical devices that 
+change with the patient over time. Biomimetic 
+materials
+What is it?  Synthetic materials 
+developed using inspiration  
+from nature. Designed to  
+replicate material attributes  
+of a living organism. 
+Why is it interesting?   
+Biomimetic materials often offer 
+higher structural performance  
+for lower energy input. They  
+are easier to reuse and recycle  
+than comparable materials.  
+This technology inspires us to 
+explore the natural world for  
+more sustainable solutions. 
+How could it change our lives?  
+Could open up new ways of 
+creating materials inspired by 
+nature, cheap to make and less 
+harmful to the planet. This could 
+help us discover new ways of 
+making materials, grounded  
+in millennia of evolution.Nanoparticle 
+manufacturing
+What is it?  As the name  
+suggests, the manufacturing of 
+nanoparticles. These incredibly 
+tiny particles are made either  
+by breaking down larger pieces  
+of material, or by assembling 
+single atoms and molecules into 
+nanostructures. The top-down 
+approach is useful for making 
+interconnected structures such as 
+in electronics; while the bottom-up 
+process can create identical 
+structures with atomic precision.
+Why is it interesting? 
+Nanotechnology has emerged 
+over the past decade or so as  
+an essential technology for many 
+industries. Finding more effective, 
+efficient and lower cost ways to 
+manufacture nanoparticles will 
+help us to expand the uses and 
+benefits of nanotechnology. 
+How could it change our lives?  
+Giving us stronger, cleaner and 
+“smarter” surfaces and systems;  
+removing pollutants from energy 
+production; contributing to smaller 
+and lighter electronics and better 
+batteries; and new ways to treat 
+disease. Nanoparticles will be  
+essential to our future lives. “ Offers smart materials  
+which adapt over time, with  
+the potential for ‘self-repair’.”Advanced 
+Materials and 
+Manufacturing14
+ INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESWhat is it?  Metamaterials can be 
+formed from traditional materials 
+that are easy to find in any natural 
+environment. They are engineered 
+structures designed to interact with 
+electromagnetic radiation. These 
+structures are very small, usually 
+smaller than the wavelength of  
+the radiation they are interacting 
+with. These so-called meta-atoms 
+can interact with the electric and 
+magnetic components of light in a 
+way that natural atoms do not, giving 
+metamaterials unusual properties.
+Why is it interesting? When 
+metamaterials are engineered  
+in an intelligent and innovative  
+design they behave in amazing  
+ways. They operate at the sub-
+wavelength level offering properties 
+never found in nature, which extend 
+the way light and matter interact. 
+This opens up many new sensing 
+and other possibilities. What industries could use this?  
+Transport, medical, scientific 
+research, telecommunications, 
+energy, creative industry.
+How could it change our lives? 
+Science fiction meets reality with 
+metamaterials. They could make 
+substances with which they interact 
+invisible – giving rise to the possibility 
+of a real-life invisibility cloak!
+Harnessing invisibility could remove 
+blind spots in cars, enable us to create 
+more precise medical imaging or 
+telecommunications antennae, and 
+significantly improve the efficiency  
+of solar power generators. 
+What do we need to start 
+discussing? Funding and support  
+for the science behind metamaterials 
+is a big issue. We then need to think 
+about how they can be translated 
+into commercialised products. 
+“ They could make  
+substances with which  
+they interact invisible  
+– giving rise to the  
+possibility of a real-  
+life invisibility cloak!”SHOWCASE TECHNOLOGY:
+MetamaterialsAdvanced 
+Materials and 
+Manufacturing
+015 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIES
+The world of digital  
+and electronics have 
+transformed how we live  
+over the past few decades. 
+The emerging developments on these pages suggest  
+a new era is on the horizon of faster, lighter, smarter 
+technology. They will allow us to do more with less.  
+There are real technological challenges to overcome,  
+but if they are, they could change every aspect of  
+our lives, from healthcare and computing through  
+to cutting our energy bills.Electronics, 
+Photonics  
+and Quantum 
+Technologies 
+16
+ INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESWhat is it?  A semiconductor is  
+a substance or device that conducts 
+electricity under certain conditions 
+but not others, used in many 
+electrical appliances. The next 
+generation of semiconductors  
+are those which don’t only use 
+silicon. They include various types  
+of compound semiconductors, 
+which are made from two or  
+more elements. Compound 
+semiconductors have physical 
+properties superior to silicon  
+making them better suited to  
+many applications in dependent 
+technologies such as telecoms,  
+net zero and quantum technologies.
+Why is it interesting?  Current 
+technologies are reaching their 
+performance limits in a growing 
+number of applications. Wide 
+Bandgap (WBG) compound 
+semiconductors can operate at 
+higher voltages, temperatures and 
+frequencies which will provide much 
+improved performance compared 
+with current semiconductors.What industries could use this?  
+Almost every industry is affected by 
+this technology. Key uses are in 6G, 
+photonics and power electronics.
+How could it change our lives?  Next 
+generation WBG semiconductors will 
+be smaller, faster, more efficient and 
+more reliable than current types. This 
+will help create lighter, more energy-
+efficient devices. 
+What do we need to start 
+discussing?  How we will supply  
+the minerals and materials needed  
+to produce novel semiconductors, 
+approaches to international 
+collaboration, and understanding  
+the role of UK industry in novel 
+semiconductor supply chains.
+“ The balance between  
+helping and protecting 
+people who need or  
+want this technology  
+is a big topic.”SHOWCASE TECHNOLOGY:
+Alternative and novel 
+semiconductor systemsElectronics, 
+Photonics  
+and Quantum 
+Technologies17 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESEmerging 
+microscopy 
+techniques 
+What is it?  Recent advances  
+in microscopy are changing the 
+way proteins and molecules can  
+be imaged. For example, electron 
+microscopy uses a beam of 
+electrons to create an image, 
+allowing much smaller objects  
+to be examined in finer detail.
+Why is it interesting?  This 
+technology allows us to view 
+biology at work in both space  
+and time, from single molecules 
+to entire organisms, providing 
+access to knowledge and  
+insights never before seen. 
+How could it change our lives?   
+These technologies enable 
+scientists to more accurately 
+explore the relationships between 
+structures and properties for a 
+wide variety of materials to better 
+understand their behaviour. This 
+helps us develop new materials, 
+better understand materials  
+and organisms, and enable  
+better disease diagnosis.Hyperspectral 
+imaging
+What is it?  A technique that 
+analyses a wide spectrum of  
+light instead of giving primary 
+colours to each pixel. The light 
+striking each pixel is broken  
+down into many different spectral 
+bands to provide much better 
+information about the image. 
+Why is it interesting?  
+Combining spectroscopy  
+with imaging beyond the  
+visible light wavelengths at 
+multiple frequencies provides  
+for exciting ‘fingerprinting’ of  
+an object’s make-up.
+How could it change our lives?  
+Could herald new precision 
+agriculture and biotech, with 
+higher and more reliable crop 
+yields. Could save lives by 
+monitoring extreme climate 
+events and better understanding 
+of weather systems. Has potential 
+benefits for healthcare through 
+better classification of wounds 
+and clearer imaging of microbes. Millimetre wave  
+and terahertz 
+technologies 
+What is it?  Millimetre  
+and terahertz waves are 
+electromagnetic waves just  
+like micro and audio waves. 
+Millimetre wave frequencies  
+are small, measured from 
+1-10mm, while terahertz waves  
+are much smaller, measuring  
+100 microns up to 1mm.
+Why is it interesting?   
+Has great potential for non-
+invasive sensing and imaging, 
+including healthcare diagnostics.
+How could it change our lives?   
+Millimetre or terahertz waves 
+have a shorter range than radio 
+waves, but can transmit much 
+more data. They also provide 
+higher spatial resolution in 
+imaging applications, enabling 
+high-definition images to be 
+obtained. Terahertz waves may 
+be able to play a role in protein 
+analysis and drug discovery. They 
+may help detect toxic gas, and 
+examine concrete structures. “ Terahertz waves may be  
+able to play a role in protein 
+analysis and drug discovery.”Electronics, 
+Photoni cs  
+and Quantum 
+Technolo gies18 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESPhoton  
+generators 
+What is it?  Photons are tiny 
+particles of light that have  
+unique quantum properties.
+Photon generators are light 
+sources that emit light as  
+single particles or photons. 
+Why is it interesting?  We  
+need to develop new, controllable 
+photon-emitting light sources to 
+utilise quantum technology. But 
+because quantum processes are 
+inherently random, producing 
+single photons on demand is 
+extremely challenging. 
+How could it change our lives?   
+Developing highly efficient  
+and perfectly controlled building  
+blocks for quantum technologies 
+is vital to opening up the world of 
+quantum technology. Quantum 
+light is central to the development 
+of secure communications  
+and more powerful computing, 
+powered by quantum. Plasmonics
+What is it?  Plasmonics  
+focuses on the interaction  
+of light and electron charges  
+in metallic nanostructures  
+and nanoparticles. It involves 
+exploiting waves of electrons 
+triggered when light strikes  
+a metal surface. These are  
+much shorter than wavelengths  
+of light, making it possible to  
+use light indirectly in the very 
+small dimensions of today’s 
+integrated circuits.
+Why is it interesting?   
+Has applications in imaging, 
+nanoparticles and is an  
+important enabler of other 
+emerging technologies. 
+How could it change our lives?   
+Plasmonics will impact the  
+worlds of science, engineering, 
+and medicine. It’s an unsung  
+hero as it will likely have many 
+small impacts across industries 
+and technologies used in our 
+everyday lives.“ Quantum light  
+is central to the 
+development of 
+more powerful 
+computing...”
+Electronics, 
+Photonics  
+and Quantum 
+Technologies
+19 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESPost-quantum 
+cryptography
+What is it?  Focuses on 
+developing cryptographic 
+systems that are secure  
+against both quantum and 
+classical computers and  
+can operate within existing 
+communications networks. 
+Why is it interesting?  Quantum 
+computing provides a threat to 
+traditional encryption techniques. 
+Therefore, an important goal is  
+to develop new cryptography  
+safe for both traditional and  
+new computing paradigms.
+How could it change our lives?   
+We look to quantum technology  
+to provide efficient solutions  
+to today’s technical challenges. 
+Quantum computing comes  
+with novel threats which will  
+make most currently used 
+cryptographic solutions insecure. 
+We will therefore need to begin 
+using post-quantum cryptography 
+technologies to combat  
+future threats.Room temperature 
+superconductors
+What is it?  Superconductors  
+are currently used in MRI 
+technology and in maglev  
+trains. They need very cold 
+temperatures or very high 
+pressures to work. The challenge 
+is to discover a superconductor 
+effective at normal pressures and 
+higher temperatures, to greatly  
+expand how they could be used.
+Why is it interesting?  Room 
+temperature superconductors 
+remain a challenging emerging 
+technology. But if established, 
+would allow for electricity to  
+be conducted with no waste  
+of energy. As the UK aims to 
+reach net zero by 2050, this  
+would be hugely desirable.
+How could it change our lives?   
+Could make consistently low 
+electricity bills possible and 
+radically change the economics of 
+energy production and distribution.“ Room Temperature 
+Superconductors could 
+make consistently low 
+electricity bills possible...”
+Electronics, 
+Photonics  
+and Quantum 
+Technologies020 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIES
+Recent geopolitical 
+developments have 
+highlighted the issue of 
+energy supply and security. 
+We need the right energy mix to protect our standard  
+of living and transition towards a net zero economy. 
+Renewable energy sources, carbon removal technologies 
+and energy vectors such as green hydrogen, will play an 
+increasing role in the energy mix as we move toward a 
+cleaner, greener society. How we store and supply energy 
+to key markets is a challenge as we use more sustainable 
+energy. The technologies we explore here are likely to 
+underpin how we live and work in future decades.Energy and 
+Environmental  
+ Technologies 
+21 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESCross-linked 
+polymer recycling 
+What is it?  Cross-linked  
+polymers are extremely difficult 
+to recycle, adding to landfill and 
+causing harm to the environment. 
+However, progress in materials 
+science and chemistry mean  
+that recycling of these materials  
+is now a real prospect. 
+Why is it interesting?   
+Given the continuing issue with 
+single-use plastics, any methods 
+which enable the recycling of 
+cross-linked polymers are of 
+significant interest. 
+How could it change our lives?  
+Polymers don’t decompose easily 
+and have a limited service life. 
+They have brought many positives 
+to everyday life, but the waste from 
+polymeric material can be found  
+in every environment and even  
+the human food chain. Developing 
+advanced recycling methods 
+could reduce plastic pollution – 
+and demand for oil to produce 
+new polymers.Gridscale wireless 
+energy transmission 
+and charging
+What is it?  Wireless charging  
+is commonplace in homes  
+and workplaces, at very small 
+scales. Gridscale wireless energy 
+transmission and charging applies 
+this principle to large energy uses.
+Why is it interesting?   
+Conveying electric power safely 
+over distance without cables is  
+a potential step-change in how 
+we use the electronic devices  
+we rely on.
+How could it change our lives?  
+Progress here would enable 
+storm and weather-proof  
+power transmission. It would 
+completely change the structure 
+and operations of our energy 
+transmission grid, so we can 
+move power to where it is  
+needed more easily. “ Developing advanced 
+recycling methods could 
+reduce plastic pollution and 
+demand for new polymers.”Energy and 
+Environmental 
+Technologies
+22 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESEnergy and 
+Environmental 
+Technologies
+Hypersonics 
+What is it?  Hypersonic 
+technologies could enable  
+aircraft, missiles and spacecraft  
+to reach speeds faster than Mach 
+5 – nearly 4,000 miles per hour. 
+The key challenge to be overcome  
+is that the airflow temperature 
+around a hypersonic aircraft is  
+so high that the chemical bonds 
+vibrate and then eventually break.
+Why is it interesting?   
+Hypersonic weapons are already 
+being introduced. Hypersonic 
+transport would shrink the  
+earth as the jet engine did in the  
+20th century, transforming the 
+movement of people and goods. 
+How could it change our lives?  
+London to Sydney in 3 hours! 
+Aberdeen to London in thirty 
+minutes or less! (One of your 
+authors is an Australian expat 
+living in the north of Scotland,  
+so may be biased in the  
+potential benefits ultrafast 
+transport could bring.)Novel propulsion  
+or ion based 
+propulsion 
+What is it?  Ion is a form of 
+propulsion used for spacecraft.  
+It creates thrust by giving an 
+electron energy to break free  
+of an atom. Ion thrust engines  
+are only practical in space.
+Why is it interesting?   
+Ion thrusters already keep 
+satellites in their correct  
+orbits. Ion propulsion requires 
+significantly less propellant than 
+chemical thrusters. Could help 
+space travel become a reality  
+and increase satellites’ lifespans. 
+How could it change our lives?  
+Could be a reliable technology  
+to propel us when exploring 
+deeper into space. “ Ion  
+propulsion... 
+could be  
+a reliable 
+technology  
+to propel  
+us when 
+exploring  
+deeper  
+into space.”
+23 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIES“ Hydrogen is a clean  
+energy source that,  
+when consumed in a  
+fuel cell, produces only 
+water as a by-product.”What is it?  Novel hydrogen 
+technologies are essential to  
+create cheaper, more efficient 
+hydrogen production. We need 
+scalable, affordable hydrogen 
+storage so it can be widely used.
+Why is it interesting? Technologies 
+that can efficiently produce green 
+hydrogen and store it effectively 
+could help answer our drive towards 
+net zero carbon emissions.
+What industries could use this? 
+Energy, raw material extraction and 
+refining, transport, manufacturing.How could it change our lives? 
+Hydrogen is a clean energy source 
+that, when consumed in a fuel cell, 
+produces only water as a by-product. 
+This makes it an attractive low-to-
+zero emission fuel source for our 
+homes, transport, power generation 
+and portable devices. Hydrogen  
+can also be used to store, move  
+and deliver energy from wind and 
+solar power, which currently have  
+to be consumed immediately or 
+stored in batteries
+What do we need to start 
+discussing? Topics such as 
+retrofitting infrastructure, safety 
+regulations and the environmental 
+impact of hydrogen production,  
+use and storage should continue  
+to be discussed.
+SHOWCASE TECHNOLOGY:
+Novel hydrogen 
+production and  
+storage technologiesEnergy and 
+Environmental 
+Technologies24 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESNovel negative 
+emissions 
+technologies 
+What is it?  Includes all  
+novel emerging technologies  
+to extract carbon dioxide  
+from the environment. Moves  
+beyond burying carbon dioxide 
+underground, or reusing it  
+in industrial processes. 
+Why is it interesting?   
+Reaching net zero requires  
+more than just reducing 
+emissions. To account  
+for processes that will be  
+very difficult to decarbonise 
+completely, such as steel or 
+cement making, we will need  
+to remove greenhouse gases  
+from the atmosphere. 
+How could it change our lives?  
+It could help fight climate  
+change by removing new and 
+existing greenhouse gases  
+from the earth’s atmosphere. Nuclear  
+fusion
+What is it?  A way of producing 
+potentially limitless amounts of 
+energy – and a recent, major 
+breakthrough means nuclear 
+fusion is a step closer. It’s the 
+process by which two light  
+atomic nuclei combine to  
+form a single heavier one  
+while releasing massive  
+amounts of energy. 
+Our sun is powered by nuclear 
+fusion, which must take place  
+at immensely high temperatures,  
+for the natural repulsion between 
+atoms to be overcome. To achieve 
+fusion in a lab, scientists have 
+devised a solution in which a 
+super-heated gas, or plasma,  
+is held inside a magnetic field.
+Why is it interesting?   
+Even with recent advances, 
+nuclear fusion will still be very 
+hard to achieve. But it has the 
+potential to single-handedly 
+achieve our clean energy quest.
+How could it change our lives?   
+If it can be replicated on earth at 
+an industrial scale, nuclear fusion 
+could provide virtually limitless 
+clean, safe, affordable energy. Space-based  
+solar power
+What is it?  The concept of 
+collecting solar power in high-
+earth orbit and transmitting the 
+energy securely to a fixed point  
+on the earth. It could deliver clean 
+energy, year-round, in all weathers.
+Why is it interesting?   
+It could give an uninterrupted 
+clean source of energy, therefore 
+making it an exciting part of the 
+drive towards decarbonisation.
+How could it change our lives?   
+Solar power is currently 
+hampered by an imbalance 
+between where power can be 
+generated and where demand  
+is greatest. Removing the effects 
+of weather, by placing solar arrays 
+outside the earth’s atmosphere, 
+would mean increased power 
+generation available continuously 
+anywhere on Earth.“ Nuclear fusion...has  
+the potential to single-
+handedly achieve our  
+clean energy quest.”Energy and 
+Environmental 
+Technologies025 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIES
+ Biotechnology, including 
+synthetic and engineering 
+biology, is the set of methods 
+for designing, building  
+and testing engineered 
+biological systems. 
+They can be used to construct materials, process 
+chemicals, produce energy, provide food, and help 
+maintain or enhance human health and environment. 
+This family includes technologies such as biofuels, 
+lab-grown meats and synthetic tissues.Biotechnology 
+26 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESArtificial cells  
+and artificial life 
+What is it?  An artificial cell is  
+an engineered structure that 
+mimics one or many functions  
+of a biological cell. Artificial life 
+can be considered an extension 
+of artificial cells. It’s where 
+synthetic living organisms  
+could theoretically be created, 
+particularly from artificial cells 
+that can divide and reproduce.
+Why is it interesting?  
+They could play an increasingly 
+large role in areas of medicine. 
+Interesting when we consider 
+what life means in the future.
+How could it change our lives?   
+Already used to treat kidney  
+failure. With development we 
+could develop artificial blood  
+cells, reducing the need for  
+blood donations, and increasing 
+the safety of blood products. 
+Artificial cells could be used in 
+biomanufacturing processes to 
+produce long-lasting, high yield, 
+and high-purity proteins  
+and enzymes.  Bacteria  
+and microbe 
+manufacturing
+What is it?  Using natural 
+biomaterial synthesised by 
+bacteria and microbes as  
+a manufacturing process. 
+Why is it interesting?  
+Bacteria can be used to 
+manufacture drugs including 
+antibiotics, useful molecules, 
+bioconcrete and other interesting 
+materials. The list is constantly 
+growing and changing.
+How could it change our lives?  
+Substances synthesised  
+by bacteria can create new 
+materials with useful qualities. 
+Substances produced through 
+bacterial manufacturing are 
+expected to have uses in food, 
+personal care, household 
+chemicals, biomedicine, and 
+textiles. Could touch almost  
+every aspect of our daily lives. Biocatalytic 
+membranes
+What is it?  An emerging  
+type of membrane inspired  
+by the structure and functions  
+of cell membrane. They have  
+useful properties like enhancing 
+reaction efficiency, improving  
+the removal of pollutants,  
+and enabling the re-use of 
+enzymes in some processes. 
+Why is it interesting?  
+The applications of biocatalytic 
+membrane technology are 
+beginning to be exploited  
+in the pharmaceutical and 
+biotechnology industries.  
+They could contribute towards 
+more sustainable, efficient, and 
+less polluting pharmaceutical 
+production methods.
+How could it change our lives?  
+Could improve production 
+systems in sustainable ways  
+– key to supporting our living 
+standards alongside human 
+population growth. Could  
+produce new or improved 
+foodstuffs where nutrients  
+aren’t lost during heating,  
+novel pharmaceuticals, and  
+waste water treatment.“ We could develop 
+artificial blood cells ... 
+reducing the need for 
+blood donations.”Biotechnology27 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIES“ Applications could range 
+from pacemakers to  
+deep-brain stimulation  
+for Parkinson’s disease.”What is it?  Bioelectronics is an 
+emerging area of medicine. It uses 
+tiny, implantable devices to deliver 
+electrical stimulation to nerves  
+to control a wide range of bodily 
+functions. Electroceuticals are  
+a type of bioelectronics aimed  
+at replacing drug treatments.
+Why is it interesting? They widen 
+the range of treatments possible 
+without drugs or surgery. These 
+technologies will drive a need  
+for technology developments  
+such as wireless power supply.
+What industries could use this? 
+Health and wellness.
+How could it change our lives?  
+They have huge healthcare  
+benefits. Applications could range 
+from pacemakers to deep-brain 
+stimulation for Parkinson’s disease. New applications are emerging,  
+for example to stimulate the  
+vagus nerve to combat arthritis. 
+These devices will allow us to 
+monitor and treat disease in real  
+time, improving the quality of  
+life for potentially millions. 
+What do we need to start 
+discussing? Discussions are 
+underway in the usual medical  
+and health regulation bodies 
+regarding how these treatments 
+should be used. We may want  
+to discuss who accesses these 
+technologies, particularly while  
+costs are relatively high. These 
+devices will create data of  
+some sort. We need to expand 
+discussions about ownership  
+of personal medical data, and  
+ethical uses for the health,  
+medical and insurance sectors. 
+SHOWCASE TECHNOLOGY:
+Bioelectronics  
+and electroceuticalsBiotechnology28 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESHybrid microbe 
+biotechnology 
+What is it?  It has two key  
+forms under development.  
+The first is creating new artificial 
+microbes by combining two 
+different organisms into one 
+functioning entity. The second 
+combines artificial and biological 
+components to obtain microbes 
+with new functions.
+Why is it interesting?  
+Microbes are essential to our  
+lives in a myriad of unexpected 
+ways – from helping us digest 
+and helping our immune systems, 
+through to their critical roles in 
+manufacturing and industrial 
+processes. Bio-engineering at  
+the microbe level offers potential 
+for improving our health and food, 
+and making manufacturing  
+more efficient.
+How could it change our lives?   
+Could reduce pollution and help 
+with green energy. An emerging 
+example of hybrid microbe 
+biotechnology looks to create a 
+system that converts solar energy 
+into chemical energy. This has 
+potential in treating and removing 
+environmental contaminations.  
+It would reduce pollution and 
+produce clean energy from a 
+single technology.Programmable  
+cells
+What is it?  Creating cells  
+which can be programmed for 
+many uses, such as in healthcare 
+and the environment. They are 
+programmed by putting chemical 
+switches into synthetic gene 
+circuits to open up a range of 
+logical functions to use in cells. 
+Why is it interesting?  
+Would open up new ways of 
+treating and preventing disease. 
+Programming cell behaviour  
+to represent data processing 
+expands possibilities of biological 
+computing (see Next Generation 
+Computing in AI, Data and 
+Advanced Computing for more).
+How could it change our lives?  
+Enables programmable cells,  
+or living technology, that can 
+sense their environment, make  
+a decision and act on it. Standing  
+to benefit are medicine, energy, 
+the military and agriculture.  
+Could create living diagnostics  
+and therapeutics, to treat disease 
+and reduce the likelihood and 
+impact of pandemics. Biofabrication in 
+tissue engineering
+What is it?  Biofabrication  
+could produce living 3D tissue 
+constructs to repair or replace 
+damaged or diseased tissues  
+and organs. There are a variety  
+of manufacturing approaches  
+for tissue engineering include 3D 
+printing, electrospinning, sheet 
+rolling and mould shaping. 
+Why is it interesting?  
+Could create fully functional 
+tissues and, potentially, organs.  
+A key advantage is flexibility.  
+Can create tissue which meets 
+the customised needs of human 
+and animal patients.
+How could it change our lives?  
+Replacing organs and tissues to 
+help save lives. This could help 
+with surgical treatments but also 
+improve the accuracy of laboratory 
+research, such as identifying 
+effective new medications.“ Biofabrication...  
+could create fully  
+functional tissues and, 
+potentially, organs.”Biotechnology029 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIES
+One of our biggest  
+societal challenges  
+remains healthcare.   
+We benefit from technological advances whenever  
+we visit a doctor’s surgery or, increasingly, in our homes 
+or on our phones. But as we look towards the middle  
+of the 21st century, a new set of technologies is vitally 
+needed. They are essential to help us combat disease,  
+to better support those who are physically impaired,  
+and so we can all live healthier lives for longer.Health  
+and Medical 
+Technology  
+30 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESAdult stem  
+cell generation 
+What is it?  Adult stem cells 
+maintain tissue health and  
+can replace cells that die due  
+to injury or disease. Research 
+suggests some adult stem cells 
+could create various types of cells 
+through a phenomenon known  
+as transdifferentiation. If proved,  
+it will open up new frontiers in 
+stem cell technologies.
+Why is it interesting?   
+This is the beginning of new 
+aspects of stem cell medicine 
+and regenerative therapies. 
+How could it change our lives?   
+Can help create cells to repair 
+tissues from injuries, such as to 
+the skin or brain. Adults can give 
+consent for use of their stem cells, 
+so this is much less controversial 
+than using embryonic stem cells 
+for research and treatment.Fluxomics
+What is it?  Fluxomics helps us  
+to understand how nutrient flows 
+are carried out in diverse cellular 
+systems. It gives a complete 
+picture of molecular interactions  
+in the central metabolism of 
+biological systems.
+Why is it interesting?   
+The significance of fluxomics is 
+that it gathers data from multiple 
+different-omics fields, portraying 
+the whole picture of molecular 
+interactions. This connection  
+of areas including genomics, 
+transcriptomics, proteomics  
+and metabolomics makes it 
+particularly interesting. 
+How could it change our lives?   
+Could help to find and develop 
+new pharmaceutical treatments 
+or new screening techniques.  
+It is also a key enabler for 
+personalised medicine. Anti-ageing drugs
+What is it?  ‘Geroprotective’  
+drugs aim to affect the root  
+cause of ageing and age-related 
+diseases, lengthening the lifespan 
+of animals. Approaches are  
+being explored to selectively  
+kill ageing, or ‘senescent’, cells  
+or to suppress inflammation 
+associated with ageing.
+Why is it interesting?  
+‘Senotherapeutic’ approaches  
+can revolutionise how age-  
+related diseases and ultimately 
+ageing itself can be treated,  
+with potentially far-reaching 
+ramifications.
+How could it change our lives?   
+These technologies and related 
+treatments could enable us to live 
+healthier for longer, decreasing 
+the burden of age-related disease 
+on society and potentially 
+extending life expectancy. “ These technologies  
+...could enable us to  
+live healthier for longer.”Health  
+and Medical 
+Technology31 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIES“ With a rise in bacterial 
+infections, we need to  
+discuss developing 
+alternatives...” 
+What is it?  Alternatives to antibiotics.
+Why is it interesting? Antibiotics  
+are used to prevent and treat 
+bacterial infections but bacteria  
+from common diseases are 
+becoming antibiotic-resistant.  
+New resistance mechanisms are 
+emerging and spreading globally, 
+making it harder to treat infectious 
+diseases, such as pneumonia  
+and blood poisoning. Without  
+urgent action, we are heading  
+for a post-antibiotic era in which 
+common infections and minor 
+injuries can once again kill. 
+Developing alternatives is  
+therefore a global health priority.
+What industries could use this? 
+Health, agriculture, animal health.
+How could it change our lives?  
+Antibiotic resistance could lead to 
+higher medical costs, longer hospital 
+stays and increased mortality. New, 
+safe biological antimicrobial solutions are needed so we can 
+continue to treat infections and 
+remove bacterial contaminants  
+from food sources. Technologies 
+under development in this area  
+offer real hope of a solution.
+What do we need to start 
+discussing? Discussions mostly 
+surround new antibiotics, or avoiding 
+using them unnecessarily. With a rise 
+in bacterial infections, we need to 
+discuss developing alternatives. 
+Acting now should mean we have 
+developed new technologies before 
+functioning antibiotics run out. As 
+individuals, if we are aware of new 
+treatments this should reduce 
+uncertainty and build trust.
+SHOWCASE TECHNOLOGY:
+Antibiotic replacementsHealth  
+and Medical 
+Technology32 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESMicrobiome 
+therapeutics 
+What is it?  New therapies  
+with the potential for treating 
+disease through manipulation  
+of the gut microbiome.
+Why is it interesting?  
+This technology has great 
+potential to reduce the  
+incidence and severity of  
+many human conditions  
+and diseases. If validated, 
+microbiome therapeutics  
+could open up a new branch  
+of medical treatments. 
+How could it change our lives?  
+Could produce treatments and 
+interventions that are inherently 
+suited for human use, because 
+they are directly shaped through 
+co-evolution. Therefore, these 
+medicines could be safer and 
+more successful than the  
+average clinical programme.Personalised RNA 
+therapeutics
+What is it?  RNA therapeutics 
+have become well known  
+through their use in some  
+Covid vaccines. They’re also 
+being developed for targeted 
+cancer treatments. The next 
+technological leap forward will  
+be through using RNA to provide 
+personalised therapies to patients 
+with hard-to-treat diseases.
+Why is it interesting?  
+Small molecules and antibody 
+drugs currently target only 0.05% 
+of the human genome. RNA 
+technology could open up a vast 
+array of proteins, transcripts and 
+genes as new treatment targets.
+How could it change our lives? 
+They are a rapidly expanding 
+category of drugs that could 
+change the standard of care  
+for many diseases and make 
+personalised medicine a reality. Phased genome 
+assembly tools
+What is it?  Tools which help 
+people working in genomics 
+make sense of huge volumes  
+of data. It should allow new  
+ways of genome-based 
+sequencing to speed up what  
+we can do in bioinformatics,  
+while reducing error rates.
+Why is it interesting?   
+Next-generation sequencing 
+enables whole-genome phasing 
+which can inform studies of 
+complex traits. Phasing can  
+also provide valuable information 
+for genetic disease research. 
+Given UK expertise in genomics, 
+an interest in developing the next 
+phase of tools to help exploit and 
+advance that expertise makes 
+perfect sense.
+How could it change our lives?  
+These technologies will  
+help continued advances in 
+genomics. These can help 
+improve our lives, particularly 
+through positive implications  
+for health and agriculture.“ The next technological leap 
+forward will be through using 
+RNA to provide personalised 
+therapies to patients...”Health  
+and Medical 
+Technology
+33 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESSensation 
+detection implants 
+What is it?  Implants that  
+enhance or enable detection  
+of feelings of sensation.
+Why is it interesting?   
+Could help people lacking normal 
+sensation. It could also link to  
+a more immersive computing 
+future. Ethical considerations 
+should be discussed while this 
+technology is developed.
+How could it change our lives?  
+It’s a potentially life-changing 
+technology for many people.  
+It could allow people with 
+prosthetic limbs to ‘feel’ through 
+those devices, to restore or 
+enhance hearing or the sense  
+of smell. It could also give us  
+new ways to interact with digital 
+technologies and machines. Whole body-  
+on-a-chip device
+What is it?  Multi-organ  
+systems which can emulate 
+human physiological responses 
+to drugs. Have the potential  
+to identify a drug’s efficacy  
+and its toxicity in other organs. 
+Why is it interesting?   
+Offers a more accurate and 
+cost-effective way of testing 
+treatments before clinical  
+trial. Body-on-a-chip devices 
+could increase the success  
+rates of clinical trials.
+How could it change our lives?  
+If successful, they could be used 
+to develop or select therapeutics 
+for individual patients. This could 
+revolutionise clinical trial design 
+and deliver a new wave of 
+treatments and interventions, 
+improving global health outcomes.“ It’s a potentially life-  
+changing technology  
+for many people.”
+Health  
+and Medical 
+Technology034 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIES
+When many think about 
+future technologies, they 
+immediately think of  
+robotics and space tech.  
+Here we can see a future of truly driverless cars,  
+‘soft’ robots that act a bit like worms, and satellite 
+technology which offer much better monitoring  
+of land and sea. This family of technologies could  
+be applied in almost every sector of the economy  
+and will likely include smart machines that interface  
+with or are embedded in humans. Robotics  
+and Space 
+Technologies
+35 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESFully  
+autonomous 
+vehicles  
+What is it?  Driverless vehicles 
+(ADAS Level 5) that may not even 
+have steering wheels, acceleration 
+or braking pedals. They will be able 
+to do anything a human driver can.
+Why is it interesting? Progress 
+has been made in autonomous 
+vehicle development but this 
+ultimate level is the end goal. This 
+technology provokes fascinating 
+ethical, legal and insurance-related 
+discussions. For example, if a  
+truly autonomous car was in a 
+calamitous situation where it  
+had to choose between hitting  
+a pedestrian – one a child and  
+one elderly – what would it do? 
+How could it change our lives?  
+It could fundamentally change 
+personal transport, turning a 
+driving-based commute into time 
+for leisure or work. May vastly 
+increase mobility opportunities  
+for those physically unable  
+to drive. Nanoscale  
+robotics
+What is it?  Nanoscale  
+robotics is an emerging 
+technology field creating 
+extremely small machines or 
+robots whose components are 
+near the scale of a nanometre. 
+Microrobots and nanorobots  
+are finding uses in several  
+fields, including biomedicine. 
+Why is it interesting? 
+Nanorobots are hugely interesting, 
+due to their possible uses inside 
+and outside the human body. They 
+have potential uses in medicine 
+like ‘fixing’ genetic code defects,  
+or highly targeted drug delivery. 
+They may be another way of 
+connecting our physical body  
+with the digital world. It’s likely  
+we will see self-contained 
+nanorobots devices that can 
+manufacture at the nanoscale. 
+How could it change our lives?  
+Nanorobots could transform 
+healthcare as they allow for much 
+less invasive procedures instead 
+of surgery and non-targeted 
+chemical and radiation therapies.Robotic off-world 
+manufacture
+What is it?  Technologies which 
+enable the production of goods  
+in a location beyond Earth. This 
+includes space or zero-gravity 
+manufacturing as well as lunar 
+and Martian manufacture.
+Why is it interesting?  
+Given the desire to return to  
+the moon and explore Mars  
+in more detail and for longer 
+periods, there will be a need to 
+make things on those planets  
+or in space. These technologies 
+are essential for humankind to 
+live beyond our current planet. 
+How could it change our lives?  
+Manufacturing in space, 
+benefiting from effects such as 
+microgravity and vacuum, will 
+mean we can develop products 
+that are impossible on Earth.  
+In addition, the technologies 
+required to manufacture goods 
+off-world are an important step 
+towards establishing any sort of  
+settlement on the moon or Mars. “ Microrobots and  
+nanorobots are finding  
+uses in several fields,  
+including biomedicine.” Robotics  
+and Space 
+Technologies36 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESSoft robotics   
+What is it?  Soft robots are 
+systems built from ‘soft’ or 
+compliant materials, rather  
+than the hard-bodied designs  
+of traditional robots. Many  
+soft robots have mechanical 
+properties similar to living tissues, 
+often inspired by invertebrate 
+animals like squid or worms. 
+Why is it interesting?  
+It could broaden the range  
+of applications for robotics  
+in society and industry. The 
+simplicity of the systems,  
+such as non-linear movement, 
+organic appearance and soft 
+surface, could help create 
+environments that feel more 
+natural than at present.
+How could it change our lives?  
+Allows us to begin developing 
+artificial muscles and artificial 
+organs more similar to biological 
+systems. This would make those 
+devices more practical and improve 
+quality of life for users. They could 
+help with disaster response, with 
+robots squeezing into small gaps 
+and ‘worming’ their way into a 
+collapsed structure, then expanding  
+to create an air pocket when they 
+find a casualty. Space nuclear 
+power and novel 
+space propulsion 
+systems 
+What is it?  New non-combustion-
+based propulsion systems for  
+use in spacecraft, particularly 
+nuclear propulsion. Includes 
+electric propulsion, a spacecraft 
+propulsion technique that uses 
+electrostatic or electromagnetic 
+fields to accelerate mass to  
+high speed, and nuclear-based 
+propulsion systems to overcome 
+the problem of running out of fuel.
+Why is it interesting?  
+Current propulsion methods 
+require heavy and cumbersome 
+fuels. Nuclear power has long 
+played a vital role in space 
+missions but future missions 
+could rely on it, or other novel 
+propulsion technologies, for a 
+broader range of applications 
+over increasing distances.
+How could it change our lives?  
+Development of these 
+technologies is essential to future 
+manned space exploration.“ Robots could help  
+with disaster response...  
+‘worming’ their way into  
+a collapsed structure...”Robotics  
+and Space 
+Technologies
+37 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIES“ Low earth orbit satellites 
+offer a massive increase  
+in resolution of images.” 
+What is it?  Low earth orbit  
+satellites have an altitude below 
+2000km, whereas very low earth 
+orbits are below 500km. These  
+have two major benefits: a massive 
+increase in resolution for satellite 
+images; and less threat of  
+damage as space debris does  
+not accumulate at this altitude.
+Why is it interesting? Satellites  
+at lower orbits should offer more 
+applications of the technology. 
+Developing these technologies will 
+lead new propulsion technologies 
+being created as satellites at these 
+heights require ongoing propulsion  
+to overcome the impact of 
+atmospheric drag.
+What industries could use this? 
+Telecommunications, agriculture, 
+environmental monitoring,  
+ocean monitoring.How could it change our lives?  
+Improved satellite imagery  
+will offer greater maritime 
+surveillance, improved environmental 
+monitoring, and potentially new 
+telecommunications technologies. 
+What do we need to start 
+discussing? Discussions around 
+critical topics like access, debris,  
+end of life, satellite maintenance, 
+ethics of satellite access and  
+data use are already underway  
+for other types of satellites. The  
+need here is to extend them to 
+include the specific nuances  
+of this type of satellite, and the 
+particular implications arising  
+from very low earth orbit.SHOWCASE TECHNOLOGY:
+Very low  
+earth orbit  
+(VLEO) satellitesRobotics  
+and Space 
+Technologies38 INSIGHTS REPORT: INNOVATE UK’S 50 EMERGING TECHNOLOGIESThis report represents a selection  
+of areas of emerging technology we 
+believe will be important for the UK’s 
+economy and future innovation.
+Innovate UK has been 
+consistently tracking  
+and analysing emerging 
+technologies for over a 
+decade. We’ve often 
+shared our findings with 
+the UK government, and  
+to support our own 
+strategy development.  
+But this marks the first 
+time we’ve shared our 
+thoughts publicly. 
+This report represents  
+a selection of emerging 
+technologies we believe 
+will be important for the 
+UK’s future economy.
+It is our hope that 
+individuals, businesses  
+and industries find the 
+technologies here exciting. 
+That this document helps 
+prompt discussion, interest and ideas in their future 
+development and use. 
+For this report, we have 
+had responses to our 
+Technologies of the Future 
+survey from a very broad 
+range of experts. We 
+would like to sincerely 
+thank all contributors  
+for their time and effort. 
+We would particularly like 
+to acknowledge Jonathan 
+Mitchener and the wider 
+Horizon Scanning team  
+at Innovate UK for their 
+contribution, and would like 
+to express our appreciation 
+to our UKRI colleagues and 
+their scientific communities, 
+for responding to our 
+Technologies of the  
+Future survey and  
+sharing their expertise. 
+Note
+It is impossible to accurately predict the future. It is only possible to ext rapolate  
+trends and combine them with expert analysis to envisage various possib le futures.  
+This document represents our views of a selection of interesting techno logies. It should 
+not be interpreted as a list of technologies in which we necessarily intend t o invest. Conclusions and the way forward
+We aim to launch our  
+next survey later this  
+year. We hope to engage 
+with an even broader 
+range of contributors  
+from academia, research,  
+industry and beyond to 
+feed into our next report.
+In our 2024 report we will 
+give progress updates to 
+see how our technologies 
+are faring. We are open  
+to ideas to make this 
+document more useful,  
+so get in touch if you  
+have suggestions.
+We hope you have  
+found this report thought-
+provoking. We look 
+forward to transforming 
+tomorrow, together.
+To share your thoughts on  
+this report, get in touch with  
+our Horizon Scanning team:
+horizonscanning@iuk.ukri.orgAbout Innovate UK
+Innovate UK drives productivity  
+and economic growth by supporting 
+businesses to develop and realise the 
+potential of new ideas. We connect 
+businesses to the partners, customers 
+and investors that can help them turn 
+ideas into commercially successful 
+products and services and business 
+growth. We fund business and research 
+collaborations to accelerate innovation 
+and drive business investment into 
+R&D. Our support is available to 
+businesses across all economic 
+sectors, value chains and UK regions. 
+Innovate UK is part of UK Research  
+and Innovation.
+For more information visit the 
+Innovate UK  website.
+Follow us:Accessibility
+To request copies of this report  
+in large print or in a different format, 
+please contact the Equality, Diversity 
+and Inclusion team at UKRI:  
+01793 444000  
+equality@ukri.org

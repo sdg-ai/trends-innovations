@@ -1,0 +1,41 @@
+name: dev-ti-classification
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  # Deep Learning
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cudatoolkit
+  # Web Frameworks
+  - flask
+  - streamlit
+  - uvicorn
+  - fastapi
+  # Data Science & ML
+  - pandas
+  - numpy
+  - joblib
+  # Utils
+  - requests
+  - pyyaml
+  - tqdm
+  # Dev Tools
+  - pip:
+    - notebook
+    - transformers
+    - datasets
+    - torchmetrics
+    - wandb
+    - python-dotenv
+    - nltk
+    - langchain
+    - langchain-core 
+    - langchain-community
+    - langgraph
+    - langchain-openai

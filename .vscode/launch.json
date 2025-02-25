@@ -1,29 +1,29 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Annotation 2.0",
+            "name": "ti-annotation",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/experiments/article_annotation/article_labeling_using_chatgpt_2.0.py",
+            "program": "${workspaceFolder}/climate-scanner/services/ti-classification/annotation/run.py",
             "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}",
-            // add testing argument
-            //"args": [
-            //    "--testing"
-            //]
+            "cwd": "${workspaceFolder}/climate-scanner/services/ti-classification"
         },
         {
-            "name": "Train",
+            "name": "ti-training",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/training/train.py",
+            "program": "${workspaceFolder}/climate-scanner/services/ti-classification/training/train.py",
             "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}",
-            "args": ["--debug", "--disable_wandb"]
+            "cwd": "${workspaceFolder}/climate-scanner/services/ti-classification"
+        },
+        {
+            "name": "ti-app",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/climate-scanner/services/ti-classification/app/run.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/climate-scanner/services/ti-classification"
         }
     ]
 }

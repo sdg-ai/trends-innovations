@@ -1,0 +1,23 @@
+name: ti-classifier
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - torch
+    - torchvision
+    - torchmetrics
+    - matplotlib
+    - scikit-learn
+    - pandas
+    - tqdm
+    - wandb
+    - numpy
+    - transformers
+    - python-dotenv
+    - PyYAML
+    - pyarrow
+    - wandb
+    - torchmetrics
+    - scikit-learn

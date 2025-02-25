@@ -1,0 +1,957 @@
+  
+  
+www. innovateuk .ukri.org  1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Telecom Network 2030  
+Innovation  Landscape and Opportu nities 
+ 
+ 
+ 
+  
+Dr. Yim Ling  
+ 
+Innovation Lead  
+AI & Data Economy  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Major Contributors and Approvers:  
+ 
+Tom Kirkham , Innovation Lead Future Network Technologies  
+Tom Fiddian, Head of AIDE programme s 
+Esra Kasapoglu , Director of AI & Data Economy  
+Will Drury , Executive Director Digital and Technologies  
+ 
+ 
+ 
+ 
+1st Release Version: V1.0 September  2023  
+    
+  
+www. innovateuk .ukri.org  2 
+Contents  
+1 Telecoms Innovation Powerhouse  ................................ ................................ ...... 3 
+2 Major Drivers and Supplies of Future Telecom Innovation  ................................ .. 3 
+2.1 Consumer Driver  ................................ ................................ ...........................  4 
+2.2 Business/ Society Driver  ................................ ................................ ...............  4 
+2.3 Environment Driver  ................................ ................................ .......................  5 
+2.4 Technology Innovation Supply  ................................ ................................ ...... 5 
+2.5 Governance/ Policy/ Regulation  ................................ ................................ .... 5 
+3 Telecom Network 2030 Vision  ................................ ................................ ............  6 
+3.1 Future Mobile and Fixed  Infotainment  ................................ ...........................  6 
+3.2 AI and Data Network Economy  ................................ ................................ ..... 6 
+3.3 Energised and Healthy Ageing Society  ................................ .........................  6 
+3.4 Clean Growth  ................................ ................................ ................................  7 
+3.5 Telecom Network 2030  Targets  ................................ ................................ .... 7 
+4 Telecom Network 2030 Innovation  Opportunities  ................................ ...............  8 
+4.1 Wireless Network 2030 Innovation Landscape  ................................ .............  8 
+4.2 6G Evolution and Innovation Opportunity  ................................ ......................  9 
+4.3 Future Fi xed Network Innovation Opportunity  ................................ .............  11 
+5 Accelerating Future Telecom Innovation  ................................ ...........................  13 
+5.1 Developing a UK Telecom Network Infrastructure Industry  .........................  13 
+5.2 Energising Telecom Network Application Development  ..............................  15 
+6 Network 2030 Innovation Supports  ................................ ................................ ... 18 
+6.1 Facilitating UK Tel ecom Network 2030 Innovation  ................................ ...... 18 
+6.2 Innovation Support Framework  ................................ ................................ ... 20 
+ 
+ 
+    
+  
+www. innovateuk .ukri.org  3 
+1 Telecom s Innovation Powerhouse  
+ 
+Sociali sation  and connection  are basic  need s for human s to thrive as individuals and 
+as a collective . While physical direct contact is  mostly  preferred, it may not be always 
+possible. Telecommunication networks provi de a means  to communicate remotely, 
+without the parties being in proximity.  Today , telecom networks enable voice, video, 
+and data transmission, facilitating human socialisation and information exchange for 
+entertainment and work efficiency. Increasingly, t hey also support interactions with 
+and among machines, such as computers, sensors, and robo ts.  
+ 
+Telecommunications are part of the national critical infrastructure, playing a vital role 
+in our daily social and business life activities. Moreover, through the advancements 
+of telecom technology, such as the evolution from 1G to 5G, telecom network s have 
+evolved using internationally agreed standards to address the increasing digital 
+demands within our lives  and enhancing our national productivity.  
+ 
+As a country , the UK  recognises the importance of technology advancement to our 
+economic and social development. The  Prime Minister announced the intention for 
+the UK to be a science superpower by 2030, placing science, innovation, and 
+technology at the heart of the governments  vision , highlighting f ive priority 
+technologies1. Telecoms is one of the prio rities, together with Quantum technologies, 
+Engineering biology, AI, and Semiconductors.  
+ 
+This paper discusses the telecom network innovation landscape and the 
+opportu nities that presented in the  coming telecom technology evolution.  The 
+timeframe considere d is to 2030. Every generation of network evolution, such as 
+from 4G to 5G, took about 10 years, starting from defining  the vision, detailing the 
+requirements, carrying out research, to standardisation, planning, and 
+implementation. Therefore, while looking  the future, the innovation requirements 
+from now to 2030  are also highlighted . 
+ 
+ 
+2 Major Drivers and Suppl ies of Future Telecom 
+Innovation  
+ 
+The demands of advanced telecommunication networks are constantly evolving, 
+from initial simple message commun ication to voice and now high -speed real -time 
+data communication. The primary aim of advancing the telecom networks is to 
+enhance our life -experience in 2030, while doing so assist ing the development s of 
+sustainable technologi es that boost the growth of the economy.  
+ 
+ 
+ 
+1 https://www.gov.uk/government/publications/uk -international -technology -strategy/the -uks-
+international -technology -strategy    
+  
+www. innovateuk .ukri.org  4 
+Network evolution is a continuous process of innovation and improvement. It is 
+driven by the changing market demands, technological advancements, societ al and 
+social trends. It is guided by the vision to creat e an intelligent , ubiquitous, secured , 
+and sustainable network that can connect every one and every thing.  There are many  
+drivers of telecom evolution  that can be catalogued  as coming from consumer  user, 
+business, and society, as well as from environment  conservation . 
+ 
+ 
+2.1 Consumer Driver  
+ 
+The developme nt of communication networks and electronic consumer products are 
+interrelated and create new opportunities for the future. Many electronic consumer 
+products, both new and existing, depend on communication networks that can offer 
+fast, reliable, secure, and low -latency data transmission. For example , new products 
+such as 4K/8K TV, VR HMD, Apple Vision Pro, require high -speed and broadband 
+video streaming capabilities  to create the enhanced user experience .  
+ 
+Communication networks are constantly improving t o meet these demands while 
+also stimulating new product innovations. The latest wireless network for example 
+can connect a large number of  low-power products , which then enables the 
+development of many new IoT devices,  connecting  such things as smart meters, 
+home fridges, etc.  
+ 
+Future products, such as driverless car, require communication networks that can 
+deliver even higher performance and near -real-time data exchange. Furthermore, 
+the creation of the cyber world such as  Metaverse  and Digi tal Twin  will need 
+communication networks that can support seamless interaction between virtual and 
+physical worlds.  
+ 
+ 
+2.2 Business/ Society Driver  
+ 
+5G ultra -low latency and reliable networks aim to serve consumers as well as 
+businesses. Many initiatives are a lready in place to take advantage of these new 5G 
+capabilities, including initiatives linked to the concepts of the Smart City, Smart Port, 
+Smart Factory, etc.  
+ 
+By 2030, a new age of the digital economy will emerge, where everything that needs 
+connection will be connected. Telecom networks in 2030 will be the main platforms 
+and infrastructures for business communication, collaboration, and commerce, 
+leading to high efficiency and high productivity. Moreover, telecom network 2030 will 
+support government ser vices, such as intelligent transport, crowd management, 
+emergency, disaster , and crisis managements, and many others . 
+ 
+ 
+   
+  
+www. innovateuk .ukri.org  5 
+2.3 Environment Driver  
+ 
+The urgent requirement of environment al sustainability  is becoming more recognized  
+both within the industry and gov ernments that regulate it . From the process of 
+consumer device manufacture to the operation of radio antennae the telecom 
+industry must  consider  its impact on the environment. Reducing the amount of 
+carbon used in supply chains to the development and utilisation of energy efficient 
+hardware are two examples where  reduced carb on emissions are targeted.  
+Moreover, utilisation of network technology  has the responsibility to help other 
+industries to achieve their  Environmental, social, and c orporate governance (ESG)  
+and reduce their environmental impacts and carbon emissions.  
+ 
+ 
+2.4 Technology  Innovation  Supply  
+ 
+Technology evolution is accelerating all the times since industry evolution  and as 
+companies compete within a global marketplace . It is commonly recognised that 
+technology is the only long -term solution to support the growth of a national  
+economy. Telecom evolution can come from many  areas, from the inventions of 
+physical materia l such as hollow fibre , to radio frequency  component, software radio, 
+edge subsystem, platform, and to end -to-end orchestration  system, integrating  some  
+other innovations in the fields such as AI, Quantum Computing, and Semiconductor . 
+ 
+ 
+2.5 Governance/ Policy/ Regulation  
+ 
+One of the main supplies of development towards a better and more sustainable 
+society is government policy and regulation. They help encourage strategic 
+innovation ensuring that the innovations are efficient, productive, and  eco-friendly. 
+As a driver of economic growth many countries and regions around the world have 
+launched initiatives to become leaders in technologies to deliver the future of 
+telecoms.  
+ 
+For example, in Europe, there are the Europe’s Digital Decade: digital targets for 
+20302 and the 6G Research and Innovation Programme3. In the US, there are the 
+Next G Alliance4, the NYU Wireless Industrial Affiliates Program5, and cooperation in 
+Advanced Wireless Communications  with Finland6. UK have similar ambitions and 
+aim to be a technology p owerhouse, as defined in the Long -term Science and 
+ 
+2 https://commission.europa.eu/strategy -and-policy/priorities -2019 -2024/europe -fit-digital -
+age/europes -digital -decade -digital -targets -2030_en  
+3 Europe launches the second phase of its 6G Research and Innovation Programme | Shaping 
+Europe’s digital future (europa.eu)  
+4 https://www.nextgalliance.org/  
+5 https://wireless.engineering.ny u.edu/industry -affiliates/  
+6 https://www.state.gov/joint -statement -of-the-united -states -and-finland -on-cooperation -in-advanced -
+wireless -communications/    
+  
+www. innovateuk .ukri.org  6 
+Technology Framework7, the Wireless Infrastructure Strategy8, and the International 
+Technology Strategy9. 
+ 
+3 Telecom Network 2030 Vision  
+ 
+Four core components make up the telecom network 2030 vision : 
+• Future Mobile and Fixed Infotainment  
+• AI and Data  Network  Economy  
+• Energi sed and Healthy Ageing Society  
+• Clean Growth  
+ 
+ 
+3.1 Future Mobile and Fixed Infotainment  
+ 
+Telecom n etwork 2030 will provide seamless and immersive experiences that can 
+enhance lives, offer en tertainment, and facilitate access to information. It will keep 
+user connected to the content, service, people, and machine  that matter and benefit  
+to the user. Moreover, telecom network 2030 will also enable users to interact 
+seamlessly between the new vi rtual world and the physical world. Whether it is 
+playing a cloud -based game on a device , watching a live concert in virtual reality, 
+talking to a digital assistant on a driverless car, or socialising in the cyber world, the 
+telecom network 2030 will support the future of mobile and fixed infotainment.  
+ 
+ 
+3.2 AI and Data Network  Economy   
+ 
+Artificial  intelligence and data are the key drivers of the digital economy. They enable  
+creation of  faster, smarter, and more efficient solutions for various challenges and 
+opportunities. Telecom n etwork 2030 will leverage AI and data to build an 
+autonomous network  that can be self-organize d, self -optimize d, and self -healing. In 
+addition , it will  also us e AI and data to support connected IoT devices in transforming 
+various industries  and organisations , in the sectors such as  manufacturing,  
+agriculture, transportation, government services, and many more. Telecom n etwork 
+2030 will  harness the power of AI and data to create new value and improve 
+business efficienc y. 
+ 
+ 
+3.3 Energi sed and Healthy Ageing Society  
+ 
+The ageing society poses several challenges for the economy and society. It 
+requires new ways of increasing productivity, enhancing well -being, and ensuring 
+ 
+7 https://www.gov.uk/government/publications/uk -science -and-technology -framework/the -uk-science -
+and-technology -framework  
+8 UK Wireless Infrastructure St rategy - GOV.UK (www.gov.uk)  
+9 The UK's International Technology Strategy - GOV.UK (w ww.gov.uk)    
+  
+www. innovateuk .ukri.org  7 
+quality of life. Telecom n etwork 2030 will help to  overcome these challenges by 
+providing future te lecom solutions that can boost productivity, efficiency, and 
+innovation in various domains. It can also support for example  leading -edge mobile 
+and fixed health care solutions that can improve health outcomes, reduce costs, and 
+increase access to care for the ageing population.  
+ 
+ 
+3.4 Clean Growth  
+ 
+Climate change is one of the most urgent issues facing humanity today. It requires 
+collective action from all stakeholders to reduce greenhouse gas emissions and 
+achieve  green growth . The Telecom industry’s Net Zero  programme  aims  to take 
+action to reduce the network s’ carbon footprint and achieve  net zero by 2030 . 
+Telecoms is also part of the ICT solutions that can empower  industrial 
+decarbonisation by enabling smart energy management, green transportation,  etc. 
+The aim is to reduce their environmental impact and contribute to clean growth.   
+ 
+ 
+3.5 Telecom Network 2030  Targets  
+ 
+Some of the Telecom Network 2030  targets are:  
+• Providing full mobility and broadband 
+capabilities to support new 
+Infotainments. Seamless experience 
+between physical and virtual world  
+• 5G and 5.5G UK nation -wide coverage 
+and new area coverages; Standalone 5G 
+to all populated areas by 203010 
+• Increasing IoT devices with Everything 
+required connections get connected. 
+Gigabit -broadband nationwide by 203011 
+• Supporting new age of Intelligent Data 
+Economy - smart manufacturing, 
+transportation, public services,  etc. 
+• Lift productivity to meet challenges of 
+slow growth, ag eing population, and 
+rising energy costs  
+• Telecom Net Zero and ICT solutions can empower other industries to reduce 
+carbon emission; ICT has the potential to hold global CO 2 emissions in 2030 
+at 2015 levels12 
+ 
+ 
+ 
+10 https://www.gov.uk/government/publications/uk -wireless -infrastructure -strategy/uk -wireless -
+infrastructure -strategy  
+11 https://www.gov.uk/government/publications/levelling -up-the-united -kingdom  
+12 https://www.bt .com/bt -plc/assets/documents/digital -impact -and-sustainability/our -approach/our -
+policies -and-reports/ict -carbon -reduction -eu.pdf  
+  
+  
+www. innovateuk .ukri.org  8 
+4 Telecom N etwork 2030 Innovation  Opportunities  
+ 
+This section will explore the current and future trends of wireless and fixed network 
+development s and examine the potential innovations in 6G networks  through to 
+2030 . 
+ 
+4.1 Wireless Network 2030 Innovation Landscape  
+ 
+Wireless network infrastructure is the foundation of the digital economy. In addition 
+to mobility, i t enables the delivery of high -quality, reliable, and secure connectivity to 
+various devices, applications, and services. Network infrastructure is constantly 
+innovating to meet the evolving needs and expectations of its users. It also evolves 
+with the purposes of improving its own network efficiency, optimizing the resources, 
+reducing the costs, and increasing the agility.  
+ 
+ 
+ 
+ 
+There are two main sources of future telecom innovations:  
+• Network Infrastructure  Equipment  Innovations (enabling new capabilities, 
+more efficiency, etc)  
+• End-User Service Innovations ( enabling 2C Infotainment, 2B work efficiency, 
+2G digital transformation, etc)  
+ 
+Wireless network infrastructure consists of Radio Access Network (RAN), Transport 
+(including Backhaul), Core network, and OSS/BSS. Innovations can be related to 
+any of these infrastructure elements, as well as some of the late st technologies in 
+Cloud Edge, SDN, NFV, Slicing, and Cloud Core.  
+ 
+ uture  ireless Innovation Landscape
+ emar : t e a o e is not a definiti e list    ut rat er are potential areas of inno ation
+D : Digital  ransformation      :  o  o  ar et     :  i ed  ireless  ccess   m    : massi e  ultiple  nput  ultiple  utput      :  adio 
+ ccess  et or          :  peration s   usiness  upport  ystem    D :  oft are Defined  et or      :  et or   unction  irtuali a tion  
+   :  e icle to E eryt ing    ed ap: educed  apa ility      :  on  errestrial  et or  (suc  as  atellite    ig   ltitude  latforms     ) ireless  et or        nno ation  pportunities
+ nd  ser  ervice Innovation
+ onsumer      usiness     Network In rastructure Innovation
+    ac  aul  ore         
+Edge  loud  D       licing  ore  loud
+ ri ate  o ile  et or  (   )
+ eutral  ost  et or 
+Digital   in pen        pplication
+ et or 
+ oint  ensing and 
+ ensor  et or s      
+ ntegration        ...        
+m    
+ entimetre    u       
+  ree  pace  ptic
+ et or  of
+ et or s ural  o erage
+ utonomous 
+ et or s (  )      eta erse  
+ ologram  ireless
+ uantum
+ ecurity mart  ity   ealt   ransport  ..Edge  omputing
+ tandalone (  )  et or   
+ .  
+   era it  road and
+ et or  reen    ecure        ( nfotainment    or  efficiency   D ..) ( e   er ice  ntroduction   net or  efficiency   fast    ..)
+ econfigura le 
+ urfaces ndustry  .   loud     
+De ice  ard are  oft are  er ice  pplication  omponent  latform ltra 
+m     ed ap  
+  
+www. innovateuk .ukri.org  9 
+5G is the first mobile system that aims to serve not only the general consumer 
+market but , also business and organisation. The end -user service and application 
+innovations cover all segment s, including 2C, 2H, 2B, and 2G markets.  
+ 
+Wireless network evolution is a continuous process of research and standardisation . 
+Mobile network has evolved from the 1G analogue voice network, 2G digital voice 
+and SMS, 3G circuit and packet switches, to 4G dat a network, and 5G 2C and 2B 
+data network s. Some of the key topics of 5G and 5.5G evolution include: FWA, 
+Cloud VR, Private Mobile Network (PMN), massive MIMO, Edge Computing, Rural 
+Coverage, Neutral Host Network, Open RAN, Standalone (SA) Network, V2X/ UAV , 
+Digital Twin, Industry 4.0+, Smart City/ Heath/Transport/ Education/ Agriculture 
+applications , and reduced capability (RedCap , also known as NR -Light ). 
+ 
+6G research has been started . Some of the hot topics of 6G  are: XR/ Metaverse/ 
+Hologram wireless, Sensing and sensor network s, Terrestrial  Network and Non -
+Terrestrial Network ( TN-NTN) Integration, Terahertz/ mmWave,  Free-space Optic , 
+Terabit Broadband Network, Network of Networks, Reconfigurable Intelligent 
+Surfaces, Ultra -massive MIMO, and Quantum Security Network.  
+ 
+Wireless network is  in sync and converging with other technology advancements. 
+For example, there is an increasing tendency of using AI for applications over 
+networks and for an autonomous network. AI will be used in 5G and 5.5G networks 
+and it is expected that 6G will widel y incorporate the use of AI technology. Also, it is 
+commonly accepted that all the infrastructure and application developments will have 
+to fall under the green and secure framework.  The network s will have to be power 
+efficien t themselves as well as have t he capabilities to support other business es and 
+industr ies in their green cred entials. Telecom networks  also need to be inherently 
+secure d and continuously to be a major part of the critical infrastructure . 
+ 
+Potential areas of telecom innovation can come f rom but not limited to:  
+• Component (antenna, RF unit, beam -forming module, etc)  
+• Device (IoT, 5G Wifi router, etc)  
+• Hardware (MEC server, base station, etc)  
+• Software (Radio Intelligent Controller, device management, etc)  
+• Platform (cloud, edge, IoT, etc)  
+• Service (integration, design, data analysis, operation, etc) 
+• Application (smart city, port, education, health, etc)  
+ 
+ 
+4.2 6G Evolution  and Innovation  Opportunity  
+ 
+6G evolution is the next generation of wireless communication technology that will 
+build on the a chievements of 5G and provide extreme connectivity for various 
+applications and services. 6G evolution will incorporate AI intelligence, tera 
+networks, network of networks, green and secure technologies, as well as enhance   
+  
+www. innovateuk .ukri.org  10 
+the existing 5G features of eMBB, mMTC, and uRLLC. Six U sage Scenarios are 
+identified  by ITU13: 
+• Immersive Communication (an extension of eMBB)  
+• Massive Communication  (an extension of mMTC)  
+• HRLLC (Hyper Reliable & Low -Latency Communication – an extension of 
+uRLLC)  
+• Ubiquitous Connectivi ty 
+• Integrated AI and Communication  
+• Integrated Sensing and Communication  
+ 
+And four design principles , applicable to all usage scenarios , are defined as : 
+• Sustainability  
+• Connecting the unconnected  
+• Ubiquitous intelligence  
+• Security/ privacy/ resilience  
+ 
+ 
+ 
+ITU and the  wireless  industry are in the process of defining  the 6G requirements of 
+IMT-2030. Below shows some of the key char acteristics that are expected in 6G 
+evolution :  
+▪ High Data Rate:  The peak downlink data rate will exceed 100 Gbps, enabling 
+ultra-fast transmission of large amounts of data.  The up link peak data will also 
+be enhanced to larger than 10 G bps. 
+▪ High Capacity:  The network capacity will be 100 times higher than 5G, 
+supporting massive data traffic and concurrent users.  
+ 
+13 https://www.itu.int/en/ITU -R/study -groups/rsg5/rwp5d/imt -2030/Pages/default.aspx  
+    volution
+  i    ata  ate  pea  do nlin    
+     ps  uplin       p s
+  i    apacit         
+   ps  overa e  ver w ere    D 
+co erage   in t e s ies   space and 
+under ater
+   treme Low Latenc  E E    ms
+  i    elia ilit         
+  lwa s  ecured   rust   ecurity and 
+ esilience
+  ensin   apa ilit     ig   recision 
+ ositioning :      cm
+  assive  onnected  evices (     m 
+  m )
+ Low  ner   and  ost  de ices and 
+infrastructure onsumer
+ ndustry
+ o ernment usiness
+    onnectivit  
+   urrent proposals   to  e defined  y              and     
+ ource:               rame or  ( une     )  
+  
+www. innovateuk .ukri.org  11 
+▪ Gbps Coverage E verywhere:  The network coverage will extend to three -
+dimensional spaces, including the skies, space, and underwater, ensuring 
+seamless connectivity in any environment.  
+▪ Extreme Low Latency:  The end -to-end latency will be less than 1ms, 
+enabling real -time an d interactive applications that require high 
+responsiveness and accuracy.  
+▪ High Reliability:  The network reliability will reach five nines (99.999%)  or 
+above , ensuring minimal errors and failures in critical scenarios.  
+▪ Always Secured:  The network will provi de trust, security, and resilience for 
+all users and devices, protecting them from cyberattacks and privacy 
+breaches.  
+▪ Sensing Capability & High Precision Positioning:  The network will have 
+the ability to sense the physical environment and provide high prec ision 
+positioning for users and devices, in the resolution of 1  to 10cm, enabling new 
+applications such as augmented reality and autonomous driving.  
+▪ Massive Connected Devices:  The network will support up to 10 0 million 
+connected devices per square kilometr e, enabling the Internet of Things and 
+smart city applications.  
+▪ Low Energy and Cost:  The network and devices will consume low energy 
+and cost, making them more sustainable and affordable.  
+ 
+6G evolution will serve various sectors and domains, such as consum er, business, 
+industry, and government, and enable new possibilities and opportunities for 
+innovation and development.  
+ 
+ 
+4.3 Future Fixed Network Innovation  Opportunity  
+ 
+Future fixed network innovations are the key to enabling a wide range of new 
+applications and services that require high -speed, low -latency, secure , and reliable 
+connectivity. It has the characteristic of determin istic experience that is more difficult 
+to achieve in a mobile network. While 5G is moving on to 5.5G and 6G, the evolution 
+of fixed network is also progressing from Fixed 5G (F5G) to F5.5G and F6G14, 
+whereas Wi-Fi is moving from wifi6, to wifi7 and wifi815. These technologies aim to 
+provide seamless and high-speed  experiences for users across different domains 
+and scenarios.  
+ 
+ 
+14 https://www.etsi.org/images/files/ETSIWhitePapers/etsi_wp_41_FSG_ed1.pdf  
+15 https://standards.ieee.org/beyond -standards/the -evolution -of-wi-fi-technology -and-standards/    
+  
+www. innovateuk .ukri.org  12 
+ 
+ 
+Some of the applications that can benefit from future fixed network innovations are 
+Cloud VR/AR/XR/Desktop,  wireless metaverse, smart city, digital twin, internet of 
+sensors, hologram communication, and many more. These applications require high 
+bandwidth , low latency, and high quality of service to deliver immersive and realistic 
+experiences. For example, Cloud VR/AR/XR  can enable users to access virtual or 
+augmented reality content, without the need for expensive or bulky devices. Smart 
+city can leverage  the massive amount of data collected by sensors and cameras to 
+improve urban planning, management, and services. Digital twins can create a 
+virtual replica  of physical objects or systems, allowing for remote monitoring, control, 
+and optimization. The inte rnet of sensors can connect billions of devices and sensors 
+to the cloud, enabling new applications such as smart agriculture, environmental 
+monitoring, and industrial automation. Hologram communication can enable users to 
+interact with each other and object in 3D projection, creating a sense of presence 
+and intimacy.  
+ 
+Some of the major innovation topics of Fixed Network 2030  include:  
+• 10s Gigabit Broadband for home  and organisation  
+o mmWave Wifi  
+o High-density Wifi MIMO  
+o Satellite LEO/ MEO Internet  
+o FTTx ( Fibre To The Everything and Everywhere)  
+ 
+• All-Optical Network  
+o All-optical processing/ switching  
+o New hollow core fibre wavelengths and transceiver. Coherent 
+Detection.  
+o Flexible Optical Network carrier/ multiplexing/ channel  
+ 
+ uture  i ed Network Innovations
+ 
+     
+ ifi   
+ loud  ompute 
+and  anagement                                  
+                                  
+                                    
+                                   
+                     
+                                     
+                        
+                           
+                                  
+                                    
+          
+         
+         
+          
+            
+            
+       
+        
+   ll  ptical  et or   s  iga it 
+ road and for 
+ ome  organisation          
+                     
+                            
+                                 ecure   elia le  Deterministic    ntelligent E perience  pplication
+   :   e  ift   eneration  i ed  et or    ringing  i re to E ery  ere and E eryt ing (E   )  
+  
+www. innovateuk .ukri.org  13 
+• Cloud Compute and Management  
+o Edge Compute/ Slicing/ Deterministic  
+o Energy Efficiency Network  
+o Integrated Power Computing  
+o Autonomous (Intend based) Network  
+o Network -based sensing systems  
+ 
+ 
+5 Accelerat ing Future Telecom Innovation  
+ 
+To create and be recognised as a future telecom technology powerhouse, the UK 
+would benefit from accelerat ing the pace of developments in both the infrastructure 
+and the application. There is strength in the UK academic base which can support 
+industry in specific develop ment opportun ities. In this section, we will analyse the 
+strengths, weaknesses, opportunities, and threats (SWOT) of UK in these two areas 
+and discuss how to develop the telecom infrastructure equipment industry and how 
+to energi se the application development s.  
+ 
+ 
+5.1 Develop ing a UK Telecom Network Infrastructure Industry  
+ 
+The global telecom  network  equipment  market  is expected to grow rapidly from £1 
+trillion in 2020 to £2.4 trillion by 203016. The UK has strengths in this market, such as 
+leading acad emic research, leading telecom operators, well established telecom 
+labs, and favourable finance and regulation. However, the UK might face some 
+challenges in fostering the telecom equipment  industry , such as debatably lacking a 
+major  native  telecom infrast ructure vendor headquartered in the country and 
+arguably not having the necessary supply chain eco -system in the UK, for such 
+things as communication  chipset, router, computer, and cloud servers , being made 
+in UK . 
+ 
+To address the lack of a large -scale UK infrastructure provider , an opportunity exists 
+in the diversification of the network and support for new innovators into the supply 
+chain. To support this, the UK has set out its future telecom innovation strategy and 
+is looking to seizing the opportunities presented by the open network initiatives, the 
+UK supply chain diversification strategy, along with the technical opportunities within 
+the upcoming 5.5G , 6G, and non-terrestrial communication s evolutions .  
+ 
+With a st rong research base , the UK is well positioned to create innovation that can 
+be exploited to grow new infrastructure providers for the telecom networks of the 
+future.  This is well supported by UK government yet  presents an opportunity for the 
+innovation to be accelerated so that it can grow and scale up in its early stages. 
+Highlighting the key technological areas where the UK can develop  an early  
+competitive edge and leadership  is essential.  
+ 
+16 https://www.ericsson.com/assets/local/5g/the -5g-for-business -a-2030 -compass -report -2019.pdf    
+  
+www. innovateuk .ukri.org  14 
+ 
+Research efforts o f 6G and Telecom Network 2030 are already taken places  in North 
+America, Europe, China, Korea, and Japan , aiming to be  the leaders in creating  6G 
+applications and services, as well as the technologies that will set the global 
+standards.  Meanwhile, each reg ion or country has its own strengths and advantages 
+in different aspects of the 5G/5.5G ecosystem.  Below investigates  particular ly the 
+situations in United States and Europe.  
+ 
+ 
+ 
+The US has a strong presence in the radio chip industry, with companies such as 
+Qualcomm, Intel, Xilinx, and Nvidia leading the market. The US also dominates the 
+server computing industry, with companies such as Dell, HPE, and Compaq 
+providing high -performance solutions. Moreover, the US is home to the major cloud 
+infrastructure pr oviders, such as AWS, Microsoft Azure, and Google Cloud, who offer 
+scalable and reliable platforms for 5G/5.5G applications and services.  These cloud 
+hyperscalers are also increasingly getting into the telecom infrastructure markets , 
+leverag ing their scales and finances, starting from core and edge cloud s and to the 
+whole end -to-end infrastructure.  
+ 
+In contrast, the EU excels in the end -to-end telecom infrastructure  equipment  
+industry, with companies such as Ericsson and Nokia providing comprehensive 
+solutions for 5G/5.5G networks. The EU has also been active in promoting open 
+network and diversified supply chain strategies, as well as supporting research and 
+innovation projec ts through initiatives such as Horizon Europe.  
+ 
+ 
+  
+  
+www. innovateuk .ukri.org  15 
+The UK stands out in academic research, including telecom, software, and AI. 
+Further, the  K  as some of t e  orld’s leading universities and research institutes 
+in these fields, such as Cambridge University , Imperial College London, and Alan 
+Turing Institute. The UK also hosts some of the largest telecom operators in the 
+world, such as Vodafone Group and BT Group, who are conducting leading product 
+and solution research for future telecom technologies.  
+ 
+Thus , UK has a  great opportunity to develop future network infrastructure equipment 
+industry harnessing  academic research strengths coupled to  operational experience 
+of large telecom networks. To develop the telecom infrastructure providers in UK, the 
+followin g approaches can be considered :  
+ 
+• Leverage on academic research in telecom and software . The UK has a 
+strong academic research base in telecom and software, which can provide with 
+cutting -edge knowledge and innovation to help harness scientific innovation in 
+the domain. There are many large opportunities for the UK to foster collaboration 
+around telecom technologies through innovation among universities, industry, 
+and government, to support the transfer of research outcomes to the market.  
+ 
+• Learn from experi ence of large telecom operators . The UK has some of the 
+largest and most advanced telecom operators in the world, which can offer 
+valuable insights and best practices on how to design, build, manage , and 
+operate  network infrastructure. Through  leverag ing experience to integrate 
+innovative infrastructure  equipment solutions  into the market , UK organisations 
+can address the challenges and needs of telecom operators worldwide.  
+ 
+By developing its own telecom network infrastructure industry,  the UK can create 
+competitive advantage , ensure national security , and encourage econom ic growth , 
+while  contribute to the global telecom sector.  
+ 
+ 
+5.2 Energi sing Telecom Network Application Development  
+ 
+5G and beyond have the potential  to enable revolutionary applications that can 
+benefit individuals, businesses, and governments. However, the advantages of 5G 
+are not yet fully realised by consumers or businesses.  
+ 
+The UK has some strengths in harnessing the opportunities of 5G, such as an open 
+society that allows for a variety of applications, and a strong venture capital market 
+for tech companies ($14.9B in 2020)17. The UK also leads Europe in AI investment 
+and has well -established 5G Testbeds & Trials, in addition to a  large software 
+industry with a pool of skilled software and AI engineers. However, the UK, in fact 
+the whole industry,  also faces some challenges, such as  a lack of standard ised 
+methods  and application blueprints  of deploying 5G in various industrial sectors.   
+ 
+ 
+17 https://dealroom.co/blog/tech -nation -report -2021 -the-future -uk-tech-built   
+  
+www. innovateuk .ukri.org  16 
+One of the challenges of developing and deploying innovative applications over 5G 
+and beyond is the business model and the barriers to fast adoption. Different 
+stakeholders, such as network operators, vendors, integrators, and verticals, may 
+have different  incentives and expectations from the network. For example s: 
+ 
+• Operators may not find it attractive to only charge for traffic, if they need to 
+invest in network infrastructure and maintenance  
+• Vendors may not find it overwhelming to only provide a small net work, with a 
+handful of radio base stations and local infrastructure solutions.  
+• Integrators may not find it appealing to provide customisation services, as 
+they need to deal with complex and diverse requirements from different 
+verticals.  
+• Verticals may not be willing to adopt the network solutions, as they may face 
+large initial investment and possible high total cost of ownership (TCO), as 
+well as potential operation disruption  with not so clear benefits  
+ 
+However, it is well understood that the use of latest telecom network technology can 
+increase long-term productivity , competitiveness, security, and agility of business  
+and facilitate digital transformation of the society as whole. Therefore, there is a 
+rationale to foster innovation of the ap plication developments  over 5G and 5.5G 
+network . To be able to consider fully the areas of application development, we first 
+will discuss  the business model s of different architecture options of the 5G and 5.5G 
+private mobile network .   
+  
+www. innovateuk .ukri.org  17 
+ 
+ 
+1. Private  network over public network with slicin g: This model uses network 
+slicing to create virtual networks over a shared public network infrastructure. This  
+can offer readily available wide -area coverage , scalability,  and reliability  to the 
+users as well as is a relative low -cost solution . For example, this model can be 
+used for public services such as police or ambulance, of which slicing  will ensure  
+high priority, low latency, and high security  for the user . These blue light services 
+need wide area coverage th at is already provided by the public mobile network. 
+Moreover, network slicing can guarantee the quality of service and security that 
+they require. This solution also has the advantage of using the licensed radio 
+spectrum of the public mobile network opera tor.  
+ 
+2. Private network with public network control and local MEC : This model uses 
+Multi -access Edge  Computing (MEC) to create local private networks that are 
+controlled by a public network operator. This can offer more proximity, bandwidth, 
+and intelligenc e for local applications or services , as well as high local data 
+security . For example, this model can be used for smart manufacturing or smart 
+campus, which require high data rate, low latency, local real-time processing , and 
+local data security . 
+ 
+  
+  
+www. innovateuk .ukri.org  18 
+3. Standalone private network : This model uses a dedicated network 
+infrastructure that is owned and operated by a private entity. This can offer more 
+autonomy, security, and optimisation for isolated applications or services. For 
+example, this model can be us ed for large oil and gas field  plant  or underground 
+mining  site, which require high availability, reliability,  safety , and security of data . 
+Although it is called a standalone network, some of the facilities, such as  a radio 
+base station can  be share -used  with the public network . By doing so, this will  
+allow private user to seamlessly access to public network services , as well as 
+enable  public user  to use and share some cost of  the equipment in the private 
+network . Further more , in this case, network slicing  can be implemented to ensure 
+there is  no compr omise of either the service quality or network data security  to 
+the private network user . 
+ 
+There are potential innovations in the following three areas of application 
+development:  
+ 
+1. Public services . Mobile application developments for the local authority can 
+improve the efficiency and quality of public services, such as ambulance, fire, and 
+police. For example, 5G technology can be used to enable real -time communication 
+and data transmission between em ergency vehicles and control centres, to allow 
+remote diagnosis and treatment of patients. These blue light services need wide 
+area coverage that is already provided by the public mobile network. Moreover, 
+network slicing can guarantee the quality of servi ce and security that they require. 
+This solution also has the advantage of using the licensed radio spectrum of the 
+public mobile network operator.  
+ 
+2. Neutral host network . In this case, application developments can enable for 
+example vehicle -to-infrastru cture (V2I) communication, such as smart traffic 
+management, road safety, and environmental monitoring. The neutral host network 
+model, where a single network infrastructure is shared by multiple operators and 
+service providers, can reduce costs, increase coverage, and allow interoperability.  
+ 
+3. Private network industrial  blueprints . Mobile applications can be developed 
+that can enhance the productivity and performance of industrial sectors, such as 
+manufacturing, mining, and logistics. The concept of stan dardisation into a fixed 
+menu of use case applications for different vertical businesses should be promoted. 
+These application templates facilitate easier deployment and allow enterprises  in 
+various industry  to choose the most suitable  standard  application s for their needs.  
+ 
+6 Network 2030 Innovation  Support s 
+ 
+6.1 Facilitat ing UK Telecom Network 2030 Innovation  
+ 
+To achieve the vision of Telecom Network 2030, both the development and 
+commercialisation of innovative applications and services  as well as the 
+development of advanced infrastructure equipment  are important .   
+  
+www. innovateuk .ukri.org  19 
+ 
+Innovate UK, as part of UK Research and Innovation  (UKRI) , together with 
+Engineering and Physical Sciences Research Council (EPSRC) , Catapults , local and 
+regional governments,  industrial orga nisations , and universit ies have already 
+established several industry and academic telecom labs across the country, which  
+provide  support s to the deployment and testing of open and interoperable network 
+technologies, such as ORAN, RIC, MEC, etc. These labs can also support the 
+application development for various domains, such as manufacturing, health care, 
+etc. 
+ 
+In addition, though Department f or Science, Innovation and Technology ’s (DSIT’s) 
+Future Telecom s programme , EPSRC and Innovate UK will support  the 
+establishment of academic research hubs across the country, which can foster new 
+infrastructure equipment development, such as V2X netw ork, NTN -TN, sensing 
+network, AI, reflective device, etc. These hubs can also enable new applications and 
+services, such as immersive XR, 3D gaming, driverless car, virtual world integration, 
+etc. 
+ 
+ 
+ 
+ 
+As part of delivery of the Future Telecom s programme, Innovate UK , will run several 
+funding challenge competition s, based on well -established methods , to support 
+future telecom innovative projects by companies .  
+ 
+Furthermore , Innovate UK  is working with the C eltic-Next programme18, which is part 
+of the EUREKA Cluster19, in international ly collaborative R&D projects  focusing on 
+next-generation communications for the digital society . Successful project proposal  
+ 
+18 https://www.celticnext.eu/about -celtic -next/  
+19 https://www.celticnext.eu/eureka -clusters -programme/  
+Telecom Network 2030 Innovation  upports
+ pplication 
+de elopment 
+( anufacturing   
+ ealt   etc) ccelerate 
+ pplication 
+ evelopment and 
+ ommerciali ation
+ pen and 
+ nteropera le 
+ et or  (      
+      E   etc) ccelerate 
+In rastructure 
+  uipment 
+ evelopment e   pplications 
+( mmersi e      D 
+ aming  Dri erless  ar   
+ irtual  orld  ntegration 
+etc) 
+ e   nfrastructure 
+(    net or       
+     ensing      
+ eflecti e De ice   etc) a e uses of 
+ ndustry and 
+ egional La sLe erage on 
+ cademic 
+ esearc  and La s
+   .    
+ tart  mall  ut  im  ig ndustrial  lueprints to  ross  ndustries
+     .       
+  
+www. innovateuk .ukri.org  20 
+to Celtic -Next will get a  Label . The label can then be used , to indicate that the project 
+has been technically assessed by Celtic -Next, in the application of Innovate UK 
+funding challenges . 
+ 
+ 
+6.2 Innovation Support Framework  
+ 
+To foster innovation , the following areas are important across the UK:  
+ 
+1. Lab Facilities : Continue to consolidate  and grow testbed and trial lab facilities  
+that can support innovative projects , for new future telecom infrastructure 
+development,  interoperability test, and telecom application development and 
+integration.   
+ 
+2. Vertical Industry Applicat ion Blueprints : identif y key target ver ticals, such as 
+healthcare, education, manufacturing, and entertainment , which  can benefit from 
+5G and other telecom  technologies , and deliver a blueprint  application solution to 
+each  target vertical. Application could  be first developed as a standard best 
+practice for a specific industry, but it should also have the market potentials to 
+apply to other industries  – cross market is a big opportunity.  
+ 
+3. Open Network Infrastructure Equipmen t Development : Continue d promotion 
+of 5G/5.5.5G development, with a focus on open network and diversified supply 
+chain strategies. Access for  innovators to get entry to the UK open telecom 
+infrastructure ecosystem  is important . New infrastructure developme nt can start 
+with pilot projects and trials but needs  to have  a clear vision and roadmap for 
+large -scale deployment and adoption.  
+ 
+4. 6G/F6G research : Development of a 6G ecosystem, encouraging cross domain 
+tec nology con ergence and le eraging on t e  K’s e cellent researc  
+capabilities, industry -university collaboration programs, and standardi sation 
+efforts.  
+ 
+ 
+ s t e  K’s inno ation agency   nno ate  K ’s mission  is to help UK businesses 
+grow through the development and commercialisation of new products, processes, 
+and services, supported by an outstanding innovation ecosystem that is agile, 
+inclusive, and easy to navigate.  Innovate UK  will continue  to inspire, involve , and 
+invest to support innovation.     
+  
+www. innovateuk .ukri.org  21 
+List of Abbreviation  
+ 
+Abbreviation  Definition  
+AI Artificial Intelligence  
+AR Augmented Reality  
+BSS Business Support System  
+DSIT  Department for Science, Innovation and Technology  
+eMBB  Enhanced Mobile Broadband  
+EPSRC  Engineering and Physical Sciences Research Council  
+ESG  Environmental, Social, and corporate Governance  
+FTTx  Fibre   o   e “ ” ( ome  room  etc)  
+FWA  Fixed Wireless Access  
+HMD  Head Mounted Device  
+HRLLC  Hyper Reliable and Low -Latency Communications  
+ICT  Information and Communications Technology  
+IMT International  Mobile  Telecommunications  
+ITU International Telecommunication Union  
+LEO Low Earth Orbit  
+MEO  Medium Earth Orbit  
+MIMO  Multiple -Input and Multiple -Output  
+mMTC  Massive Machine Type Communication  
+NFV Network Functions Virtualization  
+NHS  National Health Service  
+NR 5G Ne w Radio  
+NTN Non-Terrestrial Network  
+ORAN  Open Radio Access Network  
+OSS  Operation Support System  
+PMN  Private Mobile Network  
+RAN  Radio Access Network  
+RedCap  Reduced Capability , also known as NR -Light  
+RF Radio Frequency  
+RIC RAN Intelligent Controller  
+SA Standalone  (5G architecture)  
+SDN  Software Defined Network  
+SMS  Short Message Service  
+SWOT  Strengths, Weaknesses, Opportunities, and Threats  
+TCO  Total Cost of Ownership  
+TN Terrestrial Network  
+UAV Unmanned Aerial Vehicle  
+UKRI  UK Research and Innovation  
+uRLLC  Ultra -Reliable Low Latency Communications  
+VR Virtual Reality  
+XR Extended Reality  
+ 

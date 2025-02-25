@@ -1,0 +1,12 @@
+streamlit==1.42.1
+torch==2.5.1
+transformers==4.49.0
+pandas==2.2.3
+joblib==1.4.2
+numpy==2.2.3
+pillow==11.1.0
+tqdm==4.67.1
+scikit-learn==1.5.2
+tokenizers==0.21.0
+fastapi
+uvicorn[standard]

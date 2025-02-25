@@ -1,0 +1,625 @@
+
+
+
+Business enterprise research and development, UK - Office for National Statistics
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tell us whether you accept cookies
+We would like to use cookies to collect information about how you use ons.gov.uk.
+We use this information to make the website work as well as possible and improve our services.
+
+
+
+Accept all cookies
+
+
+Set cookie preferences
+
+
+
+
+
+
+
+
+
+You’ve accepted all cookies. You can change your cookie settings at any time.
+Hide
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+/economy/governmentpublicsectorandtaxes/researchanddevelopmentexpenditure/bulletins/businessenterpriseresearchanddevelopment/2022
+
+
+
+
+
+
+
+
+
+
+English (EN) | 
+Cymraeg (CY)
+
+
+
+
+
+Release calendar
+
+
+Methodology
+
+
+Media
+
+
+About
+
+
+Blog
+
+
+
+
+
+
+
+
+
+
+Menu
+
+
+
+
+Search
+
+
+
+
+Home
+
+
+
+
+Business, industry and trade
+
+
+
+
+Business
+
+
+Changes to business
+
+
+Construction industry
+
+
+IT and internet industry
+
+
+International trade
+
+
+Manufacturing and production industry
+
+
+Retail industry
+
+
+Tourism industry
+
+
+
+
+
+
+
+Economy
+
+
+
+
+Economic output and productivity
+
+
+Environmental accounts
+
+
+Government, public sector and taxes
+
+
+Gross Domestic Product (GDP)
+
+
+Gross Value Added (GVA)
+
+
+Inflation and price indices
+
+
+Investments, pensions and trusts
+
+
+National accounts
+
+
+Regional accounts
+
+
+
+
+
+
+
+Employment and labour market
+
+
+
+
+People in work
+
+
+People not in work
+
+
+
+
+
+
+
+People, population and community
+
+
+
+
+Armed forces community
+
+
+Births, deaths and marriages
+
+
+Crime and justice
+
+
+Cultural identity
+
+
+Education and childcare
+
+
+Elections
+
+
+Health and social care
+
+
+Household characteristics
+
+
+Housing
+
+
+Leisure and tourism
+
+
+Measuring progress, well-being and beyond GDP
+
+
+Personal and household finances
+
+
+Population and migration
+
+
+
+
+
+Taking part in a survey?
+
+
+
+English (EN) | 
+Cymraeg (CY)
+
+
+
+
+
+
+
+Search for a keyword(s) or time series ID
+
+
+Search
+
+
+
+
+
+
+
+
+
+
+Data and analysis from Census 2021
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home
+
+
+
+
+Economy
+
+
+
+
+Government, public sector and taxes
+
+
+
+
+Research and development expenditure
+
+
+
+Business enterprise research and development, UK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Business enterprise research and development, UK: 2022
+
+Spending and numbers employed on research and development by businesses in the UK, including data on sources of funds and regional spread.
+
+
+
+
+
+
+
+
+This is the latest release.
+View previous releases
+
+
+
+
+
+
+
+
+
+
+
+Contact: Email Daniel Robinson
+
+
+Release date: 27 February 2024
+
+
+Next release: To be announced
+
+
+
+
+
+
+
+
+
+Table of contents
+
+
+Main points
+
+
+Business enterprise research and development data
+
+
+Measuring the data
+
+
+New insights into research and development
+
+
+Methodological developments
+
+
+Related links
+
+
+Cite this statistical bulletin
+
+
+
+
+
+
+
+Print this 
+Statistical bulletin
+
+
+
+
+
+
+Download as PDF
+
+
+
+
+
+
+
+
+View all data used in this 
+Statistical bulletin
+
+
+
+
+
+
+
+
+1. Main points
+
+
+Expenditure on research and development (R&D) performed by UK businesses was £49.9 billion in 2022, an increase of £3.0 billion since 2021 (6.4%); this is the first period produced based on the new sample design and results methodology.
+The pharmaceuticals product group made the largest contribution to the total of business R&D performed in 2022, with £9.0 billion (17.9% of total R&D performed by UK businesses).
+The East of England had the largest regional value of business R&D performed in 2022, which was £10.7 billion (21.4%).
+The total value of R&D performed by the arts, entertainment and recreation industries was £0.9 billion in 2022.
+Estimates in this release have been compiled based on a new sample design and using new results methodologies; these estimates supersede the approach used in the previous release, therefore all estimates for 2022 other than the UK total are not directly comparable with previous years.
+
+Back to table of contents
+
+
+
+
+
+2. Business enterprise research and development data
+
+
+Business enterprise research and development, UK (designated as national statistics)  Dataset | Released 27 February 2024  UK estimates of annual research and development (R&D) spending by UK businesses.Business enterprise research and development, UK (designated as official statistics)  Dataset | Released 27 February 2024  Annual research and development (R&D) spending and employment by UK businesses, including data by product category and employment on R&D. 
+
+
+Back to table of contents
+
+
+
+
+
+3. Measuring the data
+
+The main source of data used to compile estimates for this publication is the annual business enterprise research and development (BERD) survey. This collects annual data on UK businesses that perform research and development (R&D).In this statistical bulletin, R&D and related concepts follow internationally agreed standards defined by the Organisation for Economic Co-operation and Development (OECD), as published in the Frascati Manual 2015.R&D can be measured by the expenditure on R&D performed by a business, or by the funding received by a business for R&D work. These are often, but not always, the same. Performance is regarded as a more accurate measure than funding received, as not all funds received may be used as intended. This release reports on R&D expenditure in UK businesses, irrespective of the country of residence of the ultimate owner or users of the R&D produced.Where regional breakdowns have been provided, for the larger responders that complete a more detailed questionnaire (the long-form type), the results are based on where the R&D is performed, which may not be the main location of the business surveyed. For the rest of the sample, which receive the short-form type, the region where the R&D is performed is assumed to be the main location of the business. Industrial classifications of businesses in this publication come from the Inter-Departmental Business Register (IDBR), which classifies businesses based on the principal activity performed by the business. All figures quoted are in current prices unless otherwise stated.
+Back to table of contents
+
+
+
+
+
+4. New insights into research and development
+
+Based on the microdata analysis we have conducted, the new sample design has provided better representation of all industries, including those where R&D may have been previously under-recorded. The largest product groups with the most business expenditure on R&D in 2022 were:
+
+Pharmaceuticals, 17.9% of total business R&D expenditure
+Miscellaneous business activities, including technical testing and analysis, 14.3%
+Software development, 12.8%
+Motor vehicles, 7.6%
+Research and development services, 6.4%
+Pharmaceuticals R&D was performed almost exclusively by businesses in the Scientific research and development and Manufacturing of pharmaceuticals industries, amounting to 93.3% of expenditure on Pharmaceuticals R&D. In contrast, R&D in Miscellaneous business activities and technical testing and analysis was more spread out across industries, with 54.2% carried out in other industries. About two-thirds (62.5%) of R&D in software development was performed in the Computer programming, consultancy and related activities industry, with the remainder performed in various other industries.When considering industry sections, which consist of several standard industrial classification (SIC) industries, the largest industry section by business R&D expenditure was the Professional, scientific and technical activities sector. The professional, scientific and technical activities section includes scientific research and development as its largest contributor and was responsible for 38.8% of total business R&D expenditure. The next largest industry section, Manufacturing, performed 22.3% of total business R&D expenditure. Information and communication performed 17.5% of total business R&D expenditure. Computer programming, consultancy and related activities, was the largest contributor within this industry section.The improvements to methods to address undercoverage have improved estimates of the distribution of R&D across the economy. In the 2020 survey results, which were released prior to any methods changes, large businesses, defined as businesses with over 250 employees performed 74% of R&D expenditure. In the new 2022 survey estimates, large businesses performed 59.6% of business R&D, while small and medium-sized businesses performed 40.4% of business R&D expenditure.The improvements have also enhanced coverage of industry sections that are relatively less R&D intensive. In the 2022 survey data, the Professional, Scientific and Technical activities, Manufacturing, and Information and communication sectors, which are typically the most research intensive, performed 78.7% of business R&D expenditure, and other industry sections performed 21.3%. This compares with 83.6% of business R&D expenditure in the estimates published for the 2020 reference period prior to any methods changes. Arts, entertainment and recreation activities, which is a relatively less R&D intensive industry section, performed 1.2% of business R&D expenditure in the 2020 reference period prior to methods changes; in the new survey, the industry sector performed 1.7% of business R&D expenditure. 
+Back to table of contents
+
+
+
+
+
+5. Methodological developments
+
+In previously published business enterprise research and development (BERD) statistics, up to the 2020 reference period, it has been established that there was undercoverage, particularly of small businesses. As an interim step, last year we applied an uplift approach (as explained in our Options for Transformation of Business Enterprise Research and Development Statistics article) to our BERD estimates, to adjust for this undercoverage, with a commitment to develop the BERD methods, as explained in our Update on transformation of research and development statistics: November 2023 article, for this release.For 2022 we have a new sample, that has increased the volume of data received and ensured that the BERD statistics now better reflect the level of R&D performed across the UK economy. This means that the estimates in this bulletin supersede those from the interim uplift approach and are considered the most accurate estimates of business R&D in the UK.Directly sampling from the Inter-departmental Business Register (IDBR)Rather than using feeder surveys to build and maintain the BERD reference list, the new design samples businesses directly from the IDBR. This further optimises the businesses selected to ensure adequate coverage of the types of R&D being performed (also referred to as product group) and by region. By sampling directly from the IDBR, the design ensures that the sample better represents the UK economy, both in terms of regional distribution and by type of R&D performed. Returns from the BERD survey are weighted to represent the wider population of non-sampled businesses for BERD on the IDBR.Using administrative dataFollowing our comparison of BERD with administrative data sources (article), we now utilise the HMRC R&D Tax Credit data to inform our sample. Using the HMRC data, we identify the top 400 R&D tax credit claimants. These are combined with the top 400 R&D performing businesses, based on expenditure reported on the previous year’s BERD survey, to compile a reference list of approximately 800 of Great Britain’s top R&D performers. This ensures that important performers of R&D are included in the sample each year. The remainder of the sample are randomly drawn from the IDBR to ensure it includes all business types and that adequate numbers of businesses are sampled by region to produce robust subnational estimates. Survey questionnairesBERD uses two types of questionnaire: a long-form type and a short-form type. The long form collects detailed breakdowns about R&D, which includes the type of R&D being performed, referred to as product group in this release, and also collects postcode information on the location of where the R&D is being performed. For 2022 we dispatched approximately 8,000 long-form types, which is a substantial increase compared with the previous sample design and provides us with more returned data to inform the BERD statistics. In contrast, only 400 long forms were dispatched in previous years. This improvement will lead to differences in the breakdowns in 2022, as fewer assumptions now have to be made.The short form collects totals only and excludes the detailed breakdowns collected on the long form. To determine the type and location of R&D being performed, assumptions are made based on each business’s standard industrial classification (SIC) and address details as held on the IDBR. Sampling more businessesThe sample for the BERD survey in Great Britain increased from approximately 4,000 businesses for 2021 to approximately 37,000 businesses for the 2022 reference period. Within this, the number of long-form responders increased from approximately 400 to over 8,000 and the short forms from 3,600 to approximately 29,000. The larger number of long forms should improve the quality of the survey results at a detailed level. Although the sample size has increased substantially, the comparison to the previous sample size may not be helpful. The previous method, using feeder surveys, which identified businesses performing R&D, meant that all respondents were assumed to perform R&D. The 2022 sample is larger and more representative, but captures a proportion of businesses that do not perform R&D. Despite this, the larger sample means that we have collected data from a much broader range of businesses, and estimates of total R&D better represent the full business population.Northern IrelandBERD statistics for Northern Ireland are compiled by the Northern Ireland Statistics Research Agency (NISRA) and we have been working in partnership with them to ensure that when combined with the GB BERD data, the estimates at the UK level are the best quality possible. The Northern Ireland sample remained at approximately 1,500 businesses for 2022.It should be noted that the regional estimate for Northern Ireland in this release is slightly higher than the estimate published by NISRA. This is because of a small proportion of R&D being performed in Northern Ireland, but by GB businesses. These businesses are in scope for the GB BERD survey and are excluded from the results published by NISRA. We have worked closely with NISRA to ensure no duplication exists as a result.Further detail about the improvements to our sample design can be found in our Update on transformation of research and development statistics: November 2023 article.Other methodological developmentsIn addition to the sample redesign, there has been a substantial programme of work to improve the BERD statistics. This includes:
+
+an electronic questionnaire – to enhance the experience of the responder and improve data quality, with automatic validation at point of entry
+improved survey guidance – to improve the quality of data collection on BERD, questionnaire guidance has been enhanced to help businesses better interpret the questions
+more detailed data collected – a larger proportion of the sample received long forms collecting full detail on product group and locations of R&D, so fewer assumptions had to be made
+development of new results systems – ensuring higher quality analysis, and production of results
+research into international approaches – we have commissioned an academic review of international methods used for R&D statistics to better understand methods we can draw on to improve our estimates, An International Review of Approaches to Measuring Research and Development published on the SOC ARXIV website
+Future developmentsAlthough substantial development has already been made, there are further improvements we will continue to make. These developments are to ensure that the new sample approach and systems can sustainably deliver the BERD results in future. These improvements will include:
+
+optimising our sample design – using the analysis from our survey responses this year, we will optimise the sample to maintain the right level of coverage and quality while reducing the size of the sample to around 20,000 businesses
+product group information – we will examine the quality of more detailed product group information (below the published product group level) to assess if this could be included for granular analysis
+regional information – we will continue to look at further refinement of the regional-level data and possible inclusion of greater regional breakdowns (below International Territorial Level 1)
+Impact on (GERD) statistics from new BERD methodology improvementsThe gross domestic expenditure on research and development (GERD) statistics measure total expenditure on R&D performed in the UK by all sectors of the economy. As the BERD sector is the largest sector by value of expenditure, the improvement to methods implemented in this BERD release will affect the GERD results, which are due to be released later this year. The impact is expected to be minimal, as the improvement to methods have not substantially shifted the total level of Business Expenditure on R&D based on the uplift approach. Despite the limited impact, as the BERD data should not be directly compared with earlier years, GERD will also be restricted to data for 2022 only.Impact on measures of R&D as a proportion of GDPThe estimates of the percentage of gross domestic product (GDP) that was spent on R&D performed by businesses in the UK, which are usually published in the BERD results, are not available in this release. This is because we have not yet incorporated the improvements to the measurement of R&D in the business sector into the calculations of GDP. We continue to work towards introducing these improvements into the national accounts, but the earliest opportunity to do so will be in 2025. In the interim we are working to understand the impact that the R&D improvements will have on national accounts and GDP. We intend to publish an update on our progress with this in summer 2024.Time seriesThe uplift approach was implemented from 2014 at the UK level, and at a detailed level from 2018, until 2021. The new sample design adopted for 2022 has enabled us to publish more lower-level detail than was possible compared with the uplift approach. Estimates at this lower level of detail may differ from those compiled under the previous methodology. Such differences could be because of actual changes in R&D activity, as well as the methodological changes and enhancements to the questionnaire, but it is difficult to quantify these elements. Therefore, estimates from 2022 are not directly comparable with previous years except at the UK level.While the uplift approach worked well for the UK totals and for most breakdowns, there are some important product groups and regions where the uplift methodology appears to have over or underestimated expenditure on R&D, and the new sample design is expected to have produced more robust estimates in these areas. This means that although a comparison could be drawn over time, it is unlikely to accurately reflect actual year-on-year changes. An example of this is the computer programming and information service activities product group, where clarifications to the questionnaire may mean that previously businesses were unknowingly reporting data under this product group when it should have been recorded in another. Changes such as this will mean the product group breakdowns in 2022 more accurately reflect R&D expenditure.In addition to this, the increased use of long forms to capture BERD data means that fewer assumptions are now being made about the type of R&D being performed and the locations involved. This will naturally lead to changes in the distribution of expenditure across the product groups and regional breakdowns. While causing a discontinuity, these changes are improvements that help to ensure the robustness of the statistics in 2022.As our development work continues, we will seek to produce a time series that contains comparable estimates across the periods covered at the more detailed level. This is expected to be published in the spring of 2024. We will also include a small number of revisions to back data for survey respondents, which will further improve the quality and comparability of the results over time. However, the impact on the UK-level estimates of the data revisions is expected to be small.More quality and methodology information on strengths, limitations, appropriate uses, and how the data were created is available in our Business Enterprise Research and Development Survey QMI.Official Statistics statusThe new figures in this release provide the current best estimate of R&D at the UK level which have been validated against other available data. However, given the changes to BERD statistics over the last two years, there are fewer data for validation on a year-on-year basis, and on the estimates below the UK level. Therefore, in this release, only the total UK estimate is designated as “National Statistic” status with all estimates below the UK level, classed as “Official Statistics”.As detailed in the Office for Statistics Regulation’s (OSR’s) letter, headed Assessment of Business Enterprise Research and Development statistics, we are working with OSR as they carry out a quality assessment of BERD statistics. This review focuses on the new methods and how these meet our user needs with the aim of regaining National Statistics status for these statistics in the next release.
+Back to table of contents
+
+
+
+
+
+6. Related links
+
+
+Gross domestic expenditure on research and development, UK: 2020  Bulletin | Released 17 July 2023  Annual estimates of research and development (R&D) performed and funded by business enterprise, higher education, government, UK Research and Innovation (UKRI), and private non-profit organisations.Research and development expenditure by the UK government: 2021  Bulletin | Released 30 March 2023  Research and development and related expenditure by UK government departments and devolved administrations. 
+
+
+Back to table of contents
+
+
+
+
+
+7. Cite this statistical bulletin
+
+
+Office for National Statistics (ONS), released 27 February 2024, ONS website, statistical bulletin, Business enterprise research and development, UK: 2022 
+
+
+Back to table of contents
+
+
+
+
+
+
+
+
+View all data used in this 
+Statistical bulletin
+
+
+
+
+
+Contact details for this 
+Statistical bulletin
+
+
+
+
+Daniel Robinson
+RandD@ons.gov.uk 
+Telephone: +44 1633 455718
+
+
+
+
+
+
+
+
+Footer links
+
+
+
+
+
+Help
+
+
+Accessibility
+
+
+Cookies
+
+
+Privacy
+
+
+Terms and conditions
+
+
+
+
+About ONS
+
+
+What we do
+
+
+Careers
+
+
+Contact us
+
+
+News
+
+
+Freedom of Information
+
+
+
+
+Connect with us
+
+
+Twitter
+
+
+Instagram
+
+
+Facebook
+
+
+LinkedIn
+
+
+Consultations
+
+
+Discussion forums
+
+
+Email alerts
+
+
+
+
+
+
+
+
+
+
+All content is available under the Open Government Licence v3.0, except where otherwise stated
+
+
+
+
+
+
+
+
+
+

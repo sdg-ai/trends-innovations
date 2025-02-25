@@ -71,3 +71,4 @@ coverage.xml
 *.log
 logs/
 climate-scanner/services/ti-classification/training/results/
+climate-scanner/services/ti-classification/wandb/

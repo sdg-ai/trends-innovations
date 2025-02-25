@@ -63,7 +63,7 @@ def seed_everything(seed):
 
 
 def init_configurations(args) -> Dict[str, Tuple[RunConfig, Dict]]:
-    with open("train_configs.yml", "r") as f:
+    with open("training/train_configs.yml", "r") as f:
         custom_configs = yaml.safe_load(f)
     initialized_configs = {}
     

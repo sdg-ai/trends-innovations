@@ -243,7 +243,7 @@ def load_openai_annotated_data() -> pd.DataFrame:
     logger.info("Loading ChatGPT annotated data.")
     df = pd.read_parquet(
         os.path.join("dataset/ai_annotated_data",
-                     "openai_annotated_data.parquet"))
+                     "old_openai_annotated_data.parquet"))
     logger.info(
         f"Loaded total of {len(df)} samples from ChatGPT annotated data.")
     return df
